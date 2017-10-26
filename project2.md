@@ -1,9 +1,10 @@
 ---
+title: Jekyll 2
+date: 2015-10-07 15:39:40 Z
 layout: page
-title:  "Jekyll 2"
-date:   2015-10-07 15:39:40
 preview: https://unsplash.it/300/300
-categories: [project]
+categories:
+- project
 excerpt: Description here
 ---
 

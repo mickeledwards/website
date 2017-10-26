@@ -1,15 +1,23 @@
-# Site settings
+---
 title: Mickel Edwards
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is the personal portfolio site for Mickel Edwards.
-  Industrial designer at Iowa  State University.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+description: 'This is the personal portfolio site for Mickel Edwards. Industrial designer
+  at Iowa  State University.
 
-# Build settings
+'
+baseurl: ''
+url: http://yourdomain.com
+twitter_username: jekyllrb
+github_username: jekyll
 markdown: kramdown
 permalink: none
-categories: [project]
+categories:
+- project
