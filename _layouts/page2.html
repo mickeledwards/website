@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div id="home-wrap" class="content-section">
+	<div class="container">
+	   <div class="row no-margin">
+	       <div class="col-md-12 padding-leftright-null">
+	           <div id="page-header">
+	               <div class="text">
+	                   <h1 class="margin-bottom-small">{{ page.title }}<span class="color">.</span></h1>
+						<!-- <p class="heading left max full grey-dark">{{ post.excerpt }}</p> -->
+	               </div>
+	           </div>
+	       </div>
+	   </div>
+	</div>	         
+	<div class="container">
+	    <div class="row no-margin wrap-text padding-onlytop-lg">
+	        <div class="col-md-12 padding-leftright-null">
+	{{ content }}
+	        </div>
+	    </div>
+	    {% include hiddensvgs.html %}
+	    {% include layers.html %}
+	    
+	</div>
+</div>
