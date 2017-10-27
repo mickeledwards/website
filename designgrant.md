@@ -1,6 +1,6 @@
 ---
 title: Design Grant
-date: 2015-10-07 10:39:40 -0500
+date: 2015-10-07 15:39:40 +0000
 layout: page2
 preview: "/images/kinect.png"
 categories:

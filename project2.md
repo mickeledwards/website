@@ -1,6 +1,6 @@
 ---
 title: Jekyll 2
-date: 2015-10-07 15:39:40 Z
+date: 2015-10-07 15:39:40 +0000
 layout: page
 preview: https://unsplash.it/300/300
 categories:
