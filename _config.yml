@@ -21,3 +21,6 @@ markdown: kramdown
 permalink: none
 categories:
 - project
+
+plugins:
+- jekyll-menus
