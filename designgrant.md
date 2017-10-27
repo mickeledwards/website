@@ -2,7 +2,7 @@
 title: Design Grant
 date: 2015-10-07 10:39:40 -0500
 layout: page2
-preview: "/img/shop2.jpg"
+preview: "/images/kinect.png"
 categories:
 - project
 excerpt: Creation of a Reactive Sculpture
