@@ -1,5 +1,5 @@
 ---
 header:
-- url: "/api"
-  title: API Documentation
-  identifier: api
+- url: "/"
+  title: Home
+  identifier: home
