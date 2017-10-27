@@ -1,11 +1,11 @@
 ---
-title: Jekyll 3
+title: Grasshopper
 date: 2015-10-08 15:39:40 +0000
 layout: post
-preview: https://unsplash.it/300/300
+preview: "/images/grassh.png"
 categories:
 - project
-excerpt: Description here
+excerpt: Generative Design
 ---
 
 ![Picture 1](https://unsplash.it/800/600)
