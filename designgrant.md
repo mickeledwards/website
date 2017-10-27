@@ -5,7 +5,7 @@ layout: page2
 preview: "/images/kinect.png"
 categories:
 - project
-excerpt: Description here
+excerpt: Creation of a Reactive Sculpture
 ---
 
 
