@@ -1,8 +1,8 @@
 ---
 title: Iowa Prison Industries
-date: 2015-10-07 15:39:40 +0000
+date: 2015-10-07 10:39:40 -0500
 layout: page
-preview: "/images/ipichair.png"
+preview: "/images/ipiseat2.png"
 categories:
 - project
 excerpt: Furniture Design
