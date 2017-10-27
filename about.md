@@ -1,7 +1,8 @@
 ---
-title: about
+title: About
 permalink: "/about/"
 layout: page
 ---
 
-About Here
+
+<span style="font-size: 1rem;">About Here</span>
