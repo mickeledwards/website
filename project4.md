@@ -2,7 +2,7 @@
 title: Jekyll 4
 date: 2015-10-09 15:39:40 +0000
 layout: post
-preview: "/img/news3.jpg"
+preview: https://unsplash.it/300/300
 categories:
 - project
 excerpt: Description here
