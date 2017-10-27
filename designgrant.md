@@ -1,6 +1,6 @@
 ---
 title: Design Grant
-date: 2015-10-07 15:39:40 Z
+date: 2015-10-07 10:39:40 -0500
 layout: page2
 preview: "/images/kinect.png"
 categories:
@@ -8,4 +8,5 @@ categories:
 excerpt: Description here
 ---
 
-Bavaria ipsum dolor sit amet g’hupft wia gsprunga wolln dringma aweng oba Biazelt hogg di hera helfgod. Sog i hawadere midananda nomoi a bissal wos gehd ollaweil gor kumm geh naa jo leck mi, Xaver: Weiznglasl i hob di liab des muas ma hoid kenna.
+
+Bavaria ipsum dolor sit amet g’hupft wia gsprunga wolln dringma aweng oba Biazelt hogg di hera helfgod. Sog i hawadere midananda nomoi a bissal wos gehd ollaweil gor kumm geh naa jo leck mi, Xaver: Weiznglasl i hob di liab des muas ma hoid kenna. Text here.
