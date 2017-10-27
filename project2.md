@@ -5,7 +5,7 @@ layout: page
 preview: "/images/ipi.png"
 categories:
 - project
-excerpt: Description here
+excerpt: Furniture Design
 ---
 
 ![Picture 1](https://unsplash.it/800/600)
