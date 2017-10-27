@@ -2,7 +2,7 @@
 title: Iowa Prison Industries
 date: 2015-10-07 15:39:40 +0000
 layout: page
-preview: https://unsplash.it/300/300
+preview: "/images/ipi.png"
 categories:
 - project
 excerpt: Description here
