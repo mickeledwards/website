@@ -4,3 +4,4 @@ _site
 *.codekit
 my_api_token
 my_username,
+jekyll.txt
