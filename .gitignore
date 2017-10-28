@@ -2,3 +2,5 @@ _site
 .sass-cache
 *.codekit
 *.codekit
+my_api_token
+my_username,
