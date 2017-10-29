@@ -16,7 +16,6 @@ image-alt:
 - A flower.
 - Another flower.
 - A leaf.
-
 ---
 
 
