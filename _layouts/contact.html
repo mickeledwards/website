@@ -1,52 +1,68 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="content-section container">
+  {% include head.html %}
+
+  <body>
+
+    <div id="main-wrap">
+      
+      {% include header.html %}
+
+     <div id="page-content">
+	 	<div class="container">
+        <div class="content-section">
 	   <div class="row no-margin">
 	       <div class="col-md-12 padding-leftright-null">
 	           <div id="page-header">
 	               <div class="text">
 	                   <h1 class="margin-bottom-small">{{ page.title }}<span class="color">.</span></h1>
-						<!-- <p class="heading left max full grey-dark">{{ post.excerpt }}</p> -->
 	               </div>
 	           </div>
 	       </div>
 	   </div>
 	</div>	         
-	<div class="container">
-	    <div class="row no-margin wrap-text padding-onlytop-lg">	       
-			<div class="col-sm-8 padding-leftright-null">
-				<form id="contact-form" class="padding-md padding-md-topbottom-null" method="POST" action="//formspree.io/admin@mickeledwards.com" >
-				    <div class="row no-margin">
-				        <div class="col-md-6 padding-leftright-null">
-				            <div class="text small padding-topbottom-null">
-				                <input class="form-field" name="name" id="name" type="text" placeholder="Your name">
-				            </div>
-				        </div>
-				        <div class="col-md-6 padding-leftright-null">
-				            <div class="text small padding-topbottom-null">
-				                <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
-				            </div>
-				        </div>
-				    </div>
-				    <div class="row no-margin">
-				        <div class="col-md-6 padding-leftright-null">
-				            <div class="text small padding-topbottom-null">
-				                <textarea class="form-field" name="messageForm" id="messageForm" rows="1" placeholder="Your Message"></textarea>
-				            </div>
-				        </div>
-				        <div class="col-md-6 padding-leftright-null">
-				            <div class="text small padding-topbottom-null">
-				                <div class="submit-area padding-onlytop-sm">
-					                <input type="text" name="_gotcha" style="display:none" />
-				                    <input type="submit" id="submit-contact" class="btn-alt active shadow" type="submit" value="Send">
-				                    <div id="msg" class="message"></div>
-				                </div>
-				            </div>
-				        </div>
-				    </div>
-				</form>
-			</div>
-	    </div>
+<div class="row no-margin wrap-text padding-onlytop-lg">	       
+	<div class="col-sm-8 padding-leftright-null">
+		<form id="contact-form" class="padding-md padding-md-topbottom-null" method="POST" action="//formspree.io/admin@mickeledwards.com" >
+		    <div class="row no-margin">
+		        <div class="col-md-6 padding-leftright-null">
+		            <div class="text small padding-topbottom-null">
+		                <input class="form-field" name="name" id="name" type="text" placeholder="Your name">
+		            </div>
+		        </div>
+		        <div class="col-md-6 padding-leftright-null">
+		            <div class="text small padding-topbottom-null">
+		                <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
+		            </div>
+		        </div>
+		    </div>
+		    <div class="row no-margin">
+		        <div class="col-md-6 padding-leftright-null">
+		            <div class="text small padding-topbottom-null">
+		                <textarea class="form-field" name="messageForm" id="messageForm" rows="1" placeholder="Your Message"></textarea>
+		            </div>
+		        </div>
+		        <div class="col-md-6 padding-leftright-null">
+		            <div class="text small padding-topbottom-null">
+		                <div class="submit-area padding-onlytop-sm">
+			                <input type="text" name="_gotcha" style="display:none" />
+		                    <input type="submit" id="submit-contact" class="btn-alt active shadow" type="submit" value="Send">
+		                    <div id="msg" class="message"></div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</form>
 	</div>
+</div>
+        
+      </div>
+      {% include footer.html %}
+     </div>
+    
+    </div>
+    
+  </body>
+
+</html>
