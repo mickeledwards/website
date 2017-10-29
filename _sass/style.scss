@@ -1664,13 +1664,16 @@ aside {
 /* =  9.Post
 /*-------------------------------------------------*/
 
+.imagelb{
+	padding: 10px 0;
+}
+
 .img-post {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 4px;
     transition: all .4s ease;
-    padding: 10px 0;
     
     &:hover {
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
