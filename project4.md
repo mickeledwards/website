@@ -1,7 +1,7 @@
 ---
 title: Jekyll 4
 date: 2015-10-09 15:39:40 +0000
-layout: postgallery
+layout: pagegallery
 preview: https://unsplash.it/300/300
 categories:
 - project
