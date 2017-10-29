@@ -41,9 +41,10 @@ layout: default
 
 			{% for image in page.image %}
 				<div class=" col-md-4 col-sm-6 col-xs-12">
-					<div class="text small padding-top-null">
-                        <img src="{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" class="img-post">
-                    </div>
+					
+					<a href="assets/img/news1.jpg" class="lightbox">
+                        <div class="image" style="background-image:url({{ page.image[forloop.index0] }})"></div>
+                    </a>
 				</div>
 			{% endfor %}
      </div>
