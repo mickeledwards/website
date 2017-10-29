@@ -10,11 +10,10 @@ collections:
     output: true
 email: your-email@domain.com
 description: 'This is the personal portfolio site for Mickel Edwards. Industrial designer
-  at Iowa  State University.
-
-'
+  at Iowa  State University.'
 baseurl: ''
 url: http://yourdomain.com
+email: admin@mickeledwards.com
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
