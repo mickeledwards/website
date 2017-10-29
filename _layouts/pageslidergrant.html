@@ -31,19 +31,26 @@ layout: default
         </div>
         <div class="col-md-8 padding-leftright-null">
             <div class="text small padding-topbottom-null">
-                <p class="heading left full">{{ page.descript }}</p>
+                <p class="heading left full">{{page.descript}}</p>
             </div>
         </div>
     </div>
-    <div class="row no-margin wrap-text padding-onlybottom-lg project-images">
-			{% for image in page.image %}
-				<div class=" col-md-4 col-sm-6 col-xs-12 imagelb">
-					<a href="{{ page.image[forloop.index0] }}" class="lightbox">
-                        <img src="{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" class="img-post">
-					</a>
-				</div>
-			{% endfor %}
-		</div>
+	{% if page.image %}
+	
+    <div class="row no-margin wrap-text padding-onlybottom-lg">
+        <div class="col-md-12 padding-leftright-null padding-onlybottom-md">
+            <div class="text small padding-topbottom-null">
+               <div class="project-gallery">
+                   {% for image in page.image %}
+                   <div class="item">
+                       <img class="img-responsive" src="{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}">
+                   </div>
+                   {% endfor %}
+               </div>
+            </div>
+        </div>
+     </div>
+	{% endif %}
     <div class="row no-margin wrap-text padding-onlytop-lg">
         <div class="col-md-12 padding-leftright-null">
 			{{ content }}
