@@ -1,4 +1,5 @@
 ---
-title: Contact Me
-layout: contact
+title: Contact
+permalink: "/contact/"
+layout: page
 ---
