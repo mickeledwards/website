@@ -1,7 +1,7 @@
 ---
 title: Design Grant
 date: 2015-10-07 15:39:40 +0000
-layout: pageslider
+layout: pagegallerygrant
 preview: "/images/kinect.png"
 categories:
 - project

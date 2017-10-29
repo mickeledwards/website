@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="content-section container">
+   <div class="row no-margin">
+       <div class="col-md-12 padding-leftright-null">
+           <div id="page-header">
+               <div class="text">
+                   <h1 class="margin-bottom-small">{{ page.title }}<span class="color">.</span></h1>
+               </div>
+           </div>
+       </div>
+   </div>
+    <div class="row no-margin wrap-text padding-onlytop-lg">
+        <div class="col-md-4 padding-leftright-null">
+            <div class="text small padding-topbottom-null">
+                {% if page.type %}
+                <h3 class="heading margin-bottom-extrasmall">Type<span class="color">.</span></h3>
+                <p class="heading left margin-bottom">{{ page.type }}</p>
+                {% endif %}
+                {% if page.client %}
+                <h3 class="heading margin-bottom-extrasmall">Client<span class="color">.</span></h3>
+                <p class="heading left margin-bottom">{{page.client}}</p>
+                {% endif %}
+                {% if page.year %}
+                <h3 class="heading margin-bottom-extrasmall">Year<span class="color">.</span></h3>
+                <p class="heading left">{{ page.year }}</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-8 padding-leftright-null">
+            <div class="text small padding-topbottom-null">
+                <p class="heading left full">{{ page.descript }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row no-margin wrap-text padding-onlybottom-lg project-images">
+			{% for image in page.image %}
+				<div class=" col-md-4 col-sm-6 col-xs-12 imagelb">
+					<a href="{{ page.image[forloop.index0] }}" class="lightbox">
+                        <img src="{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" class="img-post">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+    <div class="row no-margin wrap-text padding-onlytop-lg">
+        <div class="col-md-12 padding-leftright-null">
+			{{ content }}
+        </div>
+    </div>
+    {% include layers.html %}
+</div>
