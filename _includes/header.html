@@ -20,10 +20,8 @@
                         <li class="submenu">
                             <a href="javascript:void(0)">Portfolio</a>
                             <ul class="sub-menu">
-                                {% for page in site.pages %}
-				                	{% if page.categories contains 'project' %}
-						                    <a href="{{ page.url | prepend: site.baseurl }} ">{{ page.title }}</a>
-				                {% endif %}
+                                {% for post in site.posts %}
+						                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
 							{% endfor %}
                             </ul>
                         </li>
@@ -46,11 +44,3 @@
         </nav>
     </div>
 </header>
-
-{% if page.image.feature %}
-<div class="entry-header">
-  <div class="entry-image">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-{% endif %}

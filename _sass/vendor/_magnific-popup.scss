@@ -59,10 +59,9 @@
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-  font-family: 'iconfont' !important;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size:120px;
-  background: none !important;
 }
 @media screen and (max-width:480px) {
     .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
@@ -118,7 +117,7 @@ button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
-  background: transparent !important;
+  background: transparent;
   border: 0;
   -webkit-appearance: none;
   display: block;
@@ -157,13 +156,13 @@ button::-moz-focus-inner {
   color: #222;
   font-style: normal;
   font-size: 80px;
-  content: "×";
   font-family: 'Roboto', sans-serif;
-  background-color: transparent !important;
   font-weight: 100;}
   .mfp-close:hover,
   .mfp-close:focus {
    }
+  .mfp-close:active {
+    top: 1px; }
 button.mfp-close {
     right:0 !important;
 }
@@ -212,7 +211,7 @@ button.mfp-close {
   top: 50%;
   margin-top: -35px;
   padding: 0;
-  width: 50px !important;
+  width: 65px;
   height: 60px;
   -webkit-tap-highlight-color: transparent; }
   .mfp-arrow:active {
@@ -233,7 +232,7 @@ button.mfp-close {
     left: 0;
     top: 0;
     margin-top: 35px;
-    margin-left: 0px !important;
+    margin-left: 35px;
     border: medium inset transparent; }
   .mfp-arrow:after,
   .mfp-arrow .mfp-a {
@@ -256,8 +255,7 @@ button.mfp-close {
       margin-left: 18px;
       font-size:50px;
       content: "\f3d2";
-      font-family: "iconfont" !important;
-      opacity: 1.0 ;
+      font-family: "Ionicons";
 }
   .mfp-arrow-left:before,
   .mfp-arrow-left .mfp-b {
@@ -270,9 +268,8 @@ button.mfp-close {
   .mfp-arrow-right .mfp-a {
       font-size:50px;
       content: "\f3d3";
-      font-family: "iconfont" !important;
+      font-family: "Ionicons";
       margin-left: 22px; 
-      opacity: 1.0 ;
 }
   .mfp-arrow-right:before,
   .mfp-arrow-right .mfp-b {
@@ -368,11 +365,7 @@ img.mfp-img {
   cursor: auto; }
 
 .mfp-title {
-  text-align: left;
-  line-height: 18px;
-  color: #F3F3F3;
-  word-wrap: break-word;
-  padding-right: 36px; }
+  display: none !important;}
 
 .mfp-image-holder .mfp-content {
   max-width: 100%; }

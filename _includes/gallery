@@ -1,0 +1,45 @@
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if gallery.size == 2 %}
+  {% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+  {% assign gallery_layout = 'third' %}
+{% else %}
+  {% assign gallery_layout = '' %}
+{% endif %}
+
+<figure class="project-images {{ gallery_layout }} {{ include.class }}">
+  {% for img in gallery %}
+    {% if img.url %}
+      <a href=
+        {% if img.url contains "://" %}
+          "{{ img.url }}"
+        {% else %}
+          "{{ img.url | absolute_url }}"
+        {% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+       class="lightbox">
+        <img src=
+          {% if img.image_path contains "://" %}
+            "{{ img.image_path }}"
+          {% else %}
+            "{{ img.image_path | absolute_url }}"
+          {% endif %}
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      </a>
+    {% else %}
+      <img src=
+        {% if img.image_path contains "://" %}
+          "{{ img.image_path }}"
+        {% else %}
+          "{{ img.image_path | absolute_url }}"
+        {% endif %}
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+  {% endfor %}
+  
+</figure>

@@ -1,0 +1,26 @@
+
+{% if page.previous or page.next %}
+</div>
+<div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="nav-left">
+				    {% if page.previous %}
+				      <center><a href="{{ page.previous.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></center>
+				    {% else %}
+				      <center><a href="#" class="btn-alt small shadow margin-null disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></center>
+				    {% endif %}
+				    </div>
+            	</div>
+            <div class="col-xs-6">
+                <div class="nav-right">
+				    {% if page.next %}
+				      <center><a href="{{ page.next.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></center>
+				    {% else %}
+				      <center><a href="#" class="btn-alt small shadow margin-null disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></center>
+				    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div> 
+{% endif %}

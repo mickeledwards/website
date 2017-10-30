@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container">
-   <div class="row no-margin">
+   <div class=" no-margin">
 	   <div class="col-md-12 padding-leftright-null">
 		   <div id="home-header">
 				  	<div class="deco-container">
@@ -30,20 +30,18 @@ layout: default
 <div id="home-wrap" class="content-section">
 		<section id="projects" class="page padding-top-null padding-onlybottom-lg">
 			<div class="projects-items row">
-				{% for page in site.pages %}
-					{% if page.categories contains 'project' %}
+				{% for post in site.posts %}
 						<div class="single-item col-md-4 col-sm-6 col-xs-12">
-							<a href="{{ page.url | prepend: site.baseurl }}">
+							<a href="{{ post.url | absolute_url }}">
 							  <div class="item">
-								  <img src="{{ page.preview }}">
+								  <img src="{{ post.preview }}">
 								  <div class="content">
-									  <h3>{{ page.title }}</h3>
-									  <p>{{ page.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+									  <h3>{{ post.title }}</h3>
+									  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 									</div>
 								</div>
 							</a>
 						</div>
-					{% endif %}
 				{% endfor %}
 			</div>
 		</section>				  
