@@ -8,7 +8,7 @@
 				 	{% if page.next %}
 				      <center><a href="{{ page.next.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></center>
 				    {% else %}
-				      <center><a href="#" class="btn small margin-null disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></center>
+				      <center><a href="#" class="btn small margin-null disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Previous" }}</a></center>
 				    {% endif %}
 				    </div>
             	</div>
@@ -18,7 +18,7 @@
 {% if page.previous %}
 				      <center><a href="{{ page.previous.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></center>
 				    {% else %}
-				      <center><a href="#" class="btn margin-null small disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></center>
+				      <center><a href="#" class="btn margin-null small disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Next" }}</a></center>
 				    {% endif %}
                 </div>
             </div>
