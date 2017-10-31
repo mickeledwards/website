@@ -247,6 +247,10 @@ a {
             border-color:transparent;
             transition: all .4s ease;
         }
+        &.small {
+            height: 36px;
+            line-height: 36px;
+        }
     }
     &.btn-alt {
         padding:0;
