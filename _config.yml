@@ -1,5 +1,5 @@
 
-permalink: :title.html
+permalink: :title
 # Site Settings
 locale                   : "en"
 title                    : "Mickel Edwards Industrial Design Portfolio"
