@@ -4,13 +4,13 @@
 
 button {
     &.mfp-close {
-        background-color: $secondary-color !important;
-        color: white;
+        color: $secondary-color !important;
+        background-color: white !important;
         transition: background-color .4s ease;
 
         &:hover {
-            background-color: $darkgrey-background !important;
-            transition: background-color .4s ease;
+            color: $darkgrey-background !important;
+            transition: color .4s ease;
         }
     }
 }

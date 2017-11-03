@@ -22,7 +22,7 @@
 
 
 /*-------------------------------------------------*/
-
+$fontawesomesize: 2em;
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
@@ -45,7 +45,8 @@ $large: 991px;
 $full: 1199px;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
-//@import 'iconfonts';
+@import 'ionicons';
+@import 'fontawesome';
 @import 'bootstrap';
 @import 'grid';
 @import 'mixins';
@@ -1101,26 +1102,7 @@ textarea {
         }
     }
     #home-header {
-        .text {
-            padding: 150px 50px 125px 50px;
-            
-            @media screen and (max-width: 650px) {
-                padding: 100px 50px 125px 50px;
-            }
-            @media screen and (max-width: $small) {
-                padding: 100px 30px 125px 30px;
-            }
-            
-            p {
-                font-size: 20px;
-                line-height: 32px;
-                
-                @media screen and (max-width: 650px) {
-                    font-size: 18px;
-                    line-height: 28px;
-                }
-            }
-        }
+	    padding: 3em 50px 0 50px;
     }
 
     #projects, #projects-filters {

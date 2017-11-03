@@ -1,10 +1,10 @@
 {
-  "name": "minimal-mistakes",
+  "name": "mickeledwards",
   "version": "4.6.0",
-  "description": "Minimal Mistakes Jekyll theme npm build scripts",
+  "description": "Mickel Edwards Jekyll Website npm build scripts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git://github.com/mickeledwards/mickeledwards.github.io.git"
   },
   "keywords": [
     "jekyll",
@@ -14,9 +14,9 @@
   "author": "Michael Rose",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/mickeledwards/mickeledwards.github.io/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "http://mickeledwards.com/",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -29,6 +29,6 @@
     "uglify": "uglifyjs assets/js/vendor/jquery/jquery-3.2.1.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "add-banner": "node banner.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify && npm run add-banner"
+    "build:js": "npm run uglify"
   }
 }

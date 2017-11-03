@@ -1,39 +1,44 @@
 .deco-container {
-	padding-top: 30px;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	padding-top: 0;
 	
 }
 .deco-container2 {
-	margin-top: -75px;
-	padding-left: 10vw;
-	padding-right: 10vw;
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	margin-bottom: -50px;
-}
-
-@media screen and (min-width: $medium){
-	.deco-container2 {
-	margin-top: -100px;
-	margin-bottom: -125px;
-}
+	margin-top: 0;
+	margin-bottom: 0px;
 }
 
 .deco-letter {
 	font-size: 5vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
 	z-index: 10;
 	pointer-events: none;
 	font-weight: bold;
+	display: inline;
+	white-space:nowrap;
+    overflow:hidden;
 }
+
+
+@media screen and (min-width: $medium){
+	.deco-container2 {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		margin-bottom: -50px;
+	}
+	.deco-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		margin-bottom: -125px;
+	}
+	.deco-letter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 
 @media screen and (min-width: $medium){
 	.deco-letter::before {
@@ -48,9 +53,7 @@
 		background: $lettering-color;
 		z-index: -1;
 	}
-}
-
-@media screen and (min-width: $medium){
+	
 	.deco-letter:first-child {
 		grid-area: 1/ 1 / 2 / auto;
 	}
