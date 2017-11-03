@@ -1,8 +1,8 @@
 ---
 pages:
-- _posts/2010-01-07-IPI.md
-- _posts/2010-01-07-grasshopper.md
-- _posts/2010-01-07-designgrant.md
+- _posts/2016-08-08-IPI.md
+- _posts/2017-07-07-grasshopper.md
+- _posts/2017-04-04-designgrant.md
 hide_body: false
 fields:
 - name: title
