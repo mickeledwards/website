@@ -14,7 +14,6 @@ slider:
   title: Image 2 title caption
 - image_path: "/assets/images/unsplash-gallery-image-3-th.jpg"
   title: Image 3 title caption
-
 ---
 {% include slider.html %}
 
