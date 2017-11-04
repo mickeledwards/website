@@ -1,0 +1,27 @@
+{% if include.id %}
+  {% assign slider = page[include.id] %}
+{% else %}
+  {% assign slider = page.slider %}
+{% endif %}
+
+
+
+<div class="row no-margin wrap-text padding-onlybottom-lg">
+    <div class="col-md-12 padding-leftright-null padding-onlybottom-md">
+        <div class="text small padding-topbottom-null">
+           <div class="project-gallery">
+		   		{% for img in slider %}
+					<div class="item">
+				        <img src=
+				          {% if img.image_path contains "://" %}
+				            "{{ img.image_path }}"
+				          {% else %}
+				            "{{ img.image_path | absolute_url }}"
+				          {% endif %}
+				          alt="{% if img.title %}{{ img.title }}{% endif %}" class="img-responsive">
+					</div>
+				{% endfor %}
+           </div>
+        </div>
+    </div>
+</div>
