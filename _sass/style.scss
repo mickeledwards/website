@@ -1303,7 +1303,6 @@ textarea {
         border-radius: 4px;
         transition: box-shadow .4s ease;
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
-        
         @media screen and (max-width: $small) {
             padding: 30%;
             height: auto;
@@ -2030,7 +2029,7 @@ aside {
             
             &.white {
                 border: 1px solid white;
-                
+               
                 &:hover {
                     background-color: white;
                     color: $secondary-color !important;
@@ -2416,7 +2415,7 @@ picture {
                 bottom: 0;
                 max-width: 100%;
                 max-width: calc(100% - 100px);
-
+                
                 @media screen and (max-width: $large) {
                     position: relative;
                     right: inherit;
@@ -2648,7 +2647,7 @@ ul {
             bottom: 0;
             width: 2px;
             background-color: $grey-background;
-        }
+        } 
         li {
             margin-bottom: 50px;
             position: relative;
@@ -2810,3 +2809,4 @@ ul {
 @import 'diag';
 @import 'decoletters';
 @import 'entry';
+@import 'hotspot';

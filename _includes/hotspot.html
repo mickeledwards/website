@@ -1,0 +1,14 @@
+{% if include.id %}
+  {% assign hotspot = page[include.id] %}
+{% else %}
+  {% assign hotspot = page.hotspot %}
+{% endif %}
+  
+
+<div class="hotspot-image">
+	<img class="hotspot-contain" src="{{include.hotimg}}">
+	{% for pin in hotspot %}
+		<a class="hotspot" data-left="{{ pin.left }}" data-top="{{ pin.top }}" data-text="{{ pin.text }}">{{ pin.text }}</a>
+	{% endfor %}
+	<div class="hotspots-label"></div>
+</div>
