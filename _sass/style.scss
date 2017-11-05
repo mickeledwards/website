@@ -53,6 +53,8 @@ $full: 1199px;
 @import 'reset';
 @import 'posts';
 
+
+
 /*-------------------------------------------------*/
 /* =  2.General
 /*-------------------------------------------------*/
@@ -1051,26 +1053,11 @@ textarea {
         }
         
         .bg-img {
-            &.home {
-                height: 535px;
-                @include background-cover;
-                
-                @media screen and (max-width: $large) {
-                    height: 250px;
-                    height: 50vh;
-                }
-            }
-            &.error {
-                height: calc(100vh - 101px);
+                height: calc(100vh - 183px);
                 padding-left: 20px;
 
-                @media screen and (max-width: $large) {
-                    height: calc(50vh - 50px);
-                }
-                @media screen and (max-width: $small) {
-                    height: 250px;
-                    height: calc(50vh - 40px);
-                }
+                @media screen and (max-width: $medium) {
+                    height: calc(50vh - 92px) !important;
             }
         }
         
@@ -2159,6 +2146,7 @@ aside {
         }
     }
 }
+
 span {
     
     &.contact-info {
@@ -2216,31 +2204,7 @@ footer, .footer {
     
     .text {
         padding: 50px;
-        @media screen and (max-width: $small) {
-            padding: 50px 30px 0px 30px;
-        }
 
-        &.small {
-            padding: 50px 25px;
-
-            @media screen and (max-width: $large) {
-                padding: 25px 50px 0 50px;
-            }
-            
-            @media screen and (max-width: $small) {
-                padding: 25px 30px 0 30px;
-            }
-
-        }
-
-        &:last-child {
-            @media screen and (max-width: $large) {
-                padding: 25px 50px 50px 50px;
-            }
-            @media screen and (max-width: $small) {
-                padding: 25px 30px 50px 30px;
-            }
-        }
     }
     p {
         font-size: 14px;
