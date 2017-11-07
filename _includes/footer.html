@@ -21,11 +21,12 @@
 					</div>
 </footer>
         <script src="{{ "assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "assets/js/modernizr-custom.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "assets/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "assets/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "assets/js/jquery.appear.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "assets/js/main.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "assets/js/classie.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "assets/js/diag.js" | prepend: site.baseurl }}"></script>
+        {% if page.custom_js %}
+		  {% for js_file in page.custom_js %}
+		  	<script src='/assets/js/{{ js_file }}.js' type="text/javascript"></script>
+		  {% endfor %}
+		{% endif %}

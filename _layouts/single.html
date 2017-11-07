@@ -27,7 +27,11 @@ layout: default
       <section class="col-md-12 padding-leftright-null">
         {{ content }}
       </section>
-
+	  {% if page.layers %}
+	  </div>
+	  	{% include layers.html %}
+	  	<div class="container padding-topbottom-null ">
+	  {% endif %}
 
       {% include post_pagination.html %}
     </div>
