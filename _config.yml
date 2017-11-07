@@ -1,11 +1,15 @@
-
+backend:
+  name: git-gateway
+  branch: master
+  publish_mode: editorial_workflow
+  media_folder: "assets/images"
 permalink: :title
 # Site Settings
 locale                   : "en"
 title                    : "Mickel Edwards Industrial Design Portfolio"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Mickel Edwards"
+description              : "Industrial Design Portfolio of Mickel Edwards"
 url                      : "http://mickeledwards.com"
 repository               : "mickeledwards/mickeledwards.github.io"
 

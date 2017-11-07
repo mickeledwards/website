@@ -966,6 +966,28 @@ textarea {
 .container-fluid{
 	width: 100%;
 }
+.type-container {
+    margin-right: auto !important;
+	margin-left: auto !important;
+	padding-top: 5em;
+	padding-bottom: 5em;
+    
+    @media screen and (max-width: 1093px) {
+        width: 100%;
+    }
+    @media screen and (min-width: $full) {
+        width: 90%;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 85%;
+    }
+    @media screen and (min-width: 1500px) {
+        width: 70%;
+    }
+    @media screen and (min-width: 1920px) {
+        width: 1350px;
+    }
+}
 .container {
     margin-right: auto !important;
 	margin-left: auto !important;
