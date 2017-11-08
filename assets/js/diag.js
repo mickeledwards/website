@@ -59,8 +59,7 @@
 		pins = [].slice.call(diagLevelsEl.querySelectorAll('.pin')),
 		// content element
 		contentEl = document.querySelector('.contentdiag'),
-		// content close ctrl
-		contentCloseCtrl = contentEl.querySelector('button.content__button'),
+
 		// check if a content item is opened
 		isOpenContentArea,
 		// check if currently animating/navigating
@@ -103,18 +102,6 @@
 		pins.forEach(function(pin) {
 			var contentItem = contentEl.querySelector('.content__item[data-space="' + pin.getAttribute('data-space') + '"]');
 
-/*
-			pin.addEventListener('mouseenter', function() {
-				if( !isOpenContentArea ) {
-					classie.add(contentItem, 'content__item--hover');
-				}
-			});
-			pin.addEventListener('mouseleave', function() {
-				if( !isOpenContentArea ) {
-					classie.remove(contentItem, 'content__item--hover');
-				}
-			});
-*/
 			pin.addEventListener('mouseenter', function(ev) {
 				ev.preventDefault();
 				// open content for this pin
@@ -123,14 +110,9 @@
 				classie.remove(contentItem, 'content__item--hover');
 			});
 			
-			pin.addEventListener('click', function() {
+			pin.addEventListener('mouseleave', function() {
 				closeContentArea();
 			});
-		});
-
-		// closing the content area
-		contentCloseCtrl.addEventListener('click', function() {
-			closeContentArea();
 		});
 
 		// clicking on a listed space: open level - shows space
@@ -340,13 +322,9 @@
 		isOpenContentArea = true;
 		// shows space
 		showSpace(true);
-		// show close ctrl
-		classie.remove(contentCloseCtrl, 'content__button--hidden');
 		// resize diag area
 		classie.add(diag, 'diag--content-open');
-		// disable diag nav ctrls
-		classie.add(levelDownCtrl, 'boxbutton--disabled');
-		classie.add(levelUpCtrl, 'boxbutton--disabled');
+
 	}
 
 	/**
@@ -373,8 +351,6 @@
 		classie.remove(contentEl, 'content--open');
 		// close current space
 		hideSpace();
-		// hide close ctrl
-		classie.add(contentCloseCtrl, 'content__button--hidden');
 		// resize diag area
 		classie.remove(diag, 'diag--content-open');
 		// enable diag nav ctrls
