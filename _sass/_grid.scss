@@ -39,7 +39,6 @@
     .col-sm-10 {grid-column: span 10;}
     .col-sm-11 {grid-column: span 11;}
     .col-sm-12 {grid-column: span 12;}
-    .container {max-width: 540px;}
 }
 @media (min-width: $medium) {
     .col-md-1 {grid-column: span 1;}
@@ -54,7 +53,6 @@
     .col-md-10 {grid-column: span 10;}
     .col-md-11 {grid-column: span 11;}
     .col-md-12 {grid-column: span 12;}
-    .container {max-width: 720px;}
 }
 @media (min-width: $large) {
     .col-lg-1 {grid-column: span 1;}
@@ -69,7 +67,6 @@
     .col-lg-10 {grid-column: span 10;}
     .col-lg-11 {grid-column: span 11;}
     .col-lg-12 {grid-column: span 12;}
-    .container {max-width: 960px;}
 }
 @media (min-width: $full) {
     .col-xl-1 {grid-column: span 1;}
@@ -84,7 +81,6 @@
     .col-xl-10 {grid-column: span 10;}
     .col-xl-11 {grid-column: span 11;}
     .col-xl-12 {grid-column: span 12;}
-    .container {max-width: 1140px;}
 }
 
 .row {
