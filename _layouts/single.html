@@ -7,7 +7,7 @@ layout: default
 {% endif %}
 
 
-<div class="container-fluid">
+<div class="container">
 
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -30,9 +30,9 @@ layout: default
 		</div>
 
 	  {% if page.customhtml %}
-
+		</div>
 	  	{% include {{ page.customhtml}}.html %}
-	  
+	  <div class="container margin-topbottom-null">
 	  {% endif %}
 
       {% include post_pagination.html %}

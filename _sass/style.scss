@@ -1,3 +1,5 @@
+$debug: false;
+
 /*-------------------------------------------------
 =  Table of Css
 
@@ -975,9 +977,9 @@ textarea {
     @media screen and (max-width: 1093px) {
         width: 100%;
     }
-//    @media screen and (min-width: $full) {
-//      width: 90%;
-//    }
+   @media screen and (min-width: $full) {
+     width: 90%;
+    }
     @media screen and (min-width: 1366px) {
         width: 85%;
     }
