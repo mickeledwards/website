@@ -16,20 +16,22 @@ layout: default
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <div class="row no-margin">
-		<div class="col-md-12 padding-leftright-null">
-	        <div class = "text">
-          {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+			<div class="col-md-12 padding-leftright-null">
+		        <div class = "text">
+	          {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+		        </div>
 	        </div>
-        </div>
-    </div>
+	    </div>
       {% endunless %}
+		<div class="row no-margin">
+		      <section class="col-md-12 padding-leftright-null">
+		        {{ content }}
+		      </section>
+		</div>
 
-      <section class="col-md-12 padding-leftright-null">
-        {{ content }}
-      </section>
-	  {% if page.layers %}
+	  {% if page.customhtml %}
 	  </div>
-	  	{% include layers.html %}
+	  	{% include {{ page.customhtml}}.html %}
 	  	<div class="container padding-topbottom-null ">
 	  {% endif %}
 

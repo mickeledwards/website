@@ -103,6 +103,7 @@
 		pins.forEach(function(pin) {
 			var contentItem = contentEl.querySelector('.content__item[data-space="' + pin.getAttribute('data-space') + '"]');
 
+/*
 			pin.addEventListener('mouseenter', function() {
 				if( !isOpenContentArea ) {
 					classie.add(contentItem, 'content__item--hover');
@@ -113,12 +114,17 @@
 					classie.remove(contentItem, 'content__item--hover');
 				}
 			});
-			pin.addEventListener('click', function(ev) {
+*/
+			pin.addEventListener('mouseenter', function(ev) {
 				ev.preventDefault();
 				// open content for this pin
 				openContent(pin.getAttribute('data-space'));
 				// remove hover class (showing the title)
 				classie.remove(contentItem, 'content__item--hover');
+			});
+			
+			pin.addEventListener('click', function() {
+				closeContentArea();
 			});
 		});
 

@@ -7,7 +7,7 @@ categories:
 preview: assets/images/kinect.png
 excerpt: Generative Design
 date: 2010-01-07 00:00:00 +0000
-layers: layers.html
+customhtml: layers
 custom_js:
 - modernizr-custom
 - classie
