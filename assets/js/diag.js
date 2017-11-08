@@ -106,8 +106,6 @@
 				ev.preventDefault();
 				// open content for this pin
 				openContent(pin.getAttribute('data-space'));
-				// remove hover class (showing the title)
-				classie.remove(contentItem, 'content__item--hover');
 			});
 			
 			pin.addEventListener('mouseleave', function() {
@@ -221,9 +219,6 @@
 	 * Navigate through the diag´s levels
 	 */
 	function navigate(direction) {
-		if( isNavigating || !isExpanded || isOpenContentArea ) {
-			return false;
-		}
 		isNavigating = true;
 
 		var prevSelectedLevel = selectedLevel;
