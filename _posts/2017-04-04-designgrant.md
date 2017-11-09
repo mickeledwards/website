@@ -9,8 +9,6 @@ excerpt: Generative Design
 date: 2010-01-07 00:00:00 +0000
 customhtml: layers
 custom_js:
-- modernizr-custom
-- classie
 - diag
 ---
 

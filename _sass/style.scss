@@ -21,17 +21,9 @@ $debug: false;
 16.Magnific popup
 17.OWL
 18.Animations
+19.Print
 
 /*-------------------------------------------------*/
-
-#navbar-toggle-cbox {
-  display:none
-}
-#navbar-toggle-cbox:checked ~ .collapse {
-    display: block;
-}
-
-
 $fontawesomesize: 2em;
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
@@ -57,12 +49,18 @@ $full: 1199px;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 @import 'ionicons';
 @import 'fontawesome';
-@import 'bootstrap';
 @import 'grid';
 @import 'mixins';
 @import 'reset';
 @import 'posts';
-
+@import 'magnificpopup';
+@import 'owl';
+@import 'animations';
+@import 'vendor/magnific-popup';
+@import 'vendor/owl.carousel';
+@import 'diag';
+@import 'decoletters';
+@import 'hotspot';
 
 
 /*-------------------------------------------------*/
@@ -79,6 +77,15 @@ body {
 
 * {
     text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -543,6 +550,18 @@ p {
 .section-bordertop {
     border-top: 1px solid $light-background;
 }
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
 button {
     background: none;
     border:none;
@@ -702,6 +721,27 @@ blockquote, q {
 }
 textarea {
     resize: none;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
 }
 .popup-youtube, .popup-vimeo {
     position: relative;
@@ -1841,6 +1881,7 @@ aside {
                 text-align: center;
                 left: 0;
                 right: 0;
+               
 
                 ul {
                     transform: translate(0px,10px);
@@ -2502,7 +2543,8 @@ table {
             bottom: 15px;
             left: 0;
             right: 0;
-            
+           
+           
             .owl-dot {
                 span {
                     background-color: transparent;
@@ -2603,13 +2645,69 @@ em {
         }
     }
 }
+/*-------------------------------------------------*/
+/* =  19.Print
+/*-------------------------------------------------*/
 
-@import 'magnificpopup';
-@import 'owl';
-@import 'animations';
-@import 'vendor/magnific-popup';
-@import 'vendor/owl.carousel';
-@import 'diag';
-@import 'decoletters';
-@import 'entry';
-@import 'hotspot';
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; // Black prints faster: h5bp.com/s
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    // Don't show links that are fragment identifiers,
+    // or use the `javascript:` pseudo protocol
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; // h5bp.com/t
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+}
