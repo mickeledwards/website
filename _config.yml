@@ -20,7 +20,6 @@ author:
   tumblr           : "blog.mickeledwards.com"
   twitter          :
 
-
 # Reading Files
 include:
   - .htaccess
