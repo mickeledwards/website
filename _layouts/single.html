@@ -3,10 +3,63 @@ layout: default
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
+  {% if page.header.image contains "://" %}
+  {% capture img_path %}{{ page.header.image }}{% endcapture %}
+{% else %}
+  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
 {% endif %}
 
+{% if page.header.cta_url contains "://" %}
+  {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
+{% else %}
+  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
+{% endif %}
 
+{% if page.header.overlay_image contains "://" %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
+{% elsif page.header.overlay_image %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
+{% endif %}
+
+{% if page.header.overlay_filter contains "rgba" %}
+  {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
+{% elsif page.header.overlay_filter %}
+  {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
+{% endif %}
+
+{% if page.header.image_description %}
+  {% assign image_description = page.header.image_description %}
+{% else %}
+  {% assign image_description = page.title %}
+{% endif %}
+
+{% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
+
+<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %} rellax" data-rellax-speed="-5"
+  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %} z-index: -1;"
+>
+</div>
+
+  {% if page.header.overlay_color or page.header.overlay_image %}
+    <div class="row no-margin"  style="margin-bottom: 0 !important;">
+		<div class="col-md-12">
+      <h1 class="page__title"><center>
+        {% if paginator and site.paginate_show_page_num %}
+          {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
+        {% else %}
+          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+        {% endif %}
+     </center> </h1>
+		</div>
+    </div>
+  {% else %}
+    <img src="{{ img_path }}" alt="{{ image_description }}" class="page__hero-image">
+  {% endif %}
+
+{% endif %}
+
+<!-- rest of body -->
+<div class="container-fluid" style= "background-color: #ffffff; z-index: 1000;">
 <div class="container">
 
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -15,7 +68,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
-        <div class="row no-margin">
+        <div class="row no-margin" >
 			<div class="col-md-12 padding-leftright-null">
 		        <div class = "text">
 	          {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
@@ -29,13 +82,12 @@ layout: default
 		      </section>
 		</div>
 
-	  {% if page.customhtml %}
-		</div>
-	  	{% include {{ page.customhtml}}.html %}
-	  <div class="container margin-topbottom-null">
-	  {% endif %}
+{% if page.customhtml %}
+</div>
+{% include {{ page.customhtml}}.html %}
+<div class="container margin-topbottom-null">
+{% endif %}
 
-      {% include post_pagination.html %}
-    </div>
-
+{% include post_pagination.html %}
+</div>
 </div>
