@@ -27,7 +27,7 @@ layout: single
 	</div>
 	<div class="col-sm-8 padding-leftright-null">
 	    <!-- Contact Form -->
-	    <form id="contact-form" class="padding-md padding-md-topbottom-null"netlify-honeypot="bot-field" onSubmit="alert('Thank you for your feedback.')" netlify>
+	    <form id="contact-form" class="padding-md padding-md-topbottom-null" netlify-honeypot="bot-field" netlify>
 	    	<p class="hidden">
 				<label>Don’t fill this out: <input name="bot-field"></label>
 			</p>

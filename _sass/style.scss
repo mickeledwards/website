@@ -22,8 +22,16 @@ $debug: false;
 17.OWL
 18.Animations
 
-
 /*-------------------------------------------------*/
+
+#navbar-toggle-cbox {
+  display:none
+}
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+
+
 $fontawesomesize: 2em;
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
