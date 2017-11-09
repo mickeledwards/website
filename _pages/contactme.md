@@ -17,12 +17,7 @@ layout: single
 	<div class="col-sm-4 padding-leftright-null">
 	    <div class="text small">
 	        <p class="small margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-	        <p class="small grey-dark">322 Moon St, Venice, 1231, Italy<br>
-	            Mon. - Fri., 9 a.m. - 6.00 p.m.</p>
-	        <p class="small grey-dark">tel. <a href="#" class="grey-dark">+(39) 245 45 78 54</a><br>
-	            fax. a+(39) 245 45 78 54
-	        </p>
-	        <p class="small"><a href="#" class="simple">hello@whiteble.com</a></p>
+	        
 	    </div>
 	</div>
 	<div class="col-sm-8 padding-leftright-null">
