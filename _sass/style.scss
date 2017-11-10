@@ -256,7 +256,10 @@ a {
         text-decoration: none !important;
         transition: all .4s ease;
         font-weight: 400;
-        
+          &.disabled {
+              cursor: not-allowed;
+              opacity: 0.65;
+          }
         @media screen and (max-width:$large) {
             margin-bottom:0px;
         }
