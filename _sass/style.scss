@@ -257,6 +257,7 @@ a {
         transition: all .4s ease;
         font-weight: 400;
           &.disabled {
+              text-shadow: none;
               pointer-events: none;
               cursor: not-allowed;
               opacity: 0.65;
