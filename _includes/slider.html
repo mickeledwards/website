@@ -5,7 +5,7 @@
 {% endif %}
 
 
-<div class="row no-margin wrap-text padding-onlybottom-lg">
+<div class="row fullheight no-margin wrap-text padding-onlybottom-lg">
     <div class="col-md-12 padding-leftright-null padding-onlybottom-md">
         <div class="text small padding-topbottom-null">
             <div class="image-carousel dots-inside">
@@ -17,7 +17,7 @@
 				          {% else %}
 				            "{{ img.image_path | absolute_url }}"
 				          {% endif %}
-				          alt="{% if img.title %}{{ img.title }}{% endif %}" class="img-responsive">
+				          alt="{% if img.title %}{{ img.title }}{% endif %}" class="img-responsive fullheight">
 					</div>
 				{% endfor %}
            </div>

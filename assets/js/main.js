@@ -177,6 +177,7 @@ $(document).ready(function($) {
             loop:true,
             //animateOut: 'fadeOut',
             //animateIn: 'fadeIn',
+            MouseDrag: true,
             touchDrag: true,
             items:1,
             autoplay:false,
