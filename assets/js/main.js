@@ -164,6 +164,8 @@ var $ = jQuery.noConflict();
     });
 
 
+var rellax = new Rellax('.rellax', {
+          });
 })(jQuery);
 
 $(document).ready(function($) {

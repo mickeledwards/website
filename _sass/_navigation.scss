@@ -654,3 +654,50 @@ header {
         }
     }
 }
+#nav {
+    padding: 50px 50px 75px 50px;
+    user-select: none;
+
+    @media screen and (max-width: $small) {
+        padding: 50px 30px 75px 30px;
+    }
+
+    span {
+
+        font-family: $secondary-font;
+        font-weight: 300;
+
+        @media screen and (max-width:$small) {
+            display: none;
+        }
+    }
+
+    .nav-right {
+        text-align: right;
+
+        i {
+            margin-left: 10px;
+            margin-right: 0;
+
+            @media screen and (max-width:$small) {
+                margin-left: 0;
+            }
+        }
+    }
+    .nav-left {
+        i {
+            margin-right: 10px;
+
+            @media screen and (max-width:$small) {
+                margin-right: 0;
+            }
+        }
+    }
+    .nav-left, .nav-right {
+        a {
+            &.btn-alt {
+                line-height: 38px;
+            }
+        }
+    }
+}

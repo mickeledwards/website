@@ -1,0 +1,304 @@
+#contact-form, #search-form {
+    .form-field {
+        outline: inherit;
+        border:none;
+        width:100%;
+        margin-bottom: 50px;
+        padding: 10px;
+        font-family: $paragraph-font;
+        font-size: 14px;
+        line-height: 14px;
+        color: $primary-color;
+        border-bottom: 1px solid rgba(117,117,117,0.41);
+        font-weight: 300;
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+
+        &.big {
+            font-size: 40px;
+            font-family: $primary-font;
+            letter-spacing: 1px;
+            padding-right: 70px;
+            line-height: 40px;
+
+            @media screen and (max-width:$medium) {
+                font-size: 35px;
+                padding-right: 35px;
+            }
+        }
+
+    }
+    label {
+        font-size: 16px;
+        line-height: 20px;
+        color: $primary-color;
+        font-weight: 300;
+        margin-bottom: 12px;
+
+        sup {
+            color: $secondary-background;
+            top: -0.1em;
+        }
+    }
+    textarea {
+        &.form-field {
+            padding: 12px 9px;
+        }
+    }
+    ::-webkit-input-placeholder {
+        font-family: $paragraph-font;
+        color: $primary-color-light;
+        font-size: 14px;
+    }
+
+    :-moz-placeholder {
+        font-family: $paragraph-font;
+        color: $primary-color-light;
+        font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+        font-family: $paragraph-font;
+        color: $primary-color-light;
+        font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+        font-family: $paragraph-font;
+        color: $primary-color-light;
+        font-size: 14px;
+    }
+
+    #submit-contact {
+        padding: 0;
+        text-align: left;
+        font-size: 12px;
+        line-height: 22px;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        display: inline-block;
+        overflow: hidden;
+        outline: none;
+        border:none;
+        border-radius: 0;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        letter-spacing: 1px;
+        margin: 0;
+        background-color: transparent;
+        transition: all .4s ease;
+
+        &:hover {
+            color: $primary-color;
+            transition: all .4s ease;
+        }
+
+        &.btn-alt {
+            height: 36px;
+            line-height: 36px;
+            text-transform: none;
+            font-weight:400;
+            background-color: transparent;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            transition: all .4s ease;
+            text-transform: uppercase;
+            border-radius: 2px;
+            padding-right: 30px;
+            padding-left: 30px;
+            text-align: center;
+            font-size: 12px;
+            font-family: $secondary-font;
+            display: inline-block;
+            overflow: hidden;
+            outline: none;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: white;
+                transition: all .4s ease;
+            }
+
+            &.shadow {
+                box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            &.white {
+                border: 1px solid white;
+
+                &:hover {
+                    background-color: white;
+                    color: $secondary-color !important;
+                    transition: all .4s ease;
+                }
+            }
+            &.active {
+                background-color: $secondary-color;
+                color: white;
+                transition: all .4s ease;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $secondary-color !important;
+                    transition: all .4s ease;
+                }
+            }
+        }
+    }
+    .form-button {
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: -2px;
+
+        &.big {
+            top: 7px;
+            right: 25px;
+
+            i {
+                font-size: 60px;
+
+                @media screen and (max-width:$medium) {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    #msg {
+        color: #f54337;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+
+        &.error, &.success {
+            padding-top: 36px;
+        }
+    }
+
+    &.color {
+        ::-webkit-input-placeholder {
+            color: $secondary-color;
+        }
+
+        :-moz-placeholder {
+            color: $secondary-color;
+        }
+
+        ::-moz-placeholder {
+            color: $secondary-color;
+        }
+
+        :-ms-input-placeholder {
+            color: $secondary-color;
+        }
+    }
+    &.black {
+        ::-webkit-input-placeholder {
+            color: $primary-color;
+            font-weight: 400;
+        }
+        :-moz-placeholder {
+            color: $primary-color;
+            font-weight: 400;
+        }
+        ::-moz-placeholder {
+            color: $primary-color;
+            font-weight: 400;
+        }
+        :-ms-input-placeholder {
+            color: $primary-color;
+            font-weight: 400;
+        }
+    }
+    &.big {
+        ::-webkit-input-placeholder {
+            font-size: 40px;
+            font-family: $primary-font;
+            letter-spacing: 1px;
+
+            @media screen and (max-width:$medium) {
+                font-size: 35px;
+            }
+        }
+
+        :-moz-placeholder {
+            font-size: 40px;
+            font-family: $primary-font;
+            letter-spacing: 1px;
+
+            @media screen and (max-width:$medium) {
+                font-size: 35px;
+            }
+        }
+
+        ::-moz-placeholder {
+            font-size: 40px;
+            font-family: $primary-font;
+            letter-spacing: 1px;
+
+            @media screen and (max-width:$medium) {
+                font-size: 35px;
+            }
+        }
+
+        :-ms-input-placeholder {
+            font-size: 40px;
+            font-family: $primary-font;
+            letter-spacing: 1px;
+
+            @media screen and (max-width:$medium) {
+                font-size: 35px;
+            }
+        }
+    }
+}
+span {
+
+    &.contact-info {
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 18px;
+        font-weight: 400;
+
+        a {
+            em {
+                color: $secondary-color;
+                transition: color .4s ease;
+            }
+
+            &:hover {
+                em {
+                    color: $primary-color;
+                    transition: color .4s ease;
+                }
+            }
+        }
+
+        em {
+            color: $paragraph-color;
+            font-weight: 300;
+        }
+    }
+}
+.contact {
+    @media screen and (max-width: $large) {
+        padding: 0 45px;
+    }
+}
+.box-form {
+    padding: 36px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+
+    @media screen and (max-width: $small) {
+        padding: 25px;
+    }
+}
