@@ -2,9 +2,9 @@ var $ = jQuery.noConflict();
 
 (function ($) {
     "use strict";
-    
+
     var width  =  $(window).width();
-    
+
     /*-------------------------------------------------*/
     /* =  Mobile Hover */
     /*-------------------------------------------------*/
@@ -18,14 +18,14 @@ var $ = jQuery.noConflict();
 
     try {
         $('.menu-button').on("click", function () {
-            
+
             //menu classic, menu sidemenu, menu basic
             var menu = $('#menu');
             var menuClassic = $('#menu-classic');
             var sidemenu = $('#sidemenu');
             var menuResponsiveSidemenu = $('#menu-responsive-sidemenu');
             var menuResponsiveClassic = $('#menu-responsive-classic');
-            
+
             menu.toggleClass('open');
             menuClassic.toggleClass('open');
             sidemenu.addClass('sidemenu open');
@@ -55,9 +55,9 @@ var $ = jQuery.noConflict();
         });
         //basic menu mobile
         $('.close-menu').on("click", function() {
-            
+
             var menu = $('#menu');
-            
+
             menu.removeClass('animated slideInDown');
             menu.addClass('animated fadeOutUp');
             setTimeout(function () {
@@ -70,9 +70,9 @@ var $ = jQuery.noConflict();
         });
         //megamenu mobile
         if (width < 991) {
-            
+
             var menuClassicSubmenu = $('.submenu', '#menu-classic');
-            
+
             menuClassicSubmenu.on("click", function () {
                 var open = false;
                 if($(this).hasClass('open')) {
@@ -91,20 +91,20 @@ var $ = jQuery.noConflict();
 
     }
 
-        
+
     /*-------------------------------------------------*/
     /* =  Responsive
     /*-------------------------------------------------*/
-    
+
     var parentHeightKey = [];
-    
+
     $('div[data-responsive="parent-height"]').each(function() {
-        parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)}); 
+        parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)});
     });
     $('div[data-responsive="child-height"]').each(function() {
         var childHeight;
         var childId = $(this).attr('data-responsive-id');
-        
+
         for(var i=0;i<parentHeightKey.length;i++){
             if(parentHeightKey[i].id == childId) {
                 childHeight = parentHeightKey[i].height;
@@ -113,12 +113,12 @@ var $ = jQuery.noConflict();
         $(this).css({'height': childHeight + 'px'})
     });
     $(window).resize(function () {
-        
+
         var currentWidth  =  $(window).width();
-        
+
         if(currentWidth>767){
             $('div[data-responsive="parent-height"]').each(function() {
-                parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)}); 
+                parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)});
             });
             $('div[data-responsive="child-height"]').each(function() {
                 var childHeight;
@@ -175,8 +175,9 @@ $(document).ready(function($) {
         $(".image-carousel").owlCarousel({
             center: true,
             loop:true,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
+            //animateOut: 'fadeOut',
+            //animateIn: 'fadeIn',
+            touchDrag: true,
             items:1,
             autoplay:false,
             autoplayHoverPause:false,
@@ -189,17 +190,17 @@ $(document).ready(function($) {
 });
 
 $('.hotspot').each(function(){
-	
+
 	var $this = $(this),
 			top = $this.data('top'),
 			left = $this.data('left');
-	
+
 	$this.css({
 		top: top + "%",
 		left: left + "%"
 	})
 	.addClass('is-visible');
-	
+
 });
 
 $(".hotspots-label").on('click', function(e){
@@ -209,9 +210,9 @@ $(".hotspots-label").on('click', function(e){
 });
 
 $('.hotspot').on('click', function(e){
-	
+
 	var text = $(this).data('text');
-	
+
 	if(!$(this).hasClass('is-active'))
 	{
 		$(this).parents('.image').find('.hotspot').removeClass('is-active');
@@ -221,9 +222,9 @@ $('.hotspot').on('click', function(e){
 	else
 	{
 		$(this).removeClass('is-active');
-		$(this).parents('.image').find('.hotspots-label').html( '<strong>' + $(this).text() + '</strong> <span>' + text + '</span>' ).removeClass('is-visible');	
+		$(this).parents('.image').find('.hotspots-label').html( '<strong>' + $(this).text() + '</strong> <span>' + text + '</span>' ).removeClass('is-visible');
 	}
-	
+
 	e.preventDefault();
 });
 

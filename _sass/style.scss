@@ -38,7 +38,6 @@ $full: 1199px;
 @import 'navigation';
 @import 'pageparts';
 @import 'posts';
-@import 'contact';
 @import 'footer';
 @import 'elements';
 @import 'print';
@@ -46,6 +45,7 @@ $full: 1199px;
 /*page-specific parts*/
 @import 'diag';
 @import 'hotspot';
+@import 'contact';
 
 /*Vendor/addins*/
 @import 'magnificpopup';
