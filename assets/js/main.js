@@ -1,12 +1,12 @@
 var $ = jQuery.noConflict();
 
-(function($) {
+(function ($) {
     "use strict";
     
     var width  =  $(window).width();
     
     /*-------------------------------------------------*/
-    /* =  Mobile Hover
+    /* =  Mobile Hover */
     /*-------------------------------------------------*/
     var mobileHover = function () {
         $('*').on('touchstart', function () {
@@ -17,7 +17,7 @@ var $ = jQuery.noConflict();
     };
 
     try {
-        $('.menu-button').on("click",function() {
+        $('.menu-button').on("click", function () {
             
             //menu classic, menu sidemenu, menu basic
             var menu = $('#menu');
@@ -32,54 +32,54 @@ var $ = jQuery.noConflict();
             menuResponsiveSidemenu.toggleClass('open');
             menuResponsiveClassic.toggleClass('open');
             menu.addClass('animated slideInDown');
-            $('.submenu', menuClassic).each(function() {
-                $('.submenu', menuClassic).removeClass( "open" );
+            $('.submenu', menuClassic).each(function () {
+                $('.submenu', menuClassic).removeClass("open");
             });
-            if ( sidemenu.hasClass( "slideInRight" ) ) {
-                sidemenu.removeClass('animated slideInRight'); 
+            if (sidemenu.hasClass("slideInRight")) {
+                sidemenu.removeClass('animated slideInRight');
                 sidemenu.addClass('animated slideOutRight');
-                setTimeout(function(){ 
+                setTimeout(function () {
                     sidemenu.toggleClass('sidemenu open');
                     sidemenu.removeClass('animated slideOutRight');
-                },1000);
+                }, 1000);
             } else {
-                sidemenu.addClass('animated slideInRight');   
+                sidemenu.addClass('animated slideInRight');
             }
-            if(width<991){
+            if (width < 991) {
                 $('body').toggleClass('no-scroll');
             }
         });
-        $('.menu-holder ul > li:not(.submenu) > a').on("click",function(){
+        $('.menu-holder ul > li:not(.submenu) > a').on("click", function () {
             $('#menu').removeClass('open');
             $('body').removeClass('no-scroll');
         });
         //basic menu mobile
-        $('.close-menu').on("click",function() {
+        $('.close-menu').on("click", function() {
             
             var menu = $('#menu');
             
             menu.removeClass('animated slideInDown');
             menu.addClass('animated fadeOutUp');
-            setTimeout(function(){ 
+            setTimeout(function () {
                 menu.toggleClass('open');
                 menu.removeClass('animated fadeOutUp');
             },1000);
-            if(width<991){
+            if(width < 991) {
                 $('body').toggleClass('no-scroll');
             }
         });
         //megamenu mobile
-        if(width<991){
+        if (width < 991) {
             
             var menuClassicSubmenu = $('.submenu', '#menu-classic');
             
-            menuClassicSubmenu.on("click",function() {
+            menuClassicSubmenu.on("click", function () {
                 var open = false;
                 if($(this).hasClass('open')) {
-                        open = true;
+                    open = true;
                 }
-                menuClassicSubmenu.each(function() {
-                    menuClassicSubmenu.removeClass( "open" );
+                menuClassicSubmenu.each(function () {
+                    menuClassicSubmenu.removeClass("open");
                 });
                 if(open) {
                     $(this).addClass('open');
@@ -89,7 +89,7 @@ var $ = jQuery.noConflict();
         }
     } catch(err) {
 
-    };
+    }
 
         
     /*-------------------------------------------------*/
@@ -151,6 +151,7 @@ var $ = jQuery.noConflict();
             fixedContentPos: true,
             gallery: {
                 enabled:true
+
             },
             closeBtnInside: false
         });
@@ -170,21 +171,20 @@ var rellax = new Rellax('.rellax', {
 
 $(document).ready(function($) {
     "use strict";
-    
-    var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    /*-------------------------------------------------*/
-    /* =  Carousel
-    /*-------------------------------------------------*/
-    try {
-        $(".post-gallery, .project-gallery").owlCarousel({
-            center: true,
-            items:1,
-            loop:true
-        });
-    } catch(err) {
 
-    }
+        $(".image-carousel").owlCarousel({
+            center: true,
+            loop:true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            items:1,
+            autoplay:false,
+            autoplayHoverPause:false,
+            dots:true,
+            nav:true,
+            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
+        });
+
 
 });
 

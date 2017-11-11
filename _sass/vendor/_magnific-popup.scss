@@ -128,7 +128,8 @@ button.mfp-arrow {
   box-shadow: none; }
 button.mfp-close {
     background-color: #3367D6;
-    margin-top: -20px;
+    margin-top: -10px;
+    margin-right: 10px;
 }
 @media screen and (max-width:480px) {
     button.mfp-close {
@@ -269,7 +270,7 @@ button.mfp-close {
       font-size:50px;
       content: "\f3d3";
       font-family: "Ionicons";
-      margin-left: 22px; 
+      margin-left: 0px;
 }
   .mfp-arrow-right:before,
   .mfp-arrow-right .mfp-b {

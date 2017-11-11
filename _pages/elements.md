@@ -69,11 +69,7 @@ A variety of common markup showing how the theme styles them.
 
 ###### Header six
 
-## Blockquotes
-
-Single line blockquote:
-
-> Stay hungry. Stay foolish.
+> Single line blockquote.
 
 Multi line blockquote with a cite reference:
 
@@ -82,7 +78,6 @@ Multi line blockquote with a cite reference:
 <cite>Steve Jobs</cite> --- Apple Worldwide Developers' Conference, 1997
 {: .small}
 
-## Tables
 
 | Employee         | Salary |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
@@ -91,46 +86,8 @@ Multi line blockquote with a cite reference:
 | [Fred Bloggs](#) | $100M  | Pictures are worth a thousand words, right? So Jane × 1,000. |
 | [Jane Bloggs](#) | $100B  | With hair like that?! Enough said.                           |
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
 Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
 :   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
 
   1. List item one 
       1. List item one 
@@ -145,63 +102,31 @@ Do It Live
   3. List item three
   4. List item four
 
-## Forms
-
-<form id="contact-form">
-  <input class="form-field" name="name" id="name" type="text" placeholder="Your name">
-    <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
-    <textarea class="form-field" name="messageForm" id="messageForm" rows="1" placeholder="Your Message"></textarea>
-    <input type="submit" id="submit-contact" class="btn-alt active shadow" type="submit" value="Send">
-</form>
-
-
-## Buttons
-
-
 [Default Button](#){: .btn}
+[Btn Alt](#){: .btn-alt }
+[Btn Alt Shadow](#){: .btn-alt .shadow}
 
 ## HTML Tags
 
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
 This is an example of a [link](http://apple.com "Apple").
 
-### Abbreviation Tag
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-### Cite Tag
 
-"Code is poetry." ---<cite>Automattic</cite>
+"Code is poetry." ---<cite>Cite Tag</cite>
 
-### Code Tag
+Code Tag Here. `word-wrap: break-word;` Code Tag.
 
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Emphasize Tag
+Strike tag <strike>strikeout text</strike>.
 
 The emphasize tag should _italicize_ text.
 
-### Insert Tag
-
 This tag should denote <ins>inserted</ins> text.
 
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
+Preformatted Tag.
 
 <pre>
 .post-title {
@@ -209,17 +134,10 @@ This tag styles large blocks of code.
 	font-weight: bold;
 	font-size: 38px;
 	line-height: 1.2;
-	and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
 }
 </pre>
 
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strong Tag
-
-This tag shows **bold text**.
+This is some **bold text**.
 
 
 YouTube video
@@ -331,11 +249,5 @@ And that's a wrap, yo! You survived the tumultuous waters of alignment. Image al
 
 Image Gallery
 ------------
-
-
-
-```liquid
-{% raw %}{% include gallery caption="This is a sample gallery with **Markdown support**." %}{% endraw %}
-```
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}

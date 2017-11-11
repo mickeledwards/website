@@ -185,7 +185,7 @@ a {
         text-decoration: none !important;
         transition: all .4s ease;
         font-weight: 400;
-          &.disabled {
+        &.disabled {
               text-shadow: none;
               pointer-events: none;
               cursor: not-allowed;
@@ -302,108 +302,6 @@ a {
             margin-right: 8px;
         }
     }
-    &.btn-pro {
-        font-size: 14px;
-        line-height: 14px;
-        color: $primary-color;
-        font-weight: 400;
-        text-decoration: none;
-        position: relative;
-        text-transform: uppercase;
-
-        &:after {
-            content: "\f30f";
-            font-family:"Ionicons";
-            position: absolute;
-            display: block;
-            position: absolute;
-            right: -20px;
-            top: 1px;
-            transition: right .4s ease;
-            color: $secondary-color;
-        }
-
-        &:hover {
-            &:after {
-                right: -25px;
-                transition: right .4s ease;
-            }
-        }
-        &.white {
-            font-weight: 300;
-        }
-    }
-    &.btn-simple {
-        font-size: 16px;
-        line-height: 16px;
-        color: $secondary-color;
-        font-weight: 400;
-        text-decoration: none;
-        position: relative;
-        text-transform: uppercase;
-        transition: color .4s ease;
-        z-index: 2;
-
-        &:before {
-           content: '';
-           background-color: $secondary-background;
-           border-radius: 2px;
-           position: absolute;
-           top:-1px;
-           bottom: 0;
-           left: -5px;
-           width: 0%;
-           z-index: -1;
-           transition: all ease .4s;
-        }
-
-        &:hover {
-            color: white;
-            padding-left: 5px;
-            transition: all .2s ease;
-
-            &:before {
-                width: calc(100% + 15px);
-                transition: all ease .4s;
-            }
-        }
-    }
-    &#btn-share {
-        padding:0;
-        padding-right: 20px;
-        padding-left: 30px;
-        text-align: center;
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        display: inline-block;
-        border-radius: 2px;
-        font-weight: 400;
-        text-decoration: none !important;
-        transition: all .4s ease;
-        background-color: transparent;
-        height: 30px;
-        line-height: 30px;
-        background-color: transparent;
-        color: $primary-color-light;
-        transition: all .4s ease;
-        font-size: 12px;
-        border: 1px solid $primary-color-light;
-        position: relative;
-
-        &:hover {
-            background-color: $secondary-color;
-            border-color: $secondary-color;
-            color: white;
-        }
-
-        &:before {
-            position: absolute;
-            content: "+ ";
-            margin-left: -12px;
-            font-size: 14px;
-            line-height: 29px;
-        }
-    }
 }
 p {
     font-family: $paragraph-font;
@@ -454,6 +352,58 @@ p {
         text-decoration: none;
     }
 }
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $primary-color;
+  a {
+    color: inherit;
+  }
+}
+
+del a {
+  color: inherit;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted $primary-color;
+}
+
+tt, code, kbd, samp, pre {
+  font-family: monospace;
+}
+
+pre {
+  overflow-x: auto; /* add scrollbars to wide code blocks*/
+}
+
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  &:before, &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; /* non-breaking space*/
+  }
+}
+
+/* horizontal rule */
+
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid $paragraph-color;
+}
+
+
 .color-dark {
     color: $primary-color;
 }
@@ -631,7 +581,13 @@ blockquote, q {
     font-style: italic;
     margin: 50px 0;
     border-left: 4px solid $secondary-color;
-
+    cite {
+    font-style: italic;
+        &:before {
+          content: "\2014";
+          padding-right: 5px;
+        }
+      }
 
     @media screen and (max-width: $small) {
         padding-left: 18px;
@@ -656,6 +612,10 @@ blockquote, q {
 }
 textarea {
     resize: none;
+}
+
+i, cite, em {
+    font-style: italic;
 }
 .embed-responsive {
   position: relative;
