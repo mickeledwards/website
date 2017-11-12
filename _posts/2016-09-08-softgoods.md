@@ -13,36 +13,34 @@ layout: single
 <div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/research.png){: .align-left}
+</div>
+</div>
+</div>
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
-
-Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
-
-
-Of course the Neverlands vary a good deal. John's, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other's nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.
-
-Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.
-
-Occasionally in her travels through her children's minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael's minds, while Wendy's began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.
-
+<div class="container-fluid coloralternate">
+<div class="container row margin-topbottom-null" markdown="block">
+<div class="col-md-8" markdown="block">
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/moodboard.png){: .align-left}
+</div>
+<div class="col-md-4" markdown="block">
+ 
+### Mood Board
+A soft and organic form was focused on, not only to remove uncomfortable hard edges, but also to give a more soothing form. Three main forms were explored: a lobed shape that fits on the back of the neck, a coral shape that would allow airflow to the face when asleep and a pebble shape. The pebble shape was chosen, as it was the most versitile and pillow-like. From here, a series of tufted stitched semicircles were added to the top of this stone shape to emulate the ripples of a stone tossed into a pond.
 </div>
 </div>
 </div>
 <div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
-<div class="col-md-12" markdown="block">
-
-{% include base_path %}
-
-{% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/soft/ideation.png)
-{% endcapture %}
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Ideation.</figcaption>
-</figure>
-
+<div class="col-md-4" markdown="block">
+ 
+### Form Development
+A soft and organic form was focused on, not only to remove uncomfortable hard edges, but also to give a more soothing form. Three main forms were explored: a lobed shape that fits on the back of the neck, a coral shape that would allow airflow to the face when asleep and a pebble shape. The pebble shape was chosen, as it was the most versitile and pillow-like. From here, a series of tufted stitched semicircles were added to the top of this stone shape to emulate the ripples of a stone tossed into a pond.
 </div>
+<div class="col-md-8" markdown="block">
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/ideation.png){: .align-right}
+</div>
+
 </div>
 </div>
 <div class="container-fluid coloralternate">
@@ -66,7 +64,7 @@ Occasionally in her travels through her children's minds Mrs. Darling found thin
 <div class="col-md-12" markdown="block">
 
 {% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/soft/usecase.jpg)
+![Foo]({{ basepath }}/assets/images/soft/usecase.png)
 {% endcapture %}
 
 <figure>
