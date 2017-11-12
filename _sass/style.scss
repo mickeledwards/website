@@ -60,3 +60,7 @@ $full: 1199px;
 .fullheight{
     max-height: 90vh;
 }
+
+.coloralternate:nth-child(2n){
+    background-color: $light-background;
+}

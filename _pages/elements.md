@@ -56,6 +56,9 @@ gallery:
   alt: placeholder image 12
   title: Image 12 title caption
 ---
+<div class="coloralternate container-fluid">
+<div class="container row margin-topbottom-null" markdown="block">
+<div class="col-md-12" markdown="block">
 
 A variety of common markup showing how the theme styles them.
 
@@ -106,6 +109,13 @@ Definition List Title
 [Btn Alt](#){: .btn-alt }
 [Btn Alt Shadow](#){: .btn-alt .shadow}
 
+</div>
+</div>
+</div>
+<div class="fullheight container-fluid coloralternate">
+<div class="container row margin-topbottom-null" markdown="block">
+<div class="col-md-12" markdown="block">
+
 ## HTML Tags
 
 This is an example of a [link](http://apple.com "Apple").
@@ -139,6 +149,12 @@ Preformatted Tag.
 
 This is some **bold text**.
 
+</div>
+</div>
+</div>
+<div class="container-fluid coloralternate">
+<div class="container row margin-topbottom-null" markdown="block">
+<div class="col-md-12" markdown="block">
 
 YouTube video
 ------------
@@ -156,17 +172,6 @@ The preferred way of using images is placing them in the `/assets/images/` direc
 
 Standard image with no width modifier classes applied.
 
-**HTML:**
-
-```html
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt="">{% endraw %}
-```
-
-**or Kramdown:**
-
-```markdown
-{% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg){% endraw %}
-```
 
 ![Unsplash image 9]({{ site.url }}{{ site.baseurl }}/assets/images/unsplash-image-9.jpg)
 
@@ -251,3 +256,6 @@ Image Gallery
 ------------
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
+</div>
+</div>
+</div>

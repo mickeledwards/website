@@ -59,35 +59,29 @@ layout: default
 {% endif %}
 
 <!-- rest of body -->
-<div class="container-fluid" style= "background-color: #ffffff; z-index: 1000;">
-<div class="container">
-
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
-        <div class="row no-margin" >
-			<div class="col-md-12 padding-leftright-null">
-		        <div class = "text">
-	          {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-		        </div>
-	        </div>
-	    </div>
-      {% endunless %}
-		<div class="row no-margin">
-		      <section class="col-md-12 padding-leftright-null">
-		        {{ content }}
-		      </section>
-		</div>
+           <div class="container">
+               <div class="row no-margin" >
+                <div class="col-md-12 padding-leftright-null">
+                     <div class = "text">
+                          {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    {% endunless %}
+
+{{ content }}
 
 {% if page.customhtml %}
-</div>
 {% include {{ page.customhtml}}.html %}
 <div class="container margin-topbottom-null">
 {% endif %}
 
+
+
 {% include post_pagination.html %}
 </div>
-</div>
+
