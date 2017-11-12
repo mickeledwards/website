@@ -99,26 +99,31 @@
   color: #515158;
   -webkit-transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) translateZ(5vmin) translateX(5vmin) translateY(-10vmin);
   transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) translateZ(5vmin) translateX(5vmin) translateY(-10vmin);
+    cursor: default;
 }
 .level--1::after {
   content: 'Base';
   padding-left: 40px;
   text-align: left;
+    cursor: default;
 }
 .level--2::after {
   content: ' Electronics';
   padding-left: 40px;
   text-align: left;
+    cursor: default;
 }
 .level--3::after {
   content: 'Servos';
   padding-left: 40px;
   text-align: left;
+    cursor: default;
 }
 .level--4::after {
   content: 'Front';
   padding-left: 40px;
   text-align: left;
+    cursor: default;
 }
 .level:not(:first-child) {
   position: absolute;
@@ -226,7 +231,7 @@
   opacity: 0;
 }
 .boxbutton {
-  font-size: 2em;
+  font-size: 3em;
   display: block;
   width: 2em;
   height: 2em;
@@ -234,6 +239,7 @@
   padding: 0;
   border: 0;
   color: $secondary-background;
+    cursor: pointer;
 }
 .boxbutton--disabled {
   cursor: default;
