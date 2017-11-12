@@ -1,16 +1,17 @@
 ---
 title: Grasshopper
 header:
-  overlay_image: "/assets/images/unsplash-image-1.jpg"
+  overlay_image: "/assets/images/grasshopper/ghopperlattice.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.3)
 categories:
 - Post Formats
 preview: assets/images/grassh.png
 excerpt: Generative Design
 date: 2010-01-07 00:00:00 +0000
 slider:
-- image_path: "/assets/images/relaxed.png"
+- image_path: "/assets/images/grasshopper/relaxed.png"
   title: Relaxed Mesh Figure Generated Via Grasshopper and Kangaroo Physics
-- image_path: "/assets/images/unsplash-gallery-image-2-th.jpg"
+- image_path: "/assets/images/grasshopper/ghopperlattice.jpg"
   title: Image 2 title caption
 - image_path: "/assets/images/unsplash-gallery-image-3-th.jpg"
   title: Image 3 title caption

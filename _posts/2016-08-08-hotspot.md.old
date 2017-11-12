@@ -26,4 +26,9 @@ hotspot:
   top: 79
 ---
 
+
+<div class="container-fluid" style= "background-color: #ffffff; z-index: 1000;">
+<div class="container no-margin">
 {% include hotspot.html  id="hotspot" hotimg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/6444/interior-01-RHD.jpg"%}
+</div>
+</div>
