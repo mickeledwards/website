@@ -2,7 +2,7 @@ permalink: :title
 # Site Settings
 locale                   : "en"
 title                    : "Mickel Edwards Industrial Design Portfolio"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Mickel Edwards"
 description              : "Industrial Design Portfolio of Mickel Edwards"
 url                      : "http://mickeledwards.com"
