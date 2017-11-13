@@ -88,8 +88,8 @@ sass:
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
- # ignore:
- #   envs: development
+  ignore:
+    envs: development
 
 
 # Defaults
