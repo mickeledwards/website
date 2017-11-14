@@ -5,7 +5,7 @@ header:
 preview: assets/images/kinect.png
 excerpt: Design Grant
 date: 2010-01-07 00:00:00 +0000
-customhtml: layers
+#customhtml: layers
 custom_js:
 - diag
 ---
@@ -28,3 +28,7 @@ Occasionally in her travels through her children's minds Mrs. Darling found thin
 </div>
 </div>
 </div>
+
+{::options parse_block_html="false" /}
+{% include layers.html markdown = "0" %}
+<div class="container margin-topbottom-null">
