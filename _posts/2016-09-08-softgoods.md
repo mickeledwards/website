@@ -1,7 +1,7 @@
 ---
 title: Light Sleeper
 header:
-  overlay_image: assets/images/soft/render.png
+  overlay_image: assets/images/soft/stone.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 categories: []
 preview: assets/images/soft/preview.png
