@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="/assets/images/branding/favicon.ico">
 	<meta name="msapplication-config" content="/assets/images/branding/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
