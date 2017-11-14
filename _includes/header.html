@@ -21,7 +21,7 @@
                             <a href="javascript:void(0)">Portfolio</a>
                             <ul class="sub-menu">
                                 {% for post in site.posts %}
-						                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+						                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a> <br/>
 							{% endfor %}
                             </ul>
                         </li>
