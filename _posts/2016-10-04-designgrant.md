@@ -15,6 +15,10 @@ custom_js:
 
 ## Project Explaination
 
+This project was born out of the opportunity that Iowa State University gave me by creating the Focus: Artist Grant program. In this program, students are awarded grants to allow them to create visual and artistic projects normally outside of their reach.
+
+When I applied for this grant, I wanted to create an interactive sculptural piece. I've always been interested in how to create a user interaction, whether it be through interacting with a product, or creating an experience with a piece of art.
+
 </div>
 </div>
 </div>
@@ -29,16 +33,35 @@ custom_js:
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Pom Pom Mirror by Daniel Rozin.</figcaption>
+    <figcaption><em>Pom Pom Mirror</em> by Daniel Rozin.</figcaption>
 </figure>
 </div>
+
+
 <div class="col-md-8" markdown="block">
 
 ## Inspiration
 
+There were a couple of different artists I looked at when  
+
+</div>
+
+<div class="col-md-4" markdown="block">
+
+{% capture fig_img %}
+![Foo]({{ basepath }}/assets/images/grant/riverbed.jpg)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+    <figcaption><em>Riverbed</em> by Olafur Eliasson.</figcaption>
+</figure>
+
+
 </div>
 </div>
 </div>
+
 <div class="container-fluid coloralternate">
 	<div class="diag-main">
 		<div class="diag">
