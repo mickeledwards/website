@@ -5,7 +5,6 @@ header:
 preview: assets/images/kinect.png
 excerpt: Design Grant
 date: 2010-01-07 00:00:00 +0000
-#customhtml: layers
 custom_js:
 - diag
 ---
@@ -14,21 +13,176 @@ custom_js:
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
-
-Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
-
-
-Of course the Neverlands vary a good deal. John's, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other's nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.
-
-Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.
-
-Occasionally in her travels through her children's minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael's minds, while Wendy's began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.
+## Project Explaination
 
 </div>
 </div>
 </div>
 
-{::options parse_block_html="false" /}
-{% include layers.html markdown = "0" %}
-<div class="container margin-topbottom-null">
+<div class="container-fluid coloralternate">
+<div class="container row margin-topbottom-null" markdown="block">
+<div class="col-md-4" markdown="block">
+
+{% capture fig_img %}
+![Foo]({{ basepath }}/assets/images/grant/inspo.png)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Pom Pom Mirror by Daniel Rozin.</figcaption>
+</figure>
+</div>
+<div class="col-md-8" markdown="block">
+
+## Inspiration
+
+</div>
+</div>
+</div>
+<div class="container-fluid coloralternate">
+	<div class="diag-main">
+		<div class="diag">
+			<div class="levels">
+				<div class="level level--1" aria-label="Base">
+					<img class="map map--1"  src="assets/svg/base.svg"  alt="Base Components" height="800" width="1140" />
+					<div class="level__pins">
+						<a class="pin pin--1-1" data-category="1" data-space="1.01"  aria-label="Pin for Red Oak Frame">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--1-2" data-category="1" data-space="1.02"  aria-label="Pin for Power Inlet">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--1-7" data-category="1" data-space="1.07"  aria-label="Pin for Plywood Backing">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="level level--2" aria-label="Electronics">
+                    <img class="map map--2"  src="assets/svg/electronics.svg"  alt="Electronic Components" height="800" width="1140" />
+					<div class="level__pins">
+						<a class="pin pin--2-1" data-category="1" data-space="2.01"  aria-label="Pin for Power Input">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-2" data-category="1" data-space="2.02"  aria-label="Pin for Fiberboard Base">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-3" data-category="1" data-space="2.03"  aria-label="Pin for Kinect Sensor">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-4" data-category="1" data-space="2.04"  aria-label="Pin for Raspberry Pi">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-5" data-category="1" data-space="2.05"  aria-label="Pin for Cooling Fans">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-6" data-category="1" data-space="2.06"  aria-label="Pin for Power Converters">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--2-8" data-category="1" data-space="2.08"  aria-label="Pin for Servo Controllers">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="level level--3" aria-label="Servos">
+					<img class="map map--3"  src="assets/svg/servos.svg"  alt="Servos" height="800" width="1140" />
+					<div class="level__pins">
+						<a class="pin pin--3-7" data-category="1" data-space="3.07"  aria-label="Pin for Servo Motors">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="level level--4" aria-label="Front Components">
+				    <img class="map map--4"  src="assets/svg/front.svg"  alt="Front Components" height="800" width="1140" />
+					<div class="level__pins">
+						<a class="pin pin--4-2" data-category="1" data-space="4.02"  aria-label="Pin for Painted Spheres">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--4-5" data-category="1" data-space="4.05"  aria-label="Pin for Plexiglass">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+						<a class="pin pin--4-7" data-category="1" data-space="4.07"  aria-label="Pin for Wooden Frame">
+							<span class="pin__icon">
+								<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>				
+		<nav class="DiagNav DiagNav--hidden">
+			<button class="boxbutton DiagNav__button--up" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
+			<button class="boxbutton boxbutton--dark DiagNav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
+			<button class="boxbutton DiagNav__button--down" aria-label="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
+		</nav>
+		<div class="contentdiag">
+			<div class="content__item" data-space="1.01">
+				<h3 class="content__item-title">Red Oak Frame</h3>
+			</div>
+			<div class="content__item" data-space="1.02">
+				<h3 class="content__item-title">Power Inlet</h3>
+			</div>
+			<div class="content__item" data-space="1.07">
+				<h3 class="content__item-title">Plywood Backing</h3>
+			</div>
+			<div class="content__item" data-space="2.01">
+				<h3 class="content__item-title">Power Input</h3>
+			</div>
+			<div class="content__item" data-space="2.02">
+				<h3 class="content__item-title">Fiberboard Base</h3>
+			</div>
+			<div class="content__item" data-space="2.03">
+				<h3 class="content__item-title">Kinect Sensor</h3>
+			</div>
+			<div class="content__item" data-space="2.04">
+				<h3 class="content__item-title">Raspberry Pi</h3>
+			</div>
+			<div class="content__item" data-space="2.05">
+				<h3 class="content__item-title">Cooling Fans</h3>
+			</div>
+			<div class="content__item" data-space="2.06">
+				<h3 class="content__item-title">Power Converters</h3>
+			</div>
+			<div class="content__item" data-space="2.08">
+				<h3 class="content__item-title">Servo Controllers</h3>
+			</div>
+			<div class="content__item" data-space="3.07">
+				<h3 class="content__item-title">Servo Motors</h3>
+			</div>
+			<div class="content__item" data-space="4.02">
+				<h3 class="content__item-title">Painted Spheres</h3>
+			</div>
+			<div class="content__item" data-space="4.05">
+				<h3 class="content__item-title">Plexiglass</h3>
+			</div>
+			<div class="content__item" data-space="4.07">
+				<h3 class="content__item-title">Wooden Frame</h3>
+			</div>
+		</div>
+	</div>
+</div>
