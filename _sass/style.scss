@@ -64,3 +64,7 @@ $full: 1199px;
 .coloralternate:nth-child(2n){
     background-color: $light-background;
 }
+
+ol, ul {
+    display:table-row;
+}

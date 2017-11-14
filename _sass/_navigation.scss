@@ -185,12 +185,12 @@ header {
                                         position: absolute;
                                         top: 88px;
                                         opacity: 0;
-                                        left: 18px;
-                                        min-width: 177px;
+                                        left: 8px;
+                                        min-width: 200px;
                                         width: auto;
                                         text-align: left;
                                         background-color: $dark-background;
-                                        padding: 16px;
+                                        padding: 16px 6px;
                                         transition: all .4s ease;
                                         
                                         @media screen and (min-width: 992px) {
