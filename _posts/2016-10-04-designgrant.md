@@ -4,7 +4,6 @@ header:
   overlay_image: "/assets/images/unsplash-image-1.jpg"
 preview: assets/images/kinect.png
 excerpt: Design Grant
-date: 2010-01-07 00:00:00 +0000
 custom_js:
 - diag
 ---

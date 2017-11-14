@@ -6,7 +6,6 @@ header:
 categories: []
 preview: assets/images/soft/preview.png
 excerpt: Soft Goods Project
-date: 2016-08-01 23:00:00 +0000
 layout: single
 hotspot:
 - text: Internal Lights

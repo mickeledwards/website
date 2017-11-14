@@ -7,7 +7,6 @@ categories:
 - Post Formats
 preview: assets/images/grassh.png
 excerpt: Generative Design
-date: 2010-01-07 00:00:00 +0000
 slider:
 - image_path: "/assets/images/grasshopper/relaxed.png"
   title: Relaxed Mesh Figure Generated Via Grasshopper and Kangaroo Physics
