@@ -41,12 +41,12 @@ From here, market research was performed, and a gap in the current market was fo
 <div class="col-md-12" markdown="block">
 
 ## Problem Finding and Research
-When looking at the typical days of the students interviewed, it was evident that they all shared a commonality of having problems sleeping. While one of the subjects interviewed went to sleep and woke up early, his sleep was generally restless. From here, the problem statement of _**how might we improve the quality of sleep for an active college student**_ was found.
+When looking at the typical days of the students interviewed, it was evident that they all shared a commonality of having problems sleeping, which included generally restless or late nights. From here, the problem statement of _**how might we improve the quality of sleep for an active college student**_ was found.
 
 From here, market research was performed, and a gap in the current market was found. The product being ideated on would be a sleep aid that both worked in the night to allow the user to fall asleep, as well as gently waking the user in the morning.
-
-
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/research.png){: .align-left}
+<div class="col-md-8" markdown="block">
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/colors.png){: .align-left}
+</div>
 </div>
 </div>
 </div>
