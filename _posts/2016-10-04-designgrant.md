@@ -4,8 +4,6 @@ header:
   overlay_image: "/assets/images/unsplash-image-1.jpg"
 preview: assets/images/kinect.png
 excerpt: Design Grant
-custom_js:
-- diag
 ---
 
 <div class="container-fluid coloralternate">
@@ -26,17 +24,10 @@ When I applied for this grant, I wanted to create an interactive sculptural piec
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-4" markdown="block">
 
-{% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/grant/inspo.png)
-{% endcapture %}
+{% include gallery img='assets/images/grant/inspo.png'  alt = 'Pom Pom Mirror' %}
+{% include gallery img='assets/images/grant/riverbed.jpg'  alt = 'Riverbed' %}
 
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-    <figcaption><em>Pom Pom Mirror</em> by Daniel Rozin.</figcaption>
-</figure>
 </div>
-
-
 <div class="col-md-8" markdown="block">
 
 ## Inspiration
@@ -45,19 +36,6 @@ There were a couple of different artists I looked at when
 
 </div>
 
-<div class="col-md-4" markdown="block">
-
-{% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/grant/riverbed.jpg)
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-    <figcaption><em>Riverbed</em> by Olafur Eliasson.</figcaption>
-</figure>
-
-
-</div>
 </div>
 </div>
 
