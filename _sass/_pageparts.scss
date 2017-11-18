@@ -311,19 +311,19 @@
 .post-gallery, .project-gallery {
 
     .owl-item {
-        transition: opacity .8s ease;
+        //transition: opacity .8s ease;
 
         img {
             border-radius: 4px;
         }
 
         &:not(.center) {
-            opacity: .2;
-            transition: opacity .8s ease;
+         //   opacity: .2;
+           // transition: opacity .8s ease;
         }
     }
     .owl-controls {
-        top:18px;
+        top:-18px;
     }
 }
 .project-meta {

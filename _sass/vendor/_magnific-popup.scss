@@ -84,7 +84,8 @@
 .mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 .mfp-loading.mfp-figure {
   display: none; }
@@ -135,9 +136,6 @@ button.mfp-close {
     button.mfp-close {
         margin-top: 0px;
     }
-}
-button.mfp-arrow {
-    background-color:#fff;
 }
 
 button::-moz-focus-inner {
@@ -208,6 +206,7 @@ button.mfp-close {
 
 .mfp-arrow {
   position: absolute;
+background-color: transparent;
   margin: 0;
   top: 50%;
   margin-top: -35px;
@@ -257,6 +256,8 @@ button.mfp-close {
       font-size:50px;
       content: "\E805";
       font-family: "Ionicons";
+      color: $secondary-color;
+      background-color: transparent;
 }
   .mfp-arrow-left:before,
   .mfp-arrow-left .mfp-b {
@@ -271,6 +272,8 @@ button.mfp-close {
       content: "\f3d3";
       font-family: "Ionicons";
       margin-left: 0px;
+      color: $secondary-color;
+      background-color: transparent;
 }
   .mfp-arrow-right:before,
   .mfp-arrow-right .mfp-b {
@@ -336,7 +339,9 @@ img.mfp-img {
 
 /* The shadow behind the image */
 .mfp-figure {
-  line-height: 0; }
+  line-height: 0;
+background-color: #FFFFFF;
+}
   .mfp-figure:after {
     content: '';
     position: absolute;

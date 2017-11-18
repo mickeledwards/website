@@ -172,6 +172,14 @@ var rellax = new Rellax('.rellax', {
 $(document).ready(function($) {
     "use strict";
 
+        $(".post-gallery, .project-gallery").owlCarousel({
+            center: true,
+            items:1,
+            loop:true,
+            autoplay: true,
+            autoplayHoverPause: true
+        });
+
         $(".image-carousel").owlCarousel({
             center: true,
             loop:true,

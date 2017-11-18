@@ -45,7 +45,7 @@ When looking at the typical days of the students interviewed, it was evident tha
 
 From here, market research was performed, and a gap in the current market was found. The product being ideated on would be a sleep aid that both worked in the night to allow the user to fall asleep, as well as gently waking the user in the morning.
 <div class="col-md-8" markdown="block">
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/colors.png){: .align-left}
+{% include gallery img='assets/images/soft/colors.png'  alt = 'Research' %}
 </div>
 </div>
 </div>
@@ -54,7 +54,7 @@ From here, market research was performed, and a gap in the current market was fo
 <div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-8" markdown="block">
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/moodboard.png){: .align-left}
+{% include gallery img='assets/images/soft/moodboard.png' alt = 'Moodboard' %}
 </div>
 <div class="col-md-4" markdown="block">
  
@@ -71,7 +71,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 A soft and organic form was focused on, not only to remove uncomfortable hard edges, but also to give a more soothing form. Three main forms were explored: a lobed shape that fits on the back of the neck, a coral shape that would allow airflow to the face when asleep and a pebble shape. The pebble shape was chosen, as it was the most versitile and pillow-like. From here, a series of tufted stitched semicircles were added to the top of this stone shape to emulate the ripples of a stone tossed into a pond.
 </div>
 <div class="col-md-8" markdown="block">
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/soft/ideation.png){: .align-right}
+{% include gallery img='assets/images/soft/ideation.png' alt = 'Ideation' %}
 </div>
 
 </div>
@@ -79,7 +79,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 <div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block" style="margin-bottom:-100px;">
-{% include hotspot.html  id='hotspot' hotimg='assets/images/soft/stone.png' %}
+{% include hotspot.html  id='hotspot' hotimg='assets/images/soft/stone.png' alt = 'Final model' %}
 </div>
 </div>
 </div>
@@ -87,14 +87,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
-{% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/soft/usecase.png)
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Light Sleeper Pillow in Use.</figcaption>
-</figure>
+{% include gallery img='assets/images/soft/usecase.png' alt = 'Model in Use' %}
 
 </div>
 </div>

@@ -580,7 +580,14 @@ blockquote, q {
     font-weight: 400;
     font-style: italic;
     margin: 50px 0;
-    border-left: 4px solid $secondary-color;
+    &::before{
+        content: "\201C";
+        font-size: 3em;
+        position: absolute;
+        left: 10px;
+        top:5px;
+        color: $secondary-color;
+    }
     cite {
     font-style: italic;
         &:before {
@@ -610,6 +617,7 @@ blockquote, q {
         }
     }
 }
+
 textarea {
     resize: none;
 }

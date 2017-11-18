@@ -20,7 +20,7 @@ layout: default
                     <div class="single-item col-lg-4 col-md-6 col-s-12">
                         <a href="{{ post.url | absolute_url }}">
                             <div class="item">
-                                <img src="{{ post.preview }}">
+                                <img src="{{ post.preview }}" alt = "{{ post.title }}">
                                 <div class="content">
                                   <h3>{{ post.title }}</h3>
                                   <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
