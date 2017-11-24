@@ -30,13 +30,10 @@ header {
             padding: 0 30px;
         }
     }
-    
     &.fixed {
         .container {
             padding: 0 50px;
-        }   
-    }
-    &.fixed {
+        }
         height: $navbar-height;
         width: 100%;
         max-width: 1500px;
@@ -111,7 +108,7 @@ header {
                     }
                 }
             }
-            #menu, #sidemenu, #menu-classic {
+            #menu, #sidemenu {
                 position: relative;
                 float: right;
                 margin: 12px 0;
@@ -467,7 +464,7 @@ header {
                     }
                 }
             }
-            #menu-responsive, #menu-responsive-sidemenu, #menu-responsive-classic {
+            #menu-responsive-sidemenu{
                 float: right;
                 display: none;
                 padding-right: 20px;
@@ -518,12 +515,6 @@ header {
                         }
                     }
                 }
-                &.minimal {
-                    display: block;
-                }
-            }
-            #menu-responsive-sidemenu, #menu-responsive-classic {
-	            
                 &.open {
                     @media screen and (max-width: $large) {
 
@@ -552,151 +543,6 @@ header {
 
                     }
                 }
-            }
-            #menu-responsive-classic {
-                &.open {
-                    @media screen and (max-width: $medium) {
-                        .menu-button {
-                            .bar {
-                                background-color: $primary-color;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.white {
-                #logo {
-                    img {
-                        &:not(.white-logo) {
-                            display: none;
-                        }
-                    }
-                }
-                #menu, #sidemenu, #menu-classic {
-                    .menu-holder {
-                        ul {
-                            li {
-                                > a {
-                                    color: white;
-                                    font-weight: 100;
-
-                                    &.active-item {
-                                        color: $secondary-color;
-                                        font-weight: 400;
-                                    }
-                                }
-                                
-                                &.lang {
-                                    span {
-                                        &.current {
-                                            a {
-                                                color: white;
-                                                
-                                                @media screen and (max-width: $large) {
-                                                    color: $secondary-color;
-                                                }
-                                            }
-                                        }
-                                    } 
-                                }
-                            }
-                        }
-                    }
-                    &.open {
-                        .menu-holder {
-                            ul {
-                                li {
-                                    > a {
-                                        color: white;
-
-                                        &.active-item {
-                                            color: $secondary-color;
-                                            font-weight: 400;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                #sidemenu {
-                    &.open {
-                        .menu-holder {
-                            ul {
-                                li {
-                                    margin: 8px 0;
-                                    > a {
-                                        color: white;
-                                        font-family: $paragraph-font;
-                                        font-size: 14px;
-                                        line-height: 26px;
-                                        font-weight: 100;
-
-                                        &.active-item {
-                                            color: $secondary-color;
-                                            font-weight: 400;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                #menu-responsive, #menu-responsive-sidemenu, #menu-responsive-classic {
-                    .menu-button {
-                        .bar {
-                            background-color: white;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-#nav {
-    padding: 50px 50px 75px 50px;
-    user-select: none;
-
-    @media screen and (max-width: $small) {
-        padding: 50px 30px 75px 30px;
-    }
-
-    span {
-
-        font-family: $secondary-font;
-        font-weight: 300;
-
-        @media screen and (max-width:$small) {
-            display: none;
-        }
-    }
-
-    .nav-right {
-        text-align: right;
-
-        i {
-            margin-left: 10px;
-            margin-right: 0;
-
-            @media screen and (max-width:$small) {
-                margin-left: 0;
-            }
-        }
-    }
-    .nav-left {
-        i {
-            margin-right: 10px;
-
-            @media screen and (max-width:$small) {
-                margin-right: 0;
-            }
-        }
-    }
-    .nav-left, .nav-right {
-        a {
-            &.btn-alt {
-                line-height: 38px;
             }
         }
     }

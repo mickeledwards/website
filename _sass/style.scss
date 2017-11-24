@@ -42,7 +42,6 @@ $full: 1199px;
 /*Parts of pages*/
 @import 'bodyparts';
 @import 'navigation';
-@import 'pageparts';
 @import 'posts';
 @import 'footer';
 @import 'elements';
@@ -54,32 +53,9 @@ $full: 1199px;
 @import 'contact';
 
 /*Vendor/addins*/
-@import 'magnificpopup';
-@import 'owl';
 @import 'vendor/magnific-popup';
 @import 'vendor/owl.carousel';
 
 /*Icons*/
 @import 'ionicons';
 @import 'fontawesome';
-
-.fullheight{
-    max-height: 90vh;
-}
-
-.coloralternate:nth-child(2n){
-    background-color: $light-background;
-}
-
-ol, ul {
-    display:table-row;
-}
-
-
-.sliderfull{
-    width:100%;
-    height:30em;
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-}

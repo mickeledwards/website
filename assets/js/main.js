@@ -176,8 +176,10 @@ $(document).ready(function($) {
             center: true,
             items:1,
             loop:true,
-            autoplay: true,
-            autoplayHoverPause: true
+            false: false,
+            autoplayHoverPause: false,
+            nav:true,
+            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
         });
 
         $(".image-carousel").owlCarousel({

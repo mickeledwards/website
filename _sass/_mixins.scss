@@ -32,3 +32,69 @@
     -ms-user-select: none;       
     user-select: none;  
 }
+
+%btn {
+    padding:0;
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+    outline: none;
+    border-radius: 2px;
+    font-weight: bold;
+    position: relative;
+    margin-right:0.625rem;
+    margin-left: 0.625rem;
+    margin-bottom:2.1875rem;
+    text-decoration: none !important;
+    transition: all .4s ease;
+    font-weight: 400;
+    @media screen and (max-width:$large) {
+        margin-bottom:0px;
+    }
+    &.disabled {
+        text-shadow: none;
+        pointer-events: none;
+        cursor: not-allowed;
+        &:hover,
+        &:focus {
+            color: $light-background;
+            text-decoration: none;
+        }
+    }
+    &.shadow {
+        @extend %shadow;
+    }
+    &.no-margin-bottom {
+        margin-bottom: 0;
+    }
+    i {
+        margin-right: 8px;
+    }
+}
+@mixin btn-theme ($txt-color, $brdr-color, $bg-color, $bg-color-hover, $txt-color-hover) {
+    border:1px solid $brdr-color;
+    background-color: $bg-color;
+    color: $txt-color;
+    &:hover{
+        background-color: $bg-color-hover;
+        color: $txt-color-hover !important;
+        border-color:transparent;
+        transition: all .4s ease;
+    }
+
+}
+%shadow{
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+%shadow-small{
+box-shadow: 0 2px 17px 0 rgba(0,0,0,0.30);
+}

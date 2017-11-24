@@ -128,9 +128,15 @@ button.mfp-arrow {
   -webkit-box-shadow: none;
   box-shadow: none; }
 button.mfp-close {
-    background-color: #3367D6;
     margin-top: -10px;
     margin-right: 10px;
+    color: $secondary-color !important;
+    background-color: transparent;
+    transition: background-color .4s ease;
+    &:hover {
+            color: $darkgrey-background !important;
+            transition: color .4s ease;
+    }
 }
 @media screen and (max-width:480px) {
     button.mfp-close {

@@ -112,7 +112,7 @@ Definition List Title
 </div>
 </div>
 </div>
-<div class="fullheight container-fluid coloralternate">
+<div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 

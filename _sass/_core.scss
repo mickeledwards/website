@@ -1,3 +1,6 @@
+html {
+  font-size: 100%;
+}
 body {
     font: 100% $secondary-font;
     color: $primary-color;
@@ -28,18 +31,18 @@ h2, h3 {
     }
 }
 h1 {
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 4rem;
+    line-height: 4.75rem;
     font-weight: 700;
     font-family: $primary-font;
 
     @media screen and (max-width: 650px) {
-        font-size: 44px;
-        line-height: 54px;
+        font-size: 2.75rem;
+        line-height: 3.375rem;
     }
     @media screen and (max-width: $small) {
-        font-size: 34px;
-        line-height: 44px;
+        font-size: 2.125rem;
+        line-height: 2.75rem;
     }
 
     &.heading {
@@ -63,80 +66,80 @@ h1 {
 
 }
 h2 {
-    font-size: 42px;
-    line-height: 45px;
+    font-size: 2.625rem;
+    line-height: 2.8125rem;
 
     @media screen and (max-width: 650px) {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 2.125rem;
+        line-height: 2.5rem;
     }
     @media screen and (max-width: $small) {
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 1.75rem;
+        line-height: 2.125rem;
     }
 
     &.small {
-      font-size: 28px;
-      line-height: 33px;
+      font-size: 1.75rem;
+      line-height: 2.0625rem;
 
         @media screen and (max-width: $small) {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
         }
     }
 }
 h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 1.375rem;
+    line-height: 2rem;
 
     &.big {
-        font-size: 42px;
-        line-height: 45px;
+        font-size: 2.625rem;
+        line-height: 2.8175rem;
 
         @media screen and (max-width: 650px) {
-            font-size: 34px;
-            line-height: 40px;
+            font-size: 2.125rem;
+            line-height: 2.5rem;
         }
         @media screen and (max-width: $small) {
-            font-size: 28px;
-            line-height: 34px;
+            font-size: 1.75rem;
+            line-height: 2.125rem;
         }
     }
 }
 h4 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     font-family: $secondary-font;
 
     &.big {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 1.375rem;
+        line-height: 2rem;
     }
 }
 h5 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-family: $secondary-font;
 }
 h6 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
     font-family: $secondary-font;
 }
 h2, h3 {
     &.heading {
         font-family: $primary-font;
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 1.625rem;
+        line-height: 2rem;
         font-weight: 400;
 
         span {
-            font-size: 35px;
+            font-size: 2.1875rem;
         }
     }
 }
 a {
-    color: $secondary-color;
+    color: $primary-color;
     text-decoration: none;
     transition: color .4s ease;
 
@@ -161,168 +164,35 @@ a {
         }
     }
     &.btn {
-        padding:0;
-        padding-right: 30px;
-        padding-left: 30px;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        display: inline-block;
-        overflow: hidden;
-        outline: none;
-        border:1px solid $dark-background;
-        border-radius: 2px;
-        font-weight: bold;
-        color: $dark-background;
-        position: relative;
-        margin-right:10px;
-        margin-left: 10px;
-        margin-bottom:35px;
-        text-decoration: none !important;
-        transition: all .4s ease;
-        font-weight: 400;
-        &.disabled {
-              text-shadow: none;
-              pointer-events: none;
-              cursor: not-allowed;
-                &:hover,
-                &:focus {
-                  color: $light-background;
-                  text-decoration: none;
-                }
-          }
-        @media screen and (max-width:$large) {
-            margin-bottom:0px;
+        @extend %btn;
+        @include btn-theme($dark-background, $dark-background, white, $secondary-color, white);
+        &-alt {
+            @extend %btn;
+            @include btn-theme(white, transparent, $secondary-color, $dark-background, white);
         }
 
-        &:hover {
-            background-color: $secondary-color;
-            color:white !important;
-            border-color:transparent;
-            transition: all .4s ease;
-        }
-        &.small {
-            height: 36px;
-            line-height: 36px;
-        }
-    }
-    &.btn-alt {
-        padding:0;
-        padding-right: 30px;
-        padding-left: 30px;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        display: inline-block;
-        overflow: hidden;
-        outline: none;
-        border-radius: 2px;
-        font-weight: 300;
-        color: white;
-        position: relative;
-        margin-right:10px;
-        margin-left: 10px;
-        margin-bottom:35px;
-        text-decoration: none !important;
-        transition: all .4s ease;
-        background-color: $secondary-color;
-
-        @media screen and (max-width:$large) {
-            margin-bottom:0px;
-        }
-
-        &:hover {
-            background-color: $primary-color;
-            color:white;
-            transition: all .4s ease;
-        }
-        &.shadow {
-            box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
-        }
-        &.no-margin-bottom {
-            margin-bottom: 0;
-        }
-        &.small {
-            height: 36px;
-            line-height: 36px;
-            background-color: $secondary-color;
-            color: white;
-            transition: all .4s ease;
-            font-size: 12px;
-
-            &:hover {
-                background-color: white;
-                color: $secondary-color;
-                transition: all .4s ease;
-            }
-
-            &.white {
-                border: 1px solid white;
-
-                &:hover {
-                    background-color: white;
-                    color: $secondary-color !important;
-                }
-            }
-
-            &.active {
-                background-color: transparent;
-                border: 1px solid $secondary-color;
-                color: $secondary-color;
-
-                &:hover {
-                    background-color: $secondary-color;
-                    border: 1px solid $secondary-color;
-                    color: white;
-                }
-
-                &.white {
-                    border-color: white;
-                    color: white;
-
-                    &:hover {
-                        background-color: white;
-                        color: $secondary-color;
-                    }
-                }
-            }
-            &.border {
-                border: 1px solid $secondary-background;
-            }
-        }
-        i {
-            margin-right: 8px;
-        }
     }
 }
 p {
     font-family: $paragraph-font;
     color: $paragraph-color;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1rem;
     font-weight: 300;
 
     &.heading {
         color: $paragraph-color;
         font-family: $paragraph-font;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 1.1875rem;
+        line-height: 1.875rem;
         max-width: 600px;
         letter-spacing: 0;
         margin: 0 auto;
 
         @media screen and (max-width: 650px) {
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 1.1875rem;
+            line-height: 1.75rem;
         }
 
         &.full {
@@ -340,7 +210,7 @@ p {
     }
 
     &.small {
-       font-size: 14px;
+       font-size: 0.875rem;
     }
 
     b, strong {
@@ -414,9 +284,6 @@ hr {
 .light-background {
     background-color: $light-background !important;
 }
-.color-background {
-    background-color: $secondary-background;
-}
 .secondary-background {
     background-color: $secondary-background;
 }
@@ -489,6 +356,7 @@ dl {
 }
 ol {
     list-style: decimal;
+    display:table-row;
     padding-left: 28px;
     font-family: $paragraph-font;
     color: $paragraph-color;
@@ -498,7 +366,9 @@ ol {
     font-weight: 300;
     margin: 25px 0 25px 15px;
 }
+
 ul {
+    display:table-row;
     li {
         &.border {
             border-bottom: 1px solid #c2c3c4;
@@ -512,8 +382,8 @@ ul {
             padding-left: 26px;
             margin: 9px 0;
             color: $primary-color;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 1rem;
+            line-height: 1.625rem;
             font-weight: 300;
             color: $primary-color;
 
@@ -589,12 +459,12 @@ blockquote, q {
         color: $secondary-color;
     }
     cite {
-    font-style: italic;
+        font-style: italic;
         &:before {
-          content: "\2014";
-          padding-right: 5px;
+            content: "\2014";
+            padding-right: 10px;
         }
-      }
+    }
 
     @media screen and (max-width: $small) {
         padding-left: 18px;
@@ -724,168 +594,5 @@ i, cite, em {
         display: block;
         width: 100%;
         height: auto;
-    }
-}
-.height-auto-lg {
-    @media screen and (max-width: $full) {
-        height: auto !important;
-    }
-}
-.height-auto-md {
-    @media screen and (max-width: $large) {
-        height: auto !important;
-    }
-}
-.height-auto-sm {
-    @media screen and (max-width: $medium) {
-        height: auto !important;
-    }
-}
-.height-auto-xs {
-    @media screen and (max-width: $small) {
-        height: auto !important;
-    }
-}
-.border-right {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99;
-    width: 70px;
-    height: 100%;
-    max-width: 70px;
-    background-color: $light-background;
-
-    @media screen and (max-width:1350px){
-        display: none;
-    }
-}
-.border-left {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99;
-    width: 70px;
-    height: 100%;
-    max-width: 70px;
-    background-color: $light-background;
-
-    @media screen and (max-width:1350px){
-        display: none;
-    }
-}
-.nav-tabs {
-    padding-left: 0 !important;
-    border-bottom: none;
-
-    li {
-        margin-bottom:0;
-
-        a {
-            font-size: 12px;
-            color: $primary-color;
-            text-decoration: none;
-            font-family: $secondary-font;
-            font-weight: 300;
-            text-transform: uppercase;
-            border: none;
-            margin-right: 0;
-            transition: all .4s ease;
-            padding: 0 30px;
-            height: 36px;
-            line-height: 36px;
-            letter-spacing: 1px;
-
-            &:hover, &:focus {
-                border:none;
-                border-radius: 2px;
-                color: $secondary-color;
-                background-color: transparent;
-                transition: all .4s ease;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-        &.active {
-            a {
-                border:none;
-                border-radius: 2px;
-                text-decoration: none;
-                color: white;
-                background-color: $primary-color-light;
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
-                &:hover, &:focus {
-                    border:none;
-                    border-radius: 2px;
-                    color: white;
-                    background-color: $secondary-background;
-                }
-                &:focus {
-                    outline: none;
-                }
-            }
-        }
-    }
-    &.alt {
-        text-align: center;
-        li {
-            float: inherit;
-            display: inline-block;
-
-
-            a {
-                padding-left: 30px;
-                padding-right: 30px;
-                opacity: .5;
-                border: none;
-                height: 40px;
-                line-height: 22px;
-                border-radius: 0px;
-                font-weight: 600;
-                text-rendering: geometricPrecision;
-                font-size: 12px;
-
-                &:hover, &:focus {
-                    border: none;
-                    opacity: 1;
-                }
-            }
-
-            &.active {
-                a {
-                    background-color: $secondary-color;
-                    color: white;
-                    opacity: 1;
-                    border-radius: 40px;
-
-                    &:hover, &:focus {
-                        border:none;
-                    }
-                }
-            }
-        }
-    }
-}
-.tab-content {
-    margin-bottom: 50px;
-    margin-top: -1px;
-
-    .tab-pane {
-        color: $paragraph-color;
-        font-size: 14px;
-        line-height: 24px;
-        font-family: $paragraph-font;
-        letter-spacing: 1px;
-        padding-top: 25px;
-        font-weight: 300;
-    }
-    &.alt {
-        .tab-pane {
-            border: none;
-        }
     }
 }

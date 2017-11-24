@@ -565,3 +565,54 @@ img[class~="center"] {
         height: auto !important;
     }
 }
+
+.height-auto-lg {
+    @media screen and (max-width: $full) {
+        height: auto !important;
+    }
+}
+.height-auto-md {
+    @media screen and (max-width: $large) {
+        height: auto !important;
+    }
+}
+.height-auto-sm {
+    @media screen and (max-width: $medium) {
+        height: auto !important;
+    }
+}
+.height-auto-xs {
+    @media screen and (max-width: $small) {
+        height: auto !important;
+    }
+}
+.border-right {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 70px;
+    height: 100%;
+    max-width: 70px;
+    background-color: $light-background;
+
+    @media screen and (max-width:1350px){
+        display: none;
+    }
+}
+.border-left {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 70px;
+    height: 100%;
+    max-width: 70px;
+    background-color: $light-background;
+
+    @media screen and (max-width:1350px){
+        display: none;
+    }
+}

@@ -78,7 +78,7 @@ picture {
 }
 img {
     &.shadow {
-        box-shadow: 0 2px 17px 0 rgba(0,0,0,0.30);
+        @extend %shadow-small;
     }
 }
 table {
@@ -107,7 +107,7 @@ table {
 }
 
 
-.image-carousel {
+.post-gallery, .project-gallery {
     .owl-controls {
         position: absolute !important;
         top: 0;
@@ -131,7 +131,7 @@ table {
                 &:hover {
 
                     span {
-                        background-color: $dark-background;
+                        color: $dark-background;
                         transition: all .4s ease;
                     }
                 }
@@ -139,16 +139,16 @@ table {
                 span {
                     height: 40px;
                     width: 40px;
-                    background-color: $secondary-color;
-                    color: white;
+                    color: $secondary-color;
+
                     display: block;
                     border-radius: 0 4px 4px 0;
                     text-align: center;
                     transition: all .4s ease;
                 }
                 i {
-                    font-size: 30px;
-                    line-height: 40px;
+                    font-size: 50px;
+                    line-height: 60px;
                 }
             }
             .owl-next {
@@ -161,7 +161,7 @@ table {
         }
         .owl-dots {
             position: absolute !important;
-            bottom: 15px;
+            bottom: 40px;
             left: 0;
             right: 0;
 
@@ -209,6 +209,7 @@ table {
             }
         }
     }
+
 }
 em {
     &.number {
@@ -220,48 +221,5 @@ em {
         float: left;
         position: absolute;
         z-index: 0;
-    }
-}
-.grid-images {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 30px;
-
-    .padding-sm {
-        padding: 30px 0 !important;
-    }
-    .padding-onlytop-sm {
-        padding-top: 30px !important;
-
-        @media screen and (max-width:$large) {
-            padding-top: 0 !important;
-        }
-    }
-    .image {
-        @include background-cover;
-        position: relative;
-        height: 271px;
-        opacity: 1;
-        transition: opacity .4s ease;
-
-        @media screen and (max-width:$large) {
-            margin-bottom: 30px;
-        }
-
-        > .lightbox-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-
-            &:focus {
-                outline: none;
-            }
-        }
-        &:hover {
-            opacity: .8;
-            transition: opacity .4s ease;
-        }
     }
 }
