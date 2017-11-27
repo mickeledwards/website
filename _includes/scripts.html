@@ -1,0 +1,32 @@
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{{ "assets/js/grid-layout-polyfill.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "assets/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "assets/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "assets/js/rellax.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script>
+
+    (function() {
+  'use strict';
+
+  var section = document.querySelectorAll(".coloralternate");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();
+
+</script>

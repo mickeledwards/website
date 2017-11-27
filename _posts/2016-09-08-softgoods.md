@@ -22,7 +22,26 @@ hotspot:
   top: 15
 ---
 
-<div class="container-fluid coloralternate">
+
+<div class="fixed-side-navbar">
+      <ul class="sidenav">
+          <li><a class="active" href="#brief"></a>
+        </li>
+          <li><a href="#research"></a>
+        </li>
+          <li><a href="#moodboard"></a>
+        </li>
+          <li><a href="#ideation"></a>
+        </li>
+          <li><a href="#finalimg"></a>
+        </li>
+          <li><a href="#usecase"></a>
+        </li>
+      </ul>
+</div>
+
+
+<div id="brief" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -36,7 +55,7 @@ From here, market research was performed, and a gap in the current market was fo
 </div>
 </div>
 
-<div class="container-fluid coloralternate">
+<div id="research" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -51,7 +70,7 @@ From here, market research was performed, and a gap in the current market was fo
 </div>
 </div>
 
-<div class="container-fluid coloralternate">
+<div id="moodboard" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-8" markdown="block">
 {% include gallery img='assets/images/soft/moodboard.png' alt = 'Moodboard' %}
@@ -63,7 +82,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </div>
 </div>
 </div>
-<div class="container-fluid coloralternate">
+<div id ="ideation" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-4" markdown="block">
  
@@ -76,14 +95,15 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 
 </div>
 </div>
-<div class="container-fluid coloralternate">
+
+<div id="finalimg" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block" style="margin-bottom:-100px;">
 {% include hotspot.html  id='hotspot' hotimg='assets/images/soft/stone.png' alt = 'Final model' %}
 </div>
 </div>
 </div>
-<div class="container-fluid coloralternate">
+<div id="usecase" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -92,3 +112,4 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </div>
 </div>
 </div>
+

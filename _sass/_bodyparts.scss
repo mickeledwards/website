@@ -56,7 +56,10 @@
     position: relative;
     z-index: 2;
     background-color: white;
-    & .coloralternate:nth-child(2n){
+    & .coloralternate{
+        max-height: 100vh;
+    }
+    & .coloralternate:nth-child(2n+1){
         background-color: $light-background;
     }
     &.footer-fixed {

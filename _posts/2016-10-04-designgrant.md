@@ -6,7 +6,19 @@ preview: assets/images/kinect.png
 excerpt: Design Grant
 ---
 
-<div class="container-fluid coloralternate">
+<div class="fixed-side-navbar">
+      <ul class="sidenav">
+          <li><a class="active" href="#intro"></a>
+        </li>
+          <li><a href="#inspo"></a>
+        </li>
+          <li><a href="#diagram"></a>
+        </li>
+      </ul>
+</div>
+
+
+<div id="intro" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -20,7 +32,7 @@ When I applied for this grant, I wanted to create an interactive sculptural piec
 </div>
 </div>
 
-<div class="container-fluid coloralternate">
+<div id="inspo" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-4" markdown="block">
 
@@ -39,7 +51,7 @@ There were a couple of different artists I looked at when
 </div>
 </div>
 
-<div class="container-fluid coloralternate">
+<div id="diagram" class="container-fluid coloralternate">
 	<div class="diag-main">
 		<div class="diag">
 			<div class="levels">
