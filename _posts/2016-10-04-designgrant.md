@@ -3,7 +3,7 @@ title: Kinectic Sculpture
 header:
   overlay_image: "/assets/images/unsplash-image-1.jpg"
 preview: assets/images/kinect.png
-excerpt: Design Grant
+excerpt: Interactive Art
 ---
 
 <div class="fixed-side-navbar">
@@ -37,7 +37,6 @@ When I applied for this grant, I wanted to create an interactive sculptural piec
 <div class="col-md-4" markdown="block">
 
 {% include gallery img='assets/images/grant/inspo.png'  alt = 'Pom Pom Mirror' %}
-{% include gallery img='assets/images/grant/riverbed.jpg'  alt = 'Riverbed' %}
 
 </div>
 <div class="col-md-8" markdown="block">

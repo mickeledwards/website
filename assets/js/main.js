@@ -172,6 +172,13 @@ var rellax = new Rellax('.rellax', {
 $(document).ready(function($) {
     "use strict";
 
+    var pagecontent = $('#page-content'),
+            pagefooter = $('#page-footer'),
+        pagefooterheight = pagefooter.height();
+    pagecontent.css({
+            "margin-bottom" : pagefooterheight + 50
+		});
+
         $(".post-gallery, .project-gallery").owlCarousel({
             center: true,
             items:1,
@@ -196,6 +203,7 @@ $(document).ready(function($) {
             nav:true,
             navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
         });
+
 
 
 });

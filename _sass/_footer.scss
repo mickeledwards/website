@@ -6,7 +6,7 @@ footer, .footer {
     }
 
     .text {
-        padding: 50px;
+        padding: 25px;
 
     }
     p {
@@ -36,15 +36,14 @@ footer, .footer {
                 display: inline-block;
                 font-weight: 300;
                 font-size: 20px;
-                color: $primary-color;
 
-                i {
-                    color: $primary-color;
+                i:before {
+                    color: $secondary-color;
                     padding: 12px;
                     transition: ease .4s color;
 
                     &:hover {
-                        color: $secondary-color;
+                        color: $primary-color;
                         transition: ease .4s color;
                     }
                 }
