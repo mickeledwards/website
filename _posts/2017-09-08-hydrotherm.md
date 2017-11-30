@@ -21,8 +21,6 @@ layout: single
         </li>
           <li><a href="#ideation"></a>
         </li>
-          <li><a href="#finalimg"></a>
-        </li>
           <li><a href="#usecase"></a>
         </li>
       </ul>
