@@ -33,12 +33,19 @@ layout: single
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
-## Project Brief
+## What is a Hydrothermal Vent?
 
->### apply and further explore methods and tools to design a soft goods product, allowing incoming INDD students a smooth transition into the program supporting the demanding INDD schedule and lifestyle
+>### A hot spring, on the foor of the ocean, mostly along the central axes of the mid-ocean ridges, where heated fuids emerge from fissures in the Earth’s crust.
 
-From here, market research was performed, and a gap in the current market was found. The product being ideated on would be a sleep aid that both worked in the night to allow the user to fall asleep, as well as gently waking the user in the morning.
 
+</div>
+<div class="col-md-6" markdown="block">
+    {% include gallery img='assets/images/hydrotherm/hydro1.jpg' alt = 'Moodboard' %}
+    
+</div>
+<div class="col-md-6" markdown="block">
+    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'Moodboard' %}
+    
 </div>
 </div>
 </div>

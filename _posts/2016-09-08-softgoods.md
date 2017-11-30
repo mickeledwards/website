@@ -25,17 +25,17 @@ hotspot:
 
 <div class="fixed-side-navbar">
       <ul class="sidenav">
-          <li><a class="active" href="#brief"></a>
+          <li><a class="active" href="#brief"><span>Brief</span></a>
         </li>
-          <li><a href="#research"></a>
+          <li><a href="#research"><span>Research</span></a>
         </li>
-          <li><a href="#moodboard"></a>
+          <li><a href="#moodboard"><span>Moodboard</span></a>
         </li>
-          <li><a href="#ideation"></a>
+          <li><a href="#ideation"><span>Ideation</span></a>
         </li>
-          <li><a href="#finalimg"></a>
+          <li><a href="#finalimg"><span>Final Image</span></a>
         </li>
-          <li><a href="#usecase"></a>
+          <li><a href="#usecase"><span>Use Case</span></a>
         </li>
       </ul>
 </div>
