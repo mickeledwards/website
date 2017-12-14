@@ -30,3 +30,63 @@
 })();
 
 </script>
+
+<script>
+    (function($, undefined) {
+        $(document).ready(function() {
+            $('#hotspot-2014').hotspot({
+                'show_on' : "mouseover",
+                'responsive' : "on",
+            });
+            $('#hotspot-8231').hotspot({
+                'show_on' : "mouseover",
+                'responsive' : "on",
+            });
+            $('#hotspot-7334').hotspot({
+                'show_on' : "mouseover",
+                'responsive' : "on",
+            });
+        });
+    })(jQuery);
+</script>
+        <script type='text/javascript' src='assets/js/hotspot-map.js'></script>
+        <script>
+        ;(function (jQuery) {
+        "use strict";
+        jQuery(document).ready(function () {
+
+            //hotspot map - fix tooltip partially hidden because of overflow:hidden
+            jQuery('.hsmap_center').parents('.be-section').css('overflow', 'visible').parents('#hotspsotwrap').css('overflow', 'hidden');
+
+            //hotspot map - fix tooltip z-index
+            jQuery('.hsmap_center').parents('.be-row').addClass('be-row-hsmap');
+
+            jQuery('.hs-spot-object').click(function() {
+                if (jQuery(window).width() < 768) {
+                    var $fixed_tooltip;
+                    $fixed_tooltip = jQuery(this).parents('.hsmap_center').find('.hsmap_fixed_tooltip');
+                    $fixed_tooltip.html('<div class="fixed_tooltip_content">' + jQuery(this).find('.hs-tooltip').html() + '</div>');
+
+                    var scrollOffset = $fixed_tooltip.offset().top - (jQuery(window).height()-$fixed_tooltip.outerHeight() +10);
+                    if (scrollOffset > jQuery(window).scrollTop())
+                        jQuery("html, body").animate({ scrollTop: scrollOffset}, 250);
+                }
+            });
+
+
+        });
+
+    })(jQuery);
+
+        </script>
+
+        <script type='text/javascript' src='assets/js/turntable.min.js'></script>
+<script>
+
+
+$('#myTurntable').turntable({
+  axis: 'scroll',
+  scrollStart: 'bottom' // only necessary if axis = 'scroll'
+});
+
+</script>

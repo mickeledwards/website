@@ -1,20 +1,6 @@
-/* core classes */
-
-
-
-::-moz-selection {
-    background: $secondary-color;
-    color: white;
-}
-
-::selection {
-    background: $secondary-color;
-    color: white;
-}
-
 /* class white: set font color white */
 [class~="white"] {
-    color: white !important;
+    color: #ffffff !important;
 }
 /* class color: set font with secondary color */
 [class~="color"] {

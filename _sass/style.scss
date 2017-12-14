@@ -17,7 +17,7 @@ $primary-color-light: #444;
 $paragraph-color: #757575;
 $paragraph-color-light: #F6F6F6;
 $secondary-color: #527a99;
-$dark-background: #000;
+$dark-background: #080809;
 $light-background: #F6F6F6;
 $secondary-background: #527a99; //blue
 $lettering-color: #354dca;
@@ -48,8 +48,9 @@ $full: 1199px;
 @import 'print';
 
 /*page-specific parts*/
+@import 'home';
 @import 'diag';
-@import 'hotspot';
+@import 'hs-spot';
 @import 'contact';
 
 /*Vendor/addins*/
@@ -60,3 +61,4 @@ $full: 1199px;
 @import 'ionicons';
 @import 'fontawesome';
 @import 'sidenav';
+@import 'turntable';

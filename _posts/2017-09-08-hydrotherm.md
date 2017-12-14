@@ -1,5 +1,5 @@
 ---
-title: Hydrotherm Room Heater
+title: Hydrotherm Heater
 header:
   overlay_image: assets/images/hydrotherm/cover.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
@@ -13,21 +13,19 @@ layout: single
 
 <div class="fixed-side-navbar">
       <ul class="sidenav">
-          <li><a class="active" href="#brief"></a>
+          <li><a class="active" href="#intro"></a>
         </li>
-          <li><a href="#research"></a>
+           <li><a href="#form"></a>
         </li>
-          <li><a href="#moodboard"></a>
+          <li><a href="#isometric"></a>
         </li>
-          <li><a href="#ideation"></a>
-        </li>
-          <li><a href="#usecase"></a>
+          <li><a href="#desk"></a>
         </li>
       </ul>
 </div>
 
 
-<div id="brief" class="container-fluid coloralternate">
+<div id="intro" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -38,64 +36,77 @@ layout: single
 
 </div>
 <div class="col-md-6" markdown="block">
-    {% include gallery img='assets/images/hydrotherm/hydro1.jpg' alt = 'Moodboard' %}
+    {% include gallery img='assets/images/hydrotherm/hydro1.jpg' alt = 'vent1' %}
     
 </div>
 <div class="col-md-6" markdown="block">
-    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'Moodboard' %}
+    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
     
 </div>
 </div>
 </div>
 
-<div id="research" class="container-fluid coloralternate">
+<div id="form" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
-## Problem Finding and Research
-When looking at the typical days of the students interviewed, it was evident that they all shared a commonality of having problems sleeping, which included generally restless or late nights. From here, the problem statement of _**how might we improve the quality of sleep for an active college student**_ was found.
 
-From here, market research was performed, and a gap in the current market was found. The product being ideated on would be a sleep aid that both worked in the night to allow the user to fall asleep, as well as gently waking the user in the morning.
-<div class="col-md-8" markdown="block">
-{% include gallery img='assets/images/soft/colors.png'  alt = 'Research' %}
-</div>
-</div>
-</div>
-</div>
-
-<div id="moodboard" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
-<div class="col-md-8" markdown="block">
-{% include gallery img='assets/images/soft/moodboard.png' alt = 'Moodboard' %}
-</div>
-<div class="col-md-4" markdown="block">
- 
-## Mood Board
-A soft and organic form was focused on, not only to remove uncomfortable hard edges, but also to give a more soothing form. Three main forms were explored: a lobed shape that fits on the back of the neck, a coral shape that would allow airflow to the face when asleep and a pebble shape. The pebble shape was chosen, as it was the most versitile and pillow-like. From here, a series of tufted stitched semicircles were added to the top of this stone shape to emulate the ripples of a stone tossed into a pond.
-</div>
-</div>
-</div>
-<div id ="ideation" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
-<div class="col-md-4" markdown="block">
- 
 ## Form Development
-A soft and organic form was focused on, not only to remove uncomfortable hard edges, but also to give a more soothing form. Three main forms were explored: a lobed shape that fits on the back of the neck, a coral shape that would allow airflow to the face when asleep and a pebble shape. The pebble shape was chosen, as it was the most versitile and pillow-like. From here, a series of tufted stitched semicircles were added to the top of this stone shape to emulate the ripples of a stone tossed into a pond.
-</div>
-<div class="col-md-8" markdown="block">
-{% include gallery img='assets/images/soft/ideation.png' alt = 'Ideation' %}
-</div>
+
 
 </div>
+<div class="col-md-6" markdown="block">
+    {% include gallery img='assets/images/hydrotherm/grasshopper.png' alt = 'Grasshopper 3D' %}
+    
+</div>
+<div class="col-md-6" markdown="block">
+    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
+    
+</div>
+</div>
 </div>
 
-<div id="usecase" class="container-fluid coloralternate">
+<div id="isometric" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
-
-{% include gallery img='assets/images/soft/usecase.png' alt = 'Model in Use' %}
-
+    {% include gallery img='assets/images/hydrotherm/isom.png' alt = 'Isometric Views' %}
+    
 </div>
 </div>
 </div>
 
+
+<div id="desk" class="container-fluid coloralternate padding-topbottom-null ">
+    {% include gallery img='assets/images/hydrotherm/cover.jpg' alt = 'Example image 1' %}
+</div>
+
+<div class="container-fluid coloralternate">
+<div class="container row">
+<div id="myTurntable" class="turntable col-md-12">
+  <ul>
+    <li data-img-src="assets/images/hydrotherm/turntable/1.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/2.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/3.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/4.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/5.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/6.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/7.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/8.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/9.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/10.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/11.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/12.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/13.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/14.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/15.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/16.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/17.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/18.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/19.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/20.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/21.jpg"></li>
+    <li data-img-src="assets/images/hydrotherm/turntable/22.jpg"></li>
+  </ul>
+</div>
+</div>
+</div>

@@ -165,10 +165,10 @@ a {
     }
     &.btn {
         @extend %btn;
-        @include btn-theme($dark-background, $dark-background, white, $secondary-color, white);
+        @include btn-theme($dark-background, $dark-background, #ffffff, $secondary-color, #ffffff);
         &-alt {
             @extend %btn;
-            @include btn-theme(white, transparent, $secondary-color, $dark-background, white);
+            @include btn-theme(#ffffff, transparent, $secondary-color, $dark-background, #ffffff);
         }
 
     }
@@ -291,7 +291,7 @@ hr {
     background-color: $dark-background !important;
 }
 .black-background {
-    background-color: #222;
+    background-color: $dark-background;
 }
 .grey-background {
     background-color: $grey-background !important;
@@ -458,13 +458,6 @@ blockquote, q {
         top:5px;
         color: $secondary-color;
     }
-    cite {
-        font-style: italic;
-        &:before {
-            content: "\2014";
-            padding-right: 10px;
-        }
-    }
 
     @media screen and (max-width: $small) {
         padding-left: 18px;
@@ -474,9 +467,13 @@ blockquote, q {
         margin-top: 18px;
         font-style: normal;
         display: block;
-        font-size: 14px;
+        font-size: 1.5rem;
         font-weight: 300;
         color: $paragraph-color;
+        &:before {
+            content: "\2014";
+            padding-right: 10px;
+        }
 
         a {
             color: $paragraph-color;
@@ -595,4 +592,13 @@ i, cite, em {
         width: 100%;
         height: auto;
     }
+}
+::-moz-selection {
+    background: $secondary-color;
+    color: #ffffff;
+}
+
+::selection {
+    background: $secondary-color;
+    color: #ffffff;
 }

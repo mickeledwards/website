@@ -1,9 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include seo.html %}
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/branding/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/branding/favicon-16x16.png">
@@ -17,5 +15,4 @@
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
-
 </head>

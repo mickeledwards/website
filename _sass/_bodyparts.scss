@@ -11,6 +11,13 @@
     }
 }
 
+
+@media screen and (max-width: $medium) {
+    .maxheight{
+            max-height: 100vh;
+        }
+    }
+
 .container-fluid{
 	width: 100%;
     background-color: #ffffff;
@@ -56,10 +63,7 @@
     position: relative;
     z-index: 2;
     margin-bottom: 0px !important;
-    background-color: white;
-    & .coloralternate{
-        max-height: 100vh;
-    }
+    background-color: #ffffff;
     & .coloralternate:nth-child(2n+1){
         background-color: $light-background;
     }
@@ -70,14 +74,7 @@
             margin-bottom: 0;
         }
     }
-    &.header-static {
-        margin-top: -80px !important;
 
-        @media screen and (max-width: $small) {
-            margin-top: -60px !important;
-        }
-
-    }
     .sliderfull{
         width:100%;
         height:30em;
@@ -128,97 +125,8 @@
             }
         }
     }
-    #home-header {
+    .home-header {
 	    padding: 3em 50px 0 50px;
-    }
-
-    #projects {
-
-        &.page {
-            padding: 50px 25px;
-
-            @media screen and (max-width: $small) {
-                padding: 50px 5px;
-            }
-        }
-
-
-        a {
-            &:hover {
-                color:$primary-color;
-            }
-        }
-        .projects-items {
-
-
-            .single-item {
-                padding:0 25px;
-                @media screen and (max-width: $large) {
-                    margin-bottom: 50px;
-                }
-                .item {
-                    background-color: white;
-                    border-radius: 4px;
-                    transition: all .4s ease;
-                    margin: 25px 10px;
-
-                    img {
-                        max-width: 100%;
-                        display: block;
-                    }
-                    .content {
-                        padding: 25px;
-                        position: relative;
-                    }
-                    span {
-                        transition: opacity .4s ease;
-
-                        &.categories {
-                            color: $primary-color;
-                            font-family: $primary-font;
-                            font-size: 14px;
-                            line-height: 24px;
-                            letter-spacing: 0;
-                            display: inline-block;
-                            font-weight: 300;
-                        }
-                    }
-                    h3 {
-                        font-weight: 300;
-                        font-size: 18px;
-                        line-height: 22px;
-                        color: $primary-color;
-                        font-weight: 300;
-                        margin-bottom: 8px;
-                    }
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 0;
-                    }
-                    a {
-                        &.link {
-                            position: absolute;
-                            top:0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                        }
-                    }
-                }
-                &:hover {
-                    .item {
-                        @extend %shadow;
-                        transition: all .4s ease;
-
-                        h3 {
-                            color: $secondary-color;
-                            transition: color .4s ease;
-                        }
-                    }
-                }
-            }
-
-        }
     }
     .section-text {
         h3 {
