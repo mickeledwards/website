@@ -15,32 +15,7 @@
     display: inline-block;
     border-bottom: 1px solid rgba(117,117,117,0.05);
 }
-span {
-    &.dropcap {
-        position: relative;
 
-        &:before {
-            content: attr(data-dropcap);
-            font-weight: 700;
-            font-size: 120px;
-            line-height: 120px;
-            position: absolute;
-            font-family: $primary-font;
-            left: 0;
-            top: -31px;
-            color: $darkgrey-background;
-            -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            transform: translateX(-50%);
-            z-index: -1;
-
-            @media screen and (max-width: $small) {
-                left: 12px;
-            }
-        }
-    }
-}
 picture {
     &.section {
         &.right {
