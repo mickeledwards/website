@@ -8,14 +8,7 @@ header {
         border-bottom: 1px solid rgba(117,117,117,0.05);
         box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
     }
-    
-    > .container {
-        padding: 0 50px;
-        
-        @media screen and (max-width: $small) {
-            padding: 0 30px;
-        }
-    }
+
 }
 .navbar {
     height: 50px;
@@ -42,7 +35,7 @@ header {
 
 }
 
-#menu, #sidemenu {
+#sidemenu {
         position: relative;
         float: right;
         margin: 12px 0;
