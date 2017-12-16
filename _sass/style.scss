@@ -60,7 +60,6 @@ $full: 1199px;
 
 /*Parts of pages*/
 @import 'bodyparts';
-@import 'navigation';
 @import 'posts';
 @import 'footer';
 @import 'elements';
@@ -71,7 +70,7 @@ $full: 1199px;
 @import 'home';
 @import 'diag';
 @import 'hs-spot';
-@import 'contact';
+
 
 /*Vendor/addins*/
 @import 'vendor/magnific-popup';
@@ -81,5 +80,8 @@ $full: 1199px;
 /*Icons*/
 @import 'ionicons';
 @import 'fontawesome';
+@import 'navigation';
+@import 'contact';
 
 @import 'helpers';
+
