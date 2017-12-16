@@ -229,12 +229,12 @@ ins {
   text-decoration: none;
   border-bottom: 1px solid $primary-color;
   a {
-    color: inherit;
+    color: $secondary-color;
   }
 }
 
 del a {
-  color: inherit;
+  color: $secondary-color;
 }
 
 abbr[title],
