@@ -130,7 +130,7 @@
 		-khtml-opacity: .15;
 		opacity: .15;
 		z-index: 0;
-		border: 1px solid #ffffff;
+		border: 1px solid white;
 		transform: scale3d(1, 1, 1);
 		-moz-transform: scale3d(1, 1, 1);
 		-webkit-transform: scale3d(1, 1, 1);
@@ -236,7 +236,7 @@
 .hs-tooltip {
 	display: block;
 	background: #181818;
-	color: #ffffff;
+	color: white;
 	font: 11px/18px helvetica, tahoma, sans-serif;
 	padding: 15px;
 	position: relative;
@@ -267,7 +267,7 @@
 		margin-bottom: 0;
 	}
 	a {
-		color: #ffffff !important;
+		color: white !important;
 		text-decoration: underline !important;
 		&:hover {
 			text-decoration: none !important;

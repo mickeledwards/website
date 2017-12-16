@@ -1,4 +1,4 @@
-#contact-form, #search-form {
+#contact-form{
     .form-field {
         outline: inherit;
         border:none;
@@ -86,7 +86,7 @@
         border:none;
         border-radius: 0;
         font-weight: bold;
-        color: #ffffff;
+        color: white;
         position: relative;
         letter-spacing: 1px;
         margin: 0;
@@ -120,7 +120,7 @@
 
             &:hover {
                 background-color: $secondary-color;
-                color: #ffffff;
+                color: white;
                 transition: all .4s ease;
             }
 
@@ -129,17 +129,17 @@
             }
 
             &.white {
-                border: 1px solid #ffffff;
+                border: 1px solid white;
 
                 &:hover {
-                    background-color: #ffffff;
+                    background-color: white;
                     color: $secondary-color !important;
                     transition: all .4s ease;
                 }
             }
             &.active {
                 background-color: $secondary-color;
-                color: #ffffff;
+                color: white;
                 transition: all .4s ease;
 
                 &:hover {
@@ -294,7 +294,7 @@ span {
 }
 .box-form {
     padding: 36px;
-    background: #ffffff;
+    background: white;
     box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
 

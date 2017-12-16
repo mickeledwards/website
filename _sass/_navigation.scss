@@ -2,7 +2,7 @@ header {
     position: relative;
     z-index: 3;
     padding: 0px;
-    background-color: #ffffff;
+    background-color: white;
     
     &.border {
         border-bottom: 1px solid rgba(117,117,117,0.05);
@@ -116,6 +116,7 @@ header {
                                 position: absolute;
                                 top: 88px;
                                 opacity: 0;
+                                opacity: 0;
                                 left: -10px;
                                 min-width: 220px;
                                 width: auto;
@@ -142,7 +143,7 @@ header {
                                     }
 
                                     a {
-                                        color: #ffffff;
+                                        color: white;
                                         margin-left: 0;
                                         font-size: 14px;
                                         line-height: 30px;
@@ -272,7 +273,7 @@ header {
                                                 font-family: $primary-font;
 
                                                 @media screen and (max-width:$large) {
-                                                    color: #ffffff;
+                                                    color: white;
                                                 }
                                             }
                                         }
@@ -305,7 +306,7 @@ header {
                             font-size: 20px;
                             line-height: 30px;
                             font-family: $secondary-font;
-                            color:#ffffff;
+                            color:white;
                             margin-left: 0;
                         }
                     }
@@ -346,7 +347,7 @@ header {
                         li {
                             margin: 15px 0;
                             a {
-                                color: #ffffff;
+                                color: white;
                                 font-size: 20px;
                                 line-height: 30px;
                             }

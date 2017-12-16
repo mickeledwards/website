@@ -1,6 +1,6 @@
 /* class white: set font color white */
 [class~="white"] {
-    color: #ffffff !important;
+    color: white !important;
 }
 /* class color: set font with secondary color */
 [class~="color"] {
@@ -124,15 +124,6 @@
 }
 img[class*="normal"] {
     display: block;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        display: none;
-    }
-}
-img[class*="retina"] {
-    display: none;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        display: block;
-    }
 }
 img[class~="center"] {
     margin: 0 auto;

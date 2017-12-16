@@ -165,10 +165,11 @@ a {
     }
     &.btn {
         @extend %btn;
-        @include btn-theme($dark-background, $dark-background, #ffffff, $secondary-color, #ffffff);
+        @include btn-theme($dark-background, $dark-background, white, $secondary-color, white);
         &-alt {
             @extend %btn;
-            @include btn-theme(#ffffff, transparent, $secondary-color, $dark-background, #ffffff);
+            @include btn-theme(white, transparent, $secondary-color, $dark-background, white
+                );
         }
 
     }
@@ -595,10 +596,10 @@ i, cite, em {
 }
 ::-moz-selection {
     background: $secondary-color;
-    color: #ffffff;
+    color: white;
 }
 
 ::selection {
     background: $secondary-color;
-    color: #ffffff;
+    color: white;
 }
