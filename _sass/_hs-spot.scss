@@ -1,3 +1,18 @@
+
+%open-icon {
+  width: 40px;
+  height: 50px;
+    content: "";
+  display: inline-block;
+  -webkit-mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxOC42IDI4LjIiCgkgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTguNiAyOC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cjx0aXRsZT5waW48L3RpdGxlPgo8Zz4KCTx0aXRsZT5MYXllciAxPC90aXRsZT4KPC9nPgo8Zz4KCTx0aXRsZT5MYXllciAyPC90aXRsZT4KCTxwYXRoIGlkPSJzdmdfMSIgZD0iTTkuMywwQzQuMiwwLDAsNC4yLDAsOS4zYzAsMi4xLDEuMyw1LjQsNCwxMC4zQzYsMjMuMSw3LjksMjYsNy45LDI2LjFsMS40LDIuMWwxLjQtMi4xYzAuMS0wLjEsMi0zLDMuOS02LjQKCQljMi43LTQuOSw0LTguMiw0LTEwLjNDMTguNiw0LjIsMTQuNSwwLDkuMywweiIvPgo8L2c+Cjwvc3ZnPgo=") no-repeat;
+
+  mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxOC42IDI4LjIiCgkgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTguNiAyOC4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cjx0aXRsZT5waW48L3RpdGxlPgo8Zz4KCTx0aXRsZT5MYXllciAxPC90aXRsZT4KPC9nPgo8Zz4KCTx0aXRsZT5MYXllciAyPC90aXRsZT4KCTxwYXRoIGlkPSJzdmdfMSIgZD0iTTkuMywwQzQuMiwwLDAsNC4yLDAsOS4zYzAsMi4xLDEuMyw1LjQsNCwxMC4zQzYsMjMuMSw3LjksMjYsNy45LDI2LjFsMS40LDIuMWwxLjQtMi4xYzAuMS0wLjEsMi0zLDMuOS02LjQKCQljMi43LTQuOSw0LTguMiw0LTEwLjNDMTguNiw0LjIsMTQuNSwwLDkuMywweiIvPgo8L2c+Cjwvc3ZnPgo=") no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: $secondary-background;
+}
+
+
 .be-row-hsmap {
     &:hover {
         z-index: 5;
@@ -68,6 +83,9 @@
 	position: absolute;
 	cursor: pointer;
 	z-index: 1;
+    &:before {
+		@extend %open-icon;
+	}
 	.hs-spot-tooltip-outer {
 		position: absolute;
 		left: 0;
