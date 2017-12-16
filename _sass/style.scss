@@ -54,7 +54,6 @@ $full: 1199px;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 @import 'reset';
 @import 'mixins';
-@import 'helpers';
 @import 'grid';
 @import 'core';
 @import 'animations';
@@ -66,6 +65,7 @@ $full: 1199px;
 @import 'footer';
 @import 'elements';
 @import 'print';
+@import 'sidenav';
 
 /*page-specific parts*/
 @import 'home';
@@ -76,9 +76,10 @@ $full: 1199px;
 /*Vendor/addins*/
 @import 'vendor/magnific-popup';
 @import 'vendor/owl.carousel';
+@import 'turntable';
 
 /*Icons*/
 @import 'ionicons';
 @import 'fontawesome';
-@import 'sidenav';
-@import 'turntable';
+
+@import 'helpers';
