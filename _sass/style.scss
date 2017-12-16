@@ -4,7 +4,27 @@ $debug: false;
     img:not([alt]){
       border: 5px dashed #c00;
     }
+	[class*="container"] {
+	    padding-top: 1rem;
+	    padding-bottom: 1rem;
+	    background-color: rgba(86,61,124,.15);
+	    border: 1px solid rgba(86,61,124,.2);
+	}
+	[class*="container"]::before {
+    	content: "." attr(class)
+	}
+	 [class*="col-"] {
+	    padding-top: 1rem;
+	    padding-bottom: 1rem;
+	    background-color: rgba(86,61,124,.15);
+	    border: 1px solid rgba(86,61,124,.2);
+	}
+	[class*="col-"]::before {
+    	content: "." attr(class)
+	}
 }
+
+
 
 /*Vars*/
 $fontawesomesize: 2em;

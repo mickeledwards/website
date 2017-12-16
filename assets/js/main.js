@@ -172,13 +172,6 @@ var rellax = new Rellax('.rellax', {
 $(document).ready(function($) {
     "use strict";
 
-    var pagecontent = $('#page-content'),
-            pagefooter = $('#page-footer'),
-        pagefooterheight = pagefooter.height();
-    pagecontent.css({
-            "margin-bottom" : pagefooterheight + 50
-		});
-
         $(".post-gallery, .project-gallery").owlCarousel({
             center: true,
             items:1,
@@ -274,7 +267,8 @@ $('.hotspot').on('click', function(e){
 	})();
 
 	// vars & stuff
-	var support = {transitions : Modernizr.csstransitions},
+
+    var support = {transitions : Modernizr.csstransitions},
 		transEndEventNames = {'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend'},
 		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
 		onEndTransition = function(el, callback, propTest) {
@@ -590,3 +584,28 @@ $('.hotspot').on('click', function(e){
 	init();
 
 })(window);
+
+
+//side scroller
+    (function() {
+  'use strict';
+
+  var section = document.querySelectorAll(".coloralternate");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();

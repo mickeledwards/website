@@ -328,7 +328,7 @@ header {
                 right:-320px;
                 top:0;
                 left: inherit;
-                background-color: rgba( $dark-background, .8);
+                background-color: $dark-background;
                 height:100%;
                 z-index:998;
 

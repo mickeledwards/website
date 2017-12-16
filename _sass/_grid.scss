@@ -4,6 +4,43 @@
     grid-template-columns: repeat(12, 8.333333%);
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: 1rem;
+    &.no-margin {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.container-fluid{
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    &:nth-child(2n+1){
+        background-color: $light-background;
+    }
+}
+
+.container {
+    margin-right: auto !important;
+	margin-left: auto !important;
+	padding-top: 5em;
+	padding-bottom: 5em;
+
+ /*   @media screen and (max-width: 1093px) {
+        width: 100%;
+    }
+   @media screen and (min-width: $full) {
+     width: 90%;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 85%;
+    }
+    @media screen and (min-width: 1500px) {
+        width: 70%;
+    }
+    @media screen and (min-width: 1920px) {
+        width: 1350px;
+    }*/
 }
 
 .col, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
@@ -86,28 +123,4 @@
     .col-xl-11 {grid-column: span 11;}
     .col-xl-12 {grid-column: span 12;}
     .container {max-width: 1140px;}
-}
-
- @if ($debug) {
-	[class*="container"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="container"]::before {
-    	content: "." attr(class)
-	}
-	 [class*="col-"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="col-"]::before {
-    	content: "." attr(class)
-	}
-}
-.row {
-    margin-bottom: 1rem;
 }

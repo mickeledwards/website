@@ -1,18 +1,16 @@
-<footer id ="page-footer" class="site-footer">
-    <div class="row margin-null">
-        <div class="col-xs-12 text">
-            <center>{% if site.author.facebook %}
-                <a href="https://facebook.com/{{ site.author.facebook }}"><i class="fa fa-fw fa-facebook1" aria-hidden="true"></i> </a>
-            {% endif %}
-            {% if site.author.github %}
-                <a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> </a>
-            {% endif %}
-            {% if site.author.linkedin %}
-                <a href="http://linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i> </a>
-            {% endif %}
-            {% if site.author.tumblr %}
-                <a href="http://{{ site.author.tumblr }}"><i class="fa fa-fw fa-tumblr" aria-hidden="true"></i> </a></center>
-            {% endif %}
-        </div>
+<footer>
+    <div class="text">
+        {% if site.author.facebook %}
+            <a href="https://facebook.com/{{ site.author.facebook }}"><i class="fa fa-fw fa-facebook1" aria-hidden="true"></i> </a>
+        {% endif %}
+        {% if site.author.github %}
+            <a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> </a>
+        {% endif %}
+        {% if site.author.linkedin %}
+            <a href="http://linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i> </a>
+        {% endif %}
+        {% if site.author.tumblr %}
+            <a href="http://{{ site.author.tumblr }}"><i class="fa fa-fw fa-tumblr" aria-hidden="true"></i> </a>
+        {% endif %}
     </div>
 </footer>

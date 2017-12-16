@@ -1,11 +1,11 @@
+.home-header {
+    padding: 3em 50px;
+}
 .projects {
-    padding: 50px 25px;
-
+    padding: 0px 25px 50px;
     @media screen and (max-width: $small) {
-        padding: 50px 5px;
+        padding:0px, 50px 5px;
     }
-
-
     a {
         &:hover {
             color:$primary-color;

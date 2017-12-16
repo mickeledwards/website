@@ -11,62 +11,11 @@
     }
 }
 
-
-@media screen and (max-width: $medium) {
-    .maxheight{
-            max-height: 100vh;
-        }
-    }
-
-.container-fluid{
-	width: 100%;
-    background-color: #ffffff;
-    z-index: 1000;
-}
-.container {
-    margin-right: auto !important;
-	margin-left: auto !important;
-	padding-top: 5em;
-	padding-bottom: 5em;
-
-    @media screen and (max-width: 1093px) {
-        width: 100%;
-    }
-   @media screen and (min-width: $full) {
-     width: 90%;
-    }
-    @media screen and (min-width: 1366px) {
-        width: 85%;
-    }
-    @media screen and (min-width: 1500px) {
-        width: 70%;
-    }
-    @media screen and (min-width: 1920px) {
-        width: 1350px;
-    }
-}
-.row {
-    &.no-margin {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    &.first-section {
-        margin-top: 80px;
-
-        @media screen and (max-width: $small) {
-            margin-top: 60px;
-        }
-    }
-}
-#page-content {
+main {
     position: relative;
     z-index: 2;
     margin-bottom: 0px !important;
     background-color: #ffffff;
-    & .coloralternate:nth-child(2n+1){
-        background-color: $light-background;
-    }
     &.footer-fixed {
         margin-bottom: 390px;
 
@@ -125,9 +74,7 @@
             }
         }
     }
-    .home-header {
-	    padding: 3em 50px 0 50px;
-    }
+
     .section-text {
         h3 {
             margin-bottom: 25px;
@@ -148,93 +95,6 @@
         }
     }
 
-}
-#page-header {
-    @include background-cover;
-    position: relative;
-
-    .bg-img {
-        height: 350px;
-        @include background-cover;
-        position: relative;
-        border-radius: 4px;
-        transition: box-shadow .4s ease;
-        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
-        @media screen and (max-width: $small) {
-            padding: 30%;
-            height: auto;
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 75%;
-            bottom: 0;
-            border-radius: 4px 0 0 4px;
-            background-color: rgba(255, 255, 255, 0.68);
-            transition: right .8s ease;
-        }
-
-        &:hover {
-
-            transition: box-shadow .4s ease;
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
-
-            &:before {
-                right: 100%;
-                transition: right .8s ease;
-            }
-        }
-    }
-
-    span {
-        &.post-meta {
-            display: block;
-            color: $secondary-color;
-            font-family: $secondary-font;
-            font-size: 22px;
-            line-height: 26px;
-            display: inline-block;
-            font-weight: 300;
-            transition: color .4s ease;
-        }
-    }
-
-    .text {
-        padding: 75px 50px 0;
-        position: relative;
-        z-index: 1;
-
-        @media screen and (max-width: $small) {
-            padding: 75px 30px;
-        }
-
-        &.small {
-            padding: 75px 25px;
-
-            @media screen and (max-width: $small) {
-                padding: 75px 5px;
-            }
-        }
-    }
-
-    &.image {
-        text-align: right;
-
-        @media screen and (max-width: $large) {
-            text-align: left;
-        }
-
-        .col-md-4 {
-            .text {
-                @media screen and (max-width: $large) {
-                    padding-bottom: 0;
-                }
-            }
-        }
-    }
 }
 .content-section {
     .text {
