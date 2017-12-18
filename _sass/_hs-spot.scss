@@ -176,23 +176,26 @@
 }
 .hs-rect.visible {
 	.hs-spot-shape {
-		position: absolute;
-		left: -3px;
-		top: -3px;
 		z-index: 1;
-		width: 75%;
-		height: 75%;
-		background-color: $secondary-background;
-		border: 3px solid $secondary-background;
-		border-radius: 50% 50% 50% 0;
-		-moz-border-radius: 50% 50% 50% 0;
-		-webkit-border-radius: 50% 50% 50% 0;
-		transform:   scale(0.75, 1) rotate(-45deg);
-		-moz-transform:   scale(0.75, 1) rotate(-45deg);
-		-webkit-transform:   scale(0.75, 1) rotate(-45deg);
-		transition: all .25s cubic-bezier(.55, 0, .1, 1);
-		-moz-transition: all .25s cubic-bezier(.55, 0, .1, 1);
-		-webkit-transition: all .25s cubic-bezier(.55, 0, .1, 1);
+      background-color: #aaa;
+      background-image: linear-gradient(left, hsla(0,0%,100%,.2), hsla(0,0%,0%,.2));
+      display: block;
+      height: 2em;
+      left: 50%;
+      margin: -1em -.05em;
+      position: absolute;
+      top: 50%;
+      width: .1em;
+        &::after{
+             background-color: $secondary-background;
+  border-radius: 50%;
+  content: '';
+  height: 1em;
+  left: -.5em;
+  position: absolute;
+  top: -.75em;
+  width: 1em;
+        }
 	}
 	.hs-spot-shape-inner {
 		position: absolute;
@@ -215,11 +218,14 @@
 		-webkit-transition: all .25s cubic-bezier(.55, 0, .1, 1);
 	}
 	&:hover {
-		.hs-spot-shape {
-			border-width: 5px;
-			left: -5px;
-			top: -5px;
-		}
+        .hs-spot-shape{
+            transform: scale3d(2, 2, 2) translateY(-0.5em);;
+            -moz-transform: scale3d(2, 2, 2) translateY(-0.5em);;
+            -webkit-transform: scale3d(2, 2, 2) translateY(-0.5em);;
+                        transition: all .25s cubic-bezier(.55, 0, .1, 1);
+            -moz-transition: all .25s cubic-bezier(.55, 0, .1, 1);
+            -webkit-transition: all .25s cubic-bezier(.55, 0, .1, 1);
+        }
 		.hs-spot-shape-inner {
 			border-width: 7px;
 			left: -7px;
