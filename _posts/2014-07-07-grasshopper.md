@@ -3,8 +3,6 @@ title: Grasshopper
 header:
   overlay_image: "/assets/images/grasshopper/ghopperlattice.jpg"
   overlay_filter: rgba(0, 0, 0, 0.3)
-categories:
-- Post Formats
 preview: assets/images/grassh.png
 excerpt: Generative Design
 sliderfull:
@@ -16,26 +14,15 @@ sliderfull:
   title: Image 3 title caption
 ---
 
-<div class="fixed-side-navbar">
-      <ul class="sidenav">
-          <li><a class="active" href="#explained"></a>
-        </li>
-          <li><a href="#slider"></a>
-        </li>
-      </ul>
-</div>
 
-<div id = "explained" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## What is Grasshopper 3D?
 
 </div>
 </div>
-</div>
 
-<div id ="slider" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
@@ -43,8 +30,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </div>
 </div>
-</div>
 
-<div class="container-fluid" markdown="block">
 {% include sliderfull.html %}   
-</div>

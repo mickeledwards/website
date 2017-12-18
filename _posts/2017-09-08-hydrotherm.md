@@ -3,11 +3,9 @@ title: Hydrotherm Heater
 header:
   overlay_image: assets/images/hydrotherm/cover.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
-categories: []
 preview: assets/images/hydrotherm/preview.png
 excerpt: Home Goods Design
 layout: single
-
 ---
 
 

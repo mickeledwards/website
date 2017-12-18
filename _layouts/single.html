@@ -36,20 +36,19 @@ layout: default
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %} rellax" data-rellax-speed="-5"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %} z-index: -1;"
->
+  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %} z-index: -1;">
 </div>
 
   {% if page.header.overlay_color or page.header.overlay_image %}
-    <div class="row no-margin"  style="margin-bottom: 0 !important;">
+    <div class="row">
 		<div class="col-md-12">
-      <h1 class="page__title"><center>
-        {% if paginator and site.paginate_show_page_num %}
-          {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
-        {% else %}
-          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
-        {% endif %}
-     </center> </h1>
+          <h1 class="page__title center">
+            {% if paginator and site.paginate_show_page_num %}
+              {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
+            {% else %}
+              {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+            {% endif %}
+          </h1>
 		</div>
     </div>
   {% else %}
@@ -61,42 +60,25 @@ layout: default
 <!-- rest of body -->
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
-           <div class="container">
-               <div class="row no-margin" >
+           <div class="row" >
                 <div class="col-md-12 padding-leftright-null">
-                     <div class = "text">
+                     <div class = "text center">
                           {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-                        </div>
                     </div>
                 </div>
             </div>
-
     {% endunless %}
 
+<!--{{ content | toc }}-->
+<div class="contentwrap">
 {{ content }}
-
+</div>
 
 
 {% include post_pagination.html %}
-<svg class="hidden">
-			<defs>
-				<symbol id="icon-pin" viewBox="0 0 200 300">
-					<title>pin</title>
-					<path d="M100,21.78A85,85,0,0,0,15.18,106.6c0,18.85,12.08,49.52,36.76,93.9,17.48,31.36,34.7,57.49,35.47,58.6L100,278.22l12.59-19.11c0.69-1.11,18-27.25,35.47-58.6,24.76-44.38,36.76-75.06,36.76-93.9A85,85,0,0,0,100,21.78Z" />
-				</symbol>
-
-				<symbol id="icon-stack" viewBox="0 0 32 32">
-					<title>stack</title>
-					<path class="path1" d="M29.143 11.071l-13.143-6.571-13.143 6.571 13.143 6.571 13.143-6.571zM16 6.681l8.781 4.39-8.781 4.39-8.781-4.39 8.781-4.39zM26.51 14.684l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255zM26.51 19.612l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255z"></path>
-				</symbol>
-				<symbol id="icon-angle-up" viewBox="0 0 21 32">
-					<title>angle-up</title>
-					<path class="path1" d="M19.196 21.143q0 0.232-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path>
-				</symbol>
-				<symbol id="icon-angle-down" viewBox="0 0 21 32">
-					<title>angle-down</title>
-					<path class="path1" d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path>
-				</symbol>
-
-			</defs>
-		</svg>
+<svg class="hidden"><defs>
+    <symbol id="icon-pin" viewBox="0 0 200 300"><title>pin</title><path d="M100,21.78A85,85,0,0,0,15.18,106.6c0,18.85,12.08,49.52,36.76,93.9,17.48,31.36,34.7,57.49,35.47,58.6L100,278.22l12.59-19.11c0.69-1.11,18-27.25,35.47-58.6,24.76-44.38,36.76-75.06,36.76-93.9A85,85,0,0,0,100,21.78Z" /></symbol>
+    <symbol id="icon-stack" viewBox="0 0 32 32"><title>stack</title><path class="path1" d="M29.143 11.071l-13.143-6.571-13.143 6.571 13.143 6.571 13.143-6.571zM16 6.681l8.781 4.39-8.781 4.39-8.781-4.39 8.781-4.39zM26.51 14.684l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255zM26.51 19.612l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255z"></path></symbol>
+    <symbol id="icon-angle-up" viewBox="0 0 21 32"><title>angle-up</title><path class="path1" d="M19.196 21.143q0 0.232-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path></symbol>
+    <symbol id="icon-angle-down" viewBox="0 0 21 32"><title>angle-down</title><path class="path1" d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path></symbol>
+</defs></svg>

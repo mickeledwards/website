@@ -20,6 +20,11 @@ author:
   tumblr           : "blog.mickeledwards.com"
   twitter          :
 
+
+plugins:
+- jekyll-autoprefixer
+- jekyll-toc
+
 # Reading Files
 include:
   - .htaccess

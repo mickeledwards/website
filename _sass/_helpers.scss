@@ -593,3 +593,8 @@ img[class~="center"] {
         display: none;
     }
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+}

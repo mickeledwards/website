@@ -7,41 +7,11 @@ categories: []
 preview: assets/images/soft/preview.png
 excerpt: Soft Goods Project
 layout: single
-hotspot:
-- text: Internal Lights
-  left: 10
-  top: 34
-- text: Bluetooth Connected
-  left: 55
-  top: 15
-- text: Stone Shape
-  left: 45
-  top: 46
-- text: Rippled Surface
-  left: 20
-  top: 15
+toc: false
 ---
 
 
-<div class="fixed-side-navbar">
-      <ul class="sidenav">
-          <li><a class="active" href="#brief"><span>Brief</span></a>
-        </li>
-          <li><a href="#research"><span>Research</span></a>
-        </li>
-          <li><a href="#moodboard"><span>Moodboard</span></a>
-        </li>
-          <li><a href="#ideation"><span>Ideation</span></a>
-        </li>
-          <li><a href="#finalimg"><span>Final Image</span></a>
-        </li>
-          <li><a href="#usecase"><span>Use Case</span></a>
-        </li>
-      </ul>
-</div>
-
-
-<div id="brief" class="container-fluid coloralternate">
+<div class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
