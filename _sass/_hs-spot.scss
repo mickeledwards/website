@@ -10,6 +10,13 @@
   -webkit-mask-size: contain;
   mask-size: contain;
   background-color: $secondary-background;
+    @media (max-width: $medium) {
+
+        width: 30px;
+    }
+    @media screen and (min-width: $medium + 1) and (max-width: $large) {
+        width: 20px;
+    }
 }
 
 
@@ -18,14 +25,9 @@
         z-index: 5;
     }
 }
-/*.hsmap_center {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-//	padding: 0 250px;
-    max-width: 100%;
+.hsmap_center {
     text-align: center;
-}*/
+}
 .hs-wrap.responsive {
     width: auto;
     display: inline-block;
@@ -156,25 +158,6 @@
 		-moz-transition: all .25s cubic-bezier(.55, 0, .1, 1);
 		-webkit-transition: all .25s cubic-bezier(.55, 0, .1, 1);
 	}
-	.hs-spot-shape-inner {
-		background: #da0606;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width: 18px;
-		height: 18px;
-		margin: -9px 0 0 -9px;
-		z-index: 1;
-		border-radius: 30px;
-		-moz-border-radius: 30px;
-		-webkit-border-radius: 30px;
-		transform: scale3d(1, 1, 1);
-		-moz-transform: scale3d(1, 1, 1);
-		-webkit-transform: scale3d(1, 1, 1);
-		transition: all .25s cubic-bezier(.55, 0, .1, 1);
-		-moz-transition: all .25s cubic-bezier(.55, 0, .1, 1);
-		-webkit-transition: all .25s cubic-bezier(.55, 0, .1, 1);
-	}
 	&:hover {
 		.hs-spot-shape-inner {
 			transform: scale3d(1.4, 1.4, 1.4);
@@ -255,7 +238,7 @@
 	display: block;
 	background: #181818;
 	color: #fff;
-	font: 11px/18px helvetica, tahoma, sans-serif;
+	font: 11px/18px $secondary-font;
 	padding: 15px;
 	position: relative;
 	min-height: 18px;
@@ -263,22 +246,22 @@
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	h1 {
-		font: 14px/14px helvetica, tahoma, sans-serif;
+		font: 14px/14px $secondary-font;
 		margin-bottom: 10px;
 		font-weight: 700;
 	}
 	h2 {
-		font: 12px/12px helvetica, tahoma, sans-serif;
+		font: 12px/12px $secondary-font;
 		margin-bottom: 10px;
 		font-weight: 700;
 	}
 	h3 {
-		font: 11px/11px helvetica, tahoma, sans-serif;
+		font: 11px/11px $secondary-font;
 		margin-bottom: 10px;
 		font-weight: 700;
 	}
 	p {
-		font: 11px/18px helvetica, tahoma, sans-serif;
+		font: 11px/18px $secondary-font;
 		margin-bottom: 10px;
 	}
 	&:last-child {
@@ -517,7 +500,7 @@
 		display: block;
 	}
 }
-@media (max-width:767px) {
+@media (max-width: $medium) {
 	#hotspsotwrap {
 		.hsmap_center {
 			padding: 0;
@@ -547,7 +530,7 @@
 		}
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 920px) {
+@media screen and (min-width: $medium + 1) and (max-width: $large) {
 	.hsmap_center {
 		.hs-rect {
 			-webkit-transform: scale(2);
@@ -565,7 +548,7 @@
 		}
 	}
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: $small) {
 	.hsmap_center {
 		.hs-rect {
 			-webkit-transform: scale(2);
