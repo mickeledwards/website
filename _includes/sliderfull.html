@@ -5,11 +5,11 @@
 {% endif %}
 
 
-<div class="text small padding-topbottom-null" >
+<div class="padding-topbottom-null" >
     <div class="project-gallery dots-inside" >
         {% for img in sliderfull %}
             <div class="item">
-                          <figure class="sliderfull" style= "background-image:url({% if img.image_path contains "://" %} {{ img.image_path }} {% else %} {{ img.image_path | absolute_url }} {% endif %});"> </figure>
+                <figure class="sliderfull" style= "background-image:url({% if img.image_path contains "://" %} {{ img.image_path }} {% else %} {{ img.image_path | absolute_url }} {% endif %});"> </figure>
             </div>
         {% endfor %}
    </div>

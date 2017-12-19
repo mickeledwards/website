@@ -1,14 +1,13 @@
-{% if include.id %}
-  {% assign hotspot = page[include.id] %}
-{% else %}
-  {% assign hotspot = page.hotspot %}
-{% endif %}
-  
-
-<div class="hotspot-image">
-	<img class="hotspot-contain" src="{{include.hotimg}}"  alt = "{{ include.alt }}">
-	{% for pin in hotspot %}
-		<a class="hotspot" data-left="{{ pin.left }}" data-top="{{ pin.top }}" data-text="{{ pin.text }}">{{ pin.text }}</a>
-	{% endfor %}
-	<div class="hotspots-label"></div>
+<div class="hsmap_center">
+    <div id="{{ hotspot.id }}" class="hs-wrap responsive hs-loading">
+        <img src='{{ hotspot.hotimg }}'>
+        {% for pin in pins %}
+        <div class="hs-spot-object" data-type="rect" data-x="{{ pin.left }}" data-y="{{ pin.top }}" data-width="10" data-height="10" data-popup-position="left" data-visible="visible" data-tooltip-width="250" data-tooltip-auto-width="false">
+            <h4>{{ pin.title }}</h4>
+            <p>{{ pin.text }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="hsmap_fixed_tooltip">
+    </div>
 </div>

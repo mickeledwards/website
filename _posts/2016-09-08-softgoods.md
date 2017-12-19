@@ -7,7 +7,6 @@ categories: []
 preview: assets/images/soft/preview.png
 excerpt: Soft Goods Project
 layout: single
-toc: false
 ---
 
 
@@ -67,7 +66,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </div>
 
 <div id="finalimg" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block" style="margin-bottom:-100px;">
 {% include hotspot.html  id='hotspot' hotimg='assets/images/soft/stone.png' alt = 'Final model' %}
 </div>
