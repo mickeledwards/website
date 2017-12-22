@@ -14,21 +14,17 @@ sliderfull:
   title: Image 3 title caption
 ---
 
-
+<section id="intro">
 <div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## What is Grasshopper 3D?
-
-</div>
-</div>
-
-<div class="container row margin-topbottom-null" markdown="block">
-<div class="col-md-12" markdown="block">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 </div>
 </div>
 
-{% include sliderfull.html %}   
+<section id="slider">
+{% include sliderfull.html %}
+</section>

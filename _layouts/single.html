@@ -40,7 +40,7 @@ layout: default
 </div>
 
   {% if page.header.overlay_color or page.header.overlay_image %}
-    <div class="row">
+    <div class="row padding-topbottom-null">
 		<div class="col-md-12">
           <h1 class="page__title center">
             {% if paginator and site.paginate_show_page_num %}
@@ -58,7 +58,7 @@ layout: default
 {% endif %}
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
-           <div class="row" >
+           <div class="row padding-topbottom-null">
                 <div class="col-md-12 padding-leftright-null">
                      <div class = "text center">
                           {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
@@ -68,6 +68,12 @@ layout: default
     {% endunless %}
 
 <div class="contentwrap">
+    <div class="fixed-side-navbar">
+      <ul class="sidenav">
+         {% include toc.html html=content sanitize=true%}
+      </ul>
+</div>
+
 {{ content }}
 </div>
 

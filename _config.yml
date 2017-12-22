@@ -24,6 +24,7 @@ author:
 plugins:
 - jekyll-autoprefixer
 - jekyll-toc
+- jekyll-srcset
 
 # Reading Files
 include:
