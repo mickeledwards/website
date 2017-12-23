@@ -9,7 +9,8 @@ layout: single
 ---
 
 
-<section id="intro" class="row margin-topbottom-null" markdown="block">
+<section id="intro">
+<div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## What is a Hydrothermal Vent?
@@ -26,10 +27,13 @@ layout: single
     {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
     
 </div>
+</div>
 </section>
 
-<section id="form" class="row margin-topbottom-null" markdown="block">
+<section id="form">
+<div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
+
 
 ## Form Development
 
@@ -43,12 +47,15 @@ layout: single
     {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
     
 </div>
+</div>
 </section>
 
-<section id="isometric" class="container row margin-topbottom-null" markdown="block">
+<section id="isometric">
+<div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
     {% include gallery img='assets/images/hydrotherm/isom.png' alt = 'Isometric Views' %}
     
+</div>
 </div>
 </section>
 
