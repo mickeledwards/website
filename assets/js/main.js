@@ -135,7 +135,7 @@ var $ = jQuery.noConflict();
     });
     /*-------------------------------------------------*/
     /* =  Magnific popup
-    /*-------------------------------------------------*/
+    /*-------------------------------------------------
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
@@ -163,7 +163,7 @@ var $ = jQuery.noConflict();
         },
         closeBtnInside: false
     });
-
+*/
 
 var rellax = new Rellax('.rellax', {
           });
@@ -584,5 +584,3 @@ $('.hotspot').on('click', function(e){
 	init();
 
 })(window);
-
-

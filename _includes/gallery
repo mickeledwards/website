@@ -11,7 +11,8 @@
           {% if include.img contains "://" %} "{{ include.img }}"
           {% else %} "{{ include.img | absolute_url }}"
           {% endif %}
-          {% if img.title %}title="{{ img.title }}"{% endif %} class="lightbox-image" >
+          data-sub-html="<h4>{{ include.title }}</h4><p>{{ include.desc }}</p>"
+          class="lightbox-image" >
               <img src=
                 {% if img.image_path contains "://" %} "{{ include.img }}"
                 {% else %} "{{ include.img | absolute_url }}"

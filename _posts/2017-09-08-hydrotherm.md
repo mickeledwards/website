@@ -20,11 +20,11 @@ layout: single
 
 </div>
 <div class="col-md-6" markdown="block">
-    {% include gallery img='assets/images/hydrotherm/hydro1.jpg' alt = 'vent1' %}
+    {% include gallery img='assets/images/hydrotherm/hydro1.jpg' title="Hydrothermal Vent Example" alt = 'vent1' %}
     
 </div>
 <div class="col-md-6" markdown="block">
-    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
+    {% include gallery img='assets/images/hydrotherm/hydro2.jpg' title="Hydrothermal Vent Example" alt = 'vent2' %}
     
 </div>
 </div>
