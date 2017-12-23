@@ -6,18 +6,6 @@ preview: assets/images/kinect.png
 excerpt: Interactive Art
 ---
 
-<div class="fixed-side-navbar">
-      <ul class="sidenav">
-          <li><a class="active" href="#intro"></a>
-        </li>
-          <li><a href="#inspo"></a>
-        </li>
-          <li><a href="#diagram"></a>
-        </li>
-      </ul>
-</div>
-
-
 <div id="intro" class="container-fluid coloralternate">
 <div class="container row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">

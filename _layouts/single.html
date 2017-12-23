@@ -68,11 +68,8 @@ layout: default
     {% endunless %}
 
 <div class="contentwrap">
-    <div class="fixed-side-navbar">
-      <ul class="sidenav">
-         {% include toc.html html=content sanitize=true%}
-      </ul>
-</div>
+
+{% include toc.html html=content sanitize=true%}
 
 {{ content }}
 </div>
