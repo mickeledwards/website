@@ -1,8 +1,11 @@
+
 <div class="hsmap_center">
-    <div id="{{ hotspot.id }}" class="hs-wrap responsive hs-loading">
-        <img src='{{ hotspot.hotimg }}'>
-        {% for pin in pins %}
-        <div class="hs-spot-object" data-type="rect" data-x="{{ pin.left }}" data-y="{{ pin.top }}" data-width="10" data-height="10" data-popup-position="left" data-visible="visible" data-tooltip-width="250" data-tooltip-auto-width="false">
+    <div class="hs-wrap responsive hs-loading">
+        <img src='{{ include.hotimg }}'>
+
+
+        {% for pin in include.pins %} %}
+        <div class="hs-spot-object" data-type="rect" data-x="{{ pin.left }}" data-y="{{ pin.top }}" data-width="5" data-height="5" data-popup-position="{{ pin.position }}" data-visible="visible" data-tooltip-width="250" data-tooltip-auto-width="false">
             <h4>{{ pin.title }}</h4>
             <p>{{ pin.text }}</p>
         </div>

@@ -45,7 +45,7 @@
 
 
         {% unless count > 1 %}
-            {% capture my_toc %}"" {% endcapture %}
+            {% capture my_toc %} {% endcapture %}
         {% endunless %}
 
 {% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
