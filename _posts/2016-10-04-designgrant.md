@@ -135,9 +135,9 @@ There were a couple of different artists I looked at when
 			</div>
 		</div>				
 		<nav class="DiagNav DiagNav--hidden">
-			<button class="boxbutton DiagNav__button--up" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
-			<button class="boxbutton boxbutton--dark DiagNav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
-			<button class="boxbutton DiagNav__button--down" aria-label="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
+			<button class="boxbutton DiagNav__button--up" aria-label="Go up"><svg class="icon icon--angle-down" viewBox="0 0 21 32"><title>angle-up</title><path class="path1" d="M19.196 21.143q0 0.232-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path></svg></button>
+			<button class="boxbutton boxbutton--dark DiagNav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><title>stack</title><path class="path1" d="M29.143 11.071l-13.143-6.571-13.143 6.571 13.143 6.571 13.143-6.571zM16 6.681l8.781 4.39-8.781 4.39-8.781-4.39 8.781-4.39zM26.51 14.684l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255zM26.51 19.612l2.633 1.316-13.143 6.571-13.143-6.571 2.633-1.316 10.51 5.255z"></path></svg></button>
+			<button class="boxbutton DiagNav__button--down" aria-label="Go down"><svg class="icon icon--angle-down" viewBox="0 0 21 32"><title>angle-down</title><path class="path1" d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path></svg></button>
 		</nav>
 		<div class="contentdiag">
 			<div class="content__item" data-space="1.01">
@@ -185,3 +185,6 @@ There were a couple of different artists I looked at when
 		</div>
 	</div>
 </div>
+<svg class="hidden"><defs>
+    <symbol id="icon-pin" viewBox="0 0 200 300"><title>pin</title><path d="M100,21.78A85,85,0,0,0,15.18,106.6c0,18.85,12.08,49.52,36.76,93.9,17.48,31.36,34.7,57.49,35.47,58.6L100,278.22l12.59-19.11c0.69-1.11,18-27.25,35.47-58.6,24.76-44.38,36.76-75.06,36.76-93.9A85,85,0,0,0,100,21.78Z" /></symbol>
+</defs></svg>
