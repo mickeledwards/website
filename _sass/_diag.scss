@@ -391,12 +391,12 @@
     transition-delay: 0.4s;
   }
   .icon--pin {
-      fill: $secondary-background;
+      @extend %pin-icon;
     }
 }
 .pin--active .icon--pin {
-  stroke: #515158;
-  stroke-width: 15px;
+  transform: scale(1.5);
+  transition: all .25s cubic-bezier(.55, 0, .1, 1);
 }
 .icon--pin {
   width: 100%;

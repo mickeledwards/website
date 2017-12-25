@@ -144,7 +144,7 @@
         height: 0px;
       position: absolute;
         &::before{
-            @extend %open-icon;
+            @extend %pin-icon;
             }
 	}
 	.hs-spot-shape-inner {

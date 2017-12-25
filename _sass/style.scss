@@ -62,6 +62,7 @@ $full: 1199px;
 @import 'elements';
 @import 'print';
 @import 'sidenav';
+@import 'navigation';
 
 /*page-specific parts*/
 @import 'home';
@@ -73,15 +74,6 @@ $full: 1199px;
 @import 'vendor/lightgallery/lightgallery';
 @import 'vendor/owl.carousel';
 @import 'turntable';
-//@import 'lightgallery.min';
-
-/*Icons*/
-@import 'ionicons';
 @import 'fontawesome';
-@import 'navigation';
 
 @import 'helpers';
-
-.subheader{
-    display: block;
-}
