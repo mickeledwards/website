@@ -292,7 +292,7 @@ header {
                         }
 
                         a {
-                            font-size: 20px;
+                            font-size: 1.25rem;
                             line-height: 30px;
                             font-family: $secondary-font;
                             color:#fff;
@@ -337,7 +337,7 @@ header {
                             margin: 15px 0;
                             a {
                                 color: #fff;
-                                font-size: 20px;
+                                font-size: 1.25rem;
                                 line-height: 30px;
                             }
                             &:hover {
@@ -386,7 +386,7 @@ header {
 #menu-responsive-sidemenu{
         float: right;
         display: none;
-        padding-right: 20px;
+        padding-right: 1.25rem;
 
 
         @media screen and (max-width:$large) {
