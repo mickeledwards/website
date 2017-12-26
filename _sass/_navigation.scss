@@ -8,7 +8,6 @@ header {
         border-bottom: 1px solid rgba(117,117,117,0.05);
         box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
     }
-
 }
 .navbar {
     height: 50px;
@@ -18,23 +17,20 @@ header {
     background-color: transparent;
     border: none;
     margin-bottom: 0;
-        a {
-            &.navbar-brand {
-                float: left;
-                height: 50px;
-                .svg-brand {
-                    fill: $dark-background;
-                    height: 40px;
-                    top: 5px;
-                    left: 30px;
-                    position: absolute;
-                }
-
-            }
-        }
-
+	a {
+		&.navbar-brand {
+			float: left;
+			height: 50px;
+			.svg-brand {
+				fill: $dark-background;
+				height: 40px;
+				top: 5px;
+				left: 30px;
+				position: absolute;
+			}
+		}
+	}
 }
-
 #sidemenu {
         position: relative;
         float: right;

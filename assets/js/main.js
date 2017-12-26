@@ -206,7 +206,7 @@ let $ = jQuery.noConflict();
 
     jQuery(document).ready(() => {
         //hotspot map - fix tooltip partially hidden because of overflow:hidden
-        jQuery('.hsmap_center').parents('.be-section').css('overflow', 'visible').parents('#hotspsotwrap').css('overflow', 'hidden');
+        jQuery('.hsmap_center').parents('.be-section').css('overflow', 'visible').parents('#hotspotwrap').css('overflow', 'hidden');
         //hotspot map - fix tooltip z-index
         jQuery('.hsmap_center').parents('.be-row').addClass('be-row-hsmap');
         jQuery('.hs-spot-object').click(function() {
@@ -224,36 +224,6 @@ let $ = jQuery.noConflict();
 
 }(jQuery));
 
-/* -------------------------------------------------*/
-/* =  OWL Carousel */
-/* -------------------------------------------------*/
-
-$(document).ready(($) => {
-    "use strict";
-    $(".post-gallery, .project-gallery").owlCarousel({
-        center: true,
-        items: 1,
-        loop: true,
-        false: false,
-        autoplayHoverPause: false,
-        nav: true,
-        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
-    });
-    $(".image-carousel").owlCarousel({
-        center: true,
-        loop: true,
-        //animateOut: 'fadeOut',
-        //animateIn: 'fadeIn',
-        MouseDrag: true,
-        touchDrag: true,
-        items: 1,
-        autoplay: false,
-        autoplayHoverPause: false,
-        dots: true,
-        nav: true,
-        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
-    });
-});
 $(".hotspot").each(function () {
 
     let $this = $(this),
@@ -301,4 +271,35 @@ $(".hotspot").on("click", function (e) {
 }
     e.preventDefault();
 
+});
+
+/* -------------------------------------------------*/
+/* =  OWL Carousel */
+/* -------------------------------------------------*/
+
+$(document).ready(($) => {
+    "use strict";
+    $(".post-gallery, .project-gallery").owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        false: false,
+        autoplayHoverPause: false,
+        nav: true,
+        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
+    });
+    $(".image-carousel").owlCarousel({
+        center: true,
+        loop: true,
+        //animateOut: 'fadeOut',
+        //animateIn: 'fadeIn',
+        MouseDrag: true,
+        touchDrag: true,
+        items: 1,
+        autoplay: false,
+        autoplayHoverPause: false,
+        dots: true,
+        nav: true,
+        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
+    });
 });

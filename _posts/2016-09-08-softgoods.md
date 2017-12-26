@@ -76,7 +76,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </section>
 
 <section id="finalimg" class="row margin-topbottom-null" markdown="block">
-<div class="col-md-12" markdown="block" style="margin-bottom:-100px;">
+<div class="col-md-12" markdown="block" id = "hotspotwrap">
     {% include hotspot.html hotimg = "assets/images/soft/stone.png" pins=page.pins-finalsoft%}
 </div>
 </section>

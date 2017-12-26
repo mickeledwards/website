@@ -14,7 +14,7 @@
 main {
     position: relative;
     z-index: 2;
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
     background-color: #fff;
     &.footer-fixed {
         margin-bottom: 390px;
@@ -43,7 +43,7 @@ main {
                 padding-left: 20px;
 
                 @media screen and (max-width: $medium) {
-                    height: calc(50vh - 92px) !important;
+                    height: calc(50vh - 92px);
             }
         }
 

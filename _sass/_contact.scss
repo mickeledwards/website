@@ -133,7 +133,7 @@
 
                 &:hover {
                     background-color: #fff;
-                    color: $secondary-color !important;
+                    color: $secondary-color;
                     transition: all .4s ease;
                 }
             }
@@ -144,7 +144,7 @@
 
                 &:hover {
                     background-color: transparent;
-                    color: $secondary-color !important;
+                    color: $secondary-color;
                     transition: all .4s ease;
                 }
             }

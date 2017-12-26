@@ -1,31 +1,5 @@
 $debug: false;
-
- @if ($debug) {
-    img:not([alt]){
-      border: 5px dashed #c00;
-    }
-	[class*="container"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="container"]::before {
-    	content: "." attr(class)
-	}
-	 [class*="col-"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="col-"]::before {
-    	content: "." attr(class)
-	}
-}
-
-
-$primary-font: 'Montserrat', sans-serif;
+$primary-font: 'gt-america', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
 $alt-font: 'Roboto', serif;
@@ -48,7 +22,8 @@ $full: 1199px;
 
 
 /*Base*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
+@import 'gtamerica';
 @import 'reset';
 @import 'mixins';
 @import 'grid';
