@@ -54,12 +54,12 @@
   margin-top: -8px;
   width: 16px;
   height: 16px;
-  background: black;
-  border: 2px solid black;
+  background: $primary-color;
+  border: 2px solid $primary-color;
   border-radius: 10px;
 }
 .fixed-side-navbar .sidenav > li a {
-  color: black;
+  color: $primary-color;
   min-height: 32px;
   background: transparent;
   padding: 5px 45px 5px 25px;
