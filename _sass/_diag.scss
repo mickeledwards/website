@@ -462,7 +462,7 @@
   top: 58vmin;
   left: 16vmin;
 }
-@media screen and (max-width: 65.625em), screen and (max-height: 40.625em) {
+@media screen and (max-width: $large){
 	.diag-main {
 		width: 100vw;
 	}
