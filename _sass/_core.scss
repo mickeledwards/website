@@ -332,14 +332,14 @@ b, strong {
 dl {
     margin:25px 0;
     font-family: $secondary-font;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
 
     dt {
         text-transform: uppercase;
         letter-spacing: 2px;
         font-family: $primary-font;
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 22px;
     }
     dd {
@@ -357,8 +357,8 @@ ol {
     padding-left: 28px;
     font-family: $paragraph-font;
     color: $paragraph-color;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     letter-spacing: 1px;
     font-weight: 300;
     margin: 25px 0 25px 15px;
@@ -424,7 +424,7 @@ pre {
     overflow: hidden;
     border-radius: 0;
     font-family: $paragraph-font;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
     letter-spacing: 1px;
     color: $primary-color;
@@ -449,7 +449,7 @@ blockquote, q {
     margin: 50px 0;
     &::before{
         content: "\201C";
-        font-size: 3em;
+        font-size: 3rem;
         position: absolute;
         left: 10px;
         top:5px;
@@ -529,7 +529,7 @@ i, cite, em {
         position: absolute;
         display: block;
         color: $secondary-background;
-        font-size: 60px;
+        font-size: 3.75rem;
         text-align: center;
         line-height: 100%;
         top: 50%;
