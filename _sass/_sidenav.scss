@@ -44,7 +44,7 @@
 //}
 .fixed-side-navbar .sidenav > a.active a {
   background-color: transparent;
-  color: black;
+  color: $primary-color;
 }
 .fixed-side-navbar .sidenav > a.active a:before {
   content: '';
