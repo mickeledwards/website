@@ -63,12 +63,12 @@
     position: relative;
     margin-right:0.625rem;
     margin-left: 0.625rem;
-    margin-bottom:50%;
+    margin-bottom:0px;
     text-decoration: none !important;
     transition: all .4s ease;
     font-weight: 400;
-    @media screen and (max-width:$large) {
-        margin-bottom:0px;
+    @media screen and (min-width:$large) {
+        margin-bottom:50%;
     }
     &.disabled {
         text-shadow: none;

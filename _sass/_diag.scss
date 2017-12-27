@@ -14,7 +14,7 @@
 }
 
 .diag-main {
-  width: 100%;
+  width: 100vw;
   display: block;
   position: relative;
   top: 0;
@@ -462,18 +462,9 @@
   top: 58vmin;
   left: 16vmin;
 }
-@media screen and (max-width: $large){
+@media screen and (min-width: $large){
 	.diag-main {
-		width: 100vw;
-	}
-	.container-diagram {
-		overflow: hidden;
-	}
-	.container-diagram--overflow {
-		overflow: auto;
-	}
-	.content__item {
-		overflow: auto;
+		width: 100%;
 	}
 
 }

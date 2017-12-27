@@ -32,19 +32,20 @@ h2, h3 {
        font-family: $primary-font;
     }
 }
-h1 {
-    font-size: 4rem;
-    line-height: 4.75rem;
+h1, h1 span {
+
+    font-size: 2.125rem;
+    line-height: 2.75rem;
     font-weight: 700;
     font-family: $primary-font;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (min-width: $small) {
         font-size: 2.75rem;
         line-height: 3.375rem;
     }
-    @media screen and (max-width: $small) {
-        font-size: 2.125rem;
-        line-height: 2.75rem;
+    @media screen and (min-width: $smedium) {
+		font-size: 4rem;
+		line-height: 4.75rem;
     }
 
     &.heading {
@@ -67,26 +68,28 @@ h1 {
     }
 
 }
-h2 {
-    font-size: 2.625rem;
-    line-height: 2.8125rem;
+h2, h2 span {
 
-    @media screen and (max-width: 650px) {
-        font-size: 2.125rem;
+	font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-family: $primary-font;
+
+    @media screen and (min-width: $small) {
+        font-size: 2rem;
         line-height: 2.5rem;
     }
-    @media screen and (max-width: $small) {
-        font-size: 1.75rem;
-        line-height: 2.125rem;
+    @media screen and (min-width: $smedium) {
+		font-size: 2.5rem;
+		line-height: 2.75rem;
     }
 
     &.small {
-      font-size: 1.75rem;
-      line-height: 2.0625rem;
-
-        @media screen and (max-width: $small) {
-            font-size: 1.5rem;
-            line-height: 1.875rem;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+        @media screen and (min-width: $small) {
+			font-size: 1.75rem;
+      		line-height: 2.0rem;
         }
     }
 }
@@ -95,16 +98,18 @@ h3 {
     line-height: 2rem;
 
     &.big {
-        font-size: 2.625rem;
-        line-height: 2.8175rem;
+		font-size: 1.75rem;
+        line-height: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
 
-        @media screen and (max-width: 650px) {
-            font-size: 2.125rem;
-            line-height: 2.5rem;
+        @media screen and (min-width: $small) {
+            font-size: 2rem;
+            line-height: 2.25rem;
         }
-        @media screen and (max-width: $small) {
-            font-size: 1.75rem;
-            line-height: 2.125rem;
+        @media screen and (min-width: $smedium) {
+			font-size: 2.5rem;
+			line-height: 2.75rem;
         }
     }
 }
@@ -188,15 +193,10 @@ p {
         color: $paragraph-color;
         font-family: $paragraph-font;
         font-size: 1.25rem;
-        line-height: 1.875rem;
+        line-height: 1.75rem;
         max-width: 600px;
         letter-spacing: 0;
         margin: 0 auto;
-
-        @media screen and (max-width: 650px) {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-        }
 
         &.full {
             max-width: 1500px;
@@ -443,7 +443,7 @@ blockquote, q {
     position: relative;
     font-size: 1rem;
     line-height: 26px;
-    padding-left: 36px;
+    padding-left: 18px;
     font-family: $paragraph-font;
     color: $paragraph-color;
     font-weight: 400;
@@ -453,13 +453,16 @@ blockquote, q {
         content: "\201C";
         font-size: 3rem;
         position: absolute;
-        left: 10px;
-        top:5px;
+        left: 0px;
+        top:10px;
         color: $secondary-color;
     }
 
-    @media screen and (max-width: $small) {
-        padding-left: 18px;
+    @media screen and (min-width: $small) {
+        padding-left: 36px;
+		&::before{
+			left: 10px;
+		}
     }
 
     cite {
@@ -526,30 +529,31 @@ i, cite, em {
     }
 
     &:before {
+
+		font-size:1.75rem;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
         content:"\f487";
         font-family:"Ionicons";
         position: absolute;
         display: block;
         color: $secondary-background;
-        font-size: 3.75rem;
         text-align: center;
         line-height: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
         padding-left: 5px;
         z-index: 1;
         transition: background-color .4s ease;
         border-radius: 50%;
 
-        @media screen and (max-width:$small) {
-            font-size:1.75rem;
-            width: 45px;
-            height: 45px;
-            line-height: 45px;
+        @media screen and (min-width:$small) {
+            font-size:3.75rem;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
         }
     }
     &:after {

@@ -36,10 +36,10 @@ header {
         float: right;
         margin: 12px 0;
         width: 80%;
-        width: calc(100% - 150px);
+        width: auto;
 
-        @media screen and (max-width:$large) {
-            width: auto;
+        @media screen and (min-width:$large) {
+            width: calc(100% - 150px);
         }
         .menu-holder {
             text-align: right;

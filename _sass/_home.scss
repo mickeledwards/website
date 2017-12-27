@@ -2,9 +2,10 @@
     padding: 3em 50px;
 }
 .projects {
+	padding:0px, 50px 5px;
     padding: 0px 25px 50px;
-    @media screen and (max-width: $small) {
-        padding:0px, 50px 5px;
+    @media screen and (min-width: $small) {
+        padding: 0px 25px 50px;
     }
     a {
         &:hover {
@@ -14,8 +15,9 @@
 
     .single-item {
         padding:0 25px;
-        @media screen and (max-width: $large) {
-            margin-bottom: 50px;
+		margin-bottom: 50px;
+        @media screen and (min-width: $large) {
+            margin-bottom: 0px;
         }
         .item {
             background-color: #fff;

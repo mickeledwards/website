@@ -19,17 +19,16 @@
         }
 
         &.big {
-            font-size: 2.5rem;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-            padding-right: 70px;
-            line-height: 2.5rem;
-
-            @media screen and (max-width:$medium) {
-                font-size: 2.125rem;
-                padding-right: 35px;
-            }
+			font-size: 2rem;
+			padding-right: 35px;
         }
+		@media screen and (min-width:$medium) {
+				font-size: 2.5rem;
+				font-family: $primary-font;
+				letter-spacing: 1px;
+				padding-right: 70px;
+				line-height: 2.5rem;
+			}
 
     }
     label {
@@ -161,11 +160,10 @@
             right: 25px;
 
             i {
-                font-size: 3.75rem;
-
-                @media screen and (max-width:$medium) {
-                    font-size: 2.125rem;
-                }
+				font-size: 2rem;
+                @media screen and (min-width:$medium) {
+					font-size: 3.5rem;
+				}
             }
         }
     }
@@ -217,43 +215,39 @@
     }
     &.big {
         ::-webkit-input-placeholder {
-            font-size: 2.5rem;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-
-            @media screen and (max-width:$medium) {
-                font-size: 2.125rem;
-            }
+			font-size: 2rem;
+			font-family: $primary-font;
+			letter-spacing: 1px;
+            @media screen and (min-width:$medium) {
+				font-size: 2.5rem;
+			}
         }
 
         :-moz-placeholder {
-            font-size: 2.5rem;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-
-            @media screen and (max-width:$medium) {
-                font-size: 2.125rem;
-            }
+			font-size: 2rem;
+			font-family: $primary-font;
+			letter-spacing: 1px;
+            @media screen and (min-width:$medium) {
+				font-size: 2.5rem;
+			}
         }
 
         ::-moz-placeholder {
-            font-size: 2.5rem;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-
-            @media screen and (max-width:$medium) {
-                font-size: 2.125rem;
-            }
+			font-size: 2rem;
+			font-family: $primary-font;
+			letter-spacing: 1px;
+            @media screen and (min-width:$medium) {
+				font-size: 2.5rem;
+			}
         }
 
         :-ms-input-placeholder {
-            font-size: 2.5rem;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-
-            @media screen and (max-width:$medium) {
-                font-size: 2.125rem;
-            }
+            @media screen and (min-width:$medium) {
+				font-size: 2.5rem;
+				font-family: $primary-font;
+				letter-spacing: 1px;
+			}
+            font-size: 2rem;
         }
     }
 }
@@ -287,18 +281,14 @@ span {
         }
     }
 }
-.contact {
-    @media screen and (max-width: $large) {
-        padding: 0 45px;
-    }
-}
+
 .box-form {
-    padding: 36px;
+    padding: 25px;
     background: #fff;
     box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
 
-    @media screen and (max-width: $small) {
-        padding: 25px;
+    @media screen and (min-width: $small) {
+        padding: 36px;
     }
 }
