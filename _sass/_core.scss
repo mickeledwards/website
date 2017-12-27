@@ -543,7 +543,7 @@ i, cite, em {
         transition: background-color .4s ease;
         border-radius: 50%;
 
-        @media screen and (max-width:410px) {
+        @media screen and (max-width:$small) {
             font-size:1.75rem;
             width: 45px;
             height: 45px;
