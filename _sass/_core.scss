@@ -2,7 +2,8 @@ html {
   font-size: 100%;
 }
 body {
-    font: 100% $secondary-font;
+    font-family: $secondary-font;
+	font-size: 100%
     color: $primary-color;
     background-color: $darkgrey-background;
     -webkit-font-smoothing: antialiased;
@@ -21,7 +22,8 @@ body {
           box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-    font: 100% $secondary-font;
+    font-family: $secondary-font;
+	font-size: 100%
     color: $primary-color;
     font-weight: 300;
 }
