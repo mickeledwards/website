@@ -24,6 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </div>
 </div>
+</section>
 
 <section id="slider">
 {% include sliderfull.html %}

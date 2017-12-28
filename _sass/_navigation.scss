@@ -14,7 +14,7 @@ header {
     box-shadow: none;
     border-radius: 0;
     background-image: none;
-    background-color: transparent;
+    background-color: none;
     border: none;
     margin-bottom: 0;
 	a {
@@ -229,7 +229,7 @@ header {
                                 ul {
                                     &.sub-menu {
                                         position: relative;
-                                        background-color: transparent;
+                                        background-color: none;
                                         top: 0;
                                         left: inherit;
                                         right: inherit;

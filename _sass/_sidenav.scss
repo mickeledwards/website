@@ -43,7 +43,6 @@
 //  display: block;
 //}
 .fixed-side-navbar .sidenav > a.active a {
-  background-color: transparent;
   color: $primary-color;
 }
 .fixed-side-navbar .sidenav > a.active a:before {
@@ -61,7 +60,7 @@
 .fixed-side-navbar .sidenav > li a {
   color: $primary-color;
   min-height: 32px;
-  background: transparent;
+  background: none;
   padding: 5px 45px 5px 25px;
   border-right: none;
 }
@@ -78,7 +77,6 @@
   margin-top: -5px;
   width: 10px;
   height: 10px;
-    background: transparent;
     border: 1px solid $secondary-color;
     border-radius: 50%;
     opacity: 1;
@@ -99,15 +97,3 @@
           transform: scale(1.2);
 
 }
-
-//.fixed-side-navbar .sidenav > li a:hover {
-//  background-color: transparent;
-//  border-top-left-radius: 5px;
-//  border-bottom-left-radius: 5px;
-//  border-color: black;
-//  boder-right: 0;
-//}
-//.fixed-side-navbar .sidenav > li a:hover > span {
-//  color: black;
-//  display: block;
-//}

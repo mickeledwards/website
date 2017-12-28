@@ -78,7 +78,7 @@
 .owl-carousel {
   display: none;
   width: 100%;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: none;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
@@ -130,7 +130,7 @@
   min-height: 1px;
   float: left;
   -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -188,7 +188,7 @@
 .owl-theme .owl-controls {
     position: relative;
     text-align: center;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: none;
 }
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
@@ -215,7 +215,7 @@
     width: 12px;
     height: 12px;
     margin: 5px 7px;
-    background: transparent;
+    background: none;
     border: 1px solid $secondary-color;
     border-radius: 50%;
     opacity: 1;

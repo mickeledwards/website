@@ -110,7 +110,6 @@ img {
     }
     &:hover {
         &:before {
-            background-color: transparent;
             color: $secondary-color;
             opacity: .5;
             transition: all .4s ease;
