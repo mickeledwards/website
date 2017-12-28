@@ -296,9 +296,9 @@
 @media screen and (max-width:$medium) {
   #hotspotwrap {
     .hsmap_center {
-	.hs-rect {
-    	transform: scale(1.33333);
-    }
+		.hs-rect {
+			transform: scale(1.33333);
+		}
       padding: 0;
     }
     .hs-wrap.responsive {

@@ -46,10 +46,7 @@
 [class~="weight-700"] {
     font-weight: 700;
 }
-/* class font weight: font-weight 900 */
-[class~="weight-900"] {
-    font-weight: 900;
-}
+
 /* class vertical-align: vertical align */
 [class="vertical-align"] {
     @include vertical-align();

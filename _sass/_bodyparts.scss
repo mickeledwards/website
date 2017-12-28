@@ -17,10 +17,10 @@ main {
     margin-bottom: 0px;
     background-color: #fff;
     &.footer-fixed {
-        margin-bottom: 390px;
+        margin-bottom: 0;
 
-        @media screen and (max-width:$large) {
-            margin-bottom: 0;
+        @media screen and (min-width:$large) {
+            margin-bottom: 390px;
         }
     }
 
@@ -35,11 +35,11 @@ main {
         padding: 0;
 
         .bg-img {
-                height: calc(100vh - 183px);
+                height: calc(50vh - 92px);
                 padding-left: 20px;
 
-                @media screen and (max-width:$medium) {
-                    height: calc(50vh - 92px);
+                @media screen and (min-width:$medium) {
+                    height: calc(100vh - 183px);
             }
         }
 
@@ -82,10 +82,10 @@ main {
         }
         &.half {
             .col-md-6 {
-                padding-left: 0;
+                padding-left: 15px;
 
-                @media screen and (max-width:$large) {
-                    padding-left: 15px;
+                @media screen and (min-width:$large) {
+                    padding-left: 0;
                 }
             }
         }
@@ -94,40 +94,40 @@ main {
 }
 .content-section {
     .text {
-        padding: 50px;
+        padding: 50px 30px;
 
-        @media screen and (max-width:$xsmall) {
-            padding: 50px 30px;
+        @media screen and (min-width:$xsmall) {
+            padding: 50px;
         }
 
         &.small {
-            padding: 50px 25px;
+            padding: 50px 5px;
 
-            @media screen and (max-width:$xsmall) {
-                padding: 50px 5px;
+            @media screen and (min-width:$xsmall) {
+                padding: 50px 25px;
             }
         }
 
         &.first {
-            padding: 50px 18px 50px 50px;
-
-            @media screen and (max-width:$large) {
+            padding: 50px 30px;
+			@media screen and (min-width:$xsmall) {
                 padding: 50px;
             }
-            @media screen and (max-width:$xsmall) {
-                padding: 50px 30px;
+            @media screen and (min-width:$large) {
+                padding: 50px 18px 50px 50px;
             }
         }
 
         &.last {
-            padding: 50px 50px 50px 32px;
 
-            @media screen and (max-width:$large) {
+			padding: 50px 30px;
+			@media screen and (min-width:$xsmall) {
                 padding: 50px;
             }
-            @media screen and (max-width:$xsmall) {
-                padding: 50px 30px;
+            @media screen and (min-width:$large) {
+                padding: 50px 50px 50px 32px;
             }
+
         }
         p {
             &:last-of-type {
@@ -141,14 +141,15 @@ main {
     .bg-img {
         @include background-cover;
         transition: height .4s ease;
-
-        @media screen and (max-width:$medium) {
-            max-height: 375px;
+		max-height: 375px;
+        @media screen and (min-width:$medium) {
+            max-height: auto;
         }
 
         &.responsive {
-            @media screen and (max-width:$medium) {
-                max-height: none;
+			max-height: none;
+            @media screen and (min-width:$medium) {
+                max-height: auto;
             }
         }
 
@@ -173,10 +174,9 @@ main {
             }
             &.transparent {
                 &:after {
-                    background: rgba(34, 34, 34, 0);
-
-                    @media screen and (max-width:$full) {
-                        background: rgba(255, 255, 255, 0.85);
+					background: rgba(255, 255, 255, 0.85);
+                    @media screen and (min-width:$full) {
+                        background: rgba(34, 34, 34, 0);
                     }
                 }
             }
