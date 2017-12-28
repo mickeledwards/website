@@ -68,7 +68,7 @@
     transition: all .4s ease;
     font-weight: 400;
     @media screen and (min-width:$large) {
-        margin-bottom:50%;
+        margin-bottom:50px;
     }
     &.disabled {
         text-shadow: none;
