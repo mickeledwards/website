@@ -57,7 +57,7 @@
 }
 /* class vertical-align: vertical align over 991px */
 [class="vertical-align-lg"] {
-    @media screen and (min-width: $large) {
+    @media screen and (min-width:$large) {
         @include vertical-align();
         z-index: 3;
     }
@@ -134,7 +134,7 @@ img[class~="center"] {
     padding-top:235px !important;
     padding-bottom:75px !important;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width:$xsmall) {
         padding-top:180px !important;
     }
 }
@@ -248,7 +248,7 @@ img[class~="center"] {
     }
 }
 .padding-xs-top-null {
-    @media screen and (max-width:$small) {
+    @media screen and (max-width:$xsmall) {
         padding-top: 0 !important;
     }
 }
@@ -268,7 +268,7 @@ img[class~="center"] {
     }
 }
 .padding-xs-leftright-null {
-    @media screen and (max-width:$small) {
+    @media screen and (max-width:$xsmall) {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
@@ -284,27 +284,27 @@ img[class~="center"] {
     padding-bottom: 36px;
 }
 .padding-md-bottom-lg {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         padding-bottom: 75px !important;
     }
 }
 .padding-md-bottom {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         padding-bottom: 50px !important;
     }
 }
 .padding-md-top {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         padding-top: 50px !important;
     }
 }
 .padding-sm-bottom {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         padding-bottom: 25px !important;
     }
 }
 .padding-lg-top-small {
-    @media screen and (max-width: $full) {
+    @media screen and (max-width:$full) {
         padding-top: 18px !important;
     }
 }
@@ -312,22 +312,22 @@ img[class~="center"] {
     margin-bottom: 36px !important;
 }
 .margin-md-bottom {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         margin-bottom: 36px !important;
     }
 }
 .margin-sm-bottom {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         margin-bottom: 36px !important;
     }
 }
 .margin-xs-bottom {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width:$xsmall) {
         margin-bottom: 36px !important;
     }
 }
 .margin-xs-bottom-small {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width:$xsmall) {
         margin-bottom: 18px !important;
     }
 }
@@ -429,32 +429,32 @@ img[class~="center"] {
 
 /* text-align shortcodes */
 .text-md-left {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         text-align: left;
     }
 }
 .text-sm-left {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         text-align: left;
     }
 }
 .text-md-right {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         text-align: right;
     }
 }
 .text-sm-right {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         text-align: right;
     }
 }
 .text-md-center {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         text-align: center;
     }
 }
 .text-sm-center {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         text-align: center;
     }
 }
@@ -518,22 +518,22 @@ img[class~="center"] {
     overflow: hidden;
 }
 .hidden-lg {
-    @media screen and (max-width: $full) {
+    @media screen and (max-width:$full) {
         display: none !important;
     }
 }
 .hidden-md {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         display: none !important;
     }
 }
 .hidden-sm {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         display: none !important;
     }
 }
 .hidden-xs {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width:$xsmall) {
         display: none !important;
     }
 }
@@ -544,22 +544,22 @@ img[class~="center"] {
 }
 
 .height-auto-lg {
-    @media screen and (max-width: $full) {
+    @media screen and (max-width:$full) {
         height: auto !important;
     }
 }
 .height-auto-md {
-    @media screen and (max-width: $large) {
+    @media screen and (max-width:$large) {
         height: auto !important;
     }
 }
 .height-auto-sm {
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width:$medium) {
         height: auto !important;
     }
 }
 .height-auto-xs {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width:$xsmall) {
         height: auto !important;
     }
 }
@@ -574,7 +574,7 @@ img[class~="center"] {
     max-width: 70px;
     background-color: $light-background;
 
-    @media screen and (max-width:1350px){
+    @media screen and (max-width:$full){
         display: none;
     }
 }
@@ -589,7 +589,7 @@ img[class~="center"] {
     max-width: 70px;
     background-color: $light-background;
 
-    @media screen and (max-width:1350px){
+    @media screen and (max-width:$full){
         display: none;
     }
 }

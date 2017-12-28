@@ -38,7 +38,7 @@ main {
                 height: calc(100vh - 183px);
                 padding-left: 20px;
 
-                @media screen and (max-width: $medium) {
+                @media screen and (max-width:$medium) {
                     height: calc(50vh - 92px);
             }
         }
@@ -84,7 +84,7 @@ main {
             .col-md-6 {
                 padding-left: 0;
 
-                @media screen and (max-width: $large) {
+                @media screen and (max-width:$large) {
                     padding-left: 15px;
                 }
             }
@@ -96,14 +96,14 @@ main {
     .text {
         padding: 50px;
 
-        @media screen and (max-width: $small) {
+        @media screen and (max-width:$xsmall) {
             padding: 50px 30px;
         }
 
         &.small {
             padding: 50px 25px;
 
-            @media screen and (max-width: $small) {
+            @media screen and (max-width:$xsmall) {
                 padding: 50px 5px;
             }
         }
@@ -111,10 +111,10 @@ main {
         &.first {
             padding: 50px 18px 50px 50px;
 
-            @media screen and (max-width: $large) {
+            @media screen and (max-width:$large) {
                 padding: 50px;
             }
-            @media screen and (max-width: $small) {
+            @media screen and (max-width:$xsmall) {
                 padding: 50px 30px;
             }
         }
@@ -122,10 +122,10 @@ main {
         &.last {
             padding: 50px 50px 50px 32px;
 
-            @media screen and (max-width: $large) {
+            @media screen and (max-width:$large) {
                 padding: 50px;
             }
-            @media screen and (max-width: $small) {
+            @media screen and (max-width:$xsmall) {
                 padding: 50px 30px;
             }
         }
@@ -175,27 +175,27 @@ main {
                 &:after {
                     background: rgba(34, 34, 34, 0);
 
-                    @media screen and (max-width: $full) {
+                    @media screen and (max-width:$full) {
                         background: rgba(255, 255, 255, 0.85);
                     }
                 }
             }
         }
         &.responsive {
-            @media screen and (max-width: $medium) {
+            @media screen and (max-width:$medium) {
                 max-height: none;
             }
             .col-md-4 {
                 &:first-child {
                     .text {
-                        @media screen and (max-width: $large) {
+                        @media screen and (max-width:$large) {
                             padding: 60px 15px 30px 15px;
                         }
                     }
                 }
                 &:last-child {
                     .text {
-                        @media screen and (max-width: $large) {
+                        @media screen and (max-width:$large) {
                             padding: 30px 15px 60px 15px;
                         }
                     }

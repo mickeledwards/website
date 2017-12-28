@@ -288,7 +288,7 @@ span {
     box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
 
-    @media screen and (min-width: $small) {
+    @media screen and (min-width:$xsmall) {
         padding: 36px;
     }
 }

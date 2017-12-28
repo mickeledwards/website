@@ -4,7 +4,7 @@
 .projects {
 	padding:0px, 50px 5px;
     padding: 0px 25px 50px;
-    @media screen and (min-width: $small) {
+    @media screen and (min-width:$xsmall) {
         padding: 0px 25px 50px;
     }
     a {
@@ -16,7 +16,7 @@
     .single-item {
         padding:0 25px;
 		margin-bottom: 50px;
-        @media screen and (min-width: $large) {
+        @media screen and (min-width:$large) {
             margin-bottom: 0px;
         }
         .item {

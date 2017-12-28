@@ -293,9 +293,12 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width:$medium) {
   #hotspotwrap {
     .hsmap_center {
+	.hs-rect {
+    	transform: scale(1.33333);
+    }
       padding: 0;
     }
     .hs-wrap.responsive {
@@ -310,16 +313,5 @@
   }
   .hsmap_fixed_tooltip .fixed_tooltip_content {
     text-align: left;
-  }
-}
-
-@media screen and (max-width: $medium - 1px) {
-  .hsmap_center {
-    .hs-rect {
-      transform: scale(1.33333);
-    }
-    .hs-spot-tooltip-outer {
-      transform: scale(0.75);
-    }
   }
 }
