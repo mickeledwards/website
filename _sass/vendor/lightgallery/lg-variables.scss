@@ -2,15 +2,15 @@ $backdrop-opacity: 1 !default;
 $lg-toolbar-bg: rgba(0, 0, 0, 0.45) !default;
 $lg-border-radius-base: 2px !default;
 $lg-theme-highlight: $secondary-background;
-$lg-theme: #0D0A0A !default;
+$lg-theme: $light-background;
 
 // basic icon colours
-$lg-icon-bg: rgba(0, 0, 0, 0.45) !default;
-$lg-icon-color: #999 !default;
-$lg-icon-hover-color: #FFF !default;
+$lg-icon-bg: $secondary-background;
+$lg-icon-color: $secondary-background;
+$lg-icon-hover-color: $primary-color;
 
 // counter
-$lg-counter-color: #e6e6e6 !default;
+$lg-counter-color: $secondary-background;
 $lg-counter-font-size: 1rem !default;
 
 // Next prev icons
@@ -34,12 +34,6 @@ $zoom-transition-duration: 0.3s !default;
 $lg-sub-html-bg: rgba(0, 0, 0, 0.45) !default;
 $lg-sub-html-color: #EEE !default;
 
-// thumbnail toggle button
-$lg-thumb-toggle-bg: #0D0A0A !default;
-$lg-thumb-toggle-color: $lg-icon-color !default;
-$lg-thumb-toggle-hover-color: $lg-icon-hover-color !default;
-$lg-thumb-bg: #0D0A0A !default;
-
 // z-index
 $zindex-outer: 1050 !default;
 $zindex-progressbar: 1083 !default;
@@ -51,3 +45,4 @@ $zindex-pager: 1080 !default;
 $zindex-playbutton: 1080 !default;
 $zindex-item: 1060 !default;
 $zindex-backdrop: 1040 !default;
+

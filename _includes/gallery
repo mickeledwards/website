@@ -6,7 +6,7 @@
 
 
 
-<figure class="project-images">
+<figure class="{% if include.img contains ".png" %}pnglightbox{% else %}project-images{% endif %}">
       <a href=
           {% if include.img contains "://" %} "{{ include.img }}"
           {% else %} "{{ include.img | absolute_url }}"

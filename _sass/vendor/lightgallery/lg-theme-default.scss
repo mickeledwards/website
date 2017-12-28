@@ -1,9 +1,8 @@
 // default theme
 .lg-actions {
     .lg-next, .lg-prev {
-        background-color: $lg-next-prev-bg;
         border-radius: $lg-border-radius-base;
-        color: $lg-next-prev-color;
+        color: $secondary-background;
         cursor: pointer;
         display: block;
         font-size: 1.5rem;
@@ -95,7 +94,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: $lg-toolbar-bg;
 
     .lg-icon {
         color: $lg-toolbar-icon-color;
@@ -131,7 +129,6 @@
 
 // lightGallery title
 .lg-sub-html {
-    background-color: $lg-sub-html-bg;
     bottom: 0;
     color: $lg-sub-html-color;
     font-size: 1rem;
@@ -143,20 +140,20 @@
     z-index: $zindex-subhtml;
 
     h4 {
-        color: $light-background;
+        color: $secondary-background;
         margin: 0;
         font-weight: bold;
     }
 
     p {
-        color: $light-background;
+        color: $secondary-background;
         margin: 5px 0 0;
     }
 }
 
 // lg image counter
 #lg-counter {
-    color: $lg-icon-color;
+    color: $lg-counter-color;
     display: inline-block;
     font-size: $lg-counter-font-size;
     padding-left: 20px;

@@ -10,6 +10,7 @@ let $ = jQuery.noConflict();
     /* -------------------------------------------------*/
 
     $(".project-images").lightGallery({download: false});
+	$(".pnglightbox").lightGallery({download: false, addClass:"whitelightbox"});
 
     /* -------------------------------------------------*/
     /* =  Side Navigation */
