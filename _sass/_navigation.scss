@@ -200,10 +200,7 @@ header {
                     padding: 120px 100px 50px 100px;
                     width:100%;
                     text-align: center;
-
-                    @media screen and (max-width:$full) {
-                        display: block;
-                    }
+					display: block;
                     @media screen and (max-width:$xsmall) {
                         padding: 120px 50px;
                     }
@@ -260,10 +257,6 @@ header {
                                                 line-height: 22px;
                                                 text-transform: uppercase;
                                                 font-family: $primary-font;
-
-                                                @media screen and (max-width:$large) {
-                                                    color: #fff;
-                                                }
                                             }
                                         }
                                     }
