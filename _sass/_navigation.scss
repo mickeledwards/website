@@ -77,7 +77,7 @@ header {
                         color: $paragraph-color;
                         padding: 10px 0;
 
-                        @media screen and (min-width: $large) and (max-width: $full) {
+                        @media screen and (min-width: $large){
                             margin-left: 24px;
                         }
 
