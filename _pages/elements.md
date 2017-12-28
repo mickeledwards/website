@@ -57,8 +57,8 @@ Definition List Title
   4. List item four
 
 [Default Button](#){: .btn}
-[Btn Alt](#){: .btn-alt }
-[Btn Alt Shadow](#){: .btn-alt .shadow}
+[Btn Alt](#){: .btn-alt .btn }
+[Btn Alt Shadow](#){: .btn .btn-alt .shadow}
 
 
 ## HTML Tags

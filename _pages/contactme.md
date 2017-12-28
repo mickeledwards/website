@@ -51,7 +51,7 @@ layout: single
                         <div class="col-md-6 padding-leftright-null">
                             <div class="text small padding-topbottom-null">
                                 <div class="submit-area padding-onlytop-sm">
-                                    <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message" />
+                                    <input type="submit" id="submit-contact" class="btn btn-alt active shadow" value="Send Message" />
                                 </div>
                             </div>
                         </div>
