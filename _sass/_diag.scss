@@ -14,7 +14,7 @@
 }
 
 .diag-main {
-  width: 100vw;
+  width: 100%;
   display: block;
   position: relative;
   top: 0;
@@ -23,6 +23,8 @@
   right: 0px;
   overflow: hidden;
   height: 35em;
+	    padding-right: 15px;
+    padding-left: 15px;
 }
 .diag {
   position: relative;
@@ -397,8 +399,9 @@
     }
 }
 .pin--active .icon--pin {
-  transform: scale(1.5);
-  transition: all .25s cubic-bezier(.55, 0, .1, 1);
+	transform: scale(1.5);
+	transition: all .25s cubic-bezier(.55, 0, .1, 1);
+	transform-origin: 50% 100%;
 }
 .icon--pin {
   width: 100%;
