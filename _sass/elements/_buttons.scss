@@ -30,21 +30,12 @@ a.btn {
     border:1px solid $dark-background;
     background-color: #fff;
     color: $dark-background;
+	text-align: center;
     &:hover{
         background-color: $secondary-color;
         color: #fff;
         border-color:none;
         transition: all .4s ease;
-    }
-    &.disabled {
-        text-shadow: none;
-        pointer-events: none;
-        cursor: not-allowed;
-        &:hover,
-        &:focus {
-            color: $light-background;
-            text-decoration: none;
-        }
     }
 
     &.no-margin-bottom {
@@ -54,13 +45,47 @@ a.btn {
         margin-right: 8px;
     }
 }
-a.btn-alt {
-		border:none;
-		background-color: $secondary-color;
-		color: #fff;
-		&:hover{
-			background-color: $dark-background;
-        	color: #fff;
-        	transition: all .4s ease;
-    	}
+.btn-alt {
+	background-color: $secondary-color;
+	border: 1px solid $secondary-color;
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-family: $secondary-font;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.375rem;
+	margin: 0;
+	overflow: hidden;
+	outline: none;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all .4s ease;
+	@extend %shadow;
+	text-align: center;
+
+
+	&:hover {
+		background-color: transparent;
+		color: $secondary-color !important;
+		transition: all .4s ease;
+		border: 1px solid $secondary-color;
 	}
+}
+
+.disabled {
+        text-shadow: none;
+        pointer-events: none;
+        cursor: not-allowed;
+        &:hover,
+        &:focus {
+            color: $light-background;
+            text-decoration: none;
+        }
+    }

@@ -105,18 +105,17 @@ header {
                                 position: absolute;
                                 top: 88px;
                                 opacity: 0;
-                                opacity: 0;
                                 left: -10px;
                                 min-width: 220px;
                                 width: auto;
                                 text-align: left;
-                                background-color: $light-background;
                                 padding: 16px 6px;
                                 transition: all .4s ease;
 
                                 @media screen and (min-width:$large) {
                                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                                     border-radius: 4px;
+									background-color: $light-background;
                                 }
 
                                 li {

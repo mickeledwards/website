@@ -10,7 +10,7 @@ layout: single
 
 
 <section id="intro">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## What is a Hydrothermal Vent?
@@ -31,7 +31,7 @@ layout: single
 </section>
 
 <section id="form">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 
@@ -51,7 +51,7 @@ layout: single
 </section>
 
 <section id="isometric">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
     {% include gallery img='assets/images/hydrotherm/isom.png' alt = 'Isometric Views' %}
     

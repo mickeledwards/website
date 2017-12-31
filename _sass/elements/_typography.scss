@@ -406,5 +406,15 @@ textarea {
 }
 
 em {
-    font-style: italic;
+	font-style: italic;
+    &.number {
+        font-size: 5rem;
+        line-height: 5rem;
+        font-family: $primary-font;
+        font-weight: 600;
+        color: $paragraph-color-light;
+        float: left;
+        position: absolute;
+        z-index: 0;
+    }
 }

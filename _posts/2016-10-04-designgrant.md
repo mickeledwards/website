@@ -6,8 +6,8 @@ preview: assets/images/kinect.png
 excerpt: Interactive Art
 ---
 
-<div id="intro" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
+<section id="intro">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## Project Explaination
@@ -18,10 +18,10 @@ When I applied for this grant, I wanted to create an interactive sculptural piec
 
 </div>
 </div>
-</div>
+</section>
 
-<div id="inspo" class="container-fluid coloralternate">
-<div class="container row margin-topbottom-null" markdown="block">
+<section id="inspo">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-4" markdown="block">
 
 {% include gallery img='assets/images/grant/inspo.png'  alt = 'Pom Pom Mirror' %}
@@ -36,9 +36,9 @@ There were a couple of different artists I looked at when
 </div>
 
 </div>
-</div>
+</section>
 
-<div id="diagram" class="container-fluid coloralternate">
+<section id="diagram">
 	<div class="diag-main">
 		<div class="diag">
 			<div class="levels">
@@ -184,4 +184,4 @@ There were a couple of different artists I looked at when
 			</div>
 		</div>
 	</div>
-</div>
+</section>

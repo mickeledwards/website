@@ -28,19 +28,18 @@ $full: 1199px;
 @import 'reset';
 @import 'mixins';
 @import 'grid';
-@import 'core';
+@import 'elements';
 @import 'animations';
 
 /*Parts of pages*/
 @import 'bodyparts';
-@import 'posts';
 @import 'footer';
-@import 'elements';
 @import 'print';
 @import 'sidenav';
 @import 'navigation';
 
 /*page-specific parts*/
+@import '404';
 @import 'home';
 @import 'diag';
 @import 'hs-spot';

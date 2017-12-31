@@ -7,8 +7,7 @@ categories:
 permalink: elements
 layout: single
 ---
-<div class="coloralternate container-fluid">
-<div class="container row margin-topbottom-null" markdown="block">
+<div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 A variety of common markup showing how the theme styles them.
@@ -57,8 +56,8 @@ Definition List Title
   4. List item four
 
 [Default Button](#){: .btn}
-[Btn Alt](#){: .btn-alt .btn }
-[Btn Alt Shadow](#){: .btn .btn-alt .shadow}
+[Btn Alt](#){: .btn-alt }
+[Btn Alt Shadow](#){: .btn .shadow}
 
 
 ## HTML Tags
@@ -95,14 +94,14 @@ Preformatted Tag.
 This is some **bold text**.
 
 </div>
-</div>
 <div class="row margin-topbottom-null" markdown="block">
 <div class="col-md-12" markdown="block">
 
 YouTube video
 ------------
-
+<div class = "popup-youtube">
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/l2Of1-d5E5o?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Twitter
 -------

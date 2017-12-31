@@ -5,9 +5,8 @@
         width:100%;
         margin-bottom: 50px;
         padding: 10px;
-        font-family: $paragraph-font;
-        font-size: 0.875rem;
-        line-height: 0.875rem;
+        font-size: 1.25rem;
+        line-height: 1rem;
         color: $primary-color;
         border-bottom: 1px solid rgba(117,117,117,0.41);
         font-weight: 300;
@@ -22,11 +21,10 @@
 			padding-right: 35px;
         }
 		@media screen and (min-width:$medium) {
-				font-size: 2.5rem;
-				font-family: $primary-font;
+				font-size: 1.25rem;
+
 				letter-spacing: 1px;
-				padding-right: 70px;
-				line-height: 2.5rem;
+				line-height: 1.25rem;
 			}
 
     }
@@ -47,195 +45,5 @@
             padding: 12px 9px;
         }
     }
-    ::-webkit-input-placeholder {
-        font-family: $paragraph-font;
-        color: $primary-color-light;
-        font-size: 0.875rem;
-    }
 
-    :-moz-placeholder {
-        font-family: $paragraph-font;
-        color: $primary-color-light;
-        font-size:  0.875rem;
-    }
-
-    ::-moz-placeholder {
-        font-family: $paragraph-font;
-        color: $primary-color-light;
-        font-size:  0.875rem;
-    }
-
-    :-ms-input-placeholder {
-        font-family: $paragraph-font;
-        color: $primary-color-light;
-        font-size:  0.875rem;
-    }
-
-    #submit-contact {
-        padding: 0;
-        text-align: left;
-        font-size: 0.75rem;
-        line-height: 22px;
-        font-family: $primary-font;
-        text-transform: uppercase;
-        display: inline-block;
-        overflow: hidden;
-        outline: none;
-        border:none;
-        border-radius: 0;
-        font-weight: bold;
-        color: #fff;
-        position: relative;
-        letter-spacing: 1px;
-        margin: 0;
-        background-color: none;
-        transition: all .4s ease;
-
-        &:hover {
-            color: $primary-color;
-            transition: all .4s ease;
-        }
-    }
-    .form-button {
-        position: absolute;
-        width: auto;
-        right: 0;
-        top: -2px;
-
-        &.big {
-            top: 7px;
-            right: 25px;
-
-            i {
-				font-size: 2rem;
-                @media screen and (min-width:$medium) {
-					font-size: 3.5rem;
-				}
-            }
-        }
-    }
-    #msg {
-        color: #f54337;
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 26px;
-
-        &.error, &.success {
-            padding-top: 36px;
-        }
-    }
-
-    &.color {
-        ::-webkit-input-placeholder {
-            color: $secondary-color;
-        }
-
-        :-moz-placeholder {
-            color: $secondary-color;
-        }
-
-        ::-moz-placeholder {
-            color: $secondary-color;
-        }
-
-        :-ms-input-placeholder {
-            color: $secondary-color;
-        }
-    }
-    &.black {
-        ::-webkit-input-placeholder {
-            color: $primary-color;
-            font-weight: 400;
-        }
-        :-moz-placeholder {
-            color: $primary-color;
-            font-weight: 400;
-        }
-        ::-moz-placeholder {
-            color: $primary-color;
-            font-weight: 400;
-        }
-        :-ms-input-placeholder {
-            color: $primary-color;
-            font-weight: 400;
-        }
-    }
-    &.big {
-        ::-webkit-input-placeholder {
-			font-size: 2rem;
-			font-family: $primary-font;
-			letter-spacing: 1px;
-            @media screen and (min-width:$medium) {
-				font-size: 2.5rem;
-			}
-        }
-
-        :-moz-placeholder {
-			font-size: 2rem;
-			font-family: $primary-font;
-			letter-spacing: 1px;
-            @media screen and (min-width:$medium) {
-				font-size: 2.5rem;
-			}
-        }
-
-        ::-moz-placeholder {
-			font-size: 2rem;
-			font-family: $primary-font;
-			letter-spacing: 1px;
-            @media screen and (min-width:$medium) {
-				font-size: 2.5rem;
-			}
-        }
-
-        :-ms-input-placeholder {
-            @media screen and (min-width:$medium) {
-				font-size: 2.5rem;
-				font-family: $primary-font;
-				letter-spacing: 1px;
-			}
-            font-size: 2rem;
-        }
-    }
-}
-span {
-
-    &.contact-info {
-        font-family: $primary-font;
-        color: $primary-color;
-        font-size: 1rem;
-        line-height: 26px;
-        margin-right: 18px;
-        font-weight: 400;
-
-        a {
-            em {
-                color: $secondary-color;
-                transition: color .4s ease;
-            }
-
-            &:hover {
-                em {
-                    color: $primary-color;
-                    transition: color .4s ease;
-                }
-            }
-        }
-
-        em {
-            color: $paragraph-color;
-            font-weight: 300;
-        }
-    }
-}
-
-.box-form {
-    padding: 25px;
-    background: #fff;
-    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 2px;
-
-    @media screen and (min-width:$xsmall) {
-        padding: 36px;
-    }
 }
