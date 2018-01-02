@@ -5,20 +5,18 @@ layout: default
 <div class="home-header">
     <h1><span class="grey-dark">Mickel Edwards.</span><br>Industrial Designer<span class="color">.</span></h1>
 </div>
-<section class="projects">
-    <div class="row">
-        {% for post in site.posts %}
-                <div class="single-item col-lg-4 col-md-6 col-s-12">
-                    <a href="{{ post.url | absolute_url }}">
-                        <div class="item">
-                            <img src="{{ post.preview }}" alt = "{{ post.title }}">
-                            <div class="content">
-                              <h3>{{ post.title }}</h3>
-                              <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        {% endfor %}
-    </div>
+<section class="projects row">
+	{% for post in site.posts %}
+			<div class="single-item col-lg-4 col-md-6 col-s-12">
+				<a href="{{ post.url | absolute_url }}">
+					<div class="item">
+						<img src="{{ post.preview }}" alt = "{{ post.title }}">
+						<div class="content">
+						  <h3>{{ post.title }}</h3>
+						  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+						</div>
+					</div>
+				</a>
+			</div>
+	{% endfor %}
 </section>

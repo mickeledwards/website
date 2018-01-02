@@ -20,7 +20,6 @@
         Output:
             An unordered list representing the table of contents of a markdown block. This snippet will only generate the table of contents and will NOT output the markdown given to it
 
-
     {% endcomment %}
     {% capture my_toc %}{% endcapture %}
     {% assign nodes = include.html | split: '<section id="' %}
