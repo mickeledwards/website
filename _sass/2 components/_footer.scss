@@ -1,4 +1,4 @@
-footer, .footer {
+˝footer, .footer {
     background-color: $darkgrey-background;
     a:hover{
         color: $secondary-color;
@@ -8,6 +8,10 @@ footer, .footer {
 
     .text {
         padding: 25px;
+		span{
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+		}
     }
 
 }

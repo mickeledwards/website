@@ -27,7 +27,26 @@ $full: 1199px;
 
 @import 'reset';
 @import 'utilities/utilities';
-@import '1 elements/elements';
-@import '2 components/components';
-@import '3 pages/pages';
-@import '4 vendor/vendor';
+
+@import '1 elements/iconfont';
+@import '1 elements/buttons';
+@import '1 elements/typography';
+@import '1 elements/grid';
+@import '1 elements/animations';
+@import '1 elements/image';
+
+@import '2 components/bodyparts';
+@import '2 components/diag';
+@import '2 components/footer';
+@import '2 components/hs-spot';
+@import '2 components/navigation';
+@import '2 components/hero';
+@import '2 components/sidenav';
+@import '2 components/turntable';
+
+@import '3 pages/404';
+@import '3 pages/contact';
+@import '3 pages/home';
+
+@import '4 vendor/lightgallery/lightgallery';
+@import '4 vendor/owl.carousel';

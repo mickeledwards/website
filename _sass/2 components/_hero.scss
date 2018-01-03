@@ -1,0 +1,58 @@
+.page__hero {
+  position: relative;
+    margin-top: -51px;
+
+
+  &--overlay {
+    position: relative;
+    padding: 10em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+      margin-top: -51px;
+
+    a {
+      color: #fff;
+    }
+
+    .wrapper {
+      padding-left: 1em;
+      padding-right: 1em;
+
+      @media screen and (min-width:$full) {
+        max-width: $full;
+      }
+    }
+
+
+    .page__lead {
+      max-width: $medium;
+
+    }
+  }
+}
+
+.page__title,
+.page__meta,
+.page__lead,
+.btn {
+      color: #fff;
+    margin-top: -3em;
+	text-align: center;
+
+}
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+
+
+  @media screen and (min-width:$large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

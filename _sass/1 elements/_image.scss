@@ -1,6 +1,3 @@
-figure {
-  margin: 0;
-}
 picture {
     &.section {
         &.right {
@@ -61,4 +58,80 @@ table {
         padding: 15px;
         border: 1px solid $darkgrey-background;
     }
+}
+
+
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%; /* part 1: Set a maximum relative to the parent*/
+  width: auto\9; /* IE7-8 need help adjusting responsive images*/
+  height: auto; /* part 2: Scale the height according to the width, otherwise you get stretching*/
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+figure {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2em 0;
+
+  img,
+  iframe,
+  .fluid-width-video-wrapper {
+    margin-bottom: 1em;
+  }
+
+
+  > a {
+    display: block;
+  }
+}
+
+.align-left {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (min-width:$xsmall) {
+		float: left;
+		margin-right: 1em;
+	}
+}
+.full-bleed{
+	overflow: hidden;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	img{
+		background-size: cover;
+	}
+}
+
+/* image align right */
+
+.align-right {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (min-width:$xsmall) {
+		float: right;
+		margin-left: 1em;
+  }
+}
+
+/* image align center */
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

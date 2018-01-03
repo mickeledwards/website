@@ -286,7 +286,7 @@ $(document).ready(($) => {
         false: false,
         autoplayHoverPause: false,
         nav: true,
-        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
+        navText: ['<span><i class="icon-chevron-left"></i></span>', '<span><i class="icon-chevron-right"></i></span>']
     });
     $(".image-carousel").owlCarousel({
         center: true,
@@ -300,6 +300,6 @@ $(document).ready(($) => {
         autoplayHoverPause: false,
         dots: true,
         nav: true,
-        navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>', '<span><i class="icon ion-ios-arrow-right"></i></span>']
+        navText: ['<span><i class="icon-chevron-left"></i></span>', '<span><i class="icon-chevron-right"></i></span>']
     });
 });

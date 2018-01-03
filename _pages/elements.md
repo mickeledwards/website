@@ -7,7 +7,7 @@ categories:
 permalink: elements
 layout: single
 ---
-<div class="row margin-topbottom-null" markdown="block">
+<div class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
 A variety of common markup showing how the theme styles them.
@@ -92,10 +92,6 @@ Preformatted Tag.
 </pre>
 
 This is some **bold text**.
-
-</div>
-<div class="row margin-topbottom-null" markdown="block">
-<div class="col-md-12" markdown="block">
 
 YouTube video
 ------------
@@ -188,3 +184,6 @@ And now we're going to shift things to the **right align**. Again, there should 
 In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah --- Just like that. It never felt so good to be right.
 
 And that's a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!
+
+</div>
+</div>
