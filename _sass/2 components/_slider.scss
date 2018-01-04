@@ -1,0 +1,114 @@
+.sliderfull{
+	width:100%;
+	min-height:30em;
+	figure{
+		height: 100%;
+		width: 100%;
+		background-size:cover;
+		background-position:center center;
+		background-repeat:no-repeat;
+	}
+}
+
+.image-carousel {
+    .owl-controls {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        img {
+            transition: all .4s ease .4s;
+        }
+
+        .owl-nav {
+            @include vertical-align(absolute);
+            left: 0;
+            right: 0;
+
+            .owl-prev, .owl-next {
+                width: 50%;
+                float: left;
+
+                &:hover {
+
+                    span {
+                        background-color: $dark-background;
+                        transition: all .4s ease;
+                    }
+                }
+
+                span {
+                    height: 40px;
+                    width: 40px;
+                    background-color: $secondary-color;
+                    color: white;
+                    display: block;
+                    border-radius: 0 4px 4px 0;
+                    text-align: center;
+                    transition: all .4s ease;
+                }
+                i {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            .owl-next {
+
+                span {
+                    float: right;
+                    border-radius: 4px 0 0 4px;
+                }
+            }
+        }
+        .owl-dots {
+            position: absolute !important;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+
+            .owl-dot {
+                span {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &.not-nav {
+        .owl-controls {
+            .owl-nav {
+                display: none;
+            }
+        }
+    }
+    &.dots-outside {
+        .owl-controls {
+            position: relative!important;
+            top: inherit;
+            bottom: inherit;
+            left: inherit;
+            right: inherit;
+            margin-top: 60px;
+
+            .owl-dots {
+                bottom: 0;
+            }
+        }
+    }
+    &.dark-dots {
+        .owl-controls {
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        background-color: $primary-color;
+
+                        &.active {
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,3 @@
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-}
 .icon {
   display: block;
   height: 1em;
@@ -39,11 +32,6 @@
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-.surroundings {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 .levels {
   position: absolute;
   top: 50%;
@@ -56,7 +44,7 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.surroundings, .levels {
+.levels {
   -webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
   transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
 }
@@ -278,7 +266,6 @@ text-align: center;
   margin: 0;
   padding: 0 0 0.25em 0;
   pointer-events: none;
-  font-weight: normal;
   opacity: 0;
   -webkit-transform: translate3d(0, -3em, 0) translate3d(0, -100%, 0);
   transform: translate3d(0, -3em, 0) translate3d(0, -100%, 0);

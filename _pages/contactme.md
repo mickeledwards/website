@@ -4,7 +4,7 @@ header:
   overlay_image: "/assets/images/contact.jpg"
   overlay_filter: rgba(0, 0, 0, 0.3)
 permalink: contactme
-layout: single
+layout: page
 ---
 
 <section class="row">

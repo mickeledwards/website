@@ -1,4 +1,16 @@
 
+body {
+    position: relative;
+    background: $darkgrey-background;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(12, 8.333333%);
@@ -6,6 +18,7 @@
 	padding-top: 5em;
 	padding-bottom: 5em;
 }
+
 
 .contentwrap{
     width: 100%;

@@ -27,11 +27,10 @@ pins-finalsoft:
 
 >### how might we improve the quality of sleep for an active college student?
 
-
 </div>
 </section>
 
-<section id="research" class="row margin-topbottom-null" markdown="block">
+<section id="research" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## Problem Finding and Research
@@ -44,9 +43,9 @@ From here, market research was performed, and a gap in the current market was fo
 </section>
 
 
-<section id="moodboard" class="row margin-topbottom-null" markdown="block">
+<section id="moodboard" class="row" markdown="block">
 
-<div class="col-md-12 margin-topbottom-null" markdown="block">
+<div class="col-md-12" markdown="block">
 
 ## Mood Board
 
@@ -60,8 +59,8 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </div>
 </section>
 
-<section id ="ideation" class="row margin-topbottom-null" markdown="block">
-<div class="col-md-12 margin-topbottom-null" markdown="block">
+<section id ="ideation" class="row" markdown="block">
+<div class="col-md-12" markdown="block">
 
 ## Form Development
 </div>
@@ -75,13 +74,13 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 </div>
 </section>
 
-<section id="finalimg" class="row margin-topbottom-null" markdown="block">
+<section id="finalimg" class="row" markdown="block">
 <div class="col-md-12" markdown="block" id = "hotspotwrap">
     {% include hotspot.html hotimg = "assets/images/soft/stone.png" pins=page.pins-finalsoft%}
 </div>
 </section>
 
-<section id="usecase" class="row margin-topbottom-null" markdown="block">
+<section id="usecase" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
 {% include gallery img='assets/images/soft/usecase.png' alt = 'Model in Use' %}

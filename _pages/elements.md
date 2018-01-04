@@ -5,7 +5,7 @@ header:
 categories:
 - Markup
 permalink: elements
-layout: single
+layout: page
 ---
 <div class="row" markdown="block">
 <div class="col-md-12" markdown="block">
@@ -99,12 +99,6 @@ YouTube video
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/l2Of1-d5E5o?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Twitter
--------
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🎨 Finally got around to adding all my <a href="https://twitter.com/procreateapp">@procreateapp</a> creations with time lapse videos <a href="https://t.co/1nNbkefC3L">https://t.co/1nNbkefC3L</a> <a href="https://t.co/gcNLJoJ0Gn">pic.twitter.com/gcNLJoJ0Gn</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/662678050795094016">November 6, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 The preferred way of using images is placing them in the `/assets/images/` directory and referencing them with an absolute path. Prepending the filename with `{% raw %}{{ site.url }}{{ site.baseurl }}/assets/images/{% endraw %}` will make sure your images display properly in feeds and such.
 
@@ -115,7 +109,6 @@ Standard image with no width modifier classes applied.
 
 Photo with Caption
 ------------------
-
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -141,7 +134,7 @@ And now for a **massively large image**. It also has **no alignment**.
 
 The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-300x200.jpg){: .align-right}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-300x200.jpg){: .align-right.half}
 
 And now we're going to shift things to the **right align**. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
 
@@ -174,9 +167,9 @@ And now for a **massively large image**. It also has **no alignment**.
 
 The figure element above has an inline style of `width: 1200px` set which should break it outside of the normal content flow.
 
-<figure style="width: 300px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-300x200.jpg" alt="">
-  <figcaption>Feels good to be right all the time.</figcaption>
+<figure class="align-left third">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-150x150.jpg" alt="">
+  <figcaption>Itty-bitty caption.</figcaption>
 </figure> 
 
 And now we're going to shift things to the **right align**. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.

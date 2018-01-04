@@ -7,7 +7,7 @@
 
 <div class="padding-topbottom-null" >
     <div class="project-gallery dots-inside" >
-        {% for img in sliderfull %}
+        {% for img in include.sliderfull %}
             <div class="item sliderfull">
                 <figure style= "background-image:url({% if img.image_path contains "://" %} {{ img.image_path }} {% else %} {{ img.image_path | absolute_url }} {% endif %});"> </figure>
             </div>

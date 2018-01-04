@@ -5,12 +5,9 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.3)
 preview: assets/images/hydrotherm/preview.png
 excerpt: Home Goods Design
-layout: single
 ---
 
-
-<section id="intro">
-<div class="row margin-topbottom-null" markdown="block">
+<section id="intro" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## What is a Hydrothermal Vent?
@@ -27,13 +24,10 @@ layout: single
     {% include gallery img='assets/images/hydrotherm/hydro2.jpg' title="Hydrothermal Vent Example" alt = 'vent2' %}
     
 </div>
-</div>
 </section>
 
-<section id="form">
-<div class="row margin-topbottom-null" markdown="block">
+<section id="form" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
-
 
 ## Form Development
 
@@ -47,15 +41,12 @@ layout: single
     {% include gallery img='assets/images/hydrotherm/hydro2.jpg' alt = 'vent2' %}
     
 </div>
-</div>
 </section>
 
-<section id="isometric">
-<div class="row margin-topbottom-null" markdown="block">
+<section id="isometric" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
     {% include gallery img='assets/images/hydrotherm/isom.png' alt = 'Isometric Views' %}
     
-</div>
 </div>
 </section>
 
@@ -63,3 +54,4 @@ layout: single
 <section id="desk" class="padding-topbottom-null">
     {% include gallery img='assets/images/hydrotherm/cover.jpg' alt = 'Example image 1' %}
 </section>
+

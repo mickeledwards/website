@@ -177,7 +177,7 @@ p {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 300;
 
     &.heading {
         color: $paragraph-color;
@@ -322,33 +322,12 @@ ul {
             line-height: 1.5rem;
             font-weight: 300;
             color: $primary-color;
-
-
-            &:before {
-                position: absolute;
-                content: "\f383";
-                font-family: "Ionicons";
-                color: $secondary-color;
-                left: 0;
-                top: 0;
-            }
         }
     }
     &.post {
         padding: 25px 0 25px 18px;
-
         li {
             font-weight: 300;
-
-            &:before {
-                position: absolute;
-                content: "\f111";
-                font-family: "FontAwesome";
-                color: $primary-color;
-                font-size: 0.5rem;
-                left: 8px;
-                top: -1px;
-            }
         }
     }
 }
@@ -403,7 +382,7 @@ blockquote, q {
         margin-top: 18px;
         font-style: normal;
         display: block;
-        font-size: 1.5rem;
+       // font-size: 1.5rem;
         font-weight: 300;
         color: $paragraph-color;
         &:before {
@@ -427,14 +406,4 @@ textarea {
 
 em {
 	font-style: italic;
-    &.number {
-        font-size: 5rem;
-        line-height: 5rem;
-        font-family: $primary-font;
-        font-weight: 600;
-        color: $paragraph-color-light;
-        float: left;
-        position: absolute;
-        z-index: 0;
-    }
 }

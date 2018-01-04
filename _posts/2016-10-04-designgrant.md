@@ -1,13 +1,13 @@
 ---
 title: Kinectic Sculpture
 header:
-  overlay_image: "/assets/images/unsplash-image-1.jpg"
-preview: assets/images/kinect.png
+  overlay_image: "/assets/images/grant/teardown.jpg"
+  overlay_filter: rgba(0, 0, 0, 0.3)
+preview: assets/images/grant/preview.png
 excerpt: Interactive Art
 ---
 
-<section id="intro">
-<div class="row margin-topbottom-null" markdown="block">
+<section id="intro" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
 ## Project Explaination
@@ -17,11 +17,9 @@ This project was born out of the opportunity that Iowa State University gave me 
 When I applied for this grant, I wanted to create an interactive sculptural piece. I've always been interested in how to create a user interaction, whether it be through interacting with a product, or creating an experience with a piece of art.
 
 </div>
-</div>
 </section>
 
-<section id="inspo">
-<div class="row margin-topbottom-null" markdown="block">
+<section id="inspo" class="row" markdown="block">
 <div class="col-md-4" markdown="block">
 
 {% include gallery img='assets/images/grant/inspo.png'  alt = 'Pom Pom Mirror' %}
@@ -32,8 +30,6 @@ When I applied for this grant, I wanted to create an interactive sculptural piec
 ## Inspiration
 
 There were a couple of different artists I looked at when  
-
-</div>
 
 </div>
 </section>
