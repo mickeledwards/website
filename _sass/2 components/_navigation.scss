@@ -74,7 +74,7 @@ header {
                         line-height: 26px;
                         font-family: $paragraph-font;
                         font-weight: 400;
-                        color: $grey-background;
+                        color: $primary-color;
                         padding: 10px 0;
 
                         @media screen and (min-width:$large){
@@ -86,7 +86,7 @@ header {
                         }
 
                         &.active, &.active-item {
-                            color: $primary-color;
+                            color: $secondary-background;
                         }
                     }
 
