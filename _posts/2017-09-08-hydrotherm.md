@@ -12,7 +12,7 @@ excerpt: Home Goods Design
 
 ## What is a Hydrothermal Vent?
 
->### A hot spring, on the foor of the ocean, mostly along the central axes of the mid-ocean ridges, where heated fuids emerge from fissures in the Earth’s crust.
+> A hot spring, on the foor of the ocean, mostly along the central axes of the mid-ocean ridges, where heated fuids emerge from fissures in the Earth’s crust.
 
 
 </div>

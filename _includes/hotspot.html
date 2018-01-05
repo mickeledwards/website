@@ -4,7 +4,7 @@
         <img src='{{ include.hotimg }}'>
         {% for pin in include.pins %} %}
         <div class="hs-spot-object" data-type="rect" data-x="{{ pin.left }}" data-y="{{ pin.top }}" data-width="5" data-height="5" data-popup-position="{{ pin.position }}" data-visible="visible" data-tooltip-width="250" data-tooltip-auto-width="false">
-            <h3>{{ pin.title }}</h3>
+            <h6>{{ pin.title }}</h6>
             <p>{{ pin.text }}</p>
         </div>
         {% endfor %}

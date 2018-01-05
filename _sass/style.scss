@@ -1,11 +1,13 @@
 $debug: false;
+
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
 $alt-font: 'Roboto', sans-serif;
+
 $primary-color: #080809;
 $primary-color-light: #444;
-$paragraph-color: #757575;
+$paragraph-color: $primary-color; //#757575;
 $paragraph-color-light: #F6F6F6;
 $secondary-color: #527a99;
 $dark-background: #080809;
@@ -15,14 +17,17 @@ $lettering-color: #354dca;
 $body-background: #EEEEEE;
 $grey-background: #F6F6F6;
 $darkgrey-background: #E6E7E8;
+
 $xsmall: 480px;
 $small: 650px;
 $medium: 767px;
 $large: 991px;
 $full: 1199px;
 
+//Typography Scale
+$min_font: 14px;
+$max_font: 18px;
 
-/*Base*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 
 @import 'reset';
@@ -51,5 +56,3 @@ $full: 1199px;
 
 @import '4 vendor/lightgallery/lightgallery';
 @import '4 vendor/owl.carousel';
-
-
