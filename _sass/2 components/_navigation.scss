@@ -74,7 +74,7 @@ header {
                         line-height: 26px;
                         font-family: $paragraph-font;
                         font-weight: 400;
-                        color: $paragraph-color;
+                        color: $grey-background;
                         padding: 10px 0;
 
                         @media screen and (min-width:$large){
@@ -331,7 +331,7 @@ header {
                             }
                             &:hover {
                                 a {
-                                    color: $paragraph-color;
+                                    color: $$grey-background;
                                 }
                             }
                             &.submenu {
@@ -342,7 +342,7 @@ header {
                                             margin: 0 0 0 16px;
 
                                             a {
-                                                color: $paragraph-color-light;
+                                                color: $grey-background;
                                                 &:hover {
                                                     color: $secondary-color !important;
                                                 }
