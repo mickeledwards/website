@@ -103,9 +103,6 @@
 
 }
 
-/*
- *  Owl Carousel - Animate Plugin
- */
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -118,54 +115,7 @@
 .owl-carousel .owl-animated-out {
   z-index: 1;
 }
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.owl-carousel .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
 /*
  * 	Owl Carousel - Auto Height Plugin
  */
@@ -287,9 +237,7 @@
   transform-style: preserve-3d;
 }
 
-/*-------------------------------------------------*/
-/* =  17.OWL
-/*-------------------------------------------------*/
+
 .owl-theme .owl-controls {
     position: relative;
     text-align: center;
