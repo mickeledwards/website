@@ -1,128 +1,33 @@
-.color-dark {
-    color: $primary-color;
-}
-.underline {
-    border-bottom: 3px solid $light-background;
-    box-shadow: inset 0 -3px 0 $light-background;
-}
-.light-background {
-    background-color: $light-background
-}
+//colors
 .secondary-background {
     background-color: $secondary-background;
 }
-.dark-background {
-    background-color: $dark-background;
-}
-.black-background {
-    background-color: $dark-background;
-}
-.grey-background {
-    background-color: $grey-background;
-}
-.darkgrey-background {
-    background-color: $darkgrey-background;
-}
-.body-background {
-    background-color: $body-background;
-}
-.section-bordertop {
-    border-top: 1px solid $light-background;
-}
-.shadow {
-	@extend %shadow;
-}
-/* class white: set font color white */
-[class~="white"] {
+.white {
     color: #fff !important;
 }
-/* class color: set font with secondary color */
-[class~="color"] {
+.color {
     color: $secondary-color !important;
 }
-/* class black: set font with black color */
-[class~="black"] {
-    color: $primary-color !important;
-}
-/* class grey: set font with grey color */
-[class~="grey"] {
-    color: $paragraph-color !important;
-}
-/* class grey-light: set font with light grey color */
-[class~="grey-light"] {
+.grey-light{
     color: $paragraph-color-light !important;
 }
-/* class grey-dark: set font with dark grey color */
-[class~="grey-dark"] {
+.grey-dark{
     color: $primary-color-light !important;
 }
 
-/* class vertical-align: vertical align */
-[class="vertical-align"] {
-    @include vertical-align();
-    z-index: 3;
-}
-/* class vertical-align: vertical align over 991px */
-[class="vertical-align-lg"] {
-    @media screen and (min-width:$large) {
-        @include vertical-align();
-        z-index: 3;
-    }
-}
-/* class overflow-hidden: overflow hidden */
-[class~="overflow-hidden"] {
-    overflow: hidden;
-}
-
-[class*="full-height"] {
-    height: 100% !important;
-}
-img[class*="normal"] {
-    display: block;
-}
-img[class~="center"] {
-    margin: 0 auto;
-}
-
-/* padding shortcodes */
-.padding-top-ultra{
-    padding-top:235px !important;
-    padding-bottom:75px !important;
-
-    @media screen and (max-width:$xsmall) {
-        padding-top:180px !important;
-    }
-}
+//padding
 .padding-lg{
     padding:75px 0 !important;
-}
-.padding-top-lg{
-    padding-top:75px !important;
-    padding-bottom:50px !important;
-}
-.padding-onlytop-lg{
-    padding-top:75px !important;
-}
-.padding-onlybottom-lg{
-    padding-bottom:75px !important;
 }
 .padding-md{
     padding:50px 0 !important;
 }
-.padding-onlytop-md {
-    padding-top:50px !important;
-}
-.padding-onlybottom-md {
-    padding-bottom:50px!important;
-}
+
 .padding-sm{
     padding:25px 0 !important;
 }
 .padding-onlytop-sm {
     padding-top:25px !important;
-}
-.padding-onlybottom-sm {
-    padding-bottom:25px !important;
 }
 .padding-null {
     padding: 0 !important;
@@ -135,330 +40,26 @@ img[class~="center"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-.padding-top-null {
-    padding-top: 0 !important;
-}
-.padding-left-null {
-    padding-left: 0 !important;
-}
-.padding-right-null {
-    padding-right: 0 !important;
-}
-.padding-bottom-null {
-    padding-bottom: 0 !important;
-}
-.padding-lg-topbottom-null {
-    @media screen and (max-width:$full) {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-}
-.padding-md-topbottom-null {
-    @media screen and (max-width:$large) {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-}
-.padding-md-leftright-null {
-    @media screen and (max-width:$large) {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
-.padding-md-top-null {
-    @media screen and (max-width:$large) {
-        padding-top: 0 !important;
-    }
-}
-.padding-md-bottom-null {
-    @media screen and (max-width:$large) {
-        padding-bottom: 0 !important;
-    }
-}
-.padding-md-left-null {
-    @media screen and (max-width:$large) {
-        padding-left: 0 !important;
-    }
-}
-.padding-md-right-null {
-    @media screen and (max-width:$large) {
-        padding-right: 0 !important;
-    }
-}
-.padding-sm-topbottom-null {
-    @media screen and (max-width:$medium) {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-}
-.padding-sm-leftright-null {
-    @media screen and (max-width:$medium) {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
-.padding-sm-top-null {
-    @media screen and (max-width:$medium) {
-        padding-top: 0 !important;
-    }
-}
-.padding-xs-top-null {
-    @media screen and (max-width:$xsmall) {
-        padding-top: 0 !important;
-    }
-}
-.padding-sm-bottom-null {
-    @media screen and (max-width:$medium) {
-        padding-bottom: 0 !important;
-    }
-}
-.padding-sm-left-null {
-    @media screen and (max-width:$medium) {
-        padding-left: 0 !important;
-    }
-}
-.padding-sm-right-null {
-    @media screen and (max-width:$medium) {
-        padding-right: 0 !important;
-    }
-}
-.padding-xs-leftright-null {
-    @media screen and (max-width:$xsmall) {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
 
-.responsive-padding-md {
-    @media screen and (max-width:$large) {
-        padding-bottom: 50px;
-    }
-}
-/* fixed padding/margin shortcodes */
-.padding-bottom {
-    padding-bottom: 36px;
-}
-.padding-md-bottom-lg {
-    @media screen and (max-width:$large) {
-        padding-bottom: 75px !important;
-    }
-}
-.padding-md-bottom {
-    @media screen and (max-width:$large) {
-        padding-bottom: 50px !important;
-    }
-}
-.padding-md-top {
-    @media screen and (max-width:$large) {
-        padding-top: 50px !important;
-    }
-}
-.padding-sm-bottom {
-    @media screen and (max-width:$large) {
-        padding-bottom: 25px !important;
-    }
-}
-.padding-lg-top-small {
-    @media screen and (max-width:$full) {
-        padding-top: 18px !important;
-    }
-}
+//margin
 .margin-bottom {
     margin-bottom: 36px !important;
 }
-.margin-md-bottom {
-    @media screen and (max-width:$large) {
-        margin-bottom: 36px !important;
-    }
-}
-.margin-sm-bottom {
-    @media screen and (max-width:$medium) {
-        margin-bottom: 36px !important;
-    }
-}
-.margin-xs-bottom {
-    @media screen and (max-width:$xsmall) {
-        margin-bottom: 36px !important;
-    }
-}
-.margin-xs-bottom-small {
-    @media screen and (max-width:$xsmall) {
-        margin-bottom: 18px !important;
-    }
-}
+
 .margin-bottom-small {
     margin-bottom: 18px !important;
 }
 .margin-bottom-extrasmall {
     margin-bottom: 9px !important;
 }
-
-/* margin shortcodes */
 .margin-null {
     margin: 0 !important;
 }
-.margin-leftright-null {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-.margin-topbottom-null {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-.margin-top-null {
-    margin-bottom: 0 !important;
-}
-.margin-bottom-null {
-    margin-bottom: 0 !important;
-}
-.margin-left-null {
-    margin-left: 0 !important;
-}
-.margin-right-null {
-    margin-left: 0 !important;
-}
-.margin-md-topbottom-null {
-    @media screen and (max-width:$large) {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-}
-.margin-md-leftright-null {
-    @media screen and (max-width:$large) {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-}
-.margin-md-top-null {
-    @media screen and (max-width:$large) {
-        margin-top: 0 !important;
-    }
-}
-.margin-md-bottom-null {
-    @media screen and (max-width:$large) {
-        margin-bottom: 0 !important;
-    }
-}
-.margin-md-left-null {
-    @media screen and (max-width:$large) {
-        margin-left: 0 !important;
-    }
-}
-.margin-md-right-null {
-    @media screen and (max-width:$large) {
-        margin-right: 0 !important;
-    }
-}
-.margin-sm-topbottom-null {
-    @media screen and (max-width:$medium) {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-}
-.margin-sm-leftright-null {
-    @media screen and (max-width:$medium) {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-}
-.margin-sm-top-null {
-    @media screen and (max-width:$medium) {
-        margin-top: 0 !important;
-    }
-}
-.margin-sm-bottom-null {
-    @media screen and (max-width:$medium) {
-        margin-bottom: 0 !important;
-    }
-}
-.margin-sm-left-null {
-    @media screen and (max-width:$medium) {
-        margin-left: 0 !important;
-    }
-}
-.margin-sm-right-null {
-    @media screen and (max-width:$medium) {
-        margin-right: 0 !important;
-    }
-}
 
-/* text-align shortcodes */
-.text-md-left {
-    @media screen and (max-width:$large) {
-        text-align: left;
-    }
-}
-.text-sm-left {
-    @media screen and (max-width:$medium) {
-        text-align: left;
-    }
-}
-.text-md-right {
-    @media screen and (max-width:$large) {
-        text-align: right;
-    }
-}
-.text-sm-right {
-    @media screen and (max-width:$medium) {
-        text-align: right;
-    }
-}
-.text-md-center {
-    @media screen and (max-width:$large) {
-        text-align: center;
-    }
-}
-.text-sm-center {
-    @media screen and (max-width:$medium) {
-        text-align: center;
-    }
-}
-/* flex order shortcodes */
-.flex-order-md {
-    @media screen and (max-width:$large) {
-        display: flex;
-        flex-direction: column;
-    }
-}
-.flex-column-push-md {
-    @media screen and (max-width:$large) {
-        order: 2;
-    }
-}
-.flex-column-pull-md {
-    @media screen and (max-width:$large) {
-        order: 1;
-    }
-}
-.flex-order-sm {
-    @media screen and (max-width:$medium) {
-        display: flex;
-        flex-direction: column;
-    }
-}
-.flex-column-push-sm {
-    @media screen and (max-width:$medium) {
-        order: 2;
-    }
-}
-.flex-column-pull-sm {
-    @media screen and (max-width:$medium) {
-        order: 1;
-    }
-}
-/* other shortcodes */
-.z-index {
-    position: relative;
-    z-index: 10 !important;
-}
+//other shortcodes
 .img-responsive {
     display: block;
     max-width: 100%;
-    height: auto;
-}
-.img-full {
-    display: block;
-    width: 100%;
     height: auto;
 }
 .not-visible {
@@ -472,113 +73,16 @@ img[class~="center"] {
 .no-scroll {
     overflow: hidden;
 }
-.hidden-lg {
-    @media screen and (max-width:$full) {
-        display: none !important;
-    }
-}
-.hidden-md {
-    @media screen and (max-width:$large) {
-        display: none !important;
-    }
-}
-.hidden-sm {
-    @media screen and (max-width:$medium) {
-        display: none !important;
-    }
-}
-.hidden-xs {
-    @media screen and (max-width:$xsmall) {
-        display: none !important;
-    }
-}
-.responsive-md-height-auto {
-    @media screen and (max-width:$large) {
-        height: auto !important;
-    }
-}
-
-.height-auto-lg {
-    @media screen and (max-width:$full) {
-        height: auto !important;
-    }
-}
-.height-auto-md {
-    @media screen and (max-width:$large) {
-        height: auto !important;
-    }
-}
-.height-auto-sm {
-    @media screen and (max-width:$medium) {
-        height: auto !important;
-    }
-}
-.height-auto-xs {
-    @media screen and (max-width:$xsmall) {
-        height: auto !important;
-    }
-}
-.border-right {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99;
-    width: 70px;
-    height: 100%;
-    max-width: 70px;
-    background-color: $light-background;
-
-    @media screen and (max-width:$full){
-        display: none;
-    }
-}
-.border-left {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99;
-    width: 70px;
-    height: 100%;
-    max-width: 70px;
-    background-color: $light-background;
-
-    @media screen and (max-width:$full){
-        display: none;
-    }
-}
 
 .center{
     display: flex;
     justify-content: center;
+	margin: 0 auto;
 }
 
 .hidden{
 	display: none;
 }
-
-
- @if ($debug) {
-    img:not([alt]){
-      border: 5px dashed #c00;
-    }
-	[class*="container"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="container"]::before {
-    	content: "." attr(class)
-	}
-	 [class*="col-"] {
-	    padding-top: 1rem;
-	    padding-bottom: 1rem;
-	    background-color: rgba(86,61,124,.15);
-	    border: 1px solid rgba(86,61,124,.2);
-	}
-	[class*="col-"]::before {
-    	content: "." attr(class)
-	}
+.shadow {
+	@extend %shadow;
 }
