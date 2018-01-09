@@ -5,13 +5,6 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.3)
 preview: assets/images/grasshopper/preview.png
 excerpt: Generative Design
-sliderfull:
-- image_path: "/assets/images/grasshopper/relaxed.png"
-  title: Relaxed Mesh Figure Generated Via Grasshopper and Kangaroo Physics
-- image_path: "/assets/images/grasshopper/ghopperlattice.jpg"
-  title: Image 2 title caption
-- image_path: "/assets/images/unsplash-gallery-image-3.jpg"
-  title: Image 3 title caption
 slider:
 - image_path: "/assets/images/grasshopper/relaxed.png"
   title: Relaxed Mesh Figure Generated Via Grasshopper and Kangaroo Physics
@@ -31,10 +24,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 </section>
 
-<section id="sliderfull">
-{% include sliderfull.html sliderfull=page.sliderfull%}
-</section>
-
-<section id="slider">
+<section id="slider" class="row" markdown="block">
+<div class="col-md-12 padding-sm-side" markdown="block">
 {% include slider.html slider=page.slider%}
+</div>
 </section>

@@ -2,10 +2,10 @@
     *,
     *:before,
     *:after {
-        background: none !important;
-        color: #080809 !important; // Black prints faster: h5bp.com/s
-        box-shadow: none !important;
-        text-shadow: none !important;
+        background: none;
+        color: #080809;
+        box-shadow: none;
+        text-shadow: none;
     }
     a,
     a:visited {
@@ -34,7 +34,7 @@
         page-break-inside: avoid;
     }
     img {
-        max-width: 100% !important;
+        max-width: 100%;
     }
     p,
     h2,

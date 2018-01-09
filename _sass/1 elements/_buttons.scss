@@ -24,7 +24,7 @@ a.btn {
     font-weight: bold;
     position: relative;
     margin:0.75rem;
-    text-decoration: none !important;
+    text-decoration: none;
     transition: all .4s ease;
     font-weight: 400;
     border:1px solid $dark-background;
@@ -68,8 +68,8 @@ a.btn {
 
 
 	&:hover {
-		background-color: none;
-		color: $secondary-color !important;
+		background-color: #fff;
+		color: $secondary-color;
 		transition: all .4s ease;
 		border: 1px solid $secondary-color;
 	}

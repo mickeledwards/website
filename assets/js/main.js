@@ -279,15 +279,6 @@ $(".hotspot").on("click", function (e) {
 
 $(document).ready(($) => {
     "use strict";
-    $(".post-gallery, .project-gallery").owlCarousel({
-        center: true,
-        items: 1,
-        loop: true,
-        false: false,
-        autoplayHoverPause: false,
-        nav: true,
-        navText: ['<span><i class="icon-chevron-left"></i></span>', '<span><i class="icon-chevron-right"></i></span>']
-    });
     $(".image-carousel").owlCarousel({
         center: true,
         loop: true,
