@@ -10,6 +10,12 @@ layout: base
 			<div class="single-item col-lg-4 col-md-6 col-s-12">
 				<a href="{{ post.url | absolute_url }}">
 					<div class="item">
+						{% if post.ribbon %}
+						<div class="ribbon-wrapper index">
+							<div class="ribbon index">Ribbon
+							</div>
+						</div>
+						{% endif %}
 						<img src="{{ post.preview }}" alt = "{{ post.title }}">
 						<div class="content">
 						  <h3>{{ post.title }}</h3>

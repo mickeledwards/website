@@ -62,6 +62,8 @@ Definition List Title
 
 ## HTML Tags
 
+This is some **bold text**.
+
 This is an example of a [link](http://apple.com "Apple").
 
 
@@ -91,7 +93,16 @@ Preformatted Tag.
 }
 </pre>
 
-This is some **bold text**.
+
+<div class="refill-centering">
+<div class="ribbon-box">
+<div class="ribbon-wrapper">
+<div class="ribbon">Ribbon
+</div>
+</div>
+</div>
+</div>
+		
 
 YouTube video
 ------------

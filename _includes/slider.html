@@ -5,20 +5,17 @@
 {% endif %}
 
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="image-carousel dots-inside">
-			{% for img in include.slider %}
-					<div class="item">
-				        <img src=
-				          {% if img.image_path contains "://" %}
-				            "{{ img.image_path }}"
-				          {% else %}
-				            "{{ img.image_path | absolute_url }}"
-				          {% endif %}
-				          alt="{% if img.title %}{{ img.title }}{% endif %}" class="img-responsive fullheight">
-					</div>
-				{% endfor %}
-		</div>
-	</div>
+<div class="image-carousel dots-inside">
+	{% for img in include.slider %}
+			<div class="item">
+				<img src=
+				  {% if img.image_path contains "://" %}
+					"{{ img.image_path }}"
+				  {% else %}
+					"{{ img.image_path | absolute_url }}"
+				  {% endif %}
+				  alt="{% if img.title %}{{ img.title }}{% endif %}" class="img-responsive fullheight">
+			</div>
+		{% endfor %}
 </div>
+

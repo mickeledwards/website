@@ -13,6 +13,7 @@ $secondary-color: #527a99;
 $dark-background: #080809;
 $light-background: #F6F6F6;
 $secondary-background: #527a99; //blue
+$third-color: #477dca;
 $lettering-color: #354dca;
 $body-background: #EEEEEE;
 $grey-background: #F6F6F6;
@@ -56,3 +57,38 @@ $max_font: 18px;
 
 @import '4 vendor/lightgallery/lightgallery';
 @import '4 vendor/owl.carousel';
+
+
+.ribbon-box {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #bbb;
+	position: relative;
+}
+
+.ribbon-wrapper {
+	height: 85px;
+	width: 85px;
+	overflow: hidden;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	&.index {
+		right: 34px;
+		top: 24px;
+	}
+	.ribbon{
+		background-color: $third-color;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+		color: #fff;
+		font-size: 0.8em;
+		left: -5px;
+		line-height: 1.5em;
+		padding: 2px 7px;
+		position: relative;
+		text-align: center;
+		top: 15px;
+		transform: rotate(45deg);
+		width: 120px;
+	}
+}

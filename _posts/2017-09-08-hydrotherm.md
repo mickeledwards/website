@@ -5,6 +5,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.3)
 preview: assets/images/hydrotherm/preview.png
 excerpt: Home Goods Design
+ribbon: false
 ---
 
 <section id="intro" class="row" markdown="block">

@@ -43,7 +43,7 @@
                     height: 40px;
                     width: 40px;
                     background-color: $secondary-color;
-                    color: white;
+                    color: #fff;
                     display: block;
                     border-radius: 0 4px 4px 0;
                     text-align: center;
@@ -70,7 +70,7 @@
 
             .owl-dot {
                 span {
-                    background-color: transparent;
+                    background-color: none;
                 }
             }
         }
