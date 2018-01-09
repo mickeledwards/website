@@ -29,3 +29,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% include slider.html slider=page.slider%}
 </div>
 </section>
+

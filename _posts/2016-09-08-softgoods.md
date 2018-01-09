@@ -83,7 +83,7 @@ A soft and organic form was focused on, not only to remove uncomfortable hard ed
 <section id="usecase" class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
-{% include gallery img='assets/images/soft/usecase.png' alt = 'Model in Use' %}
+{% include comparison.html right='assets/images/soft/night.jpg' left='assets/images/soft/day.jpg' rightcaption = 'Glows Amber at Night' leftcaption = 'Glows Blue in the Morning' %}
 
 </div>
 </section>
