@@ -1,6 +1,6 @@
 .icon {
   display: block;
-  height: 1em;
+  height: 1rem;
 	text-align: center;
   fill: currentColor;
 }
@@ -232,11 +232,11 @@ text-align: center;
 .boxbutton--disabled {
   cursor: default;
   pointer-events: none;
-  color: #c4c4c7;
+  color: $darkgrey-background;
   &:focus, &:hover {
     cursor: default;
     pointer-events: none;
-    color: #c4c4c7;
+    color: $darkgrey-background;
   }
 }
 .contentdiag {
