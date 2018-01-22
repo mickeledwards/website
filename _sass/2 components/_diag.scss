@@ -226,7 +226,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: $secondary-background;
+  color: $secondary-color;
 text-align: center;
 }
 .boxbutton--disabled {
@@ -271,7 +271,7 @@ text-align: center;
   transform: translate3d(0, -3em, 0) translate3d(0, -100%, 0);
 }
 .content__item .content__item-title {
-    color: $secondary-background;
+    color: $secondary-color;
 }
 .content__item--hover .content__item-title {
   opacity: 1;

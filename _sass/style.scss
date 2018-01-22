@@ -6,17 +6,13 @@ $paragraph-font: 'Roboto', sans-serif;
 $alt-font: 'Roboto', sans-serif;
 
 $primary-color: #080809;
-$primary-color-light: #444;
-$paragraph-color: $primary-color; //#757575;
-$paragraph-color-light: #F6F6F6;
 $secondary-color: #527a99;
-$dark-background: #080809;
-$light-background: #F6F6F6;
-$secondary-background: #527a99; //blue
-$lettering-color: #354dca;
-$body-background: #EEEEEE;
-$grey-background: #F6F6F6;
 $darkgrey-background: #E6E7E8;
+$primary-color-light: lighten( $primary-color, 27%);
+$paragraph-color-light: lighten( $primary-color, 96%);
+$light-background: lighten( $primary-color, 96%);
+$body-background: lighten( $primary-color, 93%);
+$grey-background: lighten( $primary-color, 96%);
 
 $xsmall: 480px;
 $small: 650px;

@@ -1,16 +1,16 @@
 $backdrop-opacity: 1 !default;
 $lg-toolbar-bg: rgba(0, 0, 0, 0.45) !default;
 $lg-border-radius-base: 2px !default;
-$lg-theme-highlight: $secondary-background;
+$lg-theme-highlight: $secondary-color;
 $lg-theme: $light-background;
 
 // basic icon colours
-$lg-icon-bg: $secondary-background;
-$lg-icon-color: $secondary-background;
+$lg-icon-bg: $secondary-color;
+$lg-icon-color: $secondary-color;
 $lg-icon-hover-color: $primary-color;
 
 // counter
-$lg-counter-color: $secondary-background;
+$lg-counter-color: $secondary-color;
 $lg-counter-font-size: 1rem !default;
 
 // Next prev icons

@@ -24,7 +24,7 @@ header {
 			float: left;
 			height: 50px;
 			.svg-brand {
-				fill: $dark-background;
+				fill: $primary-color;
 				height: 40px;
 				top: 5px;
 				left: 30px;
@@ -89,7 +89,7 @@ header {
                         }
 
                         &.active, &.active-item {
-                            color: $secondary-background;
+                            color: $secondary-color;
                         }
                     }
 
@@ -187,7 +187,7 @@ header {
 			position: fixed;
 			left:0;
 			top:0;
-			background-color: $dark-background;
+			background-color: $primary-color;
 			width:100%;
 			height:100%;
 			z-index:998;
@@ -292,7 +292,7 @@ header {
                 right:-320px;
                 top:0;
                 left: inherit;
-                background-color: $dark-background;
+                background-color: $primary-color;
                 height:100%;
                 z-index:998;
                 .menu-holder {

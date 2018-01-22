@@ -59,7 +59,7 @@ figcaption {
   a {
 
     &:hover {
-      color: $secondary-background;
+      color: $secondary-color;
     }
   }
 }
@@ -114,7 +114,7 @@ table {
     font-weight: 300;
 
     th {
-        background: $secondary-background;
+        background: $secondary-color;
         color: #fff;
         text-align: left;
         padding: 15px;

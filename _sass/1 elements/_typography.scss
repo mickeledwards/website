@@ -4,7 +4,6 @@ html {
 body {
     font-family: $secondary-font;
     color: $primary-color;
-    background-color: $darkgrey-background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -65,14 +64,14 @@ a {
 p {
 	line-height: 1.5;
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $primary-color;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 300;
 
     b, strong {
         font-weight: 400;
-        color: $paragraph-color;
+        color: $primary-color;
     }
 
     a {
@@ -121,7 +120,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $paragraph-color;
+  border-top: 1px solid $primary-color;
 }
 
 i {
@@ -164,7 +163,7 @@ ol {
     display:table-row;
     padding-left: 28px;
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $primary-color;
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: 1px;
@@ -203,7 +202,7 @@ ul {
 mark {
     background: $light-background;
     padding: 0 4px;
-    color: $paragraph-color;
+    color: $primary-color;
 }
 pre {
     padding:25px;
@@ -230,7 +229,7 @@ blockquote, q {
     line-height: 1.5;
     padding-left: 18px;
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $primary-color;
     font-weight: 400;
     font-style: italic;
     margin: 50px 0;
@@ -253,14 +252,14 @@ blockquote, q {
         display: block;
        // font-size: 1.5rem;
         font-weight: 300;
-        color: $paragraph-color;
+        color: $primary-color;
         &:before {
             content: "\2014";
             padding-right: 10px;
         }
 
         a {
-            color: $paragraph-color;
+            color: $primary-color;
 
             &:hover {
                 color: $secondary-color;
