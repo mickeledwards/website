@@ -31,7 +31,7 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
+  - "*.codekit3"
   - "*.sublime-workspace"
   - vendor
   - .asset-cache
@@ -54,6 +54,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - __other/*
+
   
 keep_files:
   - .git

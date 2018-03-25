@@ -116,11 +116,6 @@ There were a couple of different artists I looked at when
 								<div class="icon icon--pin"></div>
 							</span>
 						</a>
-						<a class="pin pin--4-5" data-category="1" data-space="4.05"  aria-label="Pin for Plexiglass">
-							<span class="pin__icon">
-								<div class="icon icon--pin"></div>
-							</span>
-						</a>
 						<a class="pin pin--4-7" data-category="1" data-space="4.07"  aria-label="Pin for Wooden Frame">
 							<span class="pin__icon">
 								<div class="icon icon--pin"></div>
@@ -171,9 +166,6 @@ There were a couple of different artists I looked at when
 			</div>
 			<div class="content__item" data-space="4.02">
 				<h3 class="content__item-title">Painted Spheres</h3>
-			</div>
-			<div class="content__item" data-space="4.05">
-				<h3 class="content__item-title">Plexiglass</h3>
 			</div>
 			<div class="content__item" data-space="4.07">
 				<h3 class="content__item-title">Wooden Frame</h3>

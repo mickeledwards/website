@@ -10,7 +10,7 @@ layout: page
 <div class="row" markdown="block">
 <div class="col-md-12" markdown="block">
 
-A variety of common markup showing how the theme styles them.
+# Header one
 
 ## Header two
 
@@ -43,14 +43,6 @@ Definition List Title
 :   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
 
   1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
   2. List item two
   3. List item three
   4. List item four
@@ -92,24 +84,7 @@ Preformatted Tag.
 	line-height: 1.2;
 }
 </pre>
-
-
-<div class="refill-centering">
-<div class="ribbon-box">
-<div class="ribbon-wrapper">
-<div class="ribbon">Ribbon
-</div>
-</div>
-</div>
-</div>
 		
-
-YouTube video
-------------
-<div class = "popup-youtube">
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/l2Of1-d5E5o?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
-
 
 The preferred way of using images is placing them in the `/assets/images/` directory and referencing them with an absolute path. Prepending the filename with `{% raw %}{{ site.url }}{{ site.baseurl }}/assets/images/{% endraw %}` will make sure your images display properly in feeds and such.
 

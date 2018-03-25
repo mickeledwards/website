@@ -1,0 +1,11 @@
+.decon{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.deconimg{
+	grid-column: 1;
+	grid-row: 1 / span 6;
+}

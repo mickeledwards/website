@@ -21,8 +21,8 @@ $large: 991px;
 $full: 1199px;
 
 //Typography Scale
-$min_font: 14px;
-$max_font: 18px;
+$min_font: 12px;
+$max_font: 16px;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 
@@ -51,39 +51,6 @@ $max_font: 18px;
 @import '3 pages/contact';
 @import '3 pages/home';
 
+
 @import '4 vendor/lightgallery/lightgallery';
 
-
-.ribbon-box {
-	height: 100px;
-	width: 100px;
-	border: 1px solid #bbb;
-	position: relative;
-}
-
-.ribbon-wrapper {
-	height: 85px;
-	width: 85px;
-	overflow: hidden;
-	position: absolute;
-	right: -1px;
-	top: -1px;
-	&.index {
-		right: 34px;
-		top: 24px;
-	}
-	.ribbon{
-		background-color: $secondary-color;
-		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-		color: #fff;
-		font-size: 0.75rem;
-		left: -5px;
-		line-height: 1.5rem;
-		padding: 2px 7px;
-		position: relative;
-		text-align: center;
-		top: 15px;
-		transform: rotate(45deg);
-		width: 120px;
-	}
-}

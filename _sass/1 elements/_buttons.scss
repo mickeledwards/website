@@ -7,65 +7,60 @@ button {
     outline: inherit;
 }
 a.btn {
-    padding:0;
-    padding-right: 1.75rem;
-    padding-left: 1.75rem;
-    height: 2.5rem;
+
+	display: inline-block;
+    overflow: hidden;
+	margin: 0;
+	padding:0 1.75rem;
     line-height: 2rem;
-    text-align: center;
-    font-size: 0.75rem;
+	border-radius: 2px;
+	position: relative;
+
     letter-spacing: 1px;
     font-family: $secondary-font;
     text-transform: uppercase;
-    display: inline-block;
-    overflow: hidden;
+	font-weight: 400;
+	text-align: center;
+    font-size: 0.75rem;
+
     outline: none;
-    border-radius: 2px;
-    font-weight: bold;
-    position: relative;
-    margin:0.75rem;
-    text-decoration: none;
-    transition: all .4s ease;
-    font-weight: 400;
     border:1px solid $primary-color;
     background-color: #fff;
     color: $primary-color;
-	text-align: center;
+
     &:hover{
         background-color: $secondary-color;
         color: #fff;
-        border-color:none;
+        border-color: $secondary-color;
         transition: all .4s ease;
+		outline: none;
     }
     i {
         margin-right: 8px;
     }
 }
 .btn-alt {
+
+	display: inline-block;
+    overflow: hidden;
+	margin: 0;
+	padding:0 1.75rem;
+    line-height: 2rem;
+	border-radius: 2px;
+	position: relative;
+
+    letter-spacing: 1px;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+    font-size: 0.75rem;
+
 	background-color: $secondary-color;
 	border: 1px solid $secondary-color;
-	border-radius: 2px;
 	color: #fff;
-	display: inline-block;
-	font-size: 0.75rem;
-	font-family: $secondary-font;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 1.375rem;
-	margin: 0;
-	overflow: hidden;
 	outline: none;
-	position: relative;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	text-align: center;
-	text-transform: uppercase;
 	transition: all .4s ease;
-	@extend %shadow;
-	text-align: center;
-
 
 	&:hover {
 		background-color: #fff;
