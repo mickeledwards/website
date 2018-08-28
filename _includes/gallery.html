@@ -1,0 +1,11 @@
+<div class="{{include.width}}">
+        <div class="text">
+            {%if include.lightbox == 'true'%}
+            <a href="{{include.img}}" class="lightbox">
+            <img src="{{include.img}}" alt="{{include.alt}}" class="img-post">
+            </a>
+            {%else%}
+            <img src="{{include.img}}" alt="{{include.alt}}" class="">
+            {%endif%}
+        </div>
+</div>

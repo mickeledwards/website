@@ -1,22 +1,52 @@
 ---
-layout: base
+layout: default
 ---
+{% for post in site.portfolio %}
+    {% for tag in post.tags %}
+        {% capture categories %}{{categories}},{{tag}}{% endcapture %}
+    {% endfor %}
+{% endfor %}
+<!--  Page Content  -->
+<div id="page-content">
+    <!--  HomePage header  -->
+    <div class="container">
+       <div class="row no-margin">
+           <div class="col-md-12 padding-leftright-null">
+               <div id="home-header">
+                   <div class="text">
+                       <h1 class="margin-bottom-small"><span class="grey-dark">Mickel Edwards.</span><br>Industrial Designer<span class="color">.</span></h1>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <!--  END HomePage header  -->
+    <div id="home-wrap" class="content-section">
+        <div class="container">
+            <!--  Portfolio  -->
+            <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
+                <!--  Filters  -->
+                <!--  END Filters  -->
+                <div class="projects-items">
+                    <!-- Single Project -->
 
-<div class="home-header">
-    <h1><span class="grey-dark">Mickel Edwards.</span><br>Industrial Designer<span class="color">.</span></h1>
+                    {% for project in site.portfolio %}
+
+                    <div class="one-item  {% for tag in project.tags %} {{tag}} {%endfor%}">
+                        <div class="item">
+                            <img src="assets/img/{{project.teaser}}" alt="">
+                            <div class="content">
+                                <h3>{{project.title}}</h3>
+                                <p>{{project.type}} </p>
+                            </div>
+                            <a href="{{project.url}}" class="link"></a>
+                        </div>
+                    </div>
+                    <!-- END Single Project -->
+                    {%endfor%}
+                </div>
+            </section>
+            <!-- END Portfolio -->
+        </div>
+    </div>
 </div>
-<section class="projects row">
-	{% for post in site.posts %}
-			<div class="single-item col-lg-4 col-md-6 col-s-12">
-				<a href="{{ post.url | absolute_url }}">
-					<div class="item">
-						<img src="{{ post.preview }}" alt = "{{ post.title }}">
-						<div class="content">
-						  <h3>{{ post.title }}</h3>
-						  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-						</div>
-					</div>
-				</a>
-			</div>
-	{% endfor %}
-</section>

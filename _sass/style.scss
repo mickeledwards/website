@@ -1,56 +1,45 @@
-$debug: false;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i|Material+Icons');
 
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
-$alt-font: 'Roboto', sans-serif;
-
-$primary-color: #080809;
+$alt-font: 'Roboto', serif;
+$primary-color: #000;
+$primary-color-light: #444;
+$paragraph-color: #757575;
+$paragraph-color-light: #F6F6F6;
 $secondary-color: #527a99;
+$dark-background: #000;
+$light-background: #F6F6F6;
+$secondary-background: #527a99;
+$color-background: #527a99;
+$body-background: #EEEEEE;
+$grey-background: #F6F6F6;
 $darkgrey-background: #E6E7E8;
-$primary-color-light: lighten( $primary-color, 27%);
-$paragraph-color-light: lighten( $primary-color, 96%);
-$light-background: lighten( $primary-color, 96%);
-$body-background: lighten( $primary-color, 93%);
-$grey-background: lighten( $primary-color, 96%);
 
-$xsmall: 480px;
-$small: 650px;
+$iphone4: 320px;
+$iphone6: 375px;
+$iphone6plus: 414px;
+$ipad:1024px;
+$small: 480px;
 $medium: 767px;
 $large: 991px;
 $full: 1199px;
 
-//Typography Scale
-$min_font: 12px;
-$max_font: 16px;
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
-
+@import 'vendor/normalize';
+@import 'mixins';
 @import 'reset';
-@import 'utilities/utilities';
-
-@import '1 elements/iconfont';
-@import '1 elements/buttons';
-@import '1 elements/typography';
-@import '1 elements/grid';
-@import '1 elements/animations';
-@import '1 elements/image';
-
-@import '2 components/slider';
-@import '2 components/bigquote';
-@import '2 components/diag';
-@import '2 components/footer';
-@import '2 components/hs-spot';
-@import '2 components/navigation';
-@import '2 components/hero';
-@import '2 components/sidenav';
-@import '2 components/turntable';
-@import '2 components/comparison';
-
-@import '3 pages/404';
-@import '3 pages/contact';
-@import '3 pages/home';
-
-
-@import '4 vendor/lightgallery/lightgallery';
-
+@import 'vendor/flexslider','vendor/magnific-popup';
+@import 'iconfont';
+@import 'grid';
+@import 'general';
+@import 'core';
+@import 'navigation';
+@import 'blog';
+@import 'page';
+@import 'post';
+@import 'project';
+@import 'contact';
+@import 'footer';
+@import 'elements';

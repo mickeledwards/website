@@ -1,296 +1,244 @@
-let $ = jQuery.noConflict();
+var $ = jQuery.noConflict();
 
-(function ($) {
-
+(function($) {
     "use strict";
 
+    var width  =  $(window).width();
 
-    /* -------------------------------------------------*/
-    /* =  Lightbox */
-    /* -------------------------------------------------*/
-
-    $(".project-images").lightGallery({download: false});
-
-    /* -------------------------------------------------*/
-    /* =  Side Navigation */
-    /* -------------------------------------------------*/
-
-    let sidesection = document.querySelectorAll("div.contentwrap > section");
-    let sidesections = {};
-    let i = 0;
-
-    Array.prototype.forEach.call(sidesection, (e) => {
-        sidesections[e.id] = e.offsetTop;
-    });
-    window.onscroll = function () {
-
-        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-        for (i in sidesections) {
-
-            if (sidesections[i] <= scrollPosition + 20) {
-
-                document.querySelector(".active").setAttribute("class", " ");
-                document.querySelector("a[href*=" + i + "]").setAttribute("class", "active");
-
-			}
-
-		}
-
-	};
-
-    /* -------------------------------------------------*/
-    /* =  Mobile Hover */
-    /* -------------------------------------------------*/
-
-    let width = $(window).width();
-    let mobileHover = function () {
-
-        $("*").on("touchstart", function () {
-
-            $(this).trigger("hover");
-
-})
-.on("touchend", function () {
-
-            $(this).trigger("hover");
-
-});
-
-};
-
-    $(".menu-button").on("click", () => {
-        //menu classic, menu sidemenu, menu basic
-        var menu = $('#menu');
-        var menuClassic = $('#menu-classic');
-        var sidemenu = $('#sidemenu');
-        var menuResponsiveSidemenu = $('#menu-responsive-sidemenu');
-        var menuResponsiveClassic = $('#menu-responsive-classic');
-        menu.toggleClass('open');
-        menuClassic.toggleClass('open');
-        sidemenu.addClass('sidemenu open');
-        menuResponsiveSidemenu.toggleClass('open');
-        menuResponsiveClassic.toggleClass('open');
-        menu.addClass('animated slideInDown');
-        $('.submenu', menuClassic).each(function() {
-            $('.submenu', menuClassic).removeClass("open");
+    /*-------------------------------------------------*/
+    /* =  Mobile Hover
+    /*-------------------------------------------------*/
+    var mobileHover = function () {
+        $('*').on('touchstart', function () {
+            $(this).trigger('hover');
+        }).on('touchend', function () {
+            $(this).trigger('hover');
         });
-        if (sidemenu.hasClass("slideInRight")) {
-            sidemenu.removeClass('animated slideInRight');
-            sidemenu.addClass('animated slideOutRight');
-            setTimeout(function() {
-                sidemenu.toggleClass('sidemenu open');
-                sidemenu.removeClass('animated slideOutRight');
-            }, 1000);
-        } else {
-            sidemenu.addClass('animated slideInRight');
-        }
-        if (width < 991) {
-            $('body').toggleClass('no-scroll');
-        }
-    });
-    $(".menu-holder ul > li:not(.submenu) > a").on("click", () => {
-        $('#menu').removeClass('open');
-        $('body').removeClass('no-scroll');
-    });
-    // basic menu mobile
-    $(".close-menu").on("click", () => {
-        var menu = $('#menu');
-        menu.removeClass('animated slideInDown');
-        menu.addClass('animated fadeOutUp');
-        setTimeout(function() {
+    };
+
+    mobileHover();
+    /*-------------------------------------------------*/
+    /* =  Menu
+    /*-------------------------------------------------*/
+    try {
+        $('.menu-button').on("click",function() {
+
+            //menu classic, menu sidemenu, menu basic
+            var menu = $('#menu');
+            var sidemenu = $('#sidemenu');
+            var menuResponsiveSidemenu = $('#menu-responsive-sidemenu');
+
             menu.toggleClass('open');
-            menu.removeClass('animated fadeOutUp');
-        }, 1000);
-        if (width < 991) {
-            $('body').toggleClass('no-scroll');
-        }
-    });
-    // megamenu mobile
-    if (width < 991) {
+            sidemenu.addClass('sidemenu open');
+            menuResponsiveSidemenu.toggleClass('open');
+            menu.addClass('animated slideInDown');
+            if ( sidemenu.hasClass( "slideInRight" ) ) {
+                sidemenu.removeClass('animated slideInRight');
+                sidemenu.addClass('animated slideOutRight');
+                setTimeout(function(){
+                    sidemenu.toggleClass('sidemenu open');
+                    sidemenu.removeClass('animated slideOutRight');
+                },1000);
+            } else {
+                sidemenu.addClass('animated slideInRight');
+            }
+            if(width<991){
+                $('body').toggleClass('no-scroll');
+            }
+        });
+        $('.menu-holder ul > li:not(.submenu) > a').on("click",function(){
+            $('#menu').removeClass('open');
+            $('body').removeClass('no-scroll');
+        });
+        //basic menu mobile
+        $('.close-menu').on("click",function() {
 
-        let menuClassicSubmenu = $(".submenu", "#menu-classic");
+            var menu = $('#menu');
 
-        menuClassicSubmenu.on("click", function () {
+            menu.removeClass('animated slideInDown');
+            menu.addClass('animated fadeOutUp');
+            setTimeout(function(){
+                menu.toggleClass('open');
+                menu.removeClass('animated fadeOutUp');
+            },1000);
+            if(width<991){
+                $('body').toggleClass('no-scroll');
+            }
+        });
+    } catch(err) {
 
-            let open = false;
+    };
+    /*-------------------------------------------------*/
+    /* =  Isotope
+    /*-------------------------------------------------*/
+    try {
 
-            if ($(this).hasClass("open")) {
+        var $mainContainerSimple=$('section[data-isotope="load-simple"] .projects-items');
+        $mainContainerSimple.imagesLoaded( function(){
 
-                open = true;
+            var $container=$('.projects-items').isotope({itemSelector:'.one-item', layoutMode: 'fitRows'});
+            var $simpleFilters = $('#projects .filters');
 
-}
-            menuClassicSubmenu.each(() => {
-                menuClassicSubmenu.removeClass("open");
+            $simpleFilters.on('click','li',function(){
+                var filterValue=$(this).attr('data-filter');$container.isotope({
+                    filter:filterValue});
             });
-            if (open) {
-
-                $(this).addClass("open");
-
-}
-            $(this).toggleClass("open");
-
-});
-
-}
-
-    /* -------------------------------------------------*/
-    /* =  Responsive */
-    /* -------------------------------------------------*/
-    let parentHeightKey = [];
-
-    $("div[data-responsive=\"parent-height\"]").each(function () {
-
-        parentHeightKey.push({
-            "id": $(this).attr("data-responsive-id"),
-            "height": $(this).outerHeight(true)
-        });
-
-});
-    $("div[data-responsive=\"child-height\"]").each(function () {
-
-        let childHeight;
-        let childId = $(this).attr("data-responsive-id");
-
-        for (let i = 0; i < parentHeightKey.length; i++) {
-
-            if (parentHeightKey[i].id == childId) {
-
-                childHeight = parentHeightKey[i].height;
-
-}
-
-}
-        $(this).css({'height': `${childHeight  }px`
-        });
-
-});
-    $(window).resize(() => {
-        var currentWidth = $(window).width();
-        if (currentWidth > 767) {
-            $('div[data-responsive="parent-height"]').each(function() {
-                parentHeightKey.push({
-                    id: $(this).attr('data-responsive-id'),
-                    height: $(this).outerHeight(true)
+            $simpleFilters.each(function(i,buttonGroup){
+                var $buttonGroup=$(buttonGroup);
+                $buttonGroup.on('click','li',function(){
+                    $buttonGroup.find('.is-checked').removeClass('is-checked');
+                    $(this).addClass('is-checked');
                 });
+            });
+
+        });
+
+    } catch(err) {
+
+    }
+
+    //blog masonry
+    try {
+        var $blogContainer = $('.news-items');
+        $blogContainer.imagesLoaded( function(){
+            $blogContainer.isotope({itemSelector: '.one-item', layoutMode: 'fitRows' });
+            $blogContainer.isotope('layout');
+        });
+    } catch(err) {
+
+    }
+    /*-------------------------------------------------*/
+    /* =  Responsive
+    /*-------------------------------------------------*/
+
+    var parentHeightKey = [];
+
+    $('div[data-responsive="parent-height"]').each(function() {
+        parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)});
+    });
+    $('div[data-responsive="child-height"]').each(function() {
+        var childHeight;
+        var childId = $(this).attr('data-responsive-id');
+
+        for(var i=0;i<parentHeightKey.length;i++){
+            if(parentHeightKey[i].id == childId) {
+                childHeight = parentHeightKey[i].height;
+            }
+        }
+        $(this).css({'height': childHeight + 'px'})
+    });
+    $(window).resize(function () {
+
+        var currentWidth  =  $(window).width();
+
+        if(currentWidth>767){
+            $('div[data-responsive="parent-height"]').each(function() {
+                parentHeightKey.push({id:$(this).attr('data-responsive-id'),height:$(this).outerHeight(true)});
             });
             $('div[data-responsive="child-height"]').each(function() {
                 var childHeight;
                 var childId = $(this).attr('data-responsive-id');
-                for (var i = 0; i < parentHeightKey.length; i++) {
-                    if (parentHeightKey[i].id == childId) {
+
+                for(var i=0;i<parentHeightKey.length;i++){
+                    if(parentHeightKey[i].id == childId) {
                         childHeight = parentHeightKey[i].height;
                     }
                 }
-                $(this).css({
-                    'height': childHeight + 'px'
-                })
+                $(this).css({'height': childHeight + 'px'})
             });
         }
     });
-
-    /* -------------------------------------------------*/
-    /* =  Rellax */
-    /* -------------------------------------------------*/
-    let rellax = new Rellax(".rellax", {});
-
-    /* -------------------------------------------------*/
-    /* =  Hotspot Map */
-    /* -------------------------------------------------*/
-
-	$(".hs-wrap").hotspot({
-        "show_on": "mouseover",
-        "responsive": "on"
+    /*-------------------------------------------------*/
+    /* =  Magnific popup
+    /*-------------------------------------------------*/
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        closeBtnInside: false,
+        fixedContentPos: true
     });
-
-
-    jQuery(document).ready(() => {
-        //hotspot map - fix tooltip partially hidden because of overflow:hidden
-        jQuery('.hsmap_center').parents('.be-section').css('overflow', 'visible').parents('#hotspotwrap').css('overflow', 'hidden');
-        //hotspot map - fix tooltip z-index
-        jQuery('.hsmap_center').parents('.be-row').addClass('be-row-hsmap');
-        jQuery('.hs-spot-object').click(function() {
-            if (jQuery(window).width() < 768) {
-                var $fixed_tooltip;
-                $fixed_tooltip = jQuery(this).parents('.hsmap_center').find('.hsmap_fixed_tooltip');
-                $fixed_tooltip.html('<div class="fixed_tooltip_content">' + jQuery(this).find('.hs-tooltip').html() + '</div>');
-                var scrollOffset = $fixed_tooltip.offset().top - (jQuery(window).height() - $fixed_tooltip.outerHeight() + 10);
-                if (scrollOffset > jQuery(window).scrollTop()) jQuery("html, body").animate({
-                    scrollTop: scrollOffset
-                }, 250);
-            }
+    $('.project-images').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: '.lightbox',
+            type: 'image',
+            fixedContentPos: true,
+            gallery: {
+                enabled:true
+            },
+            closeBtnInside: false
         });
     });
-
-}(jQuery));
-
-$(".hotspot").each(function () {
-
-    let $this = $(this),
-        top = $this.data("top"),
-        left = $this.data("left");
-
-    $this.css({
-        "top": `${top  }%`,
-        "left": `${left  }%`
-    }).addClass("is-visible");
-
-});
-$(".hotspots-label").on("click", function (e) {
-
-    $(this).removeClass("is-visible");
-    $(this).parents(".image")
-.find(".hotspot")
-.removeClass("is-active");
-    e.preventDefault();
-
-});
-$(".hotspot").on("click", function (e) {
-
-    let text = $(this).data("text");
-
-    if (!$(this).hasClass("is-active")) {
-
-        $(this).parents(".image")
-.find(".hotspot")
-.removeClass("is-active");
-        $(this).addClass("is-active");
-        $(this).parents(".image")
-.find(".hotspots-label")
-.html("<strong>" + $(this).text() + "</strong> <span>" + text + "</span>")
-.addClass("is-visible");
-
-} else {
-
-        $(this).removeClass("is-active");
-        $(this).parents(".image")
-.find(".hotspots-label")
-.html("<strong>" + $(this).text() + "</strong> <span>" + text + "</span>")
-.removeClass("is-visible");
-
-}
-    e.preventDefault();
-
-});
-
-/* -------------------------------------------------*/
-/* =  OWL Carousel */
-/* -------------------------------------------------*/
-
-$(document).ready(($) => {
-    "use strict";
-    $(".image-carousel").owlCarousel({
-        center: true,
-        loop: true,
-        //animateOut: 'fadeOut',
-        //animateIn: 'fadeIn',
-        MouseDrag: true,
-        touchDrag: true,
-        items: 1,
-        autoplay: false,
-        autoplayHoverPause: false,
-        dots: true,
-        nav: true,
-        navText: ['<span><i class="icon-chevron-left"></i></span>', '<span><i class="icon-chevron-right"></i></span>']
+    $('.lightbox-image').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled:true
+        },
+        closeBtnInside: false
     });
+
+})(jQuery);
+
+$(document).ready(function($) {
+    "use strict";
+
+    var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    /*-------------------------------------------------*/
+    /* =  Carousel
+    /*-------------------------------------------------*/
+    try {
+        $(".post-gallery, .project-gallery").owlCarousel({
+            center: true,
+            items:1,
+            loop:true
+        });
+        $(".image-carousel").owlCarousel({
+            loop:true,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            items:1,
+            autoplay:false,
+            autoplayHoverPause:false,
+            dots:true,
+            nav:true,
+            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
+        });
+    } catch(err) {
+
+    }
+    /*-------------------------------------------------*/
+    /* =  Scroll between sections
+    /*-------------------------------------------------*/
+    /*-------------------------------------------------*/
+    /* =  Skills
+    /*-------------------------------------------------*/
+    try {
+        $('#skills').appear(function() {
+            jQuery('.skill-list li span').each(function(){
+                jQuery(this).animate({
+                    width:jQuery(this).attr('data-percent')
+                },2000);
+            });
+            $('.skill-list li .count').each(function () {
+                var number = $(this).attr('data-to');
+                $(this).prop('Counter',0).animate({
+                    Counter: number
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+    } catch(err) {
+
+    }
+    /*-------------------------------------------------*/
+    /* =  Modaal
+    /*-------------------------------------------------*/
+
 });

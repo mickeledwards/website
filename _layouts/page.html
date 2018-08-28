@@ -1,94 +1,45 @@
 ---
-layout: base
+layout: default
 ---
-
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% if page.header.image contains "://" %}
-  {% capture img_path %}{{ page.header.image }}{% endcapture %}
-{% else %}
-  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
-{% endif %}
-
-{% if page.header.cta_url contains "://" %}
-  {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
-{% else %}
-  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
-{% endif %}
-
-{% if page.header.overlay_image contains "://" %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
-{% elsif page.header.overlay_image %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
-{% endif %}
-
-{% if page.header.overlay_filter contains "rgba" %}
-  {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
-{% elsif page.header.overlay_filter %}
-  {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
-{% endif %}
-
-{% if page.header.image_description %}
-  {% assign image_description = page.header.image_description %}
-{% else %}
-  {% assign image_description = page.title %}
-{% endif %}
-
-{% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
-
-<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %} rellax" data-rellax-speed="-5"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'none' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %} z-index: -1;">
-</div>
-
-  {% if page.header.overlay_color or page.header.overlay_image %}
-    <div class="row padding-topbottom-null">
-		<div class="col-md-12">
-          <h1 class="page__title center">
-            {% if paginator and site.paginate_show_page_num %}
-              {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
-            {% else %}
-              {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
-            {% endif %}
-          </h1>
-		</div>
-    </div>
-  {% else %}
-    <img src="{{ img_path }}" alt="{{ image_description }}" class="page__hero-image">
-  {% endif %}
-
-{% endif %}
-
-{% unless page.header.overlay_color or page.header.overlay_image %}
-   <div class="row padding-topbottom-null">
-        <div class="col-md-12 padding-leftright-null">
-             <div class = "text center">
-                  {% if page.title %}<h1 class="margin-bottom-small">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+<div id="page-content">
+    <div class="container project-container project-images">
+       <div class="row no-margin">
+           <div class="col-md-12 padding-leftright-null">
+               <div id="page-header">
+                   <div class="text">
+                       <h1 class="margin-bottom-small">{{page.title}}<span class="color">.</span></h1>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="row no-margin wrap-text">
+            <div class="col-md-4 padding-leftright-null">
+                <div class="text small padding-topbottom-null">
+                    {%if page.type%}
+                    <h3 class="heading margin-bottom-extrasmall">Type<span class="color">.</span></h3>
+                    <p class="heading left margin-bottom">{{page.type}}</p>
+                    {%endif%}
+                    {%if page.client%}
+                    <h3 class="heading margin-bottom-extrasmall">Client<span class="color">.</span></h3>
+                    <p class="heading left margin-bottom">{{page.client}}</p>
+                    {%endif%}
+                    {%if page.year%}
+                    <h3 class="heading margin-bottom-extrasmall">Year<span class="color">.</span></h3>
+                    <p class="heading left">{{page.year}}</p>
+                    {%endif%}
+                </div>
             </div>
+            {%if page.description%}
+            <div class="col-md-8 padding-leftright-null">
+                <div class="text small padding-topbottom-null">
+                    <p class="heading left full">{{page.description}}</p>
+                    {%if page.descriptionlink%}<a href="{{page.descriptionlink}}" class="btn-pro">See the project</a>{%endif%}
+                </div>
+            </div>
+            {%endif%}
+        </div>
+        <div class="row project_wrapper">
+            {{ content }}
         </div>
     </div>
-{% endunless %}
-
-<div class="contentwrap">
-
-{% include toc.html html=content sanitize=true%}
-
-{{ content }}
 </div>
-
-{% if page.previous or page.next %}
-<div class="paginator">
-	<div class="paginator-button">
-		{%if page.next%}
-			<a href="{{ page.next.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.next.title | markdownify | strip_html }}" role="button">Previous</a>
-		{%else%}
-			<a href="#" class="btn small margin-null disabled" role="button">Previous</a>
-		{%endif%}
-		</div>
-	<div class="paginator-button">
-		{% if page.previous %}
-			<a href="{{ page.previous.url | absolute_url }}" class="btn-alt small shadow margin-null" title="{{ page.previous.title | markdownify | strip_html }}" role="button">Next</a>
-		{% else %}
-			<a class="btn margin-null small disabled" role="button">Next</a>
-		{% endif %}
-	</div>
-</div>
-{% endif %}
