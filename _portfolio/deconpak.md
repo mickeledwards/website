@@ -11,8 +11,10 @@ type: Medical Design
 
 
 ## DeconPak
-
 ### A Completely Understandable Patient-Led Decontamination Kit
 
 {% include gallery.html width='col-md-12' img='/assets/img/deconpak/final1.jpg' alt = 'DeconPak Information' %}
 {% include gallery.html width='col-md-12' img='/assets/img/deconpak/final2.jpg' alt = 'DeconPak Render' %}
+
+
+{% include gallery.html width='col-md-12' img='/assets/img/deconpak/finalmodels.jpg' alt = 'DeconPak Render' %}
