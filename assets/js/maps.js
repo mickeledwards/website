@@ -183,7 +183,7 @@ var $ = jQuery.noConflict();
                     "elementType": "geometry",
                     "stylers": [
                         {
-                            "color": "#527a99"
+                            "color": "#4559a8"
                         },
                         {
                             "lightness": 17
@@ -218,7 +218,7 @@ var $ = jQuery.noConflict();
                     path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
                     scale: 10,
                     strokeWeight:8,
-                    strokeColor:"#527a99"
+                    strokeColor:"#4559a8"
                 },
             });
         }
