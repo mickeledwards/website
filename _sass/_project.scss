@@ -490,3 +490,32 @@
         grid-column: 1 / span 12;
     }
 }
+
+
+.full-width-container {
+    min-height: 30vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+
+    .inner-img-wrap{
+        min-height: 30vh;
+        text-align:center;
+
+        img{
+            max-height: 80vh;
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+                        @media screen and (min-width:$medium){
+                max-width: 50%;
+            }
+        }
+    }
+}

@@ -121,9 +121,6 @@
             }
         }
     }
-    .wrap-text {
-        padding: 25px;
-    }
     .bg-img {
         @include background-cover;
         transition: height .4s ease;
