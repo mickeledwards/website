@@ -2,7 +2,7 @@
 layout: page
 title: YOU
 teaser: indexicons/you.jpg
-description: filler text.
+description: Youth and Organizations United. YOU. Connecting survivors of human trafficking to vital advocates.
 year: 2019
 type: Service Design
 ---
