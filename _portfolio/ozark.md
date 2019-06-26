@@ -6,3 +6,7 @@ description: From acid attacks to agricultural spills, contamination is a major 
 year: 2019
 type: Consumer Goods Design
 ---
+
+{% include gallery.html img='/assets/img/ozark/ozark1.jpg' alt = 'market research' %}
+{% include gallery.html img='/assets/img/ozark/ozark2.jpg' alt = 'ideation' %}
+{% include gallery.html img='/assets/img/ozark/ozark3.jpg' alt = 'final' %}

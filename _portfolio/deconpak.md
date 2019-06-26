@@ -7,11 +7,10 @@ year: 2017
 type: Medical Design
 ---
 
-{% include fullwidth.html img='/assets/img/deconpak/research.jpg' innerimg='/assets/img/deconpak/decontext.svg'%}
+{% include fullwidth.html img='/assets/img/deconpak/research.jpg' innerimg='/assets/img/deconpak/deconpak.svg'%}
 
 
-{% include gallery.html width='col-md-12' img='/assets/img/deconpak/final1.jpg' alt = 'DeconPak Information' %}
-{% include gallery.html width='col-md-12' img='/assets/img/deconpak/final2.jpg' alt = 'DeconPak Render' %}
-
-
-{% include gallery.html width='col-md-12' img='/assets/img/deconpak/finalmodels.jpg' alt = 'DeconPak Render' %}
+{% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'market research 1' %}
+{% include gallery.html img='/assets/img/deconpak/decon2.jpg' alt = 'market research 2' %}
+{% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'final 1' %}
+{% include gallery.html img='/assets/img/deconpak/decon4.jpg' alt = 'final 2' %}

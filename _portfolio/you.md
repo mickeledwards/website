@@ -7,8 +7,7 @@ year: 2019
 type: Service Design
 ---
 
-{% include fullwidth.html img='/assets/img/you/homelessbackground.jpg' innerimg='/assets/img/you/traffickingtext.svg'%}
-{% include gallery.html width='col-md-12' img='/assets/img/deconpak/final2.jpg' alt = 'DeconPak Render' %}
-
-
-{% include gallery.html width='col-md-12' img='/assets/img/deconpak/finalmodels.jpg' alt = 'DeconPak Render' %}
+{% include fullwidth.html img='/assets/img/you/homelessbackground.jpg' innerimg='/assets/img/you/you.svg'%}
+{% include gallery.html img='/assets/img/you/you1.jpg' alt = 'market research' %}
+{% include gallery.html img='/assets/img/you/you2.jpg' alt = 'journey map' %}
+{% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}

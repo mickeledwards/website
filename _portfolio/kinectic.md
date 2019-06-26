@@ -6,3 +6,6 @@ description: From acid attacks to agricultural spills, contamination is a major 
 year: 2019
 type: Sculpture Design
 ---
+
+{% include gallery.html img='/assets/img/grant/grant1.jpg' alt = 'market research' %}
+{% include gallery.html img='/assets/img/grant/grant2.jpg' alt = 'final' %}

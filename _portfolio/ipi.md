@@ -6,3 +6,8 @@ description: From acid attacks to agricultural spills, contamination is a major 
 year: 2016
 type: Furniture Design
 ---
+{% include fullwidth.html img='/assets/img/ipi/research.jpg' innerimg='/assets/img/ipi/ipi.svg'%}
+
+{% include gallery.html img='/assets/img/ipi/ipi1.jpg' alt = 'market research' %}
+{% include gallery.html img='/assets/img/ipi/ipi2.jpg' alt = 'final 1' %}
+{% include gallery.html img='/assets/img/ipi/ipi3.jpg' alt = 'final 2' %}

@@ -1,4 +1,4 @@
-<div class="{{include.width}}">
+<div class="{{include.width | default: "col-md-12"}}">
         <div class="text">
             {%if include.lightbox == 'true'%}
             <a href="{{include.img}}" class="lightbox">
