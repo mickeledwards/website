@@ -18,9 +18,12 @@ email: mickeledwards@icloud.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal Website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jgcardoso.github.io" # the base hostname & protocol for your site
+url: "http://mickeledwards.com" # the base hostname & protocol for your site
 twitter_username:
 github_username:
+
+plugins:
+  - octopress-autoprefixer
 
 # Build settings
 markdown: kramdown
