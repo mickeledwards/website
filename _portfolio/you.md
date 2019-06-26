@@ -7,6 +7,9 @@ year: 2019
 type: Service Design
 ---
 {% include fullwidth.html img='/assets/img/you/homelessbackground.jpg' innerimg='/assets/img/you/you.svg'%}
+## Researching the Problem
 {% include gallery.html img='/assets/img/you/you1.jpg' alt = 'market research' %}
+## Journey of a Potential Victim
 {% include gallery.html img='/assets/img/you/you2.jpg' alt = 'journey map' %}
+## Artifacts for YOU
 {% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
