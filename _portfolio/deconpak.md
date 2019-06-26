@@ -6,10 +6,7 @@ description: From acid attacks to agricultural spills, contamination is a major 
 year: 2017
 type: Medical Design
 ---
-
 {% include fullwidth.html img='/assets/img/deconpak/research.jpg' innerimg='/assets/img/deconpak/deconpak.svg'%}
-
-
 {% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'market research 1' %}
 {% include gallery.html img='/assets/img/deconpak/decon2.jpg' alt = 'market research 2' %}
 {% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'final 1' %}

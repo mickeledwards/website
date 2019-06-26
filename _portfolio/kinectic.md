@@ -6,6 +6,5 @@ description: This project began as a funded art piece for my university that use
 year: 2019
 type: Sculpture Design
 ---
-
 {% include gallery.html img='/assets/img/grant/grant1.jpg' alt = 'market research' %}
 {% include gallery.html img='/assets/img/grant/grant2.jpg' alt = 'final' %}
