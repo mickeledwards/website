@@ -2,7 +2,7 @@
 layout: page
 title: Kinectic Sculpture
 teaser: indexicons/designgrant.jpg
-description: From acid attacks to agricultural spills, contamination is a major issue that is often overlooked. Unfortunately, the current products and services on the market are not inclusively designed and are hard to understand in an event of an emergency, even for an able-bodied adult. This design seeks to develop a more inclusive system of decontamination procedures that will take less time to carry out and ultimately save lives.
+description: This project began as a funded art piece for my university that uses computer vision to mirror the actions of the viewer in front of the piece. This is done by detecting the changes in depth that one standing in front of it causes, then rotating colored in spheres in accordance.
 year: 2019
 type: Sculpture Design
 ---

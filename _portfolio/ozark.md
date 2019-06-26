@@ -2,7 +2,7 @@
 layout: page
 title: Ozark Barbecue
 teaser: indexicons/ozark.jpg
-description: From acid attacks to agricultural spills, contamination is a major issue that is often overlooked. Unfortunately, the current products and services on the market are not inclusively designed and are hard to understand in an event of an emergency, even for an able-bodied adult. This design seeks to develop a more inclusive system of decontamination procedures that will take less time to carry out and ultimately save lives.
+description: Develop a solution to the inconveniences and problems that cause users to avoid utilizing their barbecue
 year: 2019
 type: Consumer Goods Design
 ---
