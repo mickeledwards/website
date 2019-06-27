@@ -10,6 +10,6 @@ type: Service Design
 ## Researching the Problem
 {% include gallery.html img='/assets/img/you/you1.jpg' alt = 'market research' %}
 ## Journey of a Potential Victim
-{% include gallery.html img='/assets/img/you/you2.jpg' alt = 'journey map' %}
+{% include gallery.html img='/assets/img/you/you2.svg' alt = 'journey map' %}
 ## Artifacts for YOU
 {% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
