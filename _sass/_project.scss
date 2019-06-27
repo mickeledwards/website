@@ -489,12 +489,15 @@
         padding-bottom: 60px;
     }
     h1, h2, h3, h4, h5, p{
-        grid-column: 1 / span 12;
+          -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
     }
 }
 
 
 .full-width-container {
+    display:block;
     min-height: 30vh;
   width: 100vw;
   position: relative;

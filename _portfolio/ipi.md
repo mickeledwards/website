@@ -5,8 +5,9 @@ teaser: indexicons/ipi.jpg
 description: Develop lounge furniture that can create an inclusive and welcoming environment within municipal settings.
 year: 2016
 type: Furniture Design
+fullwidth: /assets/img/ipi/research.jpg
+fullwidthinner: /assets/img/ipi/ipi.svg
 ---
-{% include fullwidth.html img='/assets/img/ipi/research.jpg' innerimg='/assets/img/ipi/ipi.svg'%}
 ## Research and Sketches
 {% include gallery.html img='/assets/img/ipi/ipi1.jpg' alt = 'market research' %}
 ## Final Units

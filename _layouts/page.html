@@ -4,7 +4,7 @@ layout: default
 <div id="page-content">
     <div class="container project-container project-images">
        <div class="row no-margin">
-           <div class="col-md-12 padding-leftright-null">
+           <div class="col-xs-12 padding-leftright-null">
                <div id="page-header">
                    <div class="text">
                        <h1 class="margin-bottom-small">{{page.title}}<span class="color">.</span></h1>
@@ -13,7 +13,7 @@ layout: default
            </div>
         </div>
         <div class="row no-margin wrap-text">
-            <div class="col-md-4 padding-leftright-null">
+            <div class="col-xs-12 col-md-4 padding-leftright-null">
                 <div class="text small padding-topbottom-null">
                     {%if page.type%}
                     <h3 class="heading margin-bottom-extrasmall">Type<span class="color">.</span></h3>
@@ -30,7 +30,7 @@ layout: default
                 </div>
             </div>
             {%if page.description%}
-            <div class="col-md-8 padding-leftright-null">
+            <div class="col-xs-12 col-md-8 padding-leftright-null">
                 <div class="text small padding-topbottom-null">
                     <p class="heading left full">{{page.description}}</p>
                     {%if page.descriptionlink%}<a href="{{page.descriptionlink}}" class="btn-pro">See the project</a>{%endif%}
@@ -38,6 +38,13 @@ layout: default
             </div>
             {%endif%}
         </div>
+        {%if page.fullwidth%}
+        <div class="full-width-container" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{page.fullwidth}});">
+                <div class="inner-img-wrap">
+                    <img class="inner-img" src="{{page.fullwidthinner}}"/>
+                </div>
+        </div>
+        {%endif%}
         <div class="row project_wrapper">
             {{ content }}
         </div>
