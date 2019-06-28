@@ -149,34 +149,14 @@ var $ = jQuery.noConflict();
         }
     });
     /*-------------------------------------------------*/
-    /* =  Magnific popup
+    /* =  Lightbox
     /*-------------------------------------------------*/
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        closeBtnInside: false,
-        fixedContentPos: true
-    });
-    $('.project-images').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: '.lightbox',
-            type: 'image',
-            fixedContentPos: true,
-            gallery: {
-                enabled:true
-            },
-            closeBtnInside: false
-        });
-    });
-    $('.lightbox-image').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled:true
-        },
-        closeBtnInside: false
-    });
+
+
+            $('#lightboxinit').lightGallery({
+                selector: '.lightboximg'
+            });
+
 
 })(jQuery);
 

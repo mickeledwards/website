@@ -1,11 +1,5 @@
-<div class="{{include.width | default: "col-xs-12"}}">
-        <div class="text">
-            {%if include.lightbox == 'true'%}
-            <a href="{{include.img}}" class="lightbox">
-            <img src="{{include.img}}" alt="{{include.alt}}" class="img-post">
-            </a>
-            {%else%}
-            <img src="{{include.img}}" alt="{{include.alt}}" class="img-post">
-            {%endif%}
-        </div>
+<div class="text lightboximg {{include.width | default: "col-xs-12"}}" data-src="{{include.img}}"  data-sub-html="<p>{{include.alt}}</p>">
+    <a href="">
+        <img src="{{include.img}}" alt="{{include.alt}}" class="img-post">
+    </a>
 </div>

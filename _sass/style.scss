@@ -3,7 +3,7 @@
 $primary-font: 'Barlow', sans-serif;
 $secondary-font: 'Barlow', sans-serif;
 $paragraph-font: 'Merriweather', serif;
-$alt-font: 'Roboto', serif;
+$alt-font: 'Barlow', sans-serif;
 $primary-color: #000;
 $primary-color-light: #444;
 $paragraph-color: #444;
@@ -29,7 +29,7 @@ $full: 1199px;
 @import 'vendor/normalize';
 @import 'mixins';
 @import 'reset';
-@import 'vendor/flexslider','vendor/magnific-popup';
+@import 'vendor/flexslider','vendor/lightgallery/lightgallery';
 @import 'iconfont';
 @import 'grid';
 @import 'general';
