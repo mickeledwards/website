@@ -1,57 +1,6 @@
 #page-header {
     @include background-cover;
     position: relative;
-
-    .bg-img {
-        height: 350px;
-        @include background-cover;
-        position: relative;
-        border-radius: 4px;
-        transition: box-shadow .4s ease;
-        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
-
-        @media screen and (max-width: $small) {
-            padding: 30%;
-            height: auto;
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 75%;
-            bottom: 0;
-            border-radius: 4px 0 0 4px;
-            background-color: rgba(255, 255, 255, 0.68);
-            transition: right .8s ease;
-        }
-
-        &:hover {
-
-            transition: box-shadow .4s ease;
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
-
-            &:before {
-                right: 100%;
-                transition: right .8s ease;
-            }
-        }
-    }
-
-    span {
-        &.post-meta {
-            display: block;
-            color: $secondary-color;
-            font-family: $secondary-font;
-            font-size: 22px;
-            line-height: 26px;
-            display: inline-block;
-            font-weight: 300;
-            transition: color .4s ease;
-        }
-    }
-
     .text {
         padding: 25px;
         position: relative;
@@ -60,22 +9,6 @@
         @media screen and (max-width: $small) {
                 padding: 25px 5px;
             }
-    }
-
-    &.image {
-        text-align: right;
-
-        @media screen and (max-width: $large) {
-            text-align: left;
-        }
-
-        .col-md-4 {
-            .text {
-                @media screen and (max-width: $large) {
-                    padding-bottom: 0;
-                }
-            }
-        }
     }
 }
 .content-section {
@@ -128,10 +61,6 @@
 
         @media screen and (max-width:$medium) {
             max-height: 375px;
-        }
-
-        &.fullpage-wrap {
-            padding: 0 50px;
         }
 
         &.responsive {
@@ -194,18 +123,5 @@
             }
         }
 
-    }
-}
-.content-post {
-    ul {
-        list-style: disc;
-        padding-left: 28px;
-        font-family: $paragraph-font;
-        color: $paragraph-color;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 1px;
-        font-weight: 300;
-        margin: 25px 0 25px 15px;
     }
 }

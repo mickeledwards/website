@@ -861,11 +861,6 @@
         max-width: 1920px;
     }
 }
-.fullpage-wrap {
-    margin-left: -50px;
-    margin-right: -50px;
-    background-color: white;
-}
 .fullpage-md-wrap {
     @media screen and (max-width: $large) {
         margin-left: -50px !important;
