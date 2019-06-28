@@ -154,7 +154,8 @@ var $ = jQuery.noConflict();
 
 
             $('#lightboxinit').lightGallery({
-                selector: '.lightboximg'
+                selector: '.lightboximg',
+                download: false
             });
 
 
