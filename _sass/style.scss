@@ -17,6 +17,10 @@ $body-background: #ffffff;
 $grey-background: #F6F6F6;
 $darkgrey-background: #E6E7E8;
 
+/*-------------------------------------------------*/
+/* =  Breakpoints
+/*-------------------------------------------------*/
+
 $iphone4: 320px;
 $iphone6: 375px;
 $iphone6plus: 414px;
@@ -26,6 +30,22 @@ $medium: 767px;
 $large: 991px;
 $full: 1199px;
 
+
+/*-------------------------------------------------*/
+/* =  Hotspot Variables
+/*-------------------------------------------------*/
+
+$buttonRadius: 18px;
+$labelPaddingX: $buttonRadius*1;
+$labelBorderRadius: 2px;
+$labelFade: 0.1s;
+$colorHoverAdd: #0a0d2c;
+$colorText: #333;
+$colorHeadingBackground: $primary-color-light;
+
+/*-------------------------------------------------*/
+/* =  Imports
+/*-------------------------------------------------*/
 @import 'vendor/normalize';
 @import 'mixins';
 @import 'reset';

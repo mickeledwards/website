@@ -1,4 +1,34 @@
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+
+
 var $ = jQuery.noConflict();
+
+
+    /*-------------------------------------------------*/
+    /* =  HotSpot
+    /*-------------------------------------------------*/
+$(".lg-hotspot-label").show("fast");
+$(".lg-hotspot-label").hide();
+
+$(".lg-hotspot-button").hover(function(){
+  var thisLabel = $(this).siblings(".lg-hotspot-label");
+  var thisLabelState = thisLabel.css("display");
+  $(".lg-hotspot-label").fadeOut(0).parent().css("z-index", "0");
+  if(thisLabelState=="none") {
+    thisLabel.fadeIn(0);
+    $(this).parent().css("z-index", "999");
+  }
+});
+
 
 (function($) {
     "use strict";
@@ -152,13 +182,10 @@ var $ = jQuery.noConflict();
     /* =  Lightbox
     /*-------------------------------------------------*/
 
-
             $('#lightboxinit').lightGallery({
                 selector: '.lightboximg',
                 download: false
             });
-
-
 })(jQuery);
 
 $(document).ready(function($) {
@@ -189,37 +216,5 @@ $(document).ready(function($) {
     } catch(err) {
 
     }
-    /*-------------------------------------------------*/
-    /* =  Scroll between sections
-    /*-------------------------------------------------*/
-    /*-------------------------------------------------*/
-    /* =  Skills
-    /*-------------------------------------------------*/
-    try {
-        $('#skills').appear(function() {
-            jQuery('.skill-list li span').each(function(){
-                jQuery(this).animate({
-                    width:jQuery(this).attr('data-percent')
-                },2000);
-            });
-            $('.skill-list li .count').each(function () {
-                var number = $(this).attr('data-to');
-                $(this).prop('Counter',0).animate({
-                    Counter: number
-                }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            });
-        });
-    } catch(err) {
-
-    }
-    /*-------------------------------------------------*/
-    /* =  Modaal
-    /*-------------------------------------------------*/
 
 });

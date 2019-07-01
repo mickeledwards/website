@@ -11,7 +11,7 @@
         }
     }
 }
-.project-images {
+.project-container {
     img {
         width: 100%;
         height: auto;
@@ -25,68 +25,6 @@
         &:last-child {
             img {
                 margin-bottom: 0;
-            }
-        }
-    }
-    &.grid {
-        position: relative;
-        overflow: hidden;
-
-        .image {
-            @include background-cover;
-            padding: 50%;
-            position: relative;
-
-
-            span {
-                &.content {
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    padding: 50px;
-                    transition-duration: 300ms;
-
-                    @media screen and (min-width:$medium) and (max-width:$large) {
-                        padding: 30px;
-                    }
-                    @media screen and (max-width:$small) {
-                        padding: 30px;
-                    }
-                    @media screen and (max-width:360px) {
-                        padding: 25px;
-                    }
-
-                    span {
-                        &.title {
-                            display: block;
-                            font-family: $primary-font;
-                            font-size: 12px;
-                            line-height: 22px;
-                            color: white;
-                            letter-spacing: 2px;
-                            text-transform: uppercase;
-
-                            @media screen and (max-width:360px) {
-                                line-height: 18px;
-                            }
-                        }
-                    }
-                    em {
-                        display: block;
-                        font-family: $primary-font;
-                        font-weight: 400;
-                        color: white;
-                        font-size: 35px;
-
-                        @media screen and (min-width:$medium) and (max-width:$large) {
-                            font-size: 25px;
-                        }
-                        @media screen and (max-width:$small) {
-                            font-size: 25px;
-                        }
-                    }
-                }
             }
         }
     }
@@ -322,7 +260,7 @@
             }
         }
     }
-    #projects, #projects-filters {
+    #projects {
 
         &.page {
             padding: 50px 25px;
@@ -489,9 +427,9 @@
         padding-bottom: 60px;
     }
     h1, h2, h3, h4, h5, p{
-          -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  max-width: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        width: 100%;
     }
 }
 
@@ -518,7 +456,7 @@
             margin: auto;
             max-width: 100%;
             height: auto;
-                        @media screen and (min-width:$medium){
+            @media screen and (min-width:$medium){
                 max-width: 50%;
             }
         }
