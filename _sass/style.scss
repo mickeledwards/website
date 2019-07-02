@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,700|Merriweather|Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,700|Merriweather');
 
 $primary-font: 'Barlow', sans-serif;
 $secondary-font: 'Barlow', sans-serif;
@@ -21,25 +21,18 @@ $darkgrey-background: #E6E7E8;
 /* =  Breakpoints
 /*-------------------------------------------------*/
 
-$iphone4: 320px;
-$iphone6: 375px;
-$iphone6plus: 414px;
-$ipad:1024px;
 $small: 480px;
 $medium: 767px;
 $large: 991px;
 $full: 1199px;
 
-
 /*-------------------------------------------------*/
 /* =  Hotspot Variables
 /*-------------------------------------------------*/
 
-$buttonRadius: 18px;
-$labelPaddingX: $buttonRadius*1;
-$labelBorderRadius: 2px;
+$HotspotButtonRadius: 18px;
 $labelFade: 0.1s;
-$colorHoverAdd: #0a0d2c;
+$colorHoverAdd: #4f66d4;
 $colorText: #333;
 $colorHeadingBackground: $primary-color-light;
 
@@ -62,3 +55,5 @@ $colorHeadingBackground: $primary-color-light;
 @import 'contact';
 @import 'footer';
 @import 'elements';
+@import 'owl';
+@import 'animations';

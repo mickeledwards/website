@@ -270,15 +270,16 @@ em {
         z-index: 0;
         &:hover, &:active {
             .lg-hotspot-button {
-                background-color: $secondary-color + $colorHoverAdd;
+                background-color: $colorHoverAdd;
                 &:after {
-                    background-color: $secondary-color + $colorHoverAdd;
+                    background-color: $colorHoverAdd;
                 }
             }
         }
         .lg-hotspot-button {
-            height: $buttonRadius*2;
-            width: $buttonRadius*2;
+            cursor: pointer;
+            height: $HotspotButtonRadius*2;
+            width: $HotspotButtonRadius*2;
             padding: 0px;
             border-radius: 100%;
             background-color: $secondary-color;
@@ -293,8 +294,8 @@ em {
                 transform: translate(-50%, -50%);
                 text-align: center;
                 display: block;
-                height: $buttonRadius;
-                width: $buttonRadius;
+                height: $HotspotButtonRadius;
+                width: $HotspotButtonRadius;
                 border-radius: 100%;
                 transition: border-color 1s linear;
             }
@@ -318,52 +319,50 @@ em {
             line-height: 1.45em;
             z-index: -1;
             pointer-events: none;
-            border-radius: $labelBorderRadius;
+            border-radius: 2px;
             user-select: none;
             display: none;
             transition: all $labelFade linear;
             h4 {
                 margin: 0;
-                padding: 0.65em $labelPaddingX;
+                padding: 0.65em $HotspotButtonRadius;
                 background-color: $colorHeadingBackground;
                 font-size: 1.1em;
                 font-weight: normal;
                 letter-spacing: 0.02em;
                 color: white;
-                border-radius: $labelBorderRadius $labelBorderRadius 0 0;
+                border-radius:2px 2px 0 0;
             }
             p {
                 font-family: $primary-font;
                 margin: 0;
-                padding: 1.1em $labelPaddingX 0 $labelPaddingX;
+                padding: 1.1em $HotspotButtonRadius 0 $HotspotButtonRadius;
                 color: $primary-color;
             }
         }
     }
     .top-left .lg-hotspot-label {
-        top: $buttonRadius;
+        top: $HotspotButtonRadius;
         right: auto;
         bottom: auto;
-        left: $buttonRadius;
+        left: $HotspotButtonRadius;
     }
     .top-right .lg-hotspot-label {
-        top: $buttonRadius;
-        right: $buttonRadius;
+        top: $HotspotButtonRadius;
+        right: $HotspotButtonRadius;
         bottom: auto;
         left: auto;
     }
     .bottom-right .lg-hotspot-label {
         top: auto;
-        right: $buttonRadius;
-        bottom: $buttonRadius;
+        right: $HotspotButtonRadius;
+        bottom: $HotspotButtonRadius;
         left: auto;
     }
     .bottom-left .lg-hotspot-label {
         top: auto;
         right: auto;
-        bottom: $buttonRadius;
-        left: $buttonRadius;
+        bottom: $HotspotButtonRadius;
+        left: $HotspotButtonRadius;
     }
 }
-@import 'owl';
-@import 'animations';

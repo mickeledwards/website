@@ -467,47 +467,6 @@ i {
     font-style: italic;
     font-family: $paragraph-font;
 
-    &.service {
-        display: block;
-        font-size: 35px;
-        margin-bottom: 18px;
-        transition: color .4s ease;
-
-        &.big {
-            font-size: 50px;
-        }
-
-        &.material {
-            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
-            width: 60px;
-            height: 60px;
-            border-radius: 10px;
-            font-size: 30px;
-            line-height: 60px;
-            text-align: center;
-            color: $secondary-color;
-            display: inline-block;
-
-            &.left {
-                float: left;
-            }
-        }
-        &.left {
-            float: left;
-        }
-        &:hover {
-            color: $secondary-color;
-            transition: color .4s ease;
-        }
-    }
-    &.material-icons {
-        &.service {
-            font-size: 30px;
-        }
-        &.left {
-            float: left;
-        }
-    }
     &.separator {
         display: block;
         font-size: 35px;
@@ -899,63 +858,6 @@ textarea {
     &.alt {
         .tab-pane {
             border: none;
-        }
-    }
-}
-.panel-group {
-    .panel {
-        border-radius: 0;
-        border: none;
-        box-shadow:none;
-        .panel-heading {
-            background-color: transparent;
-            background-image: none;
-            border-bottom: 1px solid $paragraph-color-light;
-            border-radius:0;
-            padding: 10px 0;
-            position: relative;
-
-            &:after {
-                position: absolute;
-                content: "\E313";
-                font-family: 'Material Icons';
-                font-size: 24px;
-                top: 14px;
-                right: 0;
-                color: $secondary-color;
-            }
-
-            h4.panel-title {
-                margin-bottom:0;
-                font-size: 16px;
-                line-height: 28px;
-
-                a {
-                    font-size: 16px;
-                    line-height: 28px;
-                    text-decoration: none;
-                    font-family: $secondary-font;
-                    color: $paragraph-color;
-                    display: block;
-                    z-index: 2;
-                    position: relative;
-                    padding-right: 36px;
-
-
-                    &:hover {
-                        color: $secondary-color;
-                    }
-                }
-            }
-        }
-        .panel-body {
-            border-top:none !important;
-            color: $primary-color;
-            font-size: 16px;
-            line-height: 26px;
-            font-family: $paragraph-font;
-            font-weight: 300;
-            padding: 25px 0;
         }
     }
 }

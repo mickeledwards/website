@@ -102,6 +102,8 @@
     position: relative;
     z-index: 2;
     background-color: white;
+    border-bottom: 1px solid rgba(117,117,117,0.05);
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.05);
     .wrap-slider {
         padding: 0 50px;
 
@@ -118,16 +120,16 @@
                     height: 250px;
                     height: 50vh;
                 }
+                @media screen and (max-width: $small) {
+                min-height: 250px;
+                height: calc(50vh - 62px);
+                }
             }
             &.error {
                 height: calc(100vh - 101px);
 
-                @media screen and (max-width: $large) {
+                @media screen and (max-width: $medium - 1) {
                     height: calc(50vh - 50px);
-                }
-                @media screen and (max-width: $small) {
-                    height: 250px;
-                    height: calc(50vh - 40px);
                 }
             }
         }
@@ -224,16 +226,14 @@
         &.error {
             height: calc(100vh - 101px);
 
-            @media screen and (max-width: $large) {
-                height: 400px;
+            @media screen and (max-width: $medium - 1) {
                 min-height: 355px;
                 height: calc(50vh - 50px);
             }
 
             @media screen and (max-width: $small) {
-                height: 250px;
                 min-height: 250px;
-                height: calc(50vh - 40px);
+                height: calc(50vh - 62px);
             }
         }
 
@@ -414,8 +414,6 @@
             }
         }
     }
-        border-bottom: 1px solid rgba(117,117,117,0.05);
-        box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.05)
 }
 
 .project_wrapper{
