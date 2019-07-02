@@ -1,45 +1,11 @@
 <div class= "hotspot-container col-xs-12">
-  <img src="/assets/img/you/city.jpg">
-
-    <div style="top: 20%; left: 32.9%;" class="lg-hotspot top-left">
-      <div class="lg-hotspot-button"><h5>1</h5></div>
-      <div class="lg-hotspot-label">
-        <h4>This is the title</h4>
-        <p>This is some text that goes in the label. It describes the item.</p>
-      </div>
+  <img src="{{page.hotspot-image}}">
+  {% for item in page.hotspot-points %}
+    <div style="top: {{ item.top }}%; left: {{ item.left }}%;" class="lg-hotspot {{item.location}}">
+      <div class="lg-hotspot-button"><h5>{{item.name}}</h5></div>
+        <div class="lg-hotspot-label">
+            <p>{{ item.text }}</p>
+        </div>
     </div>
-    <div style="top: 21%; left: 88%;" class="lg-hotspot top-right">
-      <div class="lg-hotspot-button"></div>
-      <div class="lg-hotspot-label">
-        <h4>Rocket ship</h4>
-        <p>Rocket ships can be great for business. Although they cost a lot of money, they can generate ideas and take your business to new heights.</p>
-      </div>
-    </div>
-    <div style="top: 45%; left: 15%;" class="lg-hotspot top-left">
-      <div class="lg-hotspot-button"></div>
-      <div class="lg-hotspot-label">
-        <h4>Cashbook</h4>
-        <p>What could be better than a book of cash?</p>
-      </div>
-    </div>
-    <div style="top: 45.5%; left: 62%;" class="lg-hotspot top-right">
-      <div class="lg-hotspot-button"></div>
-      <div class="lg-hotspot-label">
-        <h4>Gears</h4>
-        <p>Gears are used in a lot of situations, but here they're probably being used metaphorically.</p>
-      </div>
-    </div>
-    <div style="top: 83%; left: 30%;" class="lg-hotspot bottom-left">
-      <div class="lg-hotspot-button"></div>
-      <div class="lg-hotspot-label">
-        <h4>Notes</h4>
-        <p>Always take notes!</p>
-      </div>
-    </div>
-    <div style="top: 85%; left: 91%;" class="lg-hotspot bottom-right">
-      <div class="lg-hotspot-button"></div>
-      <div class="lg-hotspot-label">
-        <p>This is a label without a title.</p>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
+</div>
