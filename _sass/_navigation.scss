@@ -35,10 +35,6 @@ header {
                 position: relative;
                 float: left;
                 padding-top: 7px;
-
-                @media screen and (max-width:$small) {
-                    width: 180px;
-                }
                 a {
                     &.navbar-brand {
                         height:50px;

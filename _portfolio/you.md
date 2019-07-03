@@ -49,3 +49,4 @@ hotspot-points:
 
 ## Artifacts for YOU
 {% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
+

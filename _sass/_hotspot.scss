@@ -1,0 +1,113 @@
+.hotspot-container {
+    position: relative;
+    padding: 0;
+    .lg-image {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: scale-down;
+    }
+    .lg-hotspot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        &:hover, &:active {
+            .lg-hotspot-button {
+                background-color: $secondary-color-hover;
+                &:after {
+                    background-color: $secondary-color-hover;
+                }
+            }
+        }
+        .lg-hotspot-button {
+            cursor: pointer;
+            height: $HotspotButtonRadius*2;
+            width: $HotspotButtonRadius*2;
+            padding: 0px;
+            border-radius: 100%;
+            background-color: $secondary-color;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            animation: button-pulse 4s ease-in-out infinite;
+            text-align: center;
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                display: block;
+                height: $HotspotButtonRadius;
+                width: $HotspotButtonRadius;
+                border-radius: 100%;
+                transition: border-color 1s linear;
+            }
+            h5{
+                color: #fff;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-weight: 700;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .lg-hotspot-label {
+            position: absolute;
+            padding: 0 0 1.1em 0;
+            width: 16em;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 14.5px;
+            line-height: 1.45em;
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 2px;
+            user-select: none;
+            display: none;
+            transition: all 0.1s linear;
+            h4 {
+                margin: 0;
+                padding: 0.65em $HotspotButtonRadius;
+                background-color: $colorHeadingBackground;
+                font-size: 1.1em;
+                font-weight: normal;
+                letter-spacing: 0.02em;
+                color: white;
+                border-radius:2px 2px 0 0;
+            }
+            p {
+                font-family: $primary-font;
+                margin: 0;
+                padding: 1.1em $HotspotButtonRadius 0 $HotspotButtonRadius;
+                color: $primary-color;
+            }
+        }
+    }
+    .top-left .lg-hotspot-label {
+        top: $HotspotButtonRadius;
+        right: auto;
+        bottom: auto;
+        left: $HotspotButtonRadius;
+    }
+    .top-right .lg-hotspot-label {
+        top: $HotspotButtonRadius;
+        right: $HotspotButtonRadius;
+        bottom: auto;
+        left: auto;
+    }
+    .bottom-right .lg-hotspot-label {
+        top: auto;
+        right: $HotspotButtonRadius;
+        bottom: $HotspotButtonRadius;
+        left: auto;
+    }
+    .bottom-left .lg-hotspot-label {
+        top: auto;
+        right: auto;
+        bottom: $HotspotButtonRadius;
+        left: $HotspotButtonRadius;
+    }
+}

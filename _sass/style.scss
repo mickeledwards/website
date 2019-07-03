@@ -3,19 +3,17 @@
 $primary-font: 'Barlow', sans-serif;
 $secondary-font: 'Barlow', sans-serif;
 $paragraph-font: 'Merriweather', serif;
-$alt-font: 'Barlow', sans-serif;
 $primary-color: #000;
+$dark-background: #000;
 $primary-color-light: #444;
 $paragraph-color: #444;
-$paragraph-color-light: #F6F6F6;
-$secondary-color: #4559a8;
-$dark-background: #000;
-$light-background: #F6F6F6;
-$secondary-background: #4559a8;
-$color-background: #4559a8;
-$body-background: #ffffff;
-$grey-background: #F6F6F6;
 $darkgrey-background: #E6E7E8;
+$paragraph-color-light: #F6F6F6;
+$light-background: #F6F6F6;
+$grey-background: #F6F6F6;
+$body-background: #ffffff;
+$secondary-color: #4559a8;
+$secondary-color-hover: #4f66d4;
 
 /*-------------------------------------------------*/
 /* =  Breakpoints
@@ -31,9 +29,7 @@ $full: 1199px;
 /*-------------------------------------------------*/
 
 $HotspotButtonRadius: 18px;
-$labelFade: 0.1s;
-$colorHoverAdd: #4f66d4;
-$colorText: #333;
+$colorText: $paragraph-color;
 $colorHeadingBackground: $primary-color-light;
 
 /*-------------------------------------------------*/
@@ -55,5 +51,7 @@ $colorHeadingBackground: $primary-color-light;
 @import 'contact';
 @import 'footer';
 @import 'elements';
+@import 'comparison';
+@import 'hotspot';
 @import 'owl';
 @import 'animations';

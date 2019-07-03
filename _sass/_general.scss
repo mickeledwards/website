@@ -265,7 +265,7 @@ a {
                 }
             }
             &.border {
-                border: 1px solid $secondary-background;
+                border: 1px solid $secondary-color;
             }
         }
         i {
@@ -316,7 +316,7 @@ a {
 
         &:before {
            content: '';
-           background-color: $color-background;
+           background-color: $secondary-color;
            border-radius: 2px;
            position: absolute;
            top:-1px;
@@ -435,10 +435,10 @@ p {
     background-color: $light-background !important;
 }
 .color-background {
-    background-color: $color-background;
+    background-color: $secondary-color;
 }
 .secondary-background {
-    background-color: $secondary-background;
+    background-color: $secondary-color;
 }
 .dark-background {
     background-color: $dark-background !important;
@@ -491,7 +491,7 @@ dl {
     }
     dd {
         border-left: 2px solid $secondary-color;
-        font-family: $alt-font;
+        font-family: $primary-font;
         padding-left: 20px;
         margin-bottom:10px;
         font-style: italic;
@@ -636,7 +636,7 @@ textarea {
         font-family:"iconfont";
         position: absolute;
         display: block;
-        color: $secondary-background;
+        color: $secondary-color;
         font-size: 60px;
         text-align: center;
         line-height: 100%;
@@ -686,7 +686,7 @@ textarea {
         }
         &:hover {
             &:before {
-                background-color: $color-background;
+                background-color: $secondary-color;
                 transition: background-color .4s ease;
             }
         }
@@ -794,7 +794,7 @@ textarea {
                     border:none;
                     border-radius: 2px;
                     color: white;
-                    background-color: $color-background;
+                    background-color: $secondary-color;
                 }
                 &:focus {
                     outline: none;
