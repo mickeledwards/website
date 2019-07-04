@@ -12,3 +12,4 @@ type: Consumer Goods Design
 {% include gallery.html img='/assets/img/ozark/ozark2.jpg' alt = 'ideation' %}
 ## Final Design
 {% include gallery.html img='/assets/img/ozark/ozark3.jpg' alt = 'final' %}
+

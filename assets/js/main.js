@@ -200,7 +200,10 @@ $(document).ready(function($) {
         $(".post-gallery, .project-gallery").owlCarousel({
             center: true,
             items:1,
-            loop:true
+            loop:true,
+            dots:true,
+            nav:true,
+            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
         });
         $(".image-carousel").owlCarousel({
             loop:true,
@@ -211,7 +214,7 @@ $(document).ready(function($) {
             autoplayHoverPause:false,
             dots:true,
             nav:true,
-            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
+            navText: ['<span><i class="icon icon-arrow-left"></i></span>','<span><i class="icon icon-arrow-right"></i></span>']
         });
     } catch(err) {
 
