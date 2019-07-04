@@ -7,9 +7,6 @@
       }
     });
   }
-
-
-
 var $ = jQuery.noConflict();
 
 
@@ -187,28 +184,16 @@ $(".lg-hotspot-button").hover(function(){
                 download: false
             });
 })(jQuery);
-
-$(document).ready(function($) {
-    "use strict";
-
-    var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
     /*-------------------------------------------------*/
     /* =  Carousel
     /*-------------------------------------------------*/
+
+$(document).ready(function($) {
+    "use strict";
+    var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     try {
-        $(".post-gallery, .project-gallery").owlCarousel({
-            center: true,
-            items:1,
-            loop:true,
-            dots:true,
-            nav:true,
-            navText: ['<span><i class="icon ion-ios-arrow-left"></i></span>','<span><i class="icon ion-ios-arrow-right"></i></span>']
-        });
         $(".image-carousel").owlCarousel({
             loop:true,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
             items:1,
             autoplay:false,
             autoplayHoverPause:false,

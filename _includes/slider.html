@@ -1,0 +1,11 @@
+<div class="col-xs-12 padding-leftright-null padding-onlybottom-md">
+    <div class="text small padding-topbottom-null">
+        <div class="image-carousel dots-inside">
+            {% for item in page.slider %}
+            <div class="item">
+                <img class="img-responsive" src="{{item.img}}" alt="{{item.alt}}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
