@@ -4,7 +4,6 @@
         font-size: 14px;
         line-height: 24px;
         font-weight: 300;
-
         span {
             color: $black-75-percent;
             font-weight: 300;
@@ -19,7 +18,6 @@
         margin-bottom: 50px;
         opacity: 1;
         transition-duration: 300ms;
-
     }
     a {
         &:last-child {
@@ -38,7 +36,6 @@
             position: relative;
 
         }
-
         .content {
             position: absolute;
             top: 0px;
@@ -49,13 +46,11 @@
             opacity: 0;
             transition: opacity .4s ease;
             background: rgba(34, 34, 34, 0.85);
-
             .text {
                 @include vertical-align;
                 text-align: center;
                 padding: 50px;
                 opacity: 0;
-
                 @media screen and (max-width:$small) {
                     padding: 25px;
                 }
@@ -110,7 +105,6 @@
         @media screen and (max-width: 1093px) {
             padding: 0;
         }
-
         .bg-img {
             &.home {
                 height: 535px;
@@ -133,53 +127,12 @@
                 }
             }
         }
-
-        .popup-youtube, .popup-vimeo {
-
-            .bg-img {
-                border-radius: 0;
-            }
-            &:hover {
-                &:before {
-                    background-color: transparent;
-                    color: $secondary-color;
-                    opacity: .5;
-                    transition: all .4s ease;
-                }
-            }
-            &:before {
-                font-size: 60px;
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background-color: rgba(255,255,255,0.68);
-            }
-        }
     }
     #home-header {
         .text {
             padding: 75px 50px;
-
-            @media screen and (max-width: 650px) {
-                padding: 100px 50px 125px 50px;
-            }
             @media screen and (max-width: $small) {
-                padding: 100px 30px 125px 30px;
-            }
-
-            p {
-                font-size: 20px;
-                line-height: 32px;
-
-                @media screen and (max-width: 650px) {
-                    font-size: 18px;
-                    line-height: 28px;
-                }
+                padding: 25px 50px;
             }
         }
     }
@@ -224,7 +177,6 @@
         }
     }
     #projects {
-
         &.page {
             padding: 50px 25px;
 
@@ -378,7 +330,6 @@
         }
     }
 }
-
 .project_wrapper{
     div{
         padding-top: 15px;
@@ -396,8 +347,6 @@
         width: 100%;
     }
 }
-
-
 .full-width-container {
     display:block;
     min-height: 30vh;
