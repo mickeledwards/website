@@ -2,7 +2,7 @@
 layout: page
 title: YOU
 teaser: indexicons/you.jpg
-description: Youth and Organizations United YOU. Connecting survivors of human trafficking to vital advocates.
+description: Youth and Organizations United. YOU. A service to connect survivors of human trafficking to vital advocates using an online advocacy finder and standardized advocacy binders.
 year: 2019
 type: Service Design
 fullwidth: /assets/img/you/homelessbackground.jpg
