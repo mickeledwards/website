@@ -14,7 +14,7 @@ span {
             font-family: $primary-font;
             left: 0;
             top: -31px;
-            color: $darkgrey-background;
+            color: $black-10-percent;
             -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
@@ -74,7 +74,7 @@ table {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 1px;
-    border: 1px solid $darkgrey-background !important;
+    border: 1px solid $black-10-percent !important;
     font-family: $paragraph-font;
     font-weight: 300;
 
@@ -83,12 +83,12 @@ table {
         color: white;
         text-align: left;
         padding: 15px !important;
-        border: 1px solid $darkgrey-background;
+        border: 1px solid $black-10-percent;
         font-family: $primary-font;
     }
     td {
         padding: 15px !important;
-        border: 1px solid $darkgrey-background;
+        border: 1px solid $black-10-percent;
     }
 }
 .image-carousel {
@@ -115,7 +115,7 @@ table {
                 &:hover {
 
                     span {
-                        background-color: $dark-background;
+                        background-color: $black-94-percent;
                         transition: all .4s ease;
                     }
                 }
@@ -182,10 +182,10 @@ table {
             .owl-dots {
                 .owl-dot {
                     span {
-                        background-color: $primary-color;
+                        background-color: $black-94-percent;
 
                         &.active {
-                            background-color: $primary-color;
+                            background-color: $black-94-percent;
                         }
                     }
                 }
@@ -202,7 +202,7 @@ em {
         line-height: 80px;
         font-family: $primary-font;
         font-weight: 600;
-        color: $paragraph-color-light;
+        color: $black-4-percent;
         float: left;
         position: absolute;
         z-index: 0;

@@ -43,7 +43,7 @@
                 > li + li {
                     &:before {
                         padding: 0 5px;
-                        color: $primary-color;
+                        color: $black-94-percent;
                         content: "/\00a0";
                     }
                 }

@@ -98,7 +98,7 @@
 
             > li + li {
                 &:before {
-                    color: $primary-color;
+                    color: $black-94-percent;
                 }
             }
 
@@ -116,7 +116,7 @@
                 a {
                     font-size: 22px;
                     line-height: 30px;
-                    color: $primary-color;
+                    color: $black-94-percent;
 
                     @media screen and (max-width: 650px) {
                         font-size: 18px;
@@ -137,7 +137,7 @@
                         color: white;
 
                         &:hover {
-                            color: $darkgrey-background;
+                            color: $black-10-percent;
                         }
                     }
                 }

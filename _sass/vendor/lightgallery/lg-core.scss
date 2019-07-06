@@ -172,7 +172,7 @@
     right: 0;
     bottom: 0;
     z-index: $zindex-backdrop;
-    background-color: #000;
+    background-color: $black-94-percent;
     opacity: 0;
     @include transition(opacity 0.15s ease 0s);
     &.in {

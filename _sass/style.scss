@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,700|Merriweather');
-
-$primary-font: 'Barlow', sans-serif;
-$secondary-font: 'Barlow', sans-serif;
+$primary-font: 'DIN Pro', sans-serif;
+$secondary-font: 'DIN Pro', sans-serif;
 $paragraph-font: 'Merriweather', serif;
-$primary-color: #000;
-$dark-background: #000;
-$primary-color-light: #444;
-$paragraph-color: #444;
-$darkgrey-background: #E6E7E8;
-$paragraph-color-light: #F6F6F6;
-$light-background: #F6F6F6;
-$grey-background: #F6F6F6;
-$body-background: #ffffff;
+$black-94-percent: #111;
+$black-75-percent: #444;
+$black-10-percent: #E6E7E8;
+$black-4-percent: #F6F6F6;
+$body-background: #fff;
 $secondary-color: #4559a8;
 $secondary-color-hover: #4f66d4;
 
@@ -25,22 +19,13 @@ $large: 992px;
 $full: 1200px;
 
 /*-------------------------------------------------*/
-/* =  Hotspot Variables
-/*-------------------------------------------------*/
-
-$HotspotButtonRadius: 18px;
-$colorText: $paragraph-color;
-$colorHeadingBackground: $primary-color-light;
-
-/*-------------------------------------------------*/
 /* =  Imports
 /*-------------------------------------------------*/
 @import 'vendor/normalize';
 @import 'mixins';
 @import 'reset';
-@import 'vendor/lightgallery';
-@import 'vendor/owlslider';
-@import 'iconfont';
+@import 'fonts/iconfont','fonts/din','fonts/merriweather';
+@import 'vendor/lightgallery', 'vendor/owlslider';
 @import 'grid';
 @import 'general';
 @import 'core';

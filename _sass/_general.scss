@@ -1,6 +1,6 @@
 body {
     font: 100% $secondary-font;
-    color: $primary-color;
+    color: $black-94-percent;
     background-color: $body-background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font: 100% $secondary-font;
-    color: $primary-color;
+    color: $black-94-percent;
     font-weight: 300;
 }
 h2, h3 {
@@ -45,7 +45,7 @@ h1 {
     }
 
     &.heading {
-        color: $paragraph-color;
+        color: $black-75-percent;
         font-family: $primary-font;
         letter-spacing: 0;
         max-width: 800px;
@@ -148,7 +148,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $primary-color;
+        color: $black-94-percent;
         transition: color .4s ease;
     }
     &.simple {
@@ -176,10 +176,10 @@ a {
         display: inline-block;
         overflow: hidden;
         outline: none;
-        border:1px solid $dark-background;
+        border:1px solid $black-94-percent;
         border-radius: 2px;
         font-weight: bold;
-        color: $dark-background;
+        color: $black-94-percent;
         position: relative;
         margin-right:10px;
         margin-left: 10px;
@@ -229,7 +229,7 @@ a {
         }
 
         &:hover {
-            background-color: $primary-color;
+            background-color: $black-94-percent;
             color:white;
             transition: all .4s ease;
         }
@@ -275,7 +275,7 @@ a {
     &.btn-pro {
         font-size: 14px;
         line-height: 14px;
-        color: $primary-color;
+        color: $black-94-percent;
         font-weight: 400;
         text-decoration: none;
         position: relative;
@@ -354,10 +354,10 @@ a {
         height: 30px;
         line-height: 30px;
         background-color: transparent;
-        color: $primary-color-light;
+        color: $black-75-percent;
         transition: all .4s ease;
         font-size: 12px;
-        border: 1px solid $primary-color-light;
+        border: 1px solid $black-75-percent;
         position: relative;
 
         &:hover {
@@ -377,14 +377,14 @@ a {
 }
 p {
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $black-75-percent;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 16px;
     font-weight: 300;
 
     &.heading {
-        color: $paragraph-color;
+        color: $black-75-percent;
         font-family: $paragraph-font;
         font-size: 18px;
         line-height: 30px;
@@ -417,7 +417,7 @@ p {
 
     b, strong {
         font-weight: 400;
-        color: $paragraph-color;
+        color: $black-75-percent;
     }
 
     a {
@@ -425,14 +425,14 @@ p {
     }
 }
 .color-dark {
-    color: $primary-color;
+    color: $black-94-percent;
 }
 .underline {
-    border-bottom: 3px solid $light-background;
-    box-shadow: inset 0 -3px 0 $light-background;
+    border-bottom: 3px solid $black-4-percent;
+    box-shadow: inset 0 -3px 0 $black-4-percent;
 }
-.light-background {
-    background-color: $light-background !important;
+.black-4-percent {
+    background-color: $black-4-percent !important;
 }
 .color-background {
     background-color: $secondary-color;
@@ -440,23 +440,23 @@ p {
 .secondary-background {
     background-color: $secondary-color;
 }
-.dark-background {
-    background-color: $dark-background !important;
+.black-94-percent {
+    background-color: $black-94-percent !important;
 }
 .black-background {
     background-color: #222;
 }
-.grey-background {
-    background-color: $grey-background !important;
+.black-4-percent {
+    background-color: $black-4-percent !important;
 }
-.darkgrey-background {
-    background-color: $darkgrey-background !important;
+.black-10-percent {
+    background-color: $black-10-percent !important;
 }
 .body-background {
     background-color: $body-background !important;
 }
 .section-bordertop {
-    border-top: 1px solid $light-background;
+    border-top: 1px solid $black-4-percent;
 }
 button {
     background: none;
@@ -502,7 +502,7 @@ ol {
     list-style: decimal;
     padding-left: 28px;
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $black-75-percent;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -522,11 +522,11 @@ ul {
             position: relative;
             padding-left: 26px;
             margin: 9px 0;
-            color: $primary-color;
+            color: $black-94-percent;
             font-size: 16px;
             line-height: 26px;
             font-weight: 300;
-            color: $primary-color;
+            color: $black-94-percent;
 
 
             &:before {
@@ -549,7 +549,7 @@ ul {
                 position: absolute;
                 content: "\f111";
                 font-family: "iconfont";
-                color: $primary-color;
+                color: $black-94-percent;
                 font-size: 8px;
                 left: 8px;
                 top: -1px;
@@ -558,26 +558,26 @@ ul {
     }
 }
 mark {
-    background: $light-background;
+    background: $black-4-percent;
     padding: 0 4px;
-    color: $paragraph-color;
+    color: $black-75-percent;
 }
 pre {
     padding:25px;
-    background: $light-background;
+    background: $black-4-percent;
     overflow: hidden;
     border-radius: 0;
     font-family: $paragraph-font;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: $primary-color;
+    color: $black-94-percent;
     margin:25px 0;
 
 }
 code {
     color: $secondary-color;
-    background-color: $light-background;
+    background-color: $black-4-percent;
 }
 blockquote, q {
     display: block;
@@ -587,7 +587,7 @@ blockquote, q {
     line-height: 26px;
     padding-left: 36px;
     font-family: $paragraph-font;
-    color: $paragraph-color;
+    color: $black-75-percent;
     font-weight: 400;
     font-style: italic;
     margin: 50px 0;
@@ -604,10 +604,10 @@ blockquote, q {
         display: block;
         font-size: 14px;
         font-weight: 300;
-        color: $paragraph-color;
+        color: $black-75-percent;
 
         a {
-            color: $paragraph-color;
+            color: $black-75-percent;
 
             &:hover {
                 color: $secondary-color;
@@ -682,7 +682,7 @@ textarea {
 
     &.black {
         &:before {
-            background-color: $dark-background;
+            background-color: $black-94-percent;
         }
         &:hover {
             &:before {
@@ -727,7 +727,7 @@ textarea {
     width: 70px;
     height: 100%;
     max-width: 70px;
-    background-color: $light-background;
+    background-color: $black-4-percent;
 
     @media screen and (max-width:1350px){
         display: none;
@@ -742,7 +742,7 @@ textarea {
     width: 70px;
     height: 100%;
     max-width: 70px;
-    background-color: $light-background;
+    background-color: $black-4-percent;
 
     @media screen and (max-width:1350px){
         display: none;
@@ -757,7 +757,7 @@ textarea {
 
         a {
             font-size: 12px;
-            color: $primary-color;
+            color: $black-94-percent;
             text-decoration: none;
             font-family: $secondary-font;
             font-weight: 300;
@@ -787,7 +787,7 @@ textarea {
                 border-radius: 2px;
                 text-decoration: none;
                 color: white;
-                background-color: $primary-color-light;
+                background-color: $black-75-percent;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
                 &:hover, &:focus {
@@ -847,7 +847,7 @@ textarea {
     margin-top: -1px;
 
     .tab-pane {
-        color: $paragraph-color;
+        color: $black-75-percent;
         font-size: 14px;
         line-height: 24px;
         font-family: $paragraph-font;

@@ -46,7 +46,7 @@
                     line-height: 30px;
                     font-family: $paragraph-font;
                     margin: 8px 0 8px 0;
-                    color: $primary-color;
+                    color: $black-94-percent;
                     font-weight: 300;
                     transition: color .4s ease;
                 }
@@ -54,7 +54,7 @@
                     margin-bottom: 0;
                     font-size: 14px;
                     line-height: 26px;
-                    color: $paragraph-color;
+                    color: $black-75-percent;
                     margin-bottom: 15px;
                 }
                 a {
@@ -79,7 +79,7 @@
                     }
                     span {
                         &.meta {
-                            color: $primary-color-light;
+                            color: $black-75-percent;
                             transition: color .4s ease;
                         }
                     }
@@ -102,7 +102,7 @@
                         }
                         span {
                             &.meta {
-                                color: $primary-color-light;
+                                color: $black-75-percent;
                                 transition: color .4s ease;
                             }
                         }
@@ -212,11 +212,11 @@ aside {
                         h4 {
                             font-size: 14px;
                             line-height: 26px;
-                            color: $paragraph-color;
+                            color: $black-75-percent;
                         }
 
                         .meta {
-                            color: $primary-color;
+                            color: $black-94-percent;
                             font-size: 14px;
                             line-height: 26px;
                             font-weight: 300;
@@ -231,7 +231,7 @@ aside {
             &.widget-categories {
                 li {
                     a {
-                        color: $primary-color;
+                        color: $black-94-percent;
 
                         &:hover {
                             color: $secondary-color;

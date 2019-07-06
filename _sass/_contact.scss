@@ -8,7 +8,7 @@
         font-family: $paragraph-font;
         font-size: 14px;
         line-height: 14px;
-        color: $primary-color;
+        color: $black-94-percent;
         border-bottom: 1px solid rgba(117,117,117,0.41);
         font-weight: 300;
 
@@ -35,7 +35,7 @@
     label {
         font-size: 16px;
         line-height: 20px;
-        color: $primary-color;
+        color: $black-94-percent;
         font-weight: 300;
         margin-bottom: 12px;
 
@@ -51,25 +51,25 @@
     }
     ::-webkit-input-placeholder {
         font-family: $paragraph-font;
-        color: $primary-color-light;
+        color: $black-75-percent;
         font-size: 14px;
     }
 
     :-moz-placeholder {
         font-family: $paragraph-font;
-        color: $primary-color-light;
+        color: $black-75-percent;
         font-size: 14px;
     }
 
     ::-moz-placeholder {
         font-family: $paragraph-font;
-        color: $primary-color-light;
+        color: $black-75-percent;
         font-size: 14px;
     }
 
     :-ms-input-placeholder {
         font-family: $paragraph-font;
-        color: $primary-color-light;
+        color: $black-75-percent;
         font-size: 14px;
     }
 
@@ -94,7 +94,7 @@
         transition: all .4s ease;
 
         &:hover {
-            color: $primary-color;
+            color: $black-94-percent;
             transition: all .4s ease;
         }
 
@@ -199,22 +199,22 @@
     }
     &.black {
         ::-webkit-input-placeholder {
-            color: $primary-color;
+            color: $black-94-percent;
             font-weight: 400;
         }
 
         :-moz-placeholder {
-            color: $primary-color;
+            color: $black-94-percent;
             font-weight: 400;
         }
 
         ::-moz-placeholder {
-            color: $primary-color;
+            color: $black-94-percent;
             font-weight: 400;
         }
 
         :-ms-input-placeholder {
-            color: $primary-color;
+            color: $black-94-percent;
             font-weight: 400;
         }
     }
@@ -264,7 +264,7 @@ span {
 
     &.contact-info {
         font-family: $primary-font;
-        color: $primary-color;
+        color: $black-94-percent;
         font-size: 16px;
         line-height: 26px;
         margin-right: 18px;
@@ -278,14 +278,14 @@ span {
 
             &:hover {
                 em {
-                    color: $primary-color;
+                    color: $black-94-percent;
                     transition: color .4s ease;
                 }
             }
         }
 
         em {
-            color: $paragraph-color;
+            color: $black-75-percent;
             font-weight: 300;
         }
     }
@@ -370,7 +370,7 @@ span {
         }
 
         &:hover {
-            color: $primary-color;
+            color: $black-94-percent;
             transition: all .4s ease;
         }
 

@@ -6,7 +6,7 @@
         font-weight: 300;
 
         span {
-            color: $paragraph-color;
+            color: $black-75-percent;
             font-weight: 300;
         }
     }
@@ -63,7 +63,7 @@
                 h5 {
                     font-size: 38px;
                     line-height: 48px;
-                    color: $paragraph-color-light;
+                    color: $black-4-percent;
                     transform: translate(0px, -25px);
                     transition: all .3s ease-out;
                 }
@@ -250,7 +250,7 @@
                     font-size: 16px;
                     font-family: $secondary-font;
                     text-transform: none;
-                    color: $primary-color-light;
+                    color: $black-75-percent;
                     font-weight: 300;
                     margin-bottom: 25px;
                     line-height: 26px;
@@ -283,7 +283,7 @@
         }
         a {
             &:hover {
-                color:$primary-color;
+                color:$black-94-percent;
             }
         }
         .projects-items {
@@ -305,7 +305,7 @@
                         transition: opacity .4s ease;
 
                         &.categories {
-                            color: $primary-color;
+                            color: $black-94-percent;
                             font-family: $primary-font;
                             font-size: 14px;
                             line-height: 24px;
@@ -318,7 +318,7 @@
                         font-weight: 300;
                         font-size: 18px;
                         line-height: 22px;
-                        color: $primary-color;
+                        color: $black-94-percent;
                         font-weight: 300;
                         margin-bottom: 8px;
                     }

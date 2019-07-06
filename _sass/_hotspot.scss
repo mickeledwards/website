@@ -23,8 +23,8 @@
         }
         .lg-hotspot-button {
             cursor: pointer;
-            height: $HotspotButtonRadius*2;
-            width: $HotspotButtonRadius*2;
+            height: 18px*2;
+            width: 18px*2;
             padding: 0px;
             border-radius: 100%;
             background-color: $secondary-color;
@@ -39,8 +39,8 @@
                 transform: translate(-50%, -50%);
                 text-align: center;
                 display: block;
-                height: $HotspotButtonRadius;
-                width: $HotspotButtonRadius;
+                height: 18px;
+                width: 18px;
                 border-radius: 100%;
                 transition: border-color 1s linear;
             }
@@ -70,8 +70,8 @@
             transition: all 0.1s linear;
             h4 {
                 margin: 0;
-                padding: 0.65em $HotspotButtonRadius;
-                background-color: $colorHeadingBackground;
+                padding: 0.65em 18px;
+                background-color: $black-75-percent;
                 font-size: 1.1em;
                 font-weight: normal;
                 letter-spacing: 0.02em;
@@ -81,33 +81,33 @@
             p {
                 font-family: $primary-font;
                 margin: 0;
-                padding: 1.1em $HotspotButtonRadius 0 $HotspotButtonRadius;
-                color: $primary-color;
+                padding: 1.1em 18px 0 18px;
+                color: $black-94-percent;
             }
         }
     }
     .top-left .lg-hotspot-label {
-        top: $HotspotButtonRadius;
+        top: 18px;
         right: auto;
         bottom: auto;
-        left: $HotspotButtonRadius;
+        left: 18px;
     }
     .top-right .lg-hotspot-label {
-        top: $HotspotButtonRadius;
-        right: $HotspotButtonRadius;
+        top: 18px;
+        right: 18px;
         bottom: auto;
         left: auto;
     }
     .bottom-right .lg-hotspot-label {
         top: auto;
-        right: $HotspotButtonRadius;
-        bottom: $HotspotButtonRadius;
+        right: 18px;
+        bottom: 18px;
         left: auto;
     }
     .bottom-left .lg-hotspot-label {
         top: auto;
         right: auto;
-        bottom: $HotspotButtonRadius;
-        left: $HotspotButtonRadius;
+        bottom: 18px;
+        left: 18px;
     }
 }

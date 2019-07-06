@@ -20,19 +20,19 @@
 }
 /* class black: set font with black color */
 [class~="black"] {
-    color: $primary-color !important;
+    color: $black-94-percent !important;
 }
 /* class grey: set font with grey color */
 [class~="grey"] {
-    color: $paragraph-color !important;
+    color: $black-75-percent !important;
 }
 /* class grey-light: set font with light grey color */
 [class~="grey-light"] {
-    color: $paragraph-color-light !important;
+    color: $black-4-percent !important;
 }
 /* class grey-dark: set font with dark grey color */
 [class~="grey-dark"] {
-    color: $primary-color-light !important;
+    color: $black-75-percent !important;
 }
 /* class uppercase: set font uppercase */
 [class~="uppercase"] {
