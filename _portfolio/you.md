@@ -50,3 +50,10 @@ hotspot-points:
 ## Artifacts for YOU
 {% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
 
+<div class="col-xs-12 col-md-6">
+    <img src="/assets/img/you/icons1.svg" alt="YOU System Resource Binder">
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <img src="/assets/img/you/icons2.svg" alt="YOU System Web Application">
+</div>
