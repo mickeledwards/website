@@ -50,11 +50,11 @@
 
                 &.white {
                     a {
-                        color: white;
+                        color: $body-background;
                     }
                     > li + li {
                         &:before {
-                            color: white;
+                            color: $body-background;
                         }
                     }
                 }

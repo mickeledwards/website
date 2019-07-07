@@ -58,7 +58,7 @@
             position: absolute;
             padding: 0 0 1.1em 0;
             width: 16em;
-            background-color: white;
+            background-color: $body-background;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             font-size: 14.5px;
             line-height: 1.45em;
@@ -75,7 +75,7 @@
                 font-size: 1.1em;
                 font-weight: normal;
                 letter-spacing: 0.02em;
-                color: white;
+                color: $body-background;
                 border-radius:2px 2px 0 0;
             }
             p {

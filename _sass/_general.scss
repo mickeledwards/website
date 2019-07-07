@@ -194,7 +194,7 @@ a {
 
         &:hover {
             background-color: $secondary-color;
-            color:white !important;
+            color:$body-background !important;
             border-color:transparent;
             transition: all .4s ease;
         }
@@ -215,7 +215,7 @@ a {
         outline: none;
         border-radius: 2px;
         font-weight: 300;
-        color: white;
+        color: $body-background;
         position: relative;
         margin-right:10px;
         margin-left: 10px;
@@ -230,7 +230,7 @@ a {
 
         &:hover {
             background-color: $black-94-percent;
-            color:white;
+            color:$body-background;
             transition: all .4s ease;
         }
         &.shadow {
@@ -243,12 +243,12 @@ a {
             height: 36px;
             line-height: 36px;
             background-color: $secondary-color;
-            color: white;
+            color: $body-background;
             transition: all .4s ease;
             font-size: 12px;
 
             &:hover {
-                background-color: white;
+                background-color: $body-background;
                 color: $secondary-color;
                 transition: all .4s ease;
             }
@@ -261,7 +261,7 @@ a {
                 &:hover {
                     background-color: $secondary-color;
                     border: 1px solid $secondary-color;
-                    color: white;
+                    color: $body-background;
                 }
             }
             &.border {
@@ -328,7 +328,7 @@ a {
         }
 
         &:hover {
-            color: white;
+            color: $body-background;
             padding-left: 5px;
             transition: all .2s ease;
 
@@ -363,7 +363,7 @@ a {
         &:hover {
             background-color: $secondary-color;
             border-color: $secondary-color;
-            color: white;
+            color: $body-background;
         }
 
         &:before {
@@ -786,14 +786,14 @@ textarea {
                 border:none;
                 border-radius: 2px;
                 text-decoration: none;
-                color: white;
+                color: $body-background;
                 background-color: $black-75-percent;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
                 &:hover, &:focus {
                     border:none;
                     border-radius: 2px;
-                    color: white;
+                    color: $body-background;
                     background-color: $secondary-color;
                 }
                 &:focus {
@@ -830,7 +830,7 @@ textarea {
             &.active {
                 a {
                     background-color: $secondary-color;
-                    color: white;
+                    color: $body-background;
                     opacity: 1;
                     border-radius: 40px;
 

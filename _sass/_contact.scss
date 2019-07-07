@@ -86,7 +86,7 @@
         border:none;
         border-radius: 0;
         font-weight: bold;
-        color: white;
+        color: $body-background;
         position: relative;
         letter-spacing: 1px;
         margin: 0;
@@ -120,7 +120,7 @@
 
             &:hover {
                 background-color: $secondary-color;
-                color: white;
+                color: $body-background;
                 transition: all .4s ease;
             }
 
@@ -129,17 +129,17 @@
             }
 
             &.white {
-                border: 1px solid white;
+                border: 1px solid $body-background;
 
                 &:hover {
-                    background-color: white;
+                    background-color: $body-background;
                     color: $secondary-color !important;
                     transition: all .4s ease;
                 }
             }
             &.active {
                 background-color: $secondary-color;
-                color: white;
+                color: $body-background;
                 transition: all .4s ease;
 
                 &:hover {
@@ -316,7 +316,7 @@ span {
     .form-field {
         outline: inherit;
         border:none;
-        border-bottom:1px solid white;
+        border-bottom:1px solid $body-background;
         width:80%;
         padding: 18px 50px 18px 30px;
         font-family: $paragraph-font;
@@ -336,7 +336,7 @@ span {
             width: 100%;
         }
         &:focus {
-            border-bottom:1px solid white;
+            border-bottom:1px solid $body-background;
         }
     }
     #submit-newsletter {
@@ -353,7 +353,7 @@ span {
         border:none;
         border-radius: 0;
         font-weight: bold;
-        color: white;
+        color: $body-background;
         position: relative;
         margin: 0;
         background-color: transparent;
@@ -401,15 +401,15 @@ span {
 
             &:hover {
                 background-color: $secondary-color;
-                color: white;
+                color: $body-background;
                 transition: all .4s ease;
             }
 
             &.white {
-                border: 1px solid white;
+                border: 1px solid $body-background;
 
                 &:hover {
-                    background-color: white;
+                    background-color: $body-background;
                     color: $secondary-color !important;
                     transition: all .4s ease;
                 }
@@ -420,10 +420,10 @@ span {
 
                 &.active {
                     background-color: $secondary-color;
-                    color: white !important;
+                    color: $body-background !important;
 
                     &:hover {
-                        background-color: white;
+                        background-color: $body-background;
                         color: $secondary-color !important;
                         border: 1px solid transparent;
                         border-left: 1px solid $secondary-color;

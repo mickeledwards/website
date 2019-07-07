@@ -57,3 +57,4 @@ hotspot-points:
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/you/icons2.svg" alt="YOU System Web Application">
 </div>
+

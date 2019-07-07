@@ -2,12 +2,12 @@
 
 ::-moz-selection {
     background: #73737d;
-    color: white;
+    color: $body-background;
 }
 
 ::selection {
     background: #73737d;
-    color: white;
+    color: $body-background;
 }
 
 /* class white: set font color white */

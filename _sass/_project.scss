@@ -63,7 +63,7 @@
                     transition: all .3s ease-out;
                 }
                 h6 {
-                    color: white;
+                    color: $body-background;
                     text-transform: uppercase;
                     position: relative;
                     letter-spacing: 0;
@@ -96,7 +96,7 @@
 #page-content {
     position: relative;
     z-index: 2;
-    background-color: white;
+    background-color: $body-background;
     border-bottom: 1px solid rgba(117,117,117,0.05);
     box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.05);
     .wrap-slider {
@@ -240,7 +240,7 @@
         }
         .projects-items {
             .item {
-                    background-color: white;
+                    background-color: $body-background;
                     border-radius: 4px;
                     transition: all .4s ease;
                     margin: 25px;

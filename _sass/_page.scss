@@ -128,13 +128,13 @@
             &.white {
                 > li + li {
                     &:before {
-                        color: white;
+                        color: $body-background;
                     }
                 }
 
                 li {
                     a {
-                        color: white;
+                        color: $body-background;
 
                         &:hover {
                             color: $black-10-percent;

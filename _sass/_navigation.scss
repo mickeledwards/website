@@ -2,7 +2,7 @@ header {
     position: relative;
     z-index: 3;
     //padding: 10px 0px;
-    background-color: white;
+    background-color: $body-background;
     height: 50px;
     &.border {
         border-bottom: 1px solid rgba(117,117,117,0.05);
@@ -251,7 +251,7 @@ header {
                                                         font-family: $primary-font;
 
                                                         @media screen and (max-width:$large) {
-                                                            color: white;
+                                                            color: $body-background;
                                                         }
                                                     }
                                                 }
@@ -282,7 +282,7 @@ header {
                                     font-size: 20px;
                                     line-height: 30px;
                                     font-family: $secondary-font;
-                                    color:white;
+                                    color:$body-background;
                                     margin-left: 0;
                                 }
                             }
@@ -318,7 +318,7 @@ header {
                                 li {
                                     margin: 15px 0;
                                     a {
-                                        color: white;
+                                        color: $body-background;
                                         font-size: 20px;
                                         line-height: 30px;
                                     }
