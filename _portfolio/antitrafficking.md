@@ -1,6 +1,6 @@
 ---
 layout: page
-title: YOU
+title: Anti-Trafficking System <i class="iconfont" aria-hidden="true">you</i>
 teaser: indexicons/you.jpg
 description: Youth and Organizations United. YOU. A service to connect survivors of human trafficking to vital advocates using an online advocacy finder and standardized advocacy binders.
 year: 2019
@@ -57,4 +57,3 @@ hotspot-points:
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/you/icons2.svg" alt="YOU System Web Application">
 </div>
-

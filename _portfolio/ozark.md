@@ -13,3 +13,10 @@ type: Consumer Goods Design
 ## Final Design
 {% include gallery.html img='/assets/img/ozark/ozark3.jpg' alt = 'final' %}
 
+<div class="col-xs-12 col-md-6">
+    <img src="/assets/img/ozark/bbq1.svg" alt="Benefits1">
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <img src="/assets/img/ozark/bbq2.svg" alt="Benefits2">
+</div>
