@@ -24,12 +24,22 @@ github_username:
 
 plugins:
   - octopress-autoprefixer
+  - jekyll-paginate-v2
 
 # Build settings
 markdown: kramdown
 # theme: minima
 
 exclude: ["Gemfile", "Gemfile.lock", "whiteblehtml"]
+
+pagination:
+  enabled: true
+  per_page: 12
+  paginate_path: "/legacy/page:num/"
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 collections:
   portfolio:

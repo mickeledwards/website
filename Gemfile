@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll"
 gem 'octopress-autoprefixer'
+gem 'jekyll-paginate-v2'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "jonas-theme"
 

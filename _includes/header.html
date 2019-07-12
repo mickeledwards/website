@@ -15,30 +15,21 @@
                         <li>
                             <a href="/" {% if page.url == '/' %} class="active-item"{% endif %}>Home</a>
                         </li>
-                    <!--    <li class="submenu">
-                            <a href="javascript:void(0)">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/404">404</a></li>
-                            </ul>
-                        </li> -->
-
-                        <li class="submenu">
+                       <!-- <li class="submenu">
                             <a href="javascript:void(0)">Portfolio</a>
                             <ul class="sub-menu">
-                                {% for portfoliopage in site.portfolio %}
+                                {% assign sorted = (site.portfolio | sort: 'year') | reverse %}
+                                {% for portfoliopage in sorted %}
                                 <li><a href="{{ portfoliopage.url}}">{{ portfoliopage.title }}</a></li>
                                 {% endfor %}
-                            </ul>
+                            </ul>    -->
 
                         <li >
                             <a href="/about"  {% if page.url == '/about' %} class="active-item"{% endif %}>About Me</a>
                         </li>
-                      <!--  <li>
-                            <a href="/elements">Elements</a>
-                        </li> -->
+
                         <li>
-                            <a href="/contacts">Contact Me</a>
+                            <a href="/contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>

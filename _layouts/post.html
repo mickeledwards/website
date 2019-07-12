@@ -1,16 +1,67 @@
 ---
 layout: default
 ---
-
-
-<div class="page-article">
-  <div class="center-page">
-
-    {% include post-header.html %}
-
-    <article class="article-post">
-      {{ content }}
-    </article>
-
-  </div>
+<div id="page-content">
+    <div class="container">
+        <div class="row no-margin">
+            <div class="col-md-12 padding-leftright-null">
+                <div id="page-header">
+                    <div class="text text-center">
+                        <h1 class="margin-bottom-small">{{page.title}}<span class="color">.</span></h1>
+                        <span class="post-meta">{{ page.date | date_to_string}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home-wrap" class="content-section">
+        {%if page.gallery%}
+        <div class="container">
+            <div class="row no-margin wrap-text padding-onlytop-sm">
+                <div class="col-xs-12 padding-leftright-null padding-onlybottom-md">
+                    <div class="text small padding-topbottom-null">
+                        <div class="project-gallery">
+                            {% for item in page.gallery %}
+                            <div class="item">
+                                <img class="img-responsive" src="{{item.img}}" alt="">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        {%if page.video%}
+        <div class="container">
+            <div class="row no-margin wrap-text padding-onlytop-sm">
+                <div class="col-md-12 padding-leftright-null padding-sm">
+                    <a class="popup-youtube" href="{{page.video}}">
+                        <div class="bg-img static-height" style="background-image:url(assets/img/news1.jpg)"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        {%if page.headimg%}
+        <div class="container">
+            <div class="row no-margin wrap-text padding-onlytop-sm">
+                <div class="col-md-12 padding-leftright-null">
+                    <div class="text small padding-topbottom-null">
+                        <img src="{{page.headimg}}" alt="" class="img-post">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        <div class="container">
+            <div class="row no-margin wrap-text padding-bottom-null padding-onlytop-lg">
+                <div class="col-md-8 col-md-offset-2 padding-leftright-null">
+                    <div class="text small padding-topbottom-null">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

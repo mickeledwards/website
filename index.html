@@ -29,8 +29,8 @@ layout: default
                 <!--  END Filters  -->
                 <div class="projects-items">
                     <!-- Single Project -->
-
-                    {% for project in site.portfolio %}
+                    {% assign sorted = site.portfolio | sort: 'year' | reverse %}
+                    {% for project in sorted %}
 
                     <div class="one-item  {% for tag in project.tags %} {{tag}} {%endfor%}">
                         <div class="item">

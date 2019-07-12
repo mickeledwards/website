@@ -3,7 +3,7 @@ layout: page
 title: Ozark Barbecue
 teaser: indexicons/ozark.jpg
 description: Develop a solution to the inconveniences and problems that cause users to avoid utilizing their barbecue
-year: 2019
+year: 2018
 type: Consumer Goods Design
 ---
 ## Market Research

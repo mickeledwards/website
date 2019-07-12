@@ -193,6 +193,8 @@ $(document).ready(function($) {
     var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     try {
         $(".image-carousel").owlCarousel({
+            mouseDrag: true,
+            touchDrag: true,
             loop:true,
             items:1,
             autoplay:false,
@@ -200,6 +202,12 @@ $(document).ready(function($) {
             dots:true,
             nav:true,
             navText: ['<span><i class="icon icon-arrow-left"></i></span>','<span><i class="icon icon-arrow-right"></i></span>']
+        });
+       $(".post-gallery, .project-gallery").owlCarousel({
+            center: true,
+            items:1,
+            loop:true,
+           dots:true
         });
     } catch(err) {
 

@@ -163,35 +163,6 @@ table {
             }
         }
     }
-    &.dots-outside {
-        .owl-controls {
-            position: relative!important;
-            top: inherit;
-            bottom: inherit;
-            left: inherit;
-            right: inherit;
-            margin-top: 60px;
-
-            .owl-dots {
-                bottom: 0;
-            }
-        }
-    }
-    &.dark-dots {
-        .owl-controls {
-            .owl-dots {
-                .owl-dot {
-                    span {
-                        background-color: $black-94-percent;
-
-                        &.active {
-                            background-color: $black-94-percent;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 .simple-parallax {
     background-attachment: fixed;
