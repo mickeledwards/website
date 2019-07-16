@@ -1,4 +1,5 @@
 ---
+order: 5
 layout: page
 title: Kinectic Sculpture
 teaser: indexicons/designgrant.jpg

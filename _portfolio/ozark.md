@@ -1,4 +1,5 @@
 ---
+Order: 2
 layout: page
 title: Ozark Barbecue
 teaser: indexicons/ozark.jpg

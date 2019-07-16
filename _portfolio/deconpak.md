@@ -1,5 +1,6 @@
 ---
 layout: page
+Order: 4
 title: DeconPak
 teaser: indexicons/deconpak.jpg
 description: From acid attacks to agricultural spills, contamination is a major issue that is often overlooked. This design seeks to develop a more inclusive system of decontamination procedures that will take less time to carry out and ultimately save lives.
