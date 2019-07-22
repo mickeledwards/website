@@ -25,22 +25,7 @@ layout: default
         <div class="container">
             <!--  Portfolio  -->
             <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
-                <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
-                            <div class="row no-margin text-left">
-                                <div class="col-sm-12 padding-leftright-null">
-                                    <div class="filter-wrap left">
-                                        <ul class="col-md-12 filters uppercase padding-leftright-null">
-                                            <li data-filter="*" class="is-checked">All</li>
-                                            <li data-filter=".design">Design</li>
-                                            <li data-filter=".branding">Branding</li>
-                                            <li data-filter=".photography">Photography</li>
-                                            <li data-filter=".web">Web</li>
-                                            <li data-filter=".app">Apps</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+
                 <div class="projects-items">
                     {% assign sorted = site.portfolio | sort: 'order'%}
                     {% for project in sorted %}

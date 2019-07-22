@@ -25,13 +25,12 @@
 
   /* you can be more comfortable with increased icons size */
    font-size:inherit;
-
 }
 .iconfont{
-    font-family: "iconfont";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
 }
 .icon-you-logo:before {
   content: "you";
