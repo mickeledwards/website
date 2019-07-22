@@ -1,4 +1,4 @@
-#contact-form, #search-form {
+#contact-form {
     .form-field {
         outline: inherit;
         border:none;
@@ -17,20 +17,6 @@
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             border-radius: 4px;
         }
-
-        &.big {
-            font-size: 40px;
-            font-family: $primary-font;
-            letter-spacing: 1px;
-            padding-right: 70px;
-            line-height: 40px;
-
-            @media screen and (max-width:$medium) {
-                font-size: 35px;
-                padding-right: 35px;
-            }
-        }
-
     }
     label {
         font-size: 16px;

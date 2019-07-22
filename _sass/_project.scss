@@ -99,80 +99,11 @@
     background-color: $body-background;
     border-bottom: 1px solid rgba(117,117,117,0.05);
     box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.05);
-    .wrap-slider {
-        padding: 0 50px;
-
-        @media screen and (max-width: 1093px) {
-            padding: 0;
-        }
-        .bg-img {
-            &.home {
-                height: 535px;
-                @include background-cover;
-
-                @media screen and (max-width: $large) {
-                    height: 250px;
-                    height: 50vh;
-                }
-                @media screen and (max-width: $small) {
-                min-height: 250px;
-                height: calc(50vh - 62px);
-                }
-            }
-            &.error {
-                height: calc(100vh - 101px);
-
-                @media screen and (max-width: $medium - 1) {
-                    height: calc(50vh - 50px);
-                }
-            }
-        }
-    }
     #home-header {
         .text {
             padding: 75px 50px;
             @media screen and (max-width: $small) {
                 padding: 25px 50px;
-            }
-        }
-    }
-    #home-slider {
-        height: 535px;
-
-        &.error {
-            height: calc(100vh - 101px);
-
-            @media screen and (max-width: $medium - 1) {
-                min-height: 355px;
-                height: calc(50vh - 50px);
-            }
-
-            @media screen and (max-width: $small) {
-                min-height: 250px;
-                height: calc(50vh - 62px);
-            }
-        }
-
-        @media screen and (max-width: $large) {
-            height: auto;
-        }
-
-        .text {
-            padding: 50px;
-            @include vertical-align(relative);
-
-            @media screen and (max-width: $large) {
-                padding: 100px 50px;
-                top: inherit;
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none;
-            }
-            @media screen and (max-width: $medium) {
-                padding: 80px 50px;
-            }
-            @media screen and (max-width: $small) {
-                padding: 50px 30px;
             }
         }
     }

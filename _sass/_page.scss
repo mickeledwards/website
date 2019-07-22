@@ -261,10 +261,24 @@
     }
 }
 
-.about{
-    img{
-        max-width: 18rem;
-        float: left;
-        padding-right: 2em;
+.page-404 {
+    height: calc(100vh - 101px);
+    @media screen and (max-width: $medium - 1) {
+        min-height: 355px;
+        height: calc(50vh - 50px);
+    }
+    @media screen and (max-width: $small) {
+        min-height: 250px;
+        height: calc(50vh - 62px);
+    }
+    .text {
+        padding: 100px 50px;
+        @include vertical-align(relative);
+        @media screen and (max-width: $medium - 1) {
+            padding: 50px 30px;
+        }
+    }
+    &.bg-img {
+        @include background-cover;
     }
 }
