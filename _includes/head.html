@@ -14,6 +14,10 @@
     <title>{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Analytics -->
-    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101198160);</script>
-    <script async src="//static.getclicky.com/js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144576324-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+	      function gtag(){dataLayer.push(arguments);}
+	      gtag('js', new Date());
+	      gtag('config', 'UA-144576324-1');
+    </script>
 </head>
