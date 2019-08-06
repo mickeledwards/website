@@ -3,11 +3,12 @@ $secondary-font: 'DIN Pro', sans-serif;
 $paragraph-font: 'Merriweather', serif;
 $black-94-percent: #111;
 $black-75-percent: #444;
-$black-10-percent: #E6E7E8;
-$black-4-percent: #F6F6F6;
+$black-10-percent: #e6e7e8;
+$black-4-percent: #f6f6f6;
 $body-background: #fff;
 $secondary-color: #4559a8;
 $secondary-color-hover: #4f66d4;
+$select-color: #73737d;
 
 /*-------------------------------------------------*/
 /* =  Breakpoints
@@ -24,7 +25,7 @@ $full: 1200px;
 @import 'vendor/normalize';
 @import 'mixins';
 @import 'reset';
-@import 'fonts/iconfont','fonts/din','fonts/merriweather';
+@import 'fonts/iconfont', 'fonts/din', 'fonts/merriweather';
 @import 'vendor/lightgallery', 'vendor/owlslider';
 @import 'grid';
 @import 'general';

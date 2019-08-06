@@ -190,7 +190,7 @@ em {
     .padding-onlytop-sm {
         padding-top: 30px !important;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             padding-top: 0 !important;
         }
     }
@@ -201,7 +201,7 @@ em {
         opacity: 1;
         transition: opacity .4s ease;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             margin-bottom: 30px;
         }
 

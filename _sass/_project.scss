@@ -51,7 +51,7 @@
                 text-align: center;
                 padding: 50px;
                 opacity: 0;
-                @media screen and (max-width:$small) {
+                @media screen and (max-width: $small) {
                     padding: 25px;
                 }
 
@@ -254,7 +254,7 @@
                     margin: 25px;
                 }
 
-                @media screen and (max-width:$medium) {
+                @media screen and (max-width: $medium) {
                     width:100%;
                 }
             }
@@ -289,6 +289,7 @@
   margin-right: -50vw;
     background-repeat: no-repeat;
   background-attachment: fixed;
+    background-position: center top;
 
     .inner-img-wrap{
         min-height: 30vh;

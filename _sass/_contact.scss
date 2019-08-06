@@ -149,7 +149,7 @@
             i {
                 font-size: 60px;
 
-                @media screen and (max-width:$medium) {
+                @media screen and (max-width: $medium) {
                     font-size: 35px;
                 }
             }
@@ -210,7 +210,7 @@
             font-family: $primary-font;
             letter-spacing: 1px;
 
-            @media screen and (max-width:$medium) {
+            @media screen and (max-width: $medium) {
                 font-size: 35px;
             }
         }
@@ -220,7 +220,7 @@
             font-family: $primary-font;
             letter-spacing: 1px;
 
-            @media screen and (max-width:$medium) {
+            @media screen and (max-width: $medium) {
                 font-size: 35px;
             }
         }
@@ -230,7 +230,7 @@
             font-family: $primary-font;
             letter-spacing: 1px;
 
-            @media screen and (max-width:$medium) {
+            @media screen and (max-width: $medium) {
                 font-size: 35px;
             }
         }
@@ -240,7 +240,7 @@
             font-family: $primary-font;
             letter-spacing: 1px;
 
-            @media screen and (max-width:$medium) {
+            @media screen and (max-width: $medium) {
                 font-size: 35px;
             }
         }
@@ -287,11 +287,11 @@ span {
         position: relative;
         margin: 0 auto;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             width: auto;
             max-width: 550px;
         }
-        @media screen and (max-width:$small) {
+        @media screen and (max-width: $small) {
             width: 100%;
         }
 
@@ -311,10 +311,10 @@ span {
         height: 40px;
         border-radius: 40px;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             padding-right: 20%;
         }
-        @media screen and (max-width:$small) {
+        @media screen and (max-width: $small) {
             padding-right: 33%;
         }
         @media screen and (max-width:410px) {
@@ -381,7 +381,7 @@ span {
             overflow: hidden;
             outline: none;
 
-            @media screen and (max-width:$small) {
+            @media screen and (max-width: $small) {
                 border-radius: 40px;
             }
 

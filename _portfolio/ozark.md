@@ -6,6 +6,8 @@ teaser: indexicons/ozark.jpg
 description: Develop a solution to the inconveniences and problems that cause users to avoid utilizing their barbecue
 year: 2018
 type: Consumer Goods Design
+fullwidth: /assets/img/ozark/background.jpg
+fullwidthinner: /assets/img/ozark/ozark.svg
 ---
 ## Market Research
 {% include gallery.html img='/assets/img/ozark/ozark1.jpg' alt = 'market research' %}

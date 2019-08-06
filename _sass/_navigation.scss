@@ -42,7 +42,7 @@ header {
                             display: block;
                             max-height: 50px;
                             width: auto;
-                            @media screen and (max-width:$small) {
+                            @media screen and (max-width: $small) {
                                 max-height: 40px;
                                 max-width: 180px;
                             }
@@ -56,13 +56,13 @@ header {
                 margin: 10px 0;
                 width: 80%;
                 width: calc(100% - 150px);
-                @media screen and (max-width:$large) {
+                @media screen and (max-width: $large) {
                     width: auto;
                 }
                 .menu-holder {
                     text-align: right;
                     float: right;
-                    @media screen and (max-width:$large) {
+                    @media screen and (max-width: $large) {
                         display: none;
                     }
                     ul {
@@ -202,7 +202,7 @@ header {
                             @media screen and (max-width:1350px) {
                                 display: block;
                             }
-                            @media screen and (max-width:$small) {
+                            @media screen and (max-width: $small) {
                                 padding: 120px 50px;
                             }
                             ul {
@@ -250,7 +250,7 @@ header {
                                                         text-transform: uppercase;
                                                         font-family: $primary-font;
 
-                                                        @media screen and (max-width:$large) {
+                                                        @media screen and (max-width: $large) {
                                                             color: $body-background;
                                                         }
                                                     }
@@ -349,7 +349,7 @@ header {
                         }
                     }
                     .menu-holder {
-                        @media screen and (max-width:$small) {
+                        @media screen and (max-width: $small) {
                             padding: 0px 30px 50px 30px;
                         }
                     }
@@ -442,7 +442,7 @@ header {
     span {
         font-family: $secondary-font;
         font-weight: 300;
-        @media screen and (max-width:$small) {
+        @media screen and (max-width: $small) {
             display: none;
         }
     }
@@ -451,7 +451,7 @@ header {
         i {
             margin-left: 10px;
             margin-right: 0;
-            @media screen and (max-width:$small) {
+            @media screen and (max-width: $small) {
                 margin-left: 0;
             }
         }
@@ -459,7 +459,7 @@ header {
     .nav-left {
         i {
             margin-right: 10px;
-            @media screen and (max-width:$small) {
+            @media screen and (max-width: $small) {
                 margin-right: 0;
             }
         }

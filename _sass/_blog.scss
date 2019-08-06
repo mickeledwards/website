@@ -130,7 +130,7 @@
                 }
             }
 
-            @media screen and (max-width:$medium) {
+            @media screen and (max-width: $medium) {
                 width:100%;
             }
         }
@@ -144,12 +144,12 @@
                 width: 33.33333333%;
                 width: calc(33.33333333%);
 
-                @media screen and (max-width:$large) {
+                @media screen and (max-width: $large) {
                     width: 50%;
                     width: calc(50%);
                 }
 
-                @media screen and (max-width:$medium) {
+                @media screen and (max-width: $medium) {
                     width:100%;
                 }
             }

@@ -188,7 +188,7 @@ a {
         transition: all .4s ease;
         font-weight: 400;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             margin-bottom:0px;
         }
 
@@ -224,7 +224,7 @@ a {
         transition: all .4s ease;
         background-color: $secondary-color;
 
-        @media screen and (max-width:$large) {
+        @media screen and (max-width: $large) {
             margin-bottom:0px;
         }
 
