@@ -41,15 +41,14 @@ hotspot-points:
     location: top-left
     text: Youth is referred to recieve treatment from culturally appropriate advocates.
 ---
-## Researching the Problem
+## Project Information
 {% include gallery.html img='/assets/img/you/you1.jpg' alt = 'market research' %}
 
-## Journey of a Potential Victim
-### Hover over the numbers for a description of each step
-{% include hotspot.html%}
+## Researching the Problem
+{% include gallery.html img='/assets/img/you/you2.jpg' alt = 'market research' %}
 
 ## Artifacts for YOU
-{% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
+{% include gallery.html img='/assets/img/you/you4.jpg' alt = 'final' %}
 
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/you/icons1.svg" alt="YOU System Resource Binder">
@@ -58,3 +57,7 @@ hotspot-points:
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/you/icons2.svg" alt="YOU System Web Application">
 </div>
+
+## Journey of a Potential Victim
+### Hover over the numbers for a description of each step
+{% include hotspot.html%}
