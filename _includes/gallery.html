@@ -1,5 +1,11 @@
+{% if include.lightbox %}
 <div class="lightboximg col-xs-12 {{include.width}}" data-src="{{include.img}}">
     <a href="">
         <img src="{{include.img}}" alt="{{include.alt}}" class="img-post">
     </a>
 </div>
+{% else %}
+<div class="col-xs-12 {{include.width}}" data-src="{{include.img}}">
+        <img src="{{include.img}}" alt="{{include.alt}}" class="">
+</div>
+{% endif %}
