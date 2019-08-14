@@ -19,7 +19,6 @@ fullwidthinner: /assets/img/ozark/ozark.svg
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/ozark/bbq1.svg" alt="Benefits1">
 </div>
-
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/ozark/bbq2.svg" alt="Benefits2">
 </div>
