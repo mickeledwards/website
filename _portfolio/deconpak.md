@@ -10,8 +10,8 @@ fullwidth: /assets/img/deconpak/research.jpg
 fullwidthinner: /assets/img/deconpak/deconpak.svg
 ---
 ## Research
-{% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'market research 1' %}
-{% include gallery.html  img='/assets/img/deconpak/decon2.jpg' alt = 'market research 2' %}
+{% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'Research' %}
+{% include gallery.html  img='/assets/img/deconpak/decon2.jpg' alt = 'Sketches' %}
+{% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'User Testing' %}
 ## DeconPak
-{% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'final 1' %}
-{% include gallery.html img='/assets/img/deconpak/decon4.jpg' alt = 'final 2' %}
+{% include gallery.html img='/assets/img/deconpak/decon4.jpg' alt = 'Final' %}

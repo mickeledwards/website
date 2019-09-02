@@ -13,8 +13,9 @@ fullwidthinner: /assets/img/ozark/ozark.svg
 {% include gallery.html img='/assets/img/ozark/ozark1.jpg' alt = 'market research' %}
 ## Ideation
 {% include gallery.html img='/assets/img/ozark/ozark2.jpg' alt = 'ideation' %}
-## Final Design
 {% include gallery.html img='/assets/img/ozark/ozark3.jpg' alt = 'final' %}
+## Final Design
+{% include gallery.html img='/assets/img/ozark/ozark4.jpg' alt = 'final' %}
 
 <div class="col-xs-12 col-md-6">
     <img src="/assets/img/ozark/bbq1.svg" alt="Benefits1">
