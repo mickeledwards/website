@@ -11,7 +11,18 @@ fullwidthinner: /assets/img/deconpak/deconpak.svg
 ---
 ## Research
 {% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'Research' %}
+
+## Sketches
 {% include gallery.html  img='/assets/img/deconpak/decon2.jpg' alt = 'Sketches' %}
+
+## User Testing
 {% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'User Testing' %}
+
+## Refinement from User Testing
+{% include gallery.html  img='/assets/img/deconpak/decon4.jpg' alt = 'User Refinement' %}
+
+## Model Development
+{% include gallery.html img='/assets/img/deconpak/decon5.jpg' alt = 'Physical Model' %}
+
 ## DeconPak
-{% include gallery.html img='/assets/img/deconpak/decon4.jpg' alt = 'Final' %}
+{% include gallery.html img='/assets/img/deconpak/decon6.jpg' alt = 'Final' %}

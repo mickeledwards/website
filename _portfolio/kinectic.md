@@ -9,5 +9,6 @@ type: Sculpture Design
 fullwidth: /assets/img/kinectic/mirror.jpg
 fullwidthinner: /assets/img/kinectic/kinectic.svg
 ---
-{% include gallery.html img='/assets/img/kinectic/grant1.jpg' alt = 'market research' %}
+{% include gallery.html img='/assets/img/kinectic/grant1.jpg' alt = 'process work' %}
 {% include gallery.html img='/assets/img/kinectic/grant2.jpg' alt = 'final' %}
+{% include gallery.html img='/assets/img/kinectic/grant3.jpg' alt = 'final 2' %}
