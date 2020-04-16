@@ -41,25 +41,17 @@ hotspot-points:
     location: top-right
     text: Patient puts on blue scrub suit and is safe from contamination.
 ---
-## Research
-{% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'Research' %}
+## What is the Current Decontamination Process?
+{% include gallery.html img='/assets/img/deconpak/research1.jpg' alt = 'Research' %}
 
 ## Sketches
-{% include gallery.html  img='/assets/img/deconpak/decon2.jpg' alt = 'Sketches' %}
+{% include gallery.html  img='/assets/img/deconpak/sketches.jpg' alt = 'Sketches' %}
 
 ## User Testing
-{% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'User Testing' %}
+{% include gallery.html img='/assets/img/deconpak/usertesting.jpg' alt = 'User Testing' %}
 
-## Refinement from User Testing
-{% include gallery.html  img='/assets/img/deconpak/decon4.jpg' alt = 'User Refinement' %}
-
-## Model Development
-{% include gallery.html img='/assets/img/deconpak/decon5.jpg' alt = 'Physical Model' %}
-
-## DeconPak
-{% include gallery.html img='/assets/img/deconpak/decon6.jpg' alt = 'Final' %}
 
 
 ## DeconPak in Action
-### Hover over the numbers for a description of how DeconPak can help
+### Hover over the numbers for a description of how DeconPak works
 {% include hotspot.html%}
