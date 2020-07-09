@@ -10,16 +10,19 @@ fullwidth: /assets/img/ozark/background.jpg
 fullwidthinner: /assets/img/ozark/ozark.svg
 ---
 ## Market Research
-{% include gallery.html img='/assets/img/ozark/ozark1.jpg' alt = 'market research' %}
-## Ideation
-{% include gallery.html img='/assets/img/ozark/ozark2.jpg' alt = 'ideation' %}
-{% include gallery.html img='/assets/img/ozark/ozark3.jpg' alt = 'final' %}
-## Final Design
-{% include gallery.html img='/assets/img/ozark/ozark4.jpg' alt = 'final' %}
+{% include gallery.html img='/assets/img/ozark/barbecue1.jpg' alt = 'market research' %}
 
-<div class="col-xs-12 col-md-6">
-    <img src="/assets/img/ozark/bbq1.svg" alt="Benefits1">
-</div>
-<div class="col-xs-12 col-md-6">
-    <img src="/assets/img/ozark/bbq2.svg" alt="Benefits2">
-</div>
+## In-the-Field Research
+{% include gallery.html img='/assets/img/ozark/barbecue2.jpg' alt = 'field research' %}
+
+## Idea Generation
+{% include gallery.html img='/assets/img/ozark/barbecue3.jpg' alt = 'idea generation' %}
+
+## Form and Function Refinement
+{% include gallery.html img='/assets/img/ozark/barbecue4.jpg' alt = 'idea refinement' %}
+
+## Ozark Barbecue
+{% include gallery.html img='/assets/img/ozark/barbecue5.jpg' alt = 'idea refinement' %}
+{% include gallery.html img='/assets/img/ozark/barbecue6.jpg' alt = 'idea refinement' %}
+
+

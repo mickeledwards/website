@@ -42,15 +42,20 @@ hotspot-points:
     text: Patient puts on blue scrub suit and is safe from contamination.
 ---
 ## What is the Current Decontamination Process?
-{% include gallery.html img='/assets/img/deconpak/research1.jpg' alt = 'Research' %}
+{% include gallery.html img='/assets/img/deconpak/decon1.jpg' alt = 'Research' %}
 
 ## Sketches
-{% include gallery.html  img='/assets/img/deconpak/sketches.jpg' alt = 'Sketches' %}
+{% include gallery.html  img='/assets/img/deconpak/decon2.jpg' alt = 'Sketches' %}
 
 ## User Testing
-{% include gallery.html img='/assets/img/deconpak/usertesting.jpg' alt = 'User Testing' %}
+{% include gallery.html img='/assets/img/deconpak/decon3.jpg' alt = 'User Testing' %}
 
+## Final Product
+{% include gallery.html img='/assets/img/deconpak/decon4.jpg' alt = 'Final Product 1' %}
 
+{% include gallery.html img='/assets/img/deconpak/decon5.jpg' alt = 'Final Product 2' %}
+
+{% include gallery.html img='/assets/img/deconpak/decon6.jpg' alt = 'Final Product 3' %}
 
 ## DeconPak in Action
 ### Hover over the numbers for a description of how DeconPak works

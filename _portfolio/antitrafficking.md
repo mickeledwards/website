@@ -36,22 +36,21 @@ hotspot-points:
     location: top-right
     text: Youth is referred to receive treatment from culturally appropriate advocates.
 ---
-## Images from Chico, California
-{% include gallery.html img='/assets/img/you/you1.jpg' alt = 'homeless images' %}
 
 ## Researching the Problem
-{% include gallery.html img='/assets/img/you/you2.jpg' alt = 'research' %}
+{% include gallery.html img='/assets/img/you/you1.jpg' alt = 'research' %}
 
-## Artifacts for YOU
-{% include gallery.html img='/assets/img/you/you3.jpg' alt = 'final' %}
+## Three Points of Contact
+{% include gallery.html img='/assets/img/you/you2.jpg' alt = 'points of contact' %}
 
-<div class="col-xs-12 col-md-6">
-    <img src="/assets/img/you/icons1.svg" alt="YOU System Resource Binder">
-</div>
+## Spreading Awareness
+{% include gallery.html img='/assets/img/you/you3.jpg' alt = 'points of contact' %}
 
-<div class="col-xs-12 col-md-6">
-    <img src="/assets/img/you/icons2.svg" alt="YOU System Web Application">
-</div>
+## Two Artifacts. One Mission.
+{% include gallery.html img='/assets/img/you/you4.jpg' alt = 'artifacts' %}
+
+## Final System Package
+{% include gallery.html img='/assets/img/you/you5.jpg' alt = 'artifacts' %}
 
 ## Journey of a Potential Victim
 ### Hover over the numbers for a description of how <i class="iconfont">YOU</i> can help
