@@ -3,7 +3,7 @@ Order: 2
 layout: page
 title: Hydrotherm
 teaser: indexicons/hydrotherm.jpg
-description: From a Hairdryer Into a Conceptual Room Heater
+description: From a Hairdryer Into a Conceptual Room Heater. This project was based on the idea of reusing existing technology into new products.
 year: 2017
 type: Consumer Goods Design
 ---
