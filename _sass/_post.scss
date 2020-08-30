@@ -43,18 +43,18 @@
                 > li + li {
                     &:before {
                         padding: 0 5px;
-                        color: $black-94-percent;
+                        color: $color-coal;
                         content: "/\00a0";
                     }
                 }
 
                 &.white {
                     a {
-                        color: $body-background;
+                        color: $color-white;
                     }
                     > li + li {
                         &:before {
-                            color: $body-background;
+                            color: $color-white;
                         }
                     }
                 }

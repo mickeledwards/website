@@ -2,7 +2,7 @@ header {
     position: relative;
     z-index: 3;
     //padding: 10px 0px;
-    background-color: $body-background;
+    background-color: $color-white;
     height: 50px;
     &.border {
         border-bottom: 1px solid rgba(117,117,117,0.05);
@@ -86,16 +86,16 @@ header {
                                 line-height: 26px;
                                 font-family: $secondary-font;
                                 font-weight: 500;
-                                color: $black-75-percent;
+                                color: $color-nickel;
                                 padding: 10px 0;
                                 @media screen and (min-width: $large) and (max-width: $full) {
                                     margin-left: 24px;
                                 }
                                 &:hover {
-                                    color: $secondary-color !important;
+                                    color: $color-main !important;
                                 }
                                 &.active, &.active-item {
-                                    color: $black-94-percent;
+                                    color: $color-coal;
                                 }
                             }
                             &.submenu {
@@ -115,7 +115,7 @@ header {
                                         min-width: 177px;
                                         width: auto;
                                         text-align: left;
-                                        background-color: $black-10-percent;
+                                        background-color: $color-silver;
                                         padding: 16px;
                                         transition: all .4s ease;
                                         @media screen and (min-width: 992px) {
@@ -133,7 +133,7 @@ header {
                                                 margin: 5px 0 0 0;
                                             }
                                             a {
-                                                color: $black-75-percent;
+                                                color: $color-nickel;
                                                 margin-left: 0;
                                                 font-size: 14px;
                                                 line-height: 30px;
@@ -144,7 +144,7 @@ header {
 
                                                 &:hover {
                                                     @media screen and (min-width:$large) {
-                                                        color: $secondary-color !important;
+                                                        color: $color-main !important;
                                                         transition: padding-left .4s ease;
                                                     }
                                                 }
@@ -175,7 +175,7 @@ header {
                             margin: 0 auto;
                             font-size:100px;
                             font-weight: 100;
-                            color: $secondary-color;
+                            color: $color-main;
                             width: 50px;
                             height: 120px;
                         }
@@ -210,12 +210,12 @@ header {
                                     display: block;
                                     padding: 6px 0;
                                     a {
-                                        color: $black-94-percent;
+                                        color: $color-coal;
                                         padding: 0;
                                         font-size: 35px;
                                         line-height: 55px;
                                         &:hover {
-                                            color: $secondary-color;
+                                            color: $color-main;
                                         }
                                     }
                                     &.submenu {
@@ -244,14 +244,14 @@ header {
                                                     opacity: 0;
                                                     transition: opacity .4s ease;
                                                     a {
-                                                        color: $secondary-color;
+                                                        color: $color-main;
                                                         font-size: 12px;
                                                         line-height: 22px;
                                                         text-transform: uppercase;
                                                         font-family: $primary-font;
 
                                                         @media screen and (max-width: $large) {
-                                                            color: $body-background;
+                                                            color: $color-white;
                                                         }
                                                     }
                                                 }
@@ -282,7 +282,7 @@ header {
                                     font-size: 20px;
                                     line-height: 30px;
                                     font-family: $secondary-font;
-                                    color:$body-background;
+                                    color:$color-white;
                                     margin-left: 0;
                                 }
                             }
@@ -302,7 +302,7 @@ header {
                         right:-320px;
                         top:0;
                         left: inherit;
-                        background-color: $black-94-percent;
+                        background-color: $color-coal;
                         height:100%;
                         z-index:998;
                         .menu-holder {
@@ -318,13 +318,13 @@ header {
                                 li {
                                     margin: 15px 0;
                                     a {
-                                        color: $body-background;
+                                        color: $color-white;
                                         font-size: 20px;
                                         line-height: 30px;
                                     }
                                     &:hover {
                                         a {
-                                            color: $black-75-percent;
+                                            color: $color-nickel;
                                         }
                                     }
                                     &.submenu {
@@ -335,9 +335,9 @@ header {
                                                     margin: 0 0 0 16px;
 
                                                     a {
-                                                        color: $black-4-percent;
+                                                        color: $color-smoke;
                                                         &:hover {
-                                                            color: $secondary-color !important;
+                                                            color: $color-main !important;
                                                         }
                                                     }
                                                 }
@@ -377,7 +377,7 @@ header {
                     margin: 1px 0;
                     cursor: pointer;
                     .bar {
-                        background-color: $black-94-percent;
+                        background-color: $color-coal;
                         height: 2px;
                         width:30px;
                         display: block;
@@ -409,7 +409,7 @@ header {
                             position: relative;
                             z-index: 998;
                             .bar {
-                                background-color: $black-75-percent;
+                                background-color: $color-nickel;
                             }
                             .bar-1{
                                 margin-top:10px;

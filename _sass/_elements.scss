@@ -14,7 +14,7 @@ span {
             font-family: $primary-font;
             left: 0;
             top: -31px;
-            color: $black-10-percent;
+            color: $color-silver;
             -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
@@ -74,21 +74,21 @@ table {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 1px;
-    border: 1px solid $black-10-percent !important;
+    border: 1px solid $color-silver !important;
     font-family: $paragraph-font;
     font-weight: 300;
 
     th {
-        background: $secondary-color;
-        color: $body-background;
+        background: $color-main;
+        color: $color-white;
         text-align: left;
         padding: 15px !important;
-        border: 1px solid $black-10-percent;
+        border: 1px solid $color-silver;
         font-family: $primary-font;
     }
     td {
         padding: 15px !important;
-        border: 1px solid $black-10-percent;
+        border: 1px solid $color-silver;
     }
 }
 .image-carousel {
@@ -115,7 +115,7 @@ table {
                 &:hover {
 
                     span {
-                        background-color: $black-94-percent;
+                        background-color: $color-coal;
                         transition: all .4s ease;
                     }
                 }
@@ -123,8 +123,8 @@ table {
                 span {
                     height: 40px;
                     width: 40px;
-                    background-color: $secondary-color;
-                    color: $body-background;
+                    background-color: $color-main;
+                    color: $color-white;
                     display: block;
                     border-radius: 0 4px 4px 0;
                     text-align: center;
@@ -173,7 +173,7 @@ em {
         line-height: 80px;
         font-family: $primary-font;
         font-weight: 600;
-        color: $black-4-percent;
+        color: $color-smoke;
         float: left;
         position: absolute;
         z-index: 0;

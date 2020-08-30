@@ -1,7 +1,7 @@
 body {
     font: 100% $secondary-font;
-    color: $black-94-percent;
-    background-color: $body-background;
+    color: $color-coal;
+    background-color: $color-white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font: 100% $secondary-font;
-    color: $black-94-percent;
+    color: $color-coal;
     font-weight: 300;
 }
 h2, h3 {
@@ -59,7 +59,7 @@ h1 {
     }
 
     &.heading {
-        color: $black-75-percent;
+        color: $color-nickel;
         font-family: $primary-font;
         letter-spacing: 0;
         max-width: 800px;
@@ -92,7 +92,7 @@ h2 {
 
     &.websiteheading {
         font-weight: 500;
-        color: $black-headersubtitle !important;
+        color: $color-moon !important;
         padding-left: 50px;
         @media screen and (max-width: $large) {
             padding-left: 0px;
@@ -160,7 +160,7 @@ h2, h3 {
     }
 }
 a {
-    color: $secondary-color;
+    color: $color-main;
     text-decoration: none;
     transition: color .4s ease;
 
@@ -170,12 +170,12 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $black-94-percent;
+        color: $color-coal;
         transition: color .4s ease;
     }
     &.simple {
         text-decoration: none;
-        color: $secondary-color;
+        color: $color-main;
         transition: opacity .4s ease;
         font-weight: 400;
 
@@ -198,10 +198,10 @@ a {
         display: inline-block;
         overflow: hidden;
         outline: none;
-        border:1px solid $black-94-percent;
+        border:1px solid $color-coal;
         border-radius: 2px;
         font-weight: bold;
-        color: $black-94-percent;
+        color: $color-coal;
         position: relative;
         margin-right:10px;
         margin-left: 10px;
@@ -215,8 +215,8 @@ a {
         }
 
         &:hover {
-            background-color: $secondary-color;
-            color:$body-background !important;
+            background-color: $color-main;
+            color:$color-white !important;
             border-color:transparent;
             transition: all .4s ease;
         }
@@ -237,22 +237,22 @@ a {
         outline: none;
         border-radius: 2px;
         font-weight: 300;
-        color: $body-background;
+        color: $color-white;
         position: relative;
         margin-right:10px;
         margin-left: 10px;
         margin-bottom:35px;
         text-decoration: none !important;
         transition: all .4s ease;
-        background-color: $secondary-color;
+        background-color: $color-main;
 
         @media screen and (max-width: $large) {
             margin-bottom:0px;
         }
 
         &:hover {
-            background-color: $black-94-percent;
-            color:$body-background;
+            background-color: $color-coal;
+            color:$color-white;
             transition: all .4s ease;
         }
         &.shadow {
@@ -264,30 +264,30 @@ a {
         &.small {
             height: 36px;
             line-height: 36px;
-            background-color: $secondary-color;
-            color: $body-background;
+            background-color: $color-main;
+            color: $color-white;
             transition: all .4s ease;
             font-size: 12px;
 
             &:hover {
-                background-color: $body-background;
-                color: $secondary-color;
+                background-color: $color-white;
+                color: $color-main;
                 transition: all .4s ease;
             }
 
             &.active {
                 background-color: transparent;
-                border: 1px solid $secondary-color;
-                color: $secondary-color;
+                border: 1px solid $color-main;
+                color: $color-main;
 
                 &:hover {
-                    background-color: $secondary-color;
-                    border: 1px solid $secondary-color;
-                    color: $body-background;
+                    background-color: $color-main;
+                    border: 1px solid $color-main;
+                    color: $color-white;
                 }
             }
             &.border {
-                border: 1px solid $secondary-color;
+                border: 1px solid $color-main;
             }
         }
         i {
@@ -297,7 +297,7 @@ a {
     &.btn-pro {
         font-size: 14px;
         line-height: 14px;
-        color: $black-94-percent;
+        color: $color-coal;
         font-weight: 400;
         text-decoration: none;
         position: relative;
@@ -312,7 +312,7 @@ a {
             right: -20px;
             top: 1px;
             transition: right .4s ease;
-            color: $secondary-color;
+            color: $color-main;
         }
 
         &:hover {
@@ -328,7 +328,7 @@ a {
     &.btn-simple {
         font-size: 16px;
         line-height: 16px;
-        color: $secondary-color;
+        color: $color-main;
         font-weight: 400;
         text-decoration: none;
         position: relative;
@@ -338,7 +338,7 @@ a {
 
         &:before {
            content: '';
-           background-color: $secondary-color;
+           background-color: $color-main;
            border-radius: 2px;
            position: absolute;
            top:-1px;
@@ -350,7 +350,7 @@ a {
         }
 
         &:hover {
-            color: $body-background;
+            color: $color-white;
             padding-left: 5px;
             transition: all .2s ease;
 
@@ -376,16 +376,16 @@ a {
         height: 30px;
         line-height: 30px;
         background-color: transparent;
-        color: $black-75-percent;
+        color: $color-nickel;
         transition: all .4s ease;
         font-size: 12px;
-        border: 1px solid $black-75-percent;
+        border: 1px solid $color-nickel;
         position: relative;
 
         &:hover {
-            background-color: $secondary-color;
-            border-color: $secondary-color;
-            color: $body-background;
+            background-color: $color-main;
+            border-color: $color-main;
+            color: $color-white;
         }
 
         &:before {
@@ -399,14 +399,14 @@ a {
 }
 p {
     font-family: $paragraph-font;
-    color: $black-75-percent;
+    color: $color-nickel;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 16px;
     font-weight: 300;
 
     &.heading {
-        color: $black-75-percent;
+        color: $color-nickel;
         font-family: $paragraph-font;
         font-size: 18px;
         line-height: 30px;
@@ -439,7 +439,7 @@ p {
 
     b, strong {
         font-weight: 400;
-        color: $black-75-percent;
+        color: $color-nickel;
     }
 
     a {
@@ -447,41 +447,41 @@ p {
     }
 }
 .color-dark {
-    color: $black-94-percent;
+    color: $color-coal;
 }
 .text-center{
     text-align: center;
 }
 .underline {
-    border-bottom: 3px solid $black-4-percent;
-    box-shadow: inset 0 -3px 0 $black-4-percent;
+    border-bottom: 3px solid $color-smoke;
+    box-shadow: inset 0 -3px 0 $color-smoke;
 }
-.black-4-percent {
-    background-color: $black-4-percent !important;
+.color-smoke {
+    background-color: $color-smoke !important;
 }
 .color-background {
-    background-color: $secondary-color;
+    background-color: $color-main;
 }
 .secondary-background {
-    background-color: $secondary-color;
+    background-color: $color-main;
 }
-.black-94-percent {
-    background-color: $black-94-percent !important;
+.color-coal {
+    background-color: $color-coal !important;
 }
 .black-background {
     background-color: #222;
 }
-.black-4-percent {
-    background-color: $black-4-percent !important;
+.color-smoke {
+    background-color: $color-smoke !important;
 }
-.black-10-percent {
-    background-color: $black-10-percent !important;
+.color-silver {
+    background-color: $color-silver !important;
 }
-.body-background {
-    background-color: $body-background !important;
+.color-white {
+    background-color: $color-white !important;
 }
 .section-bordertop {
-    border-top: 1px solid $black-4-percent;
+    border-top: 1px solid $color-smoke;
 }
 button {
     background: none;
@@ -515,7 +515,7 @@ dl {
         line-height: 22px;
     }
     dd {
-        border-left: 2px solid $secondary-color;
+        border-left: 2px solid $color-main;
         font-family: $primary-font;
         padding-left: 20px;
         margin-bottom:10px;
@@ -527,7 +527,7 @@ ol {
     list-style: decimal;
     padding-left: 28px;
     font-family: $paragraph-font;
-    color: $black-75-percent;
+    color: $color-nickel;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -547,18 +547,18 @@ ul {
             position: relative;
             padding-left: 26px;
             margin: 9px 0;
-            color: $black-94-percent;
+            color: $color-coal;
             font-size: 16px;
             line-height: 26px;
             font-weight: 300;
-            color: $black-94-percent;
+            color: $color-coal;
 
 
             &:before {
                 position: absolute;
                 content: "\f383";
                 font-family: "iconfont";
-                color: $secondary-color;
+                color: $color-main;
                 left: 0;
                 top: 0;
             }
@@ -574,7 +574,7 @@ ul {
                 position: absolute;
                 content: "\f111";
                 font-family: "iconfont";
-                color: $black-94-percent;
+                color: $color-coal;
                 font-size: 8px;
                 left: 8px;
                 top: -1px;
@@ -583,26 +583,26 @@ ul {
     }
 }
 mark {
-    background: $black-4-percent;
+    background: $color-smoke;
     padding: 0 4px;
-    color: $black-75-percent;
+    color: $color-nickel;
 }
 pre {
     padding:25px;
-    background: $black-4-percent;
+    background: $color-smoke;
     overflow: hidden;
     border-radius: 0;
     font-family: $paragraph-font;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: $black-94-percent;
+    color: $color-coal;
     margin:25px 0;
 
 }
 code {
-    color: $secondary-color;
-    background-color: $black-4-percent;
+    color: $color-main;
+    background-color: $color-smoke;
 }
 blockquote, q {
     display: block;
@@ -612,11 +612,11 @@ blockquote, q {
     line-height: 26px;
     padding-left: 36px;
     font-family: $paragraph-font;
-    color: $black-75-percent;
+    color: $color-nickel;
     font-weight: 400;
     font-style: italic;
     margin: 50px 0;
-    border-left: 4px solid $secondary-color;
+    border-left: 4px solid $color-main;
 
 
     @media screen and (max-width: $small) {
@@ -629,13 +629,13 @@ blockquote, q {
         display: block;
         font-size: 14px;
         font-weight: 300;
-        color: $black-75-percent;
+        color: $color-nickel;
 
         a {
-            color: $black-75-percent;
+            color: $color-nickel;
 
             &:hover {
-                color: $secondary-color;
+                color: $color-main;
             }
         }
     }
@@ -661,7 +661,7 @@ textarea {
         font-family:"iconfont";
         position: absolute;
         display: block;
-        color: $secondary-color;
+        color: $color-main;
         font-size: 60px;
         text-align: center;
         line-height: 100%;
@@ -695,7 +695,7 @@ textarea {
     &:hover {
         &:before {
             background-color: transparent;
-            color: $secondary-color;
+            color: $color-main;
             opacity: .5;
             transition: all .4s ease;
         }
@@ -707,11 +707,11 @@ textarea {
 
     &.black {
         &:before {
-            background-color: $black-94-percent;
+            background-color: $color-coal;
         }
         &:hover {
             &:before {
-                background-color: $secondary-color;
+                background-color: $color-main;
                 transition: background-color .4s ease;
             }
         }
@@ -752,7 +752,7 @@ textarea {
     width: 70px;
     height: 100%;
     max-width: 70px;
-    background-color: $black-4-percent;
+    background-color: $color-smoke;
 
     @media screen and (max-width:1350px){
         display: none;
@@ -767,7 +767,7 @@ textarea {
     width: 70px;
     height: 100%;
     max-width: 70px;
-    background-color: $black-4-percent;
+    background-color: $color-smoke;
 
     @media screen and (max-width:1350px){
         display: none;
@@ -782,7 +782,7 @@ textarea {
 
         a {
             font-size: 12px;
-            color: $black-94-percent;
+            color: $color-coal;
             text-decoration: none;
             font-family: $secondary-font;
             font-weight: 300;
@@ -798,7 +798,7 @@ textarea {
             &:hover, &:focus {
                 border:none;
                 border-radius: 2px;
-                color: $secondary-color;
+                color: $color-main;
                 background-color: transparent;
                 transition: all .4s ease;
             }
@@ -811,15 +811,15 @@ textarea {
                 border:none;
                 border-radius: 2px;
                 text-decoration: none;
-                color: $body-background;
-                background-color: $black-75-percent;
+                color: $color-white;
+                background-color: $color-nickel;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
                 &:hover, &:focus {
                     border:none;
                     border-radius: 2px;
-                    color: $body-background;
-                    background-color: $secondary-color;
+                    color: $color-white;
+                    background-color: $color-main;
                 }
                 &:focus {
                     outline: none;
@@ -854,8 +854,8 @@ textarea {
 
             &.active {
                 a {
-                    background-color: $secondary-color;
-                    color: $body-background;
+                    background-color: $color-main;
+                    color: $color-white;
                     opacity: 1;
                     border-radius: 40px;
 
@@ -872,7 +872,7 @@ textarea {
     margin-top: -1px;
 
     .tab-pane {
-        color: $black-75-percent;
+        color: $color-nickel;
         font-size: 14px;
         line-height: 24px;
         font-family: $paragraph-font;

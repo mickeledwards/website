@@ -10,7 +10,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	color: $secondary-color;
+	color: $color-main;
 	padding: 1em;
 	opacity: 0;
     -webkit-transform: translateY(20px);
@@ -84,7 +84,7 @@
 	margin-left: -22px;
 	margin-top: -22px;
 	border-radius: 50%;
-	background: $secondary-color url('/assets/img/ui/cd-arrows.svg') no-repeat center center;
+	background: $color-main url('/assets/img/ui/cd-arrows.svg') no-repeat center center;
 	cursor: move;
 	box-shadow: 0 0 0 6px rgba(#000, .2), 0 0 10px rgba(#000, .6), inset 0 1px 0 rgba(#fff, .3);
 	opacity: 0;
@@ -92,7 +92,7 @@
 
 	&.draggable {
 		/* change background color when element is active */
-		background-color: $secondary-color-hover;
+		background-color: $color-main-hover;
 	}
 
 	.is-visible & {

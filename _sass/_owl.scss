@@ -29,7 +29,7 @@
     height: 12px;
     margin: 5px 7px;
     background: transparent;
-    border: 1px solid $secondary-color;
+    border: 1px solid $color-main;
     border-radius: 50%;
     opacity: 1;
     display: block;
@@ -41,6 +41,6 @@
     transition: opacity 200ms ease;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-    background: $secondary-color;
+    background: $color-main;
     opacity: 1;
 }

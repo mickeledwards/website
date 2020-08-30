@@ -15,7 +15,7 @@
             }
 
             article{
-                background-color: $body-background;
+                background-color: $color-white;
                 border-radius: 4px;
                 transition: all .4s ease;
 
@@ -32,7 +32,7 @@
                     transition: opacity .4s ease;
 
                     &.meta {
-                        color: $secondary-color;
+                        color: $color-main;
                        // font-family: $paragraph-font;
                         font-size: 14px;
                         line-height: 26px;
@@ -46,7 +46,7 @@
                     line-height: 30px;
                     //font-family: $paragraph-font;
                     margin: 8px 0 8px 0;
-                    color: $black-94-percent;
+                    color: $color-coal;
                     font-weight: 300;
                     transition: color .4s ease;
                 }
@@ -54,7 +54,7 @@
                     margin-bottom: 0;
                     font-size: 14px;
                     line-height: 26px;
-                    color: $black-75-percent;
+                    color: $color-nickel;
                     margin-bottom: 15px;
                 }
                 a {
@@ -74,12 +74,12 @@
                     transition: all .4s ease;
 
                     h3 {
-                        color: $secondary-color;
+                        color: $color-main;
                         transition: color .4s ease;
                     }
                     span {
                         &.meta {
-                            color: $black-75-percent;
+                            color: $color-nickel;
                             transition: color .4s ease;
                         }
                     }
@@ -97,12 +97,12 @@
                         transition: all .4s ease;
 
                         h3 {
-                            color: $secondary-color;
+                            color: $color-main;
                             transition: color .4s ease;
                         }
                         span {
                             &.meta {
-                                color: $black-75-percent;
+                                color: $color-nickel;
                                 transition: color .4s ease;
                             }
                         }

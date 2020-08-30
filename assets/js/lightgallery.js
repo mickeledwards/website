@@ -1158,7 +1158,6 @@
                     startCoords = e.pageX;
                     isDraging = true;
 
-                    // ** Fix for webkit cursor issue https://code.google.com/p/chromium/issues/detail?id=26723
                     _this.$outer.scrollLeft += 1;
                     _this.$outer.scrollLeft -= 1;
 

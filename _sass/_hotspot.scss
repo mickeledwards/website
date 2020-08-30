@@ -15,9 +15,9 @@
         z-index: 0;
         &:hover, &:active {
             .lg-hotspot-button {
-                background-color: $secondary-color-hover;
+                background-color: $color-main-hover;
                 &:after {
-                    background-color: $secondary-color-hover;
+                    background-color: $color-main-hover;
                 }
             }
         }
@@ -27,7 +27,7 @@
             width: 18px*2;
             padding: 0px;
             border-radius: 100%;
-            background-color: $secondary-color;
+            background-color: $color-main;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             z-index: 999;
             animation: button-pulse 4s ease-in-out infinite;
@@ -58,7 +58,7 @@
             position: absolute;
             padding: 0 0 1.1em 0;
             width: 16em;
-            background-color: $body-background;
+            background-color: $color-white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             font-size: 14.5px;
             line-height: 1.45em;
@@ -71,18 +71,18 @@
             h4 {
                 margin: 0;
                 padding: 0.65em 18px;
-                background-color: $black-75-percent;
+                background-color: $color-nickel;
                 font-size: 1.1em;
                 font-weight: normal;
                 letter-spacing: 0.02em;
-                color: $body-background;
+                color: $color-white;
                 border-radius:2px 2px 0 0;
             }
             p {
                 font-family: $primary-font;
                 margin: 0;
                 padding: 1.1em 18px 0 18px;
-                color: $black-94-percent;
+                color: $color-coal;
             }
         }
     }

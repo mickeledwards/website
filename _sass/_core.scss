@@ -1,11 +1,11 @@
 ::-moz-selection {
-    background: $select-color;
-    color: $body-background;
+    background: $color-steel-grey;
+    color: $color-white;
 }
 
 ::selection {
-    background: $select-color;
-    color: $body-background;
+    background: $color-steel-grey;
+    color: $color-white;
 }
 
 [class~="white"] {
@@ -13,23 +13,23 @@
 }
 
 [class~="color"] {
-    color: $secondary-color !important;
+    color: $color-main !important;
 }
 
 [class~="black"] {
-    color: $black-94-percent !important;
+    color: $color-coal !important;
 }
 
 [class~="grey"] {
-    color: $black-75-percent !important;
+    color: $color-nickel !important;
 }
 
 [class~="grey-light"] {
-    color: $black-4-percent !important;
+    color: $color-smoke !important;
 }
 
 [class~="grey-dark"] {
-    color: $black-headersubtitle !important;
+    color: $color-moon !important;
 }
 
 [class~="uppercase"] {

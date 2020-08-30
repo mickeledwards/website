@@ -5,7 +5,7 @@
         line-height: 24px;
         font-weight: 300;
         span {
-            color: $black-75-percent;
+            color: $color-nickel;
             font-weight: 300;
         }
     }
@@ -58,12 +58,12 @@
                 h5 {
                     font-size: 38px;
                     line-height: 48px;
-                    color: $black-4-percent;
+                    color: $color-smoke;
                     transform: translate(0px, -25px);
                     transition: all .3s ease-out;
                 }
                 h6 {
-                    color: $body-background;
+                    color: $color-white;
                     text-transform: uppercase;
                     position: relative;
                     letter-spacing: 0;
@@ -96,7 +96,7 @@
 #page-content {
     position: relative;
     z-index: 2;
-    background-color: $body-background;
+    background-color: $color-white;
     border-bottom: 1px solid rgba(117,117,117,0.05);
     box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.05);
     #home-header {
@@ -133,7 +133,7 @@
                     font-size: 16px;
                     font-family: $secondary-font;
                     text-transform: none;
-                    color: $black-75-percent;
+                    color: $color-nickel;
                     font-weight: 300;
                     margin-bottom: 25px;
                     line-height: 26px;
@@ -142,11 +142,11 @@
                     transition: color .4s ease;
 
                     &.is-checked {
-                        color: $secondary-color;
+                        color: $color-main;
                         font-weight: 600;
                     }
                     &:hover {
-                        color: $secondary-color;
+                        color: $color-main;
                         transition: color .4s ease;
                     }
                     sup {
@@ -166,12 +166,12 @@
         }
         a {
             &:hover {
-                color:$black-94-percent;
+                color:$color-coal;
             }
         }
         .projects-items {
             .item {
-                    background-color: $body-background;
+                    background-color: $color-white;
                     border-radius: 4px;
                     transition: all .4s ease;
                     margin: 25px;
@@ -188,7 +188,7 @@
                         transition: opacity .4s ease;
 
                         &.categories {
-                            color: $black-94-percent;
+                            color: $color-coal;
                             font-family: $primary-font;
                             font-size: 14px;
                             line-height: 24px;
@@ -201,7 +201,7 @@
                         font-weight: 300;
                         font-size: 18px;
                         line-height: 22px;
-                        color: $black-94-percent;
+                        color: $color-coal;
                         font-weight: 300;
                         margin-bottom: 8px;
                     }
@@ -244,7 +244,7 @@
                         transition: all .4s ease;
 
                         h3 {
-                            color: $secondary-color;
+                            color: $color-main;
                             transition: color .4s ease;
                         }
                     }

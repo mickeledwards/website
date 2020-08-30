@@ -8,7 +8,7 @@
         font-family: $paragraph-font;
         font-size: 14px;
         line-height: 14px;
-        color: $black-94-percent;
+        color: $color-coal;
         border-bottom: 1px solid rgba(117,117,117,0.41);
         font-weight: 300;
 
@@ -21,12 +21,12 @@
     label {
         font-size: 16px;
         line-height: 20px;
-        color: $black-94-percent;
+        color: $color-coal;
         font-weight: 300;
         margin-bottom: 12px;
 
         sup {
-            color: $secondary-color;
+            color: $color-main;
             top: -0.1em;
         }
     }
@@ -37,25 +37,25 @@
     }
     ::-webkit-input-placeholder {
         font-family: $paragraph-font;
-        color: $black-75-percent;
+        color: $color-nickel;
         font-size: 14px;
     }
 
     :-moz-placeholder {
         font-family: $paragraph-font;
-        color: $black-75-percent;
+        color: $color-nickel;
         font-size: 14px;
     }
 
     ::-moz-placeholder {
         font-family: $paragraph-font;
-        color: $black-75-percent;
+        color: $color-nickel;
         font-size: 14px;
     }
 
     :-ms-input-placeholder {
         font-family: $paragraph-font;
-        color: $black-75-percent;
+        color: $color-nickel;
         font-size: 14px;
     }
 
@@ -72,7 +72,7 @@
         border:none;
         border-radius: 0;
         font-weight: bold;
-        color: $body-background;
+        color: $color-white;
         position: relative;
         letter-spacing: 1px;
         margin: 0;
@@ -80,7 +80,7 @@
         transition: all .4s ease;
 
         &:hover {
-            color: $black-94-percent;
+            color: $color-coal;
             transition: all .4s ease;
         }
 
@@ -90,8 +90,8 @@
             text-transform: none;
             font-weight:400;
             background-color: transparent;
-            border: 1px solid $secondary-color;
-            color: $secondary-color;
+            border: 1px solid $color-main;
+            color: $color-main;
             transition: all .4s ease;
             text-transform: uppercase;
             border-radius: 2px;
@@ -105,8 +105,8 @@
             outline: none;
 
             &:hover {
-                background-color: $secondary-color;
-                color: $body-background;
+                background-color: $color-main;
+                color: $color-white;
                 transition: all .4s ease;
             }
 
@@ -115,22 +115,22 @@
             }
 
             &.white {
-                border: 1px solid $body-background;
+                border: 1px solid $color-white;
 
                 &:hover {
-                    background-color: $body-background;
-                    color: $secondary-color !important;
+                    background-color: $color-white;
+                    color: $color-main !important;
                     transition: all .4s ease;
                 }
             }
             &.active {
-                background-color: $secondary-color;
-                color: $body-background;
+                background-color: $color-main;
+                color: $color-white;
                 transition: all .4s ease;
 
                 &:hover {
                     background-color: transparent;
-                    color: $secondary-color !important;
+                    color: $color-main !important;
                     transition: all .4s ease;
                 }
             }
@@ -168,39 +168,39 @@
 
     &.color {
         ::-webkit-input-placeholder {
-            color: $secondary-color;
+            color: $color-main;
         }
 
         :-moz-placeholder {
-            color: $secondary-color;
+            color: $color-main;
         }
 
         ::-moz-placeholder {
-            color: $secondary-color;
+            color: $color-main;
         }
 
         :-ms-input-placeholder {
-            color: $secondary-color;
+            color: $color-main;
         }
     }
     &.black {
         ::-webkit-input-placeholder {
-            color: $black-94-percent;
+            color: $color-coal;
             font-weight: 400;
         }
 
         :-moz-placeholder {
-            color: $black-94-percent;
+            color: $color-coal;
             font-weight: 400;
         }
 
         ::-moz-placeholder {
-            color: $black-94-percent;
+            color: $color-coal;
             font-weight: 400;
         }
 
         :-ms-input-placeholder {
-            color: $black-94-percent;
+            color: $color-coal;
             font-weight: 400;
         }
     }
@@ -250,7 +250,7 @@ span {
 
     &.contact-info {
         font-family: $primary-font;
-        color: $black-94-percent;
+        color: $color-coal;
         font-size: 16px;
         line-height: 26px;
         margin-right: 18px;
@@ -258,20 +258,20 @@ span {
 
         a {
             em {
-                color: $secondary-color;
+                color: $color-main;
                 transition: color .4s ease;
             }
 
             &:hover {
                 em {
-                    color: $black-94-percent;
+                    color: $color-coal;
                     transition: color .4s ease;
                 }
             }
         }
 
         em {
-            color: $black-75-percent;
+            color: $color-nickel;
             font-weight: 300;
         }
     }
@@ -302,7 +302,7 @@ span {
     .form-field {
         outline: inherit;
         border:none;
-        border-bottom:1px solid $body-background;
+        border-bottom:1px solid $color-white;
         width:80%;
         padding: 18px 50px 18px 30px;
         font-family: $paragraph-font;
@@ -322,7 +322,7 @@ span {
             width: 100%;
         }
         &:focus {
-            border-bottom:1px solid $body-background;
+            border-bottom:1px solid $color-white;
         }
     }
     #submit-newsletter {
@@ -339,7 +339,7 @@ span {
         border:none;
         border-radius: 0;
         font-weight: bold;
-        color: $body-background;
+        color: $color-white;
         position: relative;
         margin: 0;
         background-color: transparent;
@@ -356,7 +356,7 @@ span {
         }
 
         &:hover {
-            color: $black-94-percent;
+            color: $color-coal;
             transition: all .4s ease;
         }
 
@@ -367,8 +367,8 @@ span {
             font-weight: 600;
             text-rendering: geometricPrecision;
             background-color: transparent;
-            border: 1px solid $secondary-color;
-            color: $secondary-color;
+            border: 1px solid $color-main;
+            color: $color-main;
             transition: all .4s ease;
             border-radius: 0px 40px 40px 0px;
             padding-right: 30px;
@@ -386,37 +386,37 @@ span {
             }
 
             &:hover {
-                background-color: $secondary-color;
-                color: $body-background;
+                background-color: $color-main;
+                color: $color-white;
                 transition: all .4s ease;
             }
 
             &.white {
-                border: 1px solid $body-background;
+                border: 1px solid $color-white;
 
                 &:hover {
-                    background-color: $body-background;
-                    color: $secondary-color !important;
+                    background-color: $color-white;
+                    color: $color-main !important;
                     transition: all .4s ease;
                 }
             }
             &.color {
-                border: 1px solid $secondary-color;
-                color: $secondary-color;
+                border: 1px solid $color-main;
+                color: $color-main;
 
                 &.active {
-                    background-color: $secondary-color;
-                    color: $body-background !important;
+                    background-color: $color-main;
+                    color: $color-white !important;
 
                     &:hover {
-                        background-color: $body-background;
-                        color: $secondary-color !important;
+                        background-color: $color-white;
+                        color: $color-main !important;
                         border: 1px solid transparent;
-                        border-left: 1px solid $secondary-color;
+                        border-left: 1px solid $color-main;
 
                         @media screen and (max-width:410px) {
                             background-color: transparent;
-                            border: 1px solid $secondary-color;
+                            border: 1px solid $color-main;
                         }
                     }
                 }
