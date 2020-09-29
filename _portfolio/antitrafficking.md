@@ -55,3 +55,6 @@ hotspot-points:
 ## Journey of a Potential Victim
 ### Hover over the numbers for a description of how <i class="iconfont">YOU</i> can help
 {% include hotspot.html%}
+
+## Capstone Poster Mockup
+{% include gallery.html img='/assets/img/you/you6.jpg' alt = 'poster' %}
