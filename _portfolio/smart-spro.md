@@ -10,6 +10,8 @@ fullwidth: /assets/img/smart-spro/smartspro-background.jpg
 fullwidthinner: /assets/img/smart-spro/smart-spro.svg
 ---
 
+
+
 ## How to Prepare an Espresso Shot
 {% include gallery.html img='/assets/img/smart-spro/coffeesteps.jpg' alt = 'Steps to Make an Espresso Shot' %}
 
