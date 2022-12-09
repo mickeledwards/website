@@ -1,48 +1,54 @@
 ---
 layout: default
 ---
-{% for post in site.portfolio %}
-    {% for tag in post.tags %}
-        {% capture categories %}{{categories}},{{tag}}{% endcapture %}
-    {% endfor %}
-{% endfor %}
+
+{% for post in site.portfolio %} {% for tag in post.tags %} {% capture
+categories %}{{categories}},{{tag}}{% endcapture %} {% endfor %} {% endfor %}
 <!--  Page Content  -->
 <div id="page-content">
-    <!--  HomePage header  -->
-    <div class="container">
-       <div class="row no-margin">
-           <div class="col-xs-12 padding-leftright-null">
-               <div id="home-header">
-                   <div class="text">
-                       <h1 class="margin-bottom-small websiteheading">Mickel Edwards<span class="color">.</span></h1><br>
-                       <h2 class="websiteheading">Industrial Designer</h2>
-                   </div>
-               </div>
-           </div>
-       </div>
-    </div>
-    <!--  END HomePage header  -->
-    <div id="home-wrap" class="content-section">
-        <div class="container">
-            <!--  Portfolio  -->
-            <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
-
-                <div class="projects-items">
-                    {% assign sorted = site.portfolio | sort: 'order'%}
-                    {% for project in sorted %}
-                    <div class="one-item  {% for tag in project.tags %} {{tag}} {%endfor%}">
-                        <div class="item">
-                            <img src="assets/img/{{project.teaser}}" alt="">
-                            <div class="content">
-                                <h3>{{project.title}}</h3>
-                                <h5>{{project.type}} </h5>
-                            </div>
-                            <a href="{{project.url}}" class="link"></a>
-                        </div>
-                    </div>
-                    {%endfor%}
-                </div>
-            </section>
+  <!--  HomePage header  -->
+  <div class="container">
+    <div class="row no-margin">
+      <div class="col-xs-12 padding-leftright-null">
+        <div id="home-header">
+          <div class="text">
+            <h1 class="margin-bottom-small websiteheading">
+              Mickel Edwards<span class="color">.</span>
+            </h1>
+            <br />
+            <h2 class="websiteheading">Industrial Designer</h2>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <!--  END HomePage header  -->
+  <div id="home-wrap" class="content-section">
+    <div class="container">
+      <!--  Portfolio  -->
+      <section
+        id="projects"
+        data-isotope="load-simple"
+        class="page padding-top-null padding-onlybottom-lg"
+      >
+        <div class="projects-items">
+          {% assign sorted = site.portfolio | sort: 'order'%} {% for project in
+          sorted %}
+          <div
+            class="one-item  {% for tag in project.tags %} {{tag}} {%endfor%}"
+          >
+            <div class="item">
+              <img src="assets/img/{{project.teaser}}" alt="" />
+              <div class="content">
+                <h3>{{project.title}}</h3>
+                <h5>{{project.type}}</h5>
+              </div>
+              <a href="{{project.url}}" class="link"></a>
+            </div>
+          </div>
+          {%endfor%}
+        </div>
+      </section>
+    </div>
+  </div>
 </div>
