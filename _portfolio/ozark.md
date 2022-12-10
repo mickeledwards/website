@@ -1,9 +1,9 @@
 ---
-Order: 2
+order: 2
 layout: page
 title: Ozark Barbecue
 teaser: indexicons/ozark.jpg
-description: Develop a solution to the inconveniences and problems that cause users to avoid utilizing their barbecue
+description: Barbecues can elevate even the most basic of human needs. Unfortunately, Ergonomics play a secondary role to this home appliance. Ozark Barbecue looks to alleviate these pain points.
 year: 2018
 type: Consumer Goods Design
 fullwidth: /assets/img/ozark/background.jpg

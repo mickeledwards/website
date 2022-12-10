@@ -3,7 +3,7 @@ order: 3
 layout: page
 title: Anti-Trafficking System <i class="iconfont">YOU</i>
 teaser: indexicons/you.jpg
-description: Youth and Organizations United. YOU. This project is a joint effort between Iowa State University and California State University Chico's psychology department to develop solutions to issues that effect the current homeless population, including human trafficking. From this base, I was able to take a unified advocacy system for human trafficking survivors and extend it to a nationwide system.
+description: Youth and Organizations United is a joint effort between Iowa State University and California State University Chico's psychology department to develop solutions to issues that effect the current homeless population, including human trafficking. From this base, I was able to take a unified advocacy system for human trafficking survivors and extend it to a nationwide system.
 year: 2019
 type: Service Design
 fullwidth: /assets/img/you/homelessbackground.jpg

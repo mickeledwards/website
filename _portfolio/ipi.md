@@ -1,5 +1,5 @@
 ---
-Order: 1
+order: 5
 layout: page
 title: Iowa Prison Industries
 teaser: indexicons/ipi.jpg

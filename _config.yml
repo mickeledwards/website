@@ -23,6 +23,7 @@ twitter_username:
 github_username:
 
 
+
 plugins:
   - octopress-autoprefixer
   - jekyll-paginate-v2
