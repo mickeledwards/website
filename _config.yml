@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mickeledwards.com" # the base hostname & protocol for your site
 twitter_username:
 github_username:
-
+encoding: utf-8
 
 
 plugins:

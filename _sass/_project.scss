@@ -11,6 +11,9 @@
     }
 }
 .project-container {
+    .nobottompadding{
+        margin-bottom: 10px;
+    }
     img {
         width: 100%;
         height: auto;
@@ -330,3 +333,4 @@
 @media (min-width: $full){
 
 }
+
