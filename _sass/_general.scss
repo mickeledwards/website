@@ -93,7 +93,7 @@ h2 {
     &.websiteheading {
         font-weight: 500;
         color: $color-moon !important;
-        padding-left: 50px;
+      //  padding-left: 50px;
         @media screen and (max-width: $large) {
             padding-left: 0px;
         }

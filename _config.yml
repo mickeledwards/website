@@ -48,3 +48,7 @@ collections:
     layout: portfolio
     output: true
     permalink: /:title/
+  downloads:
+    layout: portfolio
+    output: true
+    permalink: /downloads/:title/

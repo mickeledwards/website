@@ -12,13 +12,21 @@ fullwidthinner: /assets/img/smart-spro/smart-spro.svg
 
 
 
-## How to Prepare an Espresso Shot
-
-{% include gallery4.html img1='/assets/img/smart-spro/step1.jpg' alt1 = 'Coffee is ground into portafilter' img2='/assets/img/smart-spro/step2.jpg' alt2 = 'Grounds are tamped in portafilter' img3='/assets/img/smart-spro/step3.jpg' alt3 = 'Portafilter is locked into espresso machine' img4='/assets/img/smart-spro/step4.jpg' alt4 = 'Hot water is pumped through grounds to create espresso'  %}
-
-## How is An Espresso Shot Timed?
-
-{% include gallery4.html img1='/assets/img/smart-spro/timing1.jpg' alt1 = 'Scale is turned on and tared out' img2='/assets/img/smart-spro/timing2.jpg' alt2 = 'Lever turns on brew switch and brew valve' img3='/assets/img/smart-spro/timing3.jpg' alt3 = 'Timer is set and must be watched with weight' img4='/assets/img/smart-spro/timing4.jpg' alt4 = 'To finish shot, lever turns down and brew valve and switch turn off'  %}
+## A Home Espresso Workflow
+{% include gallery.html img='/assets/img/smart-spro/smartspro1.jpg' alt = 'A typical home espresso workflow' %}
 
 
-## How Can this Process be Made Easier?
+## Current Market
+
+{% include gallery.html img='/assets/img/smart-spro/smartspro2.jpg' alt = 'market research' %}
+
+## Project Requirements
+{% include gallery.html img='/assets/img/smart-spro/smartspro3.jpg' alt = 'Requirements for the Project' %}
+
+## Concept Sketches
+{% include gallery.html img='/assets/img/smart-spro/smartspro4.jpg' alt = 'Conceptual sketches' %}
+
+## Hardware Development
+{% include gallery.html img='/assets/img/smart-spro/smartspro5.jpg' alt = 'Developing the software and hardware needed to solve the problem' %}
+
+{% include gallery.html img='/assets/img/smart-spro/smartspro6.jpg' alt = 'Final Render' %}
