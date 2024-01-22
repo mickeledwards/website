@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 layout: page
 title: DeconPak
 teaser: indexicons/deconpak.jpg
